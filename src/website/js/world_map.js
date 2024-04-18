@@ -161,19 +161,26 @@ function clickCountry(d, i) {
   d3.selectAll(".country").classed("country-on", false);
   d3.select(this).classed("country-on", true);
   if (!isCountryZoomed) {
-      boxZoom(path.bounds(d), path.centroid(d), 20);
+      // reduce width of the map to 50%
+      displayCountryInfo(d.properties.name);
+      // resize the width of the svg
+      // console.log(mapWidth);
+      svg.attr("width", $("#map-holder").width());
+      boxZoom(path.bounds(d), [path.centroid(d)[0], path.centroid(d)[1]], 20);
+      // put all other countries to false
       d3.selectAll(".country").each(function() {
           this.zoomed = false;
       });
       clickedCountry.zoomed = true;
-  } 
-  else {
+  } else {
+      hideCountryInfo();
+      svg.attr("width", $("#map-holder").width());
       boxUnZoom();
-      clickedCountry.zoomed = true;
-      d3.selectAll(".country").classed("country-on", false)
-      .each(function() {
-          this.zoomed = false;
+      d3.selectAll(".country").each(function() {
+        this.zoomed = false;
       });
+      d3.selectAll(".country").classed("country-on", false)
+      
   }
 }
 
@@ -217,16 +224,28 @@ function createLabelActions(labels){
         var isCountryZoomed = clickedCountry.zoomed;
         d3.selectAll(".country").classed("country-on", false);
         d3.select("#countryName" + d.properties.iso_a3).classed("country-on", true);
-        if (isCountryZoomed) {
-            boxZoom(path.bounds(d), path.centroid(d), 20);
-            d3.selectAll(".countryLabel").each(function() {
-                this.zoomed = true;
-            });
-            clickedCountry.zoomed = false;
-        } else {
-            boxUnZoom();
-            clickedCountry.zoomed = true;
-        }
+        if (!isCountryZoomed) {
+          // reduce width of the map to 50%
+          displayCountryInfo(d.properties.name);
+          // resize the width of the svg
+          // console.log(mapWidth);
+          svg.attr("width", $("#map-holder").width());
+          boxZoom(path.bounds(d), [path.centroid(d)[0], path.centroid(d)[1]], 20);
+          // put all other countries to false
+          d3.selectAll(".countryLabel").each(function() {
+              this.zoomed = false;
+          });
+          clickedCountry.zoomed = true;
+      } else {
+          hideCountryInfo();
+          svg.attr("width", $("#map-holder").width());
+          boxUnZoom();
+          d3.selectAll(".countryLabel").each(function() {
+            this.zoomed = false;
+          });
+          d3.selectAll(".country").classed("country-on", false)
+          
+      }
     });
 }
 
@@ -320,3 +339,80 @@ d3.json(dataPath,
     initiateZoom();
   }
 );
+
+//* ----------------------------- CREATE COUNTRY INFO PANEL ----------------------------------- //
+
+function displayCountryInfo(country) {
+  console.log("displaying country info");
+  var countryInfo = document.getElementById("country-info");
+  var map = document.getElementById("map-holder");
+  // Reduce width of map
+  // console.log(map.style.width);
+  map.style.width = "50%";
+  // Expand width of country info
+  countryInfo.style.width = "50%";
+  // console.log($("#map-holder").width());
+  // Display country info
+  // console.log(country);
+
+  // Clear country info
+  countryInfo.innerHTML = "";
+
+  // add country name
+  var countryName = document.createElement("h1");
+  countryName.innerHTML = country;
+  
+  // add flag
+  flag = getFlag(country);
+
+  flag.then(function(result) {
+    if (result !== null) { countryInfo.appendChild(result); }
+    // add country name on the right of the flag
+    countryName.style.display = "inline-block";
+    countryName.style.marginLeft = "10px";
+    countryInfo.appendChild(countryName);
+  });
+}
+
+function hideCountryInfo() {
+  console.log("hiding country info");
+  var countryInfo = document.getElementById("country-info");
+  // get innerHTML
+  var map = document.getElementById("map-holder");
+
+  // Expand width of map
+  map.style.width = "100%";
+  // Reduce width of country info
+  countryInfo.style.width = "0%";
+  
+  // console.log($("#map-holder").width());
+  // Clear country info
+  countryInfo.innerHTML = "";
+}
+
+async function getFlag(countryName) {
+try {
+    // Fetch country data
+    const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
+    const data = await response.json();
+
+    // Get country code
+    const countryCode = data[0].cca2;
+
+    // Fetch flag image URL
+    const flagResponse = await fetch(`https://flagcdn.com/${countryCode.toLowerCase()}.svg`);
+    const flagDataURL = await flagResponse.blob();
+
+    // Create flag image element
+    const flagImage = document.createElement('img');
+    flagImage.src = URL.createObjectURL(flagDataURL);
+    // flagImage.alt = `${countryName} flag`;
+    flagImage.width = 100;
+    flagImage.height = 100;
+    return flagImage;
+} catch (error) {
+    // console.error('Error:', error);
+    console.log("Error fetching flag");
+    return null;
+}
+}

@@ -1,7 +1,7 @@
 #map-holder {
-  width: 80vw;
-  height: calc(100vh - 40px);
-  margin: 0 auto;
+  width: 100%;
+  height: calc(80vh - 40px);
+  float: left;
 }
 
 svg rect {
@@ -28,4 +28,16 @@ svg rect {
 
 .countryLabelBg{
   fill: #d0d0d0;   /* country label background colour */
+}
+
+#country-info {
+  width: 0vw;
+  height: calc(80vh - 40px);
+  float: right;
+  transition: width 1.5s;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align items to the top */
 }
