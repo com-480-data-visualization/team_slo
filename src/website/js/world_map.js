@@ -1,13 +1,3 @@
-
-function whenDocumentLoaded(action) {
-	if (document.readyState === "loading") {
-		document.addEventListener("DOMContentLoaded", action);
-	} else {
-		// `DOMContentLoaded` already fired
-		action();
-	}
-}
-
 //* ------------------------------ CONSTANTS ---------------------------------------- //
 
 let dataPath = 'http://127.0.0.1:5500/data/world_map.json'
@@ -36,6 +26,8 @@ var path = d3
 //* ----------------------------- END VARIABLES ------------------------------------ // 
 
 //* ------------------------------ FUNCTIONS ---------------------------------------- //
+
+//[ ] --------------------------- ZOOM FUNCTIONS ----------------------------------- //
 function zoomed() {
   // This function is called when the map is zoomed
   t = d3
@@ -54,15 +46,6 @@ function unZoomed() {
   ;
   countriesGroup
     .attr("transform","translate(" + [t.x, t.y] + ")scale(" + t.k + ")")
-  ;
-}
-
-function getTextBox(selection) {
-  selection
-    .each(function(d) {
-      d.bbox = this
-        .getBBox();
-      })
   ;
 }
 
@@ -131,6 +114,19 @@ function boxUnZoom() {
   boxZoom([[0, 0], [w, h]], [w / 2, h / 2], 0);
   }
 
+// [ ] --------------------------- END ZOOM FUNCTIONS ----------------------------------- //
+
+function getTextBox(selection) {
+    selection
+      .each(function(d) {
+        d.bbox = this
+          .getBBox();
+        })
+    ;
+  }
+
+// [ ] ----------------------- CREATE COUNTRIES FUNCTIONS ----------------------------- //
+
 function createCountries(json, path, countriesGroup) {
     countries = countriesGroup
       .selectAll("path")
@@ -145,34 +141,45 @@ function createCountries(json, path, countriesGroup) {
       .each(function() {
           this.zoomed = false;
       })
-      .on("mouseover", function(d, i) {
-          d3.select("#countryLabel" + d.properties.iso_a3).style("display", "block");
-      })
-      .on("mouseout", function(d, i) {
-          d3.select("#countryLabel" + d.properties.iso_a3).style("display", "none");
-      })
-      .on("click", function(d, i) {
-          var clickedCountry = this;
-          var isCountryZoomed = clickedCountry.zoomed;
-          d3.selectAll(".country").classed("country-on", false);
-          d3.select(this).classed("country-on", true);
-          if (!isCountryZoomed) {
-              boxZoom(path.bounds(d), path.centroid(d), 20);
-              d3.selectAll(".country").each(function() {
-                  this.zoomed = false;
-              });
-              clickedCountry.zoomed = true;
-          } else {
-              boxUnZoom();
-              clickedCountry.zoomed = true;
-              d3.selectAll(".country").classed("country-on", false)
-              .each(function() {
-                  this.zoomed = false;
-              });
-          }
-      });
+      .call(createCountryActions);
   }
 
+function createCountryActions(countries){
+  countries
+    .on("mouseover", function(d, i) {
+      d3.select("#countryLabel" + d.properties.iso_a3).style("display", "block");
+    })
+    .on("mouseout", function(d, i) {
+        d3.select("#countryLabel" + d.properties.iso_a3).style("display", "none");
+    })
+    .on("click", clickCountry);
+}
+
+function clickCountry(d, i) {
+  var clickedCountry = this;
+  var isCountryZoomed = clickedCountry.zoomed;
+  d3.selectAll(".country").classed("country-on", false);
+  d3.select(this).classed("country-on", true);
+  if (!isCountryZoomed) {
+      boxZoom(path.bounds(d), path.centroid(d), 20);
+      d3.selectAll(".country").each(function() {
+          this.zoomed = false;
+      });
+      clickedCountry.zoomed = true;
+  } 
+  else {
+      boxUnZoom();
+      clickedCountry.zoomed = true;
+      d3.selectAll(".country").classed("country-on", false)
+      .each(function() {
+          this.zoomed = false;
+      });
+  }
+}
+
+// [ ] ----------------------- END CREATE COUNTRIES FUNCTIONS ----------------------------- //
+
+// [ ] ----------------------- CREATE COUNTRY LABELS FUNCTIONS ----------------------------- //
 function createCountryLabels(json, path, countriesGroup){
   countryLabels = countriesGroup
   .selectAll("g")
@@ -192,55 +199,66 @@ function createCountryLabels(json, path, countriesGroup){
       // Add zoom property to each country element
       this.zoomed = true;
   })
-  // add mouseover functionality to the label
-  .on("mouseover", function(d, i) {
-      d3.select(this).style("display", "block");
-  })
-  .on("mouseout", function(d, i) {
-        d3.select(this).style("display", "none");
-  })
-  .on("click", function(d, i) {
-      var clickedCountry = this;
-      var isCountryZoomed = clickedCountry.zoomed;
-      d3.selectAll(".country").classed("country-on", false);
-      d3.select("#countryName" + d.properties.iso_a3).classed("country-on", true);
-      if (isCountryZoomed) {
-          boxZoom(path.bounds(d), path.centroid(d), 20);
-          d3.selectAll(".countryLabel").each(function() {
-              this.zoomed = true;
-          });
-          clickedCountry.zoomed = false;
-      } else {
-          boxUnZoom();
-          clickedCountry.zoomed = true;
-      }
-  });
-// add the text to the label group showing country name
-countryLabels
-  .append("text")
-  .attr("class", "countryName")
-  .style("text-anchor", "middle")
-  .attr("dx", 0)
-  .attr("dy", 0)
-  .text(function(d) {
-    return d.properties.name;
-  })
-  .call(getTextBox);
-// add a background rectangle the same size as the text
-countryLabels
-  .insert("rect", "text")
-  .attr("class", "countryLabelBg")
-  .attr("transform", function(d) {
-    return "translate(" + (d.bbox.x - 2) + "," + d.bbox.y + ")";
-  })
-  .attr("width", function(d) {
-    return d.bbox.width + 4;
-  })
-  .attr("height", function(d) {
-    return d.bbox.height;
-  });
+  .call(createLabelActions)
+  .call(addTextBox);
 }
 
+function createLabelActions(labels){
+  labels
+    .on("mouseover", function(d, i) {
+      console.log("yessir");
+      d3.select(this).style("display", "block");
+    })
+    .on("mouseout", function(d, i) {
+        d3.select(this).style("display", "none");
+    })
+    .on("click", function(d, i) {
+        var clickedCountry = this;
+        var isCountryZoomed = clickedCountry.zoomed;
+        d3.selectAll(".country").classed("country-on", false);
+        d3.select("#countryName" + d.properties.iso_a3).classed("country-on", true);
+        if (isCountryZoomed) {
+            boxZoom(path.bounds(d), path.centroid(d), 20);
+            d3.selectAll(".countryLabel").each(function() {
+                this.zoomed = true;
+            });
+            clickedCountry.zoomed = false;
+        } else {
+            boxUnZoom();
+            clickedCountry.zoomed = true;
+        }
+    });
+}
+
+function addTextBox(labels){
+  labels
+    .append("text")
+    .attr("class", "countryName")
+    .style("text-anchor", "middle")
+    .attr("dx", 0)
+    .attr("dy", 0)
+    .text(function(d) {
+      return d.properties.name;
+    })
+    .call(getTextBox);
+  // add a background rectangle the same size as the text
+  labels
+    .insert("rect", "text")
+    .attr("class", "countryLabelBg")
+    .attr("transform", function(d) {
+      return "translate(" + (d.bbox.x - 2) + "," + d.bbox.y + ")";
+    })
+    .attr("width", function(d) {
+      return d.bbox.width + 4;
+    })
+    .attr("height", function(d) {
+      return d.bbox.height;
+    });
+}
+
+// [ ] ----------------------- END CREATE COUNTRY LABELS FUNCTIONS ------------------------ //
+
+// [ ] -------------------------------- OTHER MAP FUNCTION --------------------------------//
 function addBackground(countriesGroup) {
   // add a background rectangle
   countriesGroup
@@ -254,6 +272,8 @@ function addBackground(countriesGroup) {
   return countriesGroup;
 }
 
+// [ ] -------------------------------- END OTHER MAP FUNCTION ---------------------- //
+
 //* ----------------------------- END FUNCTIONS ------------------------------------ //
 
 //* ------------------------------ OBJECTS ----------------------------------------- //      
@@ -266,9 +286,6 @@ var zoom = d3
 var unZoom = d3
   .zoom()
   .on("zoom", unZoomed);
-
-
-
 
 // on window resize
 $(window).resize(function() {
