@@ -1,0 +1,20 @@
+svg {
+    font: 10px sans-serif;
+  }
+  
+  path {
+    stroke: #fff;
+  }
+  
+  text {
+    fill: #000;
+    font-size: 12px;
+  }
+  
+  circle {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2px;
+    cursor: pointer;
+  }
+  
