@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var checkbox = document.querySelector('input[type="checkbox"]');
   var OlympicSeason = 'Winter';
 
-  function getOlympicSeason() {
+  window.getOlympicSeason = function() {
     return OlympicSeason;
   }
 
@@ -22,6 +22,5 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       OlympicSeason = 'Winter';
     }
-    console.log(getOlympicSeason());
   });
 });

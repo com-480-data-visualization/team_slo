@@ -1,6 +1,7 @@
 #map-holder {
-  width: 100vw;
+  width: 80vw;
   height: calc(100vh - 40px);
+  margin: 0 auto;
 }
 
 svg rect {

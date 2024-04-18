@@ -205,6 +205,7 @@ function whenDocumentLoaded(action) {
             })
             // add an onclick action to zoom into clicked country
             .on("click", function(d, i) {
+                console.log(window.getOlympicSeason())
                 var clickedCountry = this;
                 var isCountryZoomed = clickedCountry.zoomed;
                 d3.selectAll(".country").classed("country-on", false);

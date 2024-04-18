@@ -8,9 +8,12 @@ body {
 }
 
 .topnav {
+    display: flex;
     background-color: #333;
     font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
+    align-items: center;
+    justify-content: flex-start;
 }
   
 /* Style the links inside the navigation bar */
@@ -21,6 +24,11 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.switch {
+  margin-right: 30px;
+  margin-left: auto;
 }
 
 /* Change the color of links on hover */
