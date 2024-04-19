@@ -162,7 +162,7 @@ function clickCountry(d, i) {
   d3.select(this).classed("country-on", true);
   if (!isCountryZoomed) {
       // reduce width of the map to 50%
-      displayCountryInfo(d.properties.name);
+      displayCountryInfo(d.properties.name, d.properties.iso_a3);
       // resize the width of the svg
       // console.log(mapWidth);
       svg.attr("width", $("#map-holder").width());
@@ -226,7 +226,7 @@ function createLabelActions(labels){
         d3.select("#countryName" + d.properties.iso_a3).classed("country-on", true);
         if (!isCountryZoomed) {
           // reduce width of the map to 50%
-          displayCountryInfo(d.properties.name);
+          displayCountryInfo(d.properties.name, d.properties.iso_a3);
           // resize the width of the svg
           // console.log(mapWidth);
           svg.attr("width", $("#map-holder").width());
@@ -342,7 +342,7 @@ d3.json(dataPath,
 
 //* ----------------------------- CREATE COUNTRY INFO PANEL ----------------------------------- //
 
-function displayCountryInfo(country) {
+function displayCountryInfo(country, countryCodeISO3) {
   console.log("displaying country info");
   var countryInfo = document.getElementById("country-info");
   var map = document.getElementById("map-holder");
@@ -363,7 +363,7 @@ function displayCountryInfo(country) {
   countryName.innerHTML = country;
   
   // add flag
-  flag = getFlag(country);
+  flag = getFlag(countryCodeISO3);
 
   flag.then(function(result) {
     if (result !== null) { countryInfo.appendChild(result); }
@@ -390,14 +390,20 @@ function hideCountryInfo() {
   countryInfo.innerHTML = "";
 }
 
-async function getFlag(countryName) {
+async function getFlag(countryCodeISO3) {
 try {
     // Fetch country data
-    const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
-    const data = await response.json();
+    const response = await fetch('https://restcountries.com/v3.1/all');
+    const countries = await response.json();
+    
+    // Find the country with the given ISO 3166-1 alpha-3 code
+    const country = countries.find(country => country.cca3 === countryCodeISO3);
 
+    if (!country) {
+        throw new Error('Country not found');
+    }
     // Get country code
-    const countryCode = data[0].cca2;
+    const countryCode = country.cca2;
 
     // Fetch flag image URL
     const flagResponse = await fetch(`https://flagcdn.com/${countryCode.toLowerCase()}.svg`);
