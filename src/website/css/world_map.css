@@ -38,6 +38,23 @@ svg rect {
   background-color: black;
   color: white;
   display: flex;
+  position: relative;
   justify-content: center; /* Center horizontally */
   align-items: flex-start; /* Align items to the top */
 }
+
+.country-stats {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  text-align: center;
+}
+
+/* #country-flag {
+  background-color: #f625d3;
+}
+
+#country-medals {
+  background-color: green;
+} */
+
