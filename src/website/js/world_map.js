@@ -213,7 +213,6 @@ function createCountryLabels(json, path, countriesGroup){
 function createLabelActions(labels){
   labels
     .on("mouseover", function(d, i) {
-      console.log("yessir");
       d3.select(this).style("display", "block");
     })
     .on("mouseout", function(d, i) {
@@ -358,20 +357,36 @@ function displayCountryInfo(country, countryCodeISO3) {
   // Clear country info
   countryInfo.innerHTML = "";
 
-  // add country name
-  var countryName = document.createElement("h1");
-  countryName.innerHTML = country;
-  
+  // add country name and flag in the same div
+  var countryFlagContainer = document.createElement("div");
+  countryFlagContainer.classList.add("country-stats");
+  // countryFlagContainer.style.position = "absolute";
+  // // countryFlagContainer.style.left = 0;
+  // countryFlagContainer.style.width = "100%";
+  countryFlagContainer.style.backgroundColor = "grey";
+  countryFlagContainer.style.textAlign = "center";
+  // countryFlagContainer.style.top = 0;
+
   // add flag
   flag = getFlag(countryCodeISO3);
 
   flag.then(function(result) {
-    if (result !== null) { countryInfo.appendChild(result); }
-    // add country name on the right of the flag
+    if (result !== null) { 
+      countryFlagContainer.appendChild(result); 
+    }
+    // add country name next to the flag
+    var countryName = document.createElement("h1");
+    countryName.innerHTML = country;
     countryName.style.display = "inline-block";
-    countryName.style.marginLeft = "10px";
-    countryInfo.appendChild(countryName);
+    countryName.style.position = "absolute"; // Adjust the margin-top value to move the name higher
+    countryFlagContainer.appendChild(countryName);
   });
+
+  // append the country info div to the country info element
+  countryInfo.appendChild(countryFlagContainer);
+
+  // display medals below the flag
+  displayMedals(countryCodeISO3);
 }
 
 function hideCountryInfo() {
@@ -391,11 +406,11 @@ function hideCountryInfo() {
 }
 
 async function getFlag(countryCodeISO3) {
-try {
+  try {
     // Fetch country data
     const response = await fetch('https://restcountries.com/v3.1/all');
     const countries = await response.json();
-    
+
     // Find the country with the given ISO 3166-1 alpha-3 code
     const country = countries.find(country => country.cca3 === countryCodeISO3);
 
@@ -416,9 +431,97 @@ try {
     flagImage.width = 100;
     flagImage.height = 100;
     return flagImage;
-} catch (error) {
+  } catch (error) {
     // console.error('Error:', error);
     console.log("Error fetching flag");
     return null;
+  }
 }
+
+function displayMedals(countryCodeISO3, year = -1) {
+  /**
+   * Function to display the medals of a country
+   * 
+   * @param {string} countryCodeISO3 - ISO 3166-1 alpha-3 code of the country
+   * @param {number} year - Year of the Olympics. Default is -1, which means all time
+   */
+
+  console.log("displaying medals");
+  var countryInfo = document.getElementById("country-info");
+  var medals = document.createElement("div");
+  medals.classList.add("country-stats");
+  medals.style.marginTop = "100px";
+  medals.style.backgroundColor = "darkblue";
+  
+  var medalsFontSize = "50px";
+  
+  // Add "Medals" text above the emojis
+  var medalsText = document.createElement("h2");
+  medalsText.textContent = "Medals";
+  medalsText.style.fontSize = "50px";
+  medals.appendChild(medalsText)
+
+  testRandomInteger = Math.floor(Math.random() * 100);
+
+  // Create containers for each medal and its counter
+  var goldContainer = document.createElement("div");
+  goldContainer.style.display = "inline-block";
+  var goldMedal = document.createElement("div");
+  goldMedal.textContent = "🥇";
+  goldMedal.style.fontSize = medalsFontSize;
+  var goldCounter = document.createElement("div");
+  goldCounter.textContent = "0";
+  goldCounter.style.fontSize = medalsFontSize;
+  goldContainer.appendChild(goldMedal);
+  goldContainer.appendChild(goldCounter);
+
+  animateCounter(goldCounter, Math.floor(Math.random() * 100), 2000);
+
+  var silverContainer = document.createElement("div");
+  silverContainer.style.display = "inline-block";
+  var silverMedal = document.createElement("div");
+  silverMedal.textContent = "🥈";
+  silverMedal.style.fontSize = medalsFontSize;
+  var silverCounter = document.createElement("div");
+  silverCounter.textContent = "0";
+  silverCounter.style.fontSize = medalsFontSize;
+  silverContainer.appendChild(silverMedal);
+  silverContainer.appendChild(silverCounter);
+
+  animateCounter(silverCounter, Math.floor(Math.random() * 100), 2000);
+
+  var bronzeContainer = document.createElement("div");
+  bronzeContainer.style.display = "inline-block";
+  var bronzeMedal = document.createElement("div");
+  bronzeMedal.textContent = "🥉";
+  bronzeMedal.style.fontSize = medalsFontSize;
+  var bronzeCounter = document.createElement("div");
+  bronzeCounter.textContent = "0";
+  bronzeCounter.style.fontSize = medalsFontSize;
+  bronzeContainer.appendChild(bronzeMedal);
+  bronzeContainer.appendChild(bronzeCounter);
+
+  animateCounter(bronzeCounter, Math.floor(Math.random() * 100), 2000);
+
+  // Append medal containers to the medals div
+  medals.appendChild(goldContainer);
+  medals.appendChild(silverContainer);
+  medals.appendChild(bronzeContainer);
+
+  // Inserting medals after existing elements in countryInfo
+  countryInfo.appendChild(medals);
+}
+
+function animateCounter(counterElement, finalValue, duration) {
+  var start = 0;
+  var stepTime = Math.abs(Math.floor(duration / finalValue));
+  var obj = counterElement;
+  var current = start;
+  var timer = setInterval(function() {
+    current += 1;
+    obj.textContent = current;
+    if (current >= finalValue) {
+      clearInterval(timer);
+    }
+  }, stepTime);
 }
