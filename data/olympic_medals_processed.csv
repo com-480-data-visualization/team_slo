@@ -1,0 +1,197 @@
+country_name,country_3_letter_code,game_season,GOLD,SILVER,BRONZE
+Afghanistan,AFG,Summer,0,0,2
+Algeria,ALG,Summer,5,4,8
+Argentina,ARG,Summer,18,26,23
+Armenia,ARM,Summer,2,8,8
+Australasia,ANZ,Summer,3,4,5
+Australia,AUS,Summer,144,154,183
+Australia,AUS,Winter,6,7,6
+Austria,AUT,Summer,16,28,34
+Austria,AUT,Winter,66,82,87
+Azerbaijan,AZE,Summer,7,14,29
+Bahamas,BAH,Summer,5,2,5
+Bahrain,BRN,Summer,2,2,0
+Barbados,BAR,Summer,0,0,1
+Belarus,BLR,Summer,11,28,38
+Belarus,BLR,Winter,8,7,5
+Belgium,BEL,Summer,43,53,54
+Belgium,BEL,Winter,1,2,4
+Bermuda,BER,Summer,1,0,1
+Bohemia,BOH,Summer,0,1,3
+Botswana,BOT,Summer,0,1,1
+Brazil,BRA,Summer,27,33,58
+Bulgaria,BUL,Summer,51,86,76
+Bulgaria,BUL,Winter,1,2,3
+Burkina Faso,BUR,Summer,0,0,1
+Burundi,BDI,Summer,1,1,0
+Cameroon,CMR,Summer,3,1,2
+Canada,CAN,Summer,65,94,130
+Canada,CAN,Winter,68,66,69
+Chile,CHI,Summer,1,7,4
+Chinese Taipei,TPE,Summer,6,11,17
+Colombia,COL,Summer,3,13,15
+Costa Rica,CRC,Summer,1,1,2
+Croatia,CRO,Summer,10,11,12
+Croatia,CRO,Winter,4,6,1
+Cuba,CUB,Summer,83,66,82
+Cyprus,CYP,Summer,0,1,0
+Czech Republic,CZE,Summer,18,17,22
+Czech Republic,CZE,Winter,10,11,12
+Czechoslovakia,TCH,Summer,45,44,40
+Czechoslovakia,TCH,Winter,2,8,15
+Côte d'Ivoire,CIV,Summer,0,0,1
+Democratic People's Republic of Korea,PRK,Summer,16,16,21
+Democratic People's Republic of Korea,PRK,Winter,0,1,1
+Denmark,DEN,Summer,42,66,68
+Denmark,DEN,Winter,0,1,0
+Djibouti,DJI,Summer,0,0,1
+Dominican Republic,DOM,Summer,3,5,4
+Ecuador,ECU,Summer,3,2,0
+Egypt,EGY,Summer,8,10,18
+Eritrea,ERI,Summer,0,0,1
+Estonia,EST,Summer,10,8,16
+Estonia,EST,Winter,4,2,2
+Ethiopia,ETH,Summer,23,12,22
+Federal Republic of Germany,FRG,Summer,52,64,73
+Federal Republic of Germany,FRG,Winter,9,11,9
+Fiji,FIJ,Summer,2,0,1
+Finland,FIN,Summer,96,84,114
+Finland,FIN,Winter,44,62,64
+France,FRA,Summer,204,232,243
+France,FRA,Winter,37,40,51
+Gabon,GAB,Summer,0,1,0
+Georgia,GEO,Summer,10,12,18
+German Democratic Republic (Germany),GDR,Summer,142,120,123
+German Democratic Republic (Germany),GDR,Winter,32,31,28
+Germany,GER,Summer,197,229,253
+Germany,GER,Winter,92,93,60
+Ghana,GHA,Summer,0,1,4
+Great Britain,GBR,Summer,246,281,292
+Great Britain,GBR,Winter,10,5,16
+Greece,GRE,Summer,33,43,37
+Grenada,GRN,Summer,1,1,1
+Guatemala,GUA,Summer,0,1,0
+Guyana,GUY,Summer,0,0,1
+Haiti,HAI,Summer,0,1,1
+"Hong Kong, China",HKG,Summer,2,2,4
+Hungary,HUN,Summer,172,144,159
+Hungary,HUN,Winter,2,0,2
+Iceland,ISL,Summer,0,2,2
+Independent Olympic Athletes,IOA,Summer,1,1,3
+India,IND,Summer,10,8,16
+Indonesia,INA,Summer,3,9,12
+Iraq,IRQ,Summer,0,0,1
+Ireland,IRL,Summer,10,8,14
+Islamic Republic of Iran,IRI,Summer,23,24,29
+Israel,ISR,Summer,3,1,9
+Italy,ITA,Summer,207,177,199
+Italy,ITA,Winter,33,36,47
+Jamaica,JAM,Summer,22,36,24
+Japan,JPN,Summer,167,144,171
+Japan,JPN,Winter,17,28,31
+Jordan,JOR,Summer,1,1,1
+Kazakhstan,KAZ,Summer,15,21,35
+Kazakhstan,KAZ,Winter,1,3,4
+Kenya,KEN,Summer,35,42,35
+Kosovo,KOS,Summer,3,0,0
+Kuwait,KUW,Summer,0,0,3
+Kyrgyzstan,KGZ,Summer,0,3,4
+Latvia,LAT,Summer,4,11,5
+Latvia,LAT,Winter,1,2,3
+Lebanon,LBN,Summer,0,2,2
+Liechtenstein,LIE,Winter,2,2,6
+Lithuania,LTU,Summer,6,6,10
+Luxembourg,LUX,Summer,2,1,0
+Luxembourg,LUX,Winter,0,2,0
+MIX,MIX,Summer,10,4,7
+Malaysia,MAS,Summer,0,4,3
+Mauritius,MRI,Summer,0,0,1
+Mexico,MEX,Summer,13,22,32
+Mongolia,MGL,Summer,2,11,17
+Montenegro,MNE,Summer,0,1,0
+Morocco,MAR,Summer,7,5,12
+Mozambique,MOZ,Summer,1,0,1
+Namibia,NAM,Summer,0,5,0
+Netherlands,NED,Summer,89,92,105
+Netherlands,NED,Winter,53,49,44
+Netherlands Antilles,AHO,Summer,0,1,0
+New Zealand,NZL,Summer,39,22,46
+New Zealand,NZL,Winter,2,2,2
+Niger,NIG,Summer,0,1,1
+Nigeria,NGR,Summer,3,10,14
+North Macedonia,MKD,Summer,0,1,0
+Norway,NOR,Summer,49,36,38
+Norway,NOR,Winter,125,118,111
+Olympic Athletes from Russia,OAR,Winter,2,5,7
+Pakistan,PAK,Summer,3,3,4
+Panama,PAN,Summer,1,0,2
+Paraguay,PAR,Summer,0,1,0
+People's Republic of China,CHN,Summer,213,170,157
+People's Republic of China,CHN,Winter,20,29,21
+Peru,PER,Summer,1,3,0
+Philippines,PHI,Summer,1,5,8
+Poland,POL,Summer,68,78,126
+Poland,POL,Winter,6,7,9
+Portugal,POR,Summer,5,6,12
+Puerto Rico,PUR,Summer,2,2,6
+Qatar,QAT,Summer,2,1,3
+ROC,ROC,Summer,18,24,19
+ROC,ROC,Winter,5,10,11
+Republic of Korea,KOR,Summer,87,85,86
+Republic of Korea,KOR,Winter,33,30,16
+Republic of Moldova,MDA,Summer,0,1,4
+Romania,ROU,Summer,74,88,115
+Russian Federation,RUS,Summer,141,119,148
+Russian Federation,RUS,Winter,37,31,29
+Samoa,SAM,Summer,0,1,0
+San Marino,SMR,Summer,0,0,2
+Saudi Arabia,KSA,Summer,0,2,2
+Senegal,SEN,Summer,0,1,0
+Serbia,SRB,Summer,6,6,11
+Serbia and Montenegro,SCG,Summer,2,4,3
+Singapore,SGP,Summer,1,2,2
+Slovakia,SVK,Summer,6,14,7
+Slovakia,SVK,Winter,4,4,2
+Slovenia,SLO,Summer,7,8,9
+Slovenia,SLO,Winter,4,8,12
+South Africa,RSA,Summer,26,29,28
+Soviet Union,URS,Summer,368,307,288
+Soviet Union,URS,Winter,67,49,55
+Spain,ESP,Summer,34,59,42
+Spain,ESP,Winter,1,1,3
+Sri Lanka,SRI,Summer,0,2,0
+Sudan,SUD,Summer,0,1,0
+Suriname,SUR,Summer,1,0,1
+Sweden,SWE,Summer,132,159,168
+Sweden,SWE,Winter,63,48,56
+Switzerland,SUI,Summer,51,73,67
+Switzerland,SUI,Winter,58,41,51
+Syrian Arab Republic,SYR,Summer,1,1,2
+Tajikistan,TJK,Summer,1,1,2
+Thailand,THA,Summer,10,8,17
+Togo,TOG,Summer,0,0,1
+Tonga,TGA,Summer,0,1,0
+Trinidad and Tobago,TTO,Summer,0,2,6
+Tunisia,TUN,Summer,5,3,7
+Turkey,TUR,Summer,41,26,36
+Turkmenistan,TKM,Summer,0,1,0
+Uganda,UGA,Summer,4,4,3
+Ukraine,UKR,Summer,34,34,61
+Ukraine,UKR,Winter,3,2,3
+Unified Team,EUN,Summer,44,38,28
+Unified Team,EUN,Winter,7,5,7
+United Arab Emirates,UAE,Summer,1,0,1
+United Arab Republic,UAR,Summer,0,1,1
+United Republic of Tanzania,TAN,Summer,0,2,0
+United States of America,USA,Summer,1014,796,710
+United States of America,USA,Winter,106,110,81
+Uruguay,URU,Summer,2,2,4
+Uzbekistan,UZB,Summer,10,6,19
+Uzbekistan,UZB,Winter,1,0,0
+Venezuela,VEN,Summer,3,7,9
+Vietnam,VIE,Summer,1,3,0
+West Indies Federation,WIF,Summer,0,0,2
+Yugoslavia,YUG,Summer,25,26,25
+Yugoslavia,YUG,Winter,0,3,1
+Zambia,ZAM,Summer,0,1,1
+Zimbabwe,ZIM,Summer,3,4,1

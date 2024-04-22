@@ -18,6 +18,10 @@ svg rect {
   fill: #4B5358;   /* highlight colour for selected country */
 }
 
+.country-selected{
+  fill: #ae4d5a;   /* highlight colour for selected country */
+}
+
 .countryLabel{
   display: none;   /* hide all country labels by default */
 }

@@ -12,6 +12,12 @@ var minZoom;
 var maxZoom;
 var zoomBool = false; // Boolean to check if the map is zoomed or not
 
+var currentCountryISO3 = null;
+var currentSeason = null;
+var current_country_name = null;
+
+var switchElement = document.getElementById('season-switch');
+
 var projection = d3
   .geoEquirectangular()
   .center([0, 15]) // set centre to further North as we are cropping more off bottom of map
@@ -148,9 +154,13 @@ function createCountryActions(countries){
   countries
     .on("mouseover", function(d, i) {
       d3.select("#countryLabel" + d.properties.iso_a3).style("display", "block");
+      d3.select(this).classed("country-on", true);
     })
     .on("mouseout", function(d, i) {
         d3.select("#countryLabel" + d.properties.iso_a3).style("display", "none");
+        if(!this.zoomed){
+          d3.select(this).classed("country-on", false);
+        }
     })
     .on("click", clickCountry);
 }
@@ -158,8 +168,11 @@ function createCountryActions(countries){
 function clickCountry(d, i) {
   var clickedCountry = this;
   var isCountryZoomed = clickedCountry.zoomed;
-  d3.selectAll(".country").classed("country-on", false);
-  d3.select(this).classed("country-on", true);
+  currentCountryISO3 = d.properties.iso_a3;
+  current_country_name = d.properties.name;
+  d3.selectAll(".country").classed("country-selected", false);
+  d3.select(this).classed("country-on", false);
+  d3.select(this).classed("country-selected", true);
   if (!isCountryZoomed) {
       // reduce width of the map to 50%
       displayCountryInfo(d.properties.name, d.properties.iso_a3);
@@ -179,7 +192,7 @@ function clickCountry(d, i) {
       d3.selectAll(".country").each(function() {
         this.zoomed = false;
       });
-      d3.selectAll(".country").classed("country-on", false)
+      d3.selectAll(".country").classed("country-selected", false)
       
   }
 }
@@ -214,39 +227,47 @@ function createLabelActions(labels){
   labels
     .on("mouseover", function(d, i) {
       d3.select(this).style("display", "block");
+      d3.select("#countryName" + d.properties.iso_a3).classed("country-on", true);
     })
     .on("mouseout", function(d, i) {
         d3.select(this).style("display", "none");
+        d3.select("#countryName" + d.properties.iso_a3).classed("country-on", false);
     })
-    .on("click", function(d, i) {
-        var clickedCountry = this;
-        var isCountryZoomed = clickedCountry.zoomed;
-        d3.selectAll(".country").classed("country-on", false);
-        d3.select("#countryName" + d.properties.iso_a3).classed("country-on", true);
-        if (!isCountryZoomed) {
-          // reduce width of the map to 50%
-          displayCountryInfo(d.properties.name, d.properties.iso_a3);
-          // resize the width of the svg
-          // console.log(mapWidth);
-          svg.attr("width", $("#map-holder").width());
-          boxZoom(path.bounds(d), [path.centroid(d)[0], path.centroid(d)[1]], 20);
-          // put all other countries to false
-          d3.selectAll(".countryLabel").each(function() {
-              this.zoomed = false;
-          });
-          clickedCountry.zoomed = true;
-      } else {
-          hideCountryInfo();
-          svg.attr("width", $("#map-holder").width());
-          boxUnZoom();
-          d3.selectAll(".countryLabel").each(function() {
-            this.zoomed = false;
-          });
-          d3.selectAll(".country").classed("country-on", false)
-          
-      }
-    });
+    .on("click", clickLabel);
 }
+
+function clickLabel(d, i) {
+    var clickedCountry = this;
+    var isCountryZoomed = clickedCountry.zoomed;
+    current_country_name = d.properties.name;
+    currentCountryISO3 = d.properties.iso_a3;
+    d3.selectAll(".country").classed("country-selected", false);
+    d3.select("#countryName" + d.properties.iso_a3).classed("country-selected", true);
+    currentCountryISO3 = d.properties.iso_a3;
+    if (!isCountryZoomed) {
+      // reduce width of the map to 50%
+      displayCountryInfo(d.properties.name, d.properties.iso_a3);
+      // resize the width of the svg
+      // console.log(mapWidth);
+      svg.attr("width", $("#map-holder").width());
+      boxZoom(path.bounds(d), [path.centroid(d)[0], path.centroid(d)[1]], 20);
+      // put all other countries to false
+      d3.selectAll(".countryLabel").each(function() {
+          this.zoomed = false;
+      });
+      clickedCountry.zoomed = true;
+  } else {
+      hideCountryInfo();
+      svg.attr("width", $("#map-holder").width());
+      boxUnZoom();
+      d3.selectAll(".countryLabel").each(function() {
+        this.zoomed = false;
+      });
+      d3.selectAll(".country").classed("country-selected", false)
+      
+  }
+}
+
 
 function addTextBox(labels){
   labels
@@ -327,7 +348,8 @@ var svg = d3
 .call(zoom);
 
 // get map data
-d3.json(dataPath, function(json) {
+d3.json(dataPath, 
+  function(json) {
     //Bind data and create one path per GeoJSON feature
     countriesGroup = svg.append("g").attr("id", "map")
 
@@ -335,6 +357,7 @@ d3.json(dataPath, function(json) {
     createCountries(json, path, countriesGroup);
     createCountryLabels(json, path, countriesGroup);
     initiateZoom();
+    currentSeason = window.getOlympicSeason();
   }
 );
 
@@ -369,6 +392,7 @@ function displayCountryInfo(country, countryCodeISO3) {
   // add flag
   flag = getFlag(countryCodeISO3);
 
+
   flag.then(function(result) {
     if (result !== null) { 
       countryFlagContainer.appendChild(result); 
@@ -385,7 +409,7 @@ function displayCountryInfo(country, countryCodeISO3) {
   countryInfo.appendChild(countryFlagContainer);
 
   // display medals below the flag
-  displayMedals(countryCodeISO3);
+  displayMedals(countryCodeISO3,country);
 }
 
 function hideCountryInfo() {
@@ -437,7 +461,7 @@ async function getFlag(countryCodeISO3) {
   }
 }
 
-function displayMedals(countryCodeISO3, year = -1) {
+function displayMedals(countryCodeISO3,country_name, year = -1) {
   /**
    * Function to display the medals of a country
    * 
@@ -447,7 +471,13 @@ function displayMedals(countryCodeISO3, year = -1) {
 
   console.log("displaying medals");
   var countryInfo = document.getElementById("country-info");
+  var oldMedals = document.getElementById("medals");
+  if (oldMedals !== null) {
+    countryInfo.removeChild(oldMedals);
+  }
   var medals = document.createElement("div");
+  medals.id = "medals";
+  console.log("medals:",medals);
   medals.classList.add("country-stats");
   medals.style.marginTop = "100px";
   medals.style.backgroundColor = "darkblue";
@@ -460,53 +490,73 @@ function displayMedals(countryCodeISO3, year = -1) {
   medalsText.style.fontSize = "50px";
   medals.appendChild(medalsText)
 
-  testRandomInteger = Math.floor(Math.random() * 100);
+  var nbGold = 0, nbSilver = 0, nbBronze = 0;
+  fetchMedalData(countryCodeISO3,country_name).then(function(result) {
+    if (result !== null) {
+      nbGold = result.goldMedal;
+      nbSilver = result.silverMedal;
+      nbBronze = result.bronzeMedal;
+      console.log("Medals:", nbGold, nbSilver, nbBronze);
+        // Create containers for each medal and its counter
+      var goldContainer = document.createElement("div");
+      goldContainer.style.display = "inline-block";
+      goldContainer.style.margin = "20px";
+      var goldMedal = document.createElement("div");
+      goldMedal.textContent = "🥇";
+      goldMedal.style.fontSize = medalsFontSize;
+      var goldCounter = document.createElement("div");
+      goldCounter.textContent = "0";
+      goldCounter.style.fontSize = medalsFontSize;
+      goldContainer.appendChild(goldMedal);
+      goldContainer.appendChild(goldCounter);
 
-  // Create containers for each medal and its counter
-  var goldContainer = document.createElement("div");
-  goldContainer.style.display = "inline-block";
-  var goldMedal = document.createElement("div");
-  goldMedal.textContent = "🥇";
-  goldMedal.style.fontSize = medalsFontSize;
-  var goldCounter = document.createElement("div");
-  goldCounter.textContent = "0";
-  goldCounter.style.fontSize = medalsFontSize;
-  goldContainer.appendChild(goldMedal);
-  goldContainer.appendChild(goldCounter);
+      animateCounter(goldCounter, nbGold, 2000);
 
-  animateCounter(goldCounter, Math.floor(Math.random() * 100), 2000);
+      var silverContainer = document.createElement("div");
+      silverContainer.style.display = "inline-block";
+      silverContainer.style.margin = "20px";
+      var silverMedal = document.createElement("div");
+      silverMedal.textContent = "🥈";
+      silverMedal.style.fontSize = medalsFontSize;
+      var silverCounter = document.createElement("div");
+      silverCounter.textContent = "0";
+      silverCounter.style.fontSize = medalsFontSize;
+      silverContainer.appendChild(silverMedal);
+      silverContainer.appendChild(silverCounter);
 
-  var silverContainer = document.createElement("div");
-  silverContainer.style.display = "inline-block";
-  var silverMedal = document.createElement("div");
-  silverMedal.textContent = "🥈";
-  silverMedal.style.fontSize = medalsFontSize;
-  var silverCounter = document.createElement("div");
-  silverCounter.textContent = "0";
-  silverCounter.style.fontSize = medalsFontSize;
-  silverContainer.appendChild(silverMedal);
-  silverContainer.appendChild(silverCounter);
+      animateCounter(silverCounter, nbSilver, 2000);
 
-  animateCounter(silverCounter, Math.floor(Math.random() * 100), 2000);
+      var bronzeContainer = document.createElement("div");
+      bronzeContainer.style.display = "inline-block";
+      var bronzeMedal = document.createElement("div");
+      bronzeMedal.textContent = "🥉";
+      bronzeMedal.style.fontSize = medalsFontSize;
+      var bronzeCounter = document.createElement("div");
+      bronzeCounter.textContent = "0";
+      bronzeCounter.style.fontSize = medalsFontSize;
+      bronzeContainer.appendChild(bronzeMedal);
+      bronzeContainer.appendChild(bronzeCounter);
 
-  var bronzeContainer = document.createElement("div");
-  bronzeContainer.style.display = "inline-block";
-  var bronzeMedal = document.createElement("div");
-  bronzeMedal.textContent = "🥉";
-  bronzeMedal.style.fontSize = medalsFontSize;
-  var bronzeCounter = document.createElement("div");
-  bronzeCounter.textContent = "0";
-  bronzeCounter.style.fontSize = medalsFontSize;
-  bronzeContainer.appendChild(bronzeMedal);
-  bronzeContainer.appendChild(bronzeCounter);
+      animateCounter(bronzeCounter, nbBronze, 2000);
 
-  animateCounter(bronzeCounter, Math.floor(Math.random() * 100), 2000);
-
-  // Append medal containers to the medals div
-  medals.appendChild(goldContainer);
-  medals.appendChild(silverContainer);
-  medals.appendChild(bronzeContainer);
-
+      // Append medal containers to the medals div
+      medals.appendChild(goldContainer);
+      medals.appendChild(silverContainer);
+      medals.appendChild(bronzeContainer);
+    }
+    else {  
+      // Display message if no data is found
+      var noData = document.createElement("h2");
+      noData.textContent = "Oops! This country never won any medals :(";
+      medals.appendChild(noData);
+      medals.removeChild(goldContainer);
+      medals.removeChild(silverContainer);
+      medals.removeChild(bronzeContainer);
+      console.log("No data found");
+    }
+  }).catch(function(error) {
+    console.log('Error:', error);
+  });
   // Inserting medals after existing elements in countryInfo
   countryInfo.appendChild(medals);
 }
@@ -524,3 +574,47 @@ function animateCounter(counterElement, finalValue, duration) {
     }
   }, stepTime);
 }
+
+
+async function fetchMedalData(countryCodeISO3,country_name) {
+  try {
+    const data = await d3.csvParse(await (await fetch('../../data/olympic_medals_processed.csv')).text());
+    const season = window.getOlympicSeason();
+    console.log("Season:", season);
+    console.log("Country code:", countryCodeISO3);
+    const countryData = data.filter(d => d.game_season === season && (d.country_3_letter_code === countryCodeISO3 || d.country_name === country_name));
+
+    if (countryData.length === 0) {
+      console.log("Country not found");
+      return null;
+    }
+    var goldMedal = 0, silverMedal = 0, bronzeMedal = 0;
+    if (countryData[0] !== null) {
+      // Get the total number of gold medals
+      goldMedal = parseInt(countryData[0].GOLD);
+      // Get the total number of silver medals
+      silverMedal = parseInt(countryData[0].SILVER);
+      // Get the total number of bronze medals
+      bronzeMedal = parseInt(countryData[0].BRONZE);
+    }
+    return {goldMedal, silverMedal, bronzeMedal};
+  } 
+  catch (error) {
+    console.error('Error:', error);
+    return null;
+  }
+}
+
+
+// [ ] -------------------------------- END CREATE COUNTRY INFO PANEL ----------------------------------- //
+
+switchElement.addEventListener('change', function() {
+  var newSeason = switchElement.checked ? 'Summer' : 'Winter';
+  if (newSeason !== currentSeason && currentCountryISO3 !== null) {
+    currentSeason = newSeason;
+    console.log("Season changed to", currentSeason);
+    console.log("Current country:", currentCountryISO3);
+    // Update the medals
+    displayMedals(currentCountryISO3,current_country_name);
+  }
+});
