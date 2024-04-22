@@ -327,8 +327,7 @@ var svg = d3
 .call(zoom);
 
 // get map data
-d3.json(dataPath,
-  function(json) {
+d3.json(dataPath).then(function(json) {
     //Bind data and create one path per GeoJSON feature
     countriesGroup = svg.append("g").attr("id", "map")
 
