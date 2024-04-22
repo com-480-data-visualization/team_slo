@@ -1,5 +1,7 @@
 # Project of Data Visualization (COM-480)
 
+[Website for Milestone 2](https://com-480-data-visualization.github.io/team_slo)
+
 | Student's name | SCIPER |
 | -------------- | ------ |
 |Vincent Roduit | 325140|
@@ -42,6 +44,7 @@ Our project introduces a novel approach that sets it apart from other related wo
 
 **10% of the final grade**
 
+[Website for Milestone 2](https://com-480-data-visualization.github.io/team_slo)
 
 ## Milestone 3 (31st May, 5pm)
 
