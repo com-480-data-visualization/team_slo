@@ -33,13 +33,6 @@ whenDocumentLoaded(function () {
   var checkboxState = localStorage.getItem('checkboxState');
   if (checkboxState !== null) {
     checkbox.checked = checkboxState === 'true';
-
-    // Change the Olympic season based on the checkbox state
-    if (checkbox.checked) {
-      OlympicSeason = 'Summer';
-    } else {
-      OlympicSeason = 'Winter';
-    }
   }
 
   // Change the Olympic season when the checkbox changes
