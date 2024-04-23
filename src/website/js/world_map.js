@@ -528,6 +528,7 @@ function displayMedals(countryCodeISO3,country_name, year = -1) {
 
       var bronzeContainer = document.createElement("div");
       bronzeContainer.style.display = "inline-block";
+      bronzeContainer.style.margin = "20px";
       var bronzeMedal = document.createElement("div");
       bronzeMedal.textContent = "🥉";
       bronzeMedal.style.fontSize = medalsFontSize;
