@@ -461,12 +461,12 @@ async function getFlag(countryCodeISO3) {
   }
 }
 
-function displayMedals(countryCodeISO3,country_name, year = -1) {
+function displayMedals(countryCodeISO3, country_name) {
   /**
    * Function to display the medals of a country
    * 
    * @param {string} countryCodeISO3 - ISO 3166-1 alpha-3 code of the country
-   * @param {number} year - Year of the Olympics. Default is -1, which means all time
+   * @param {string} country_name - Name of the country
    */
 
   console.log("displaying medals");
