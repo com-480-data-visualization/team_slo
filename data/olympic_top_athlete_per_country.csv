@@ -1,150 +1,193 @@
-,athlete_full_name,country_name,country_3_letter_code,athlete_url,discipline_title,num_medals,athlete_full_name_lower
-3009,Michael PHELPS,United States of America,USA,https://olympics.com/en/athletes/michael-phelps-ii,Swimming,28,michael_phelps
-11510,Larisa LATYNINA,Soviet Union,URS,https://olympics.com/en/athletes/larisa-latynina,Gymnastics Artistic,18,larisa_latynina
-2139,Marit BJOERGEN,Norway,NOR,https://olympics.com/en/athletes/marit-bjoergen,Cross Country Skiing,15,marit_bjoergen
-436,Ireen WÜST,Netherlands,NED,https://olympics.com/en/athletes/ireen-wust,Speed skating,13,ireen_wüst
-4612,Takashi ONO,Japan,JPN,https://olympics.com/en/athletes/takashi-ono,Gymnastics Artistic,13,takashi_ono
-12391,Edoardo MANGIAROTTI,Italy,ITA,https://olympics.com/en/athletes/edoardo-mangiarotti,Fencing,13,edoardo_mangiarotti
-6969,Birgit FISCHER,German Democratic Republic (Germany),GDR,https://olympics.com/en/athletes/birgit-fischer,Canoe Sprint,12,birgit_fischer
-13759,Paavo NURMI,Finland,FIN,https://olympics.com/en/athletes/paavo-nurmi,Athletics,12,paavo_nurmi
-1476,Isabell WERTH,Germany,GER,https://olympics.com/en/athletes/isabell-werth,Equestrian,12,isabell_werth
-5721,Alexei NEMOV,Russian Federation,RUS,https://olympics.com/en/athletes/alexei-nemov,Gymnastics Artistic,12,alexei_nemov
-1746,Emma MCKEON,Australia,AUS,https://olympics.com/en/athletes/emma-mckeon,Swimming,11,emma_mckeon
-10917,Vera CASLAVSKA,Czechoslovakia,TCH,https://olympics.com/en/athletes/vera-caslavska,Gymnastics Artistic,11,vera_caslavska
-12378,Aladar GEREVICH,Hungary,HUN,https://olympics.com/en/athletes/aladar-gerevich,Fencing,10,aladar_gerevich
-7100,Vitaly SCHERBO,Unified Team,EUN,https://olympics.com/en/athletes/vitaly-scherbo,Gymnastics Artistic,10,vitaly_scherbo
-7096,Vitaly SCHERBO,Belarus,BLR,https://olympics.com/en/athletes/vitaly-scherbo,Gymnastics Artistic,10,vitaly_scherbo
-14506,Hubert VAN INNIS,Belgium,BEL,https://olympics.com/en/athletes/hubert-van-innis,Archery,10,hubert_van_innis
-393,Charlotte KALLA,Sweden,SWE,https://olympics.com/en/athletes/charlotte-kalla,Cross Country Skiing,9,charlotte_kalla
-9211,Nadia COMANECI,Romania,ROU,https://olympics.com/en/athletes/nadia-comaneci,Gymnastics Artistic,9,nadia_comaneci
-6492,Merlene OTTEY-PAGE,Jamaica,JAM,https://olympics.com/en/athletes/merlene-ottey-page,Athletics,9,merlene_ottey-page
-992,Jason KENNY,Great Britain,GBR,https://olympics.com/en/athletes/jason-kenny,Cycling Track,9,jason_kenny
-13314,Eugen MACK,Switzerland,SUI,https://olympics.com/en/athletes/eugen-mack,Gymnastics Artistic,8,eugen_mack
-13664,Philippe CATTIAU,France,FRA,https://olympics.com/en/athletes/philippe-cattiau,Fencing,8,philippe_cattiau
-8274,Reiner KLIMKE,Federal Republic of Germany,FRG,https://olympics.com/en/athletes/reiner-klimke,Equestrian Dressage,8,reiner_klimke
-3233,Victor AN,Republic of Korea,KOR,https://olympics.com/en/athletes/victor-an,Short Track Speed Skating,8,victor_an
-10007,Irena Szewińska,Poland,POL,https://olympics.com/en/athletes/irena-szewinska,Athletics,7,irena_szewińska
-3472,Minxia WU,People's Republic of China,CHN,https://olympics.com/en/athletes/minxia-wu,Diving,7,minxia_wu
-495,Martina SABLIKOVA,Czech Republic,CZE,https://olympics.com/en/athletes/martina-sablikova,Speed skating,7,martina_sablikova
-1249,Denis ABLYAZIN,ROC,ROC,https://olympics.com/en/athletes/denis-ablyazin,Artistic Gymnastics,7,denis_ablyazin
-6734,Vladimir SMIRNOV,Kazakhstan,KAZ,https://olympics.com/en/athletes/vladimir-smirnov,Cross Country Skiing,7,vladimir_smirnov
-3002,Kirsty Leigh COVENTRY,Zimbabwe,ZIM,https://olympics.com/en/athletes/kirsty-leigh-coventry,Swimming,7,kirsty_leigh_coventry
-1820,Penny OLEKSIAK,Canada,CAN,https://olympics.com/en/athletes/penny-oleksiak,Swimming,7,penny_oleksiak
-4213,Felix GOTTWALD,Austria,AUT,https://olympics.com/en/athletes/felix-gottwald,Nordic Combined,7,felix_gottwald
-704,Lisa CARRINGTON,New Zealand,NZL,https://olympics.com/en/athletes/lisa-carrington,Canoe Sprint,6,lisa_carrington
-2001,Anastasiya KUZMINA,Slovakia,SVK,https://olympics.com/en/athletes/anastasiya-kuzmina-1,Biathlon,6,anastasiya_kuzmina
-5081,Janica KOSTELIC,Croatia,CRO,https://olympics.com/en/athletes/janica-kostelic,Alpine Skiing,6,janica_kostelic
-13332,Leon STUKELJ,Yugoslavia,YUG,https://olympics.com/en/athletes/leon-stukelj,Gymnastics Artistic,6,leon_stukelj
-2402,Tirunesh DIBABA,Ethiopia,ETH,https://olympics.com/en/athletes/tirunesh-dibaba,Athletics,6,tirunesh_dibaba
-14170,Frank DE BEAUREPAIRE,Australasia,ANZ,https://olympics.com/en/athletes/frank-de-beaurepaire,Swimming,6,frank_de_beaurepaire
-2554,Inna OSIPENKO-RODOMSKA,Ukraine,UKR,https://olympics.com/en/athletes/inna-osipenko-rodomska,Canoe Sprint,5,inna_osipenko-rodomska
-2553,Inna OSIPENKO-RODOMSKA,Azerbaijan,AZE,https://olympics.com/en/athletes/inna-osipenko-rodomska,Canoe Sprint,5,inna_osipenko-rodomska
-3694,Jasna SEKARIC,Independent Olympic Athletes,IOA,https://olympics.com/en/athletes/jasna-sekaric,Shooting,5,jasna_sekaric
-1864,Robert SCHEIDT,Brazil,BRA,https://olympics.com/en/athletes/robert-scheidt,Sailing,5,robert_scheidt
-372,Denis SPITSOV,Olympic Athletes from Russia,OAR,https://olympics.com/en/athletes/denis-spitsov,Cross Country Skiing,5,denis_spitsov
-15010,Ramon FONST,Cuba,CUB,https://olympics.com/en/athletes/ramon-fonst,Fencing,5,ramon_fonst
-3692,Jasna SEKARIC,Serbia and Montenegro,SCG,https://olympics.com/en/athletes/jasna-sekaric,Shooting,5,jasna_sekaric
-2313,Lasse Norman HANSEN,Denmark,DEN,https://olympics.com/en/athletes/lasse-norman-hansen,Cycling Track,5,lasse_norman_hansen
-739,Saul CRAVIOTTO,Spain,ESP,https://olympics.com/en/athletes/saul-craviotto,Canoe Sprint,5,saul_craviotto
-5357,Frank FREDERICKS,Namibia,NAM,https://olympics.com/en/athletes/frankie-fredericks,Athletics,4,frank_fredericks
-9727,Hanni WENZEL,Liechtenstein,LIE,https://olympics.com/en/athletes/hanni-wenzel,Alpine Skiing,4,hanni_wenzel
-7295,Michelle Marie SMITH,Ireland,IRL,https://olympics.com/en/athletes/michelle-marie-smith,Swimming,4,michelle_marie_smith
-1408,Eko Yuli IRAWAN,Indonesia,INA,https://olympics.com/en/athletes/eko-yuli-irawan,Weightlifting,4,eko_yuli_irawan
-6428,Carlos ESPINOLA,Argentina,ARG,https://olympics.com/en/athletes/carlos-espinola,Sailing,4,carlos_espinola
-12128,Joaquin CAPILLA PEREZ,Mexico,MEX,https://olympics.com/en/athletes/joaquin-capilla-perez,Diving,4,joaquin_capilla_perez
-1535,Eliud KIPCHOGE,Kenya,KEN,https://olympics.com/en/athletes/eliud-kipchoge,Athletics,4,eliud_kipchoge
-190,Peter PREVC,Slovenia,SLO,https://olympics.com/en/athletes/peter-prevc,Ski Jumping,4,peter_prevc
-6181,Jing CHEN,Chinese Taipei,TPE,https://olympics.com/en/athletes/jing-chen-1,Table Tennis,4,jing_chen
-9938,Mohamed GAMMOUDI,Tunisia,TUN,https://olympics.com/en/athletes/mohamed-gammoudi,Athletics,4,mohamed_gammoudi
-5613,Nikolay PECHALOV,Bulgaria,BUL,https://olympics.com/en/athletes/nikolay-pechalov,Weightlifting,4,nikolay_pechalov
-6475,Ato BOLDON,Trinidad and Tobago,TTO,https://olympics.com/en/athletes/ato-boldon,Athletics,4,ato_boldon
-5582,Pyrros DIMAS,Greece,GRE,https://olympics.com/en/athletes/pyrros-dimas,Weightlifting,4,pyrros_dimas
-1772,Chad LE CLOS,South Africa,RSA,https://olympics.com/en/athletes/chad-le-clos,Swimming,4,chad_le_clos
-2916,Rishod SOBIROV,Uzbekistan,UZB,https://olympics.com/en/athletes/rishod-sobirov,Judo,3,rishod_sobirov
-879,Tianwei FENG,Singapore,SGP,https://olympics.com/en/athletes/tianwei-feng,Table Tennis,3,tianwei_feng
-2241,Fehaid ALDEEHANI,Kuwait,KUW,https://olympics.com/en/athletes/fehaid-aldeehani,Shooting,3,fehaid_aldeehani
-16276,Nicolae JURAVSCHI,Republic of Moldova,MDA,https://olympics.com/en/athletes/nicolae-juravschi,Canoe Sprint,3,nicolae_juravschi
-14495,Max DECUGIS,MIX,MIX,https://olympics.com/en/athletes/max-decugis,Tennis,3,max_decugis
-1632,Mutaz Essa BARSHIM,Qatar,QAT,https://olympics.com/en/athletes/mutaz-essa-barshim,Athletics,3,mutaz_essa_barshim
-3586,Virgilijus ALEKNA,Lithuania,LTU,https://olympics.com/en/athletes/virgilijus-alekna,Athletics,3,virgilijus_alekna
-2885,Chong Wei LEE,Malaysia,MAS,https://olympics.com/en/athletes/chong-wei-lee,Badminton,3,chong_wei_lee
-1154,Riza KAYAALP,Turkey,TUR,https://olympics.com/en/athletes/riza-kayaalp,Wrestling,3,riza_kayaalp
-5254,Hicham EL GUERROUJ,Morocco,MAR,https://olympics.com/en/athletes/hicham-el-guerrouj,Athletics,3,hicham_el_guerrouj
-2337,Taoufik MAKHLOUFI,Algeria,ALG,https://olympics.com/en/athletes/taoufik-makhloufi,Athletics,3,taoufik_makhloufi
-6976,Ivans KLEMENTYEV,Latvia,LAT,https://olympics.com/en/athletes/ivans-klementyev,Canoe Sprint,3,ivans_klementyev
-1699,Kirani JAMES,Grenada,GRN,https://olympics.com/en/athletes/kirani-james,Athletics,3,kirani_james
-4571,Debbie FERGUSON-MCKENZIE,Bahamas,BAH,https://olympics.com/en/athletes/debbie-ferguson-mckenzie,Athletics,3,debbie_ferguson-mckenzie
-1104,Artur ALEKSANYAN,Armenia,ARM,https://olympics.com/en/athletes/artur-aleksanyan,Wrestling,3,artur_aleksanyan
-4818,Fernando GONZALEZ,Chile,CHI,https://olympics.com/en/athletes/fernando-gonzalez-2,Tennis,3,fernando_gonzalez
-848,Mariana PAJÓN,Colombia,COL,https://olympics.com/en/athletes/mariana-pajon,Cycling BMX Racing,3,mariana_pajón
-4377,Hadi SAEIBONEHKOHAL,Islamic Republic of Iran,IRI,https://olympics.com/en/athletes/hadi-saeibonehkohal,Taekwondo,3,hadi_saeibonehkohal
-5547,Claudia POLL AHRENS,Costa Rica,CRC,https://olympics.com/en/athletes/claudia-poll-ahrens,Swimming,3,claudia_poll_ahrens
-4256,Andrus VEERPALU,Estonia,EST,https://olympics.com/en/athletes/andrus-veerpalu,Cross Country Skiing,3,andrus_veerpalu
-4672,Sun Hui KYE,Democratic People's Republic of Korea,PRK,https://olympics.com/en/athletes/sun-hui-kye,Judo,3,sun_hui_kye
-609,Nino SALUKVADZE,Georgia,GEO,https://olympics.com/en/athletes/nino-salukvadze,Shooting,3,nino_salukvadze
-733,Fernando PIMENTA,Portugal,POR,https://olympics.com/en/athletes/fernando-pimenta,Canoe Sprint,2,fernando_pimenta
-1669,Joshua Kiprui CHEPTEGEI,Uganda,UGA,https://olympics.com/en/athletes/joshua-kiprui-cheptegei,Athletics,2,joshua_kiprui_cheptegei
-14732,"Vilém GOPPOLD Z LOBSDORFU, SR.",Bohemia,BOH,https://olympics.com/en/athletes/vilem-goppold-z-lobsdorfu-sr,Fencing,2,"vilém_goppold_z_lobsdorfu,_sr."
-965,Hedaya WAHBA,Egypt,EGY,https://olympics.com/en/athletes/hedaya-wahba,Taekwondo,2,hedaya_wahba
-4118,Rohullah NIKPAI,Afghanistan,AFG,https://olympics.com/en/athletes/rohullah-nikpai,Taekwondo,2,rohullah_nikpai
-4503,Jefferson PEREZ,Ecuador,ECU,https://olympics.com/en/athletes/jefferson-perez,Athletics,2,jefferson_perez
-1574,Marileidy PAULINO,Dominican Republic,DOM,https://olympics.com/en/athletes/marileidy-paulino,Athletics,2,marileidy_paulino
-590,Alessandra PERILLI,San Marino,SMR,https://olympics.com/en/athletes/alessandra-perilli,Shooting,2,alessandra_perilli
-960,Ruth Marie Christelle GBAGBI,Côte d'Ivoire,CIV,https://olympics.com/en/athletes/ruth-marie-christelle-gbagbi,Taekwondo,2,ruth_marie_christelle_gbagbi
-982,Panipak WONGPATTANAKIT,Thailand,THA,https://olympics.com/en/athletes/panipak-wongpattanakit,Taekwondo,2,panipak_wongpattanakit
-7952,Anthony Conrad NESTY,Suriname,SUR,https://olympics.com/en/athletes/anthony-conrad-nesty,Swimming,2,anthony_conrad_nesty
-954,Milica MANDIC,Serbia,SRB,https://olympics.com/en/athletes/milica-mandic,Taekwondo,2,milica_mandic
-1413,Hidilyn DIAZ,Philippines,PHI,https://olympics.com/en/athletes/hidilyn-diaz,Weightlifting,2,hidilyn_diaz
-4548,Françoise MBANGO ETONE,Cameroon,CMR,https://olympics.com/en/athletes/francoise-mbango-etone,Athletics,2,françoise_mbango_etone
-2945,Tuvshinbayar NAIDAN,Mongolia,MGL,https://olympics.com/en/athletes/tuvshinbayar-naidan,Judo,2,tuvshinbayar_naidan
-1081,Pusarla Venkata SINDHU,India,IND,https://olympics.com/en/athletes/v-sindhu-pusarla,Badminton,2,pusarla_venkata_sindhu
-4592,Maria MUTOLA,Mozambique,MOZ,https://olympics.com/en/athletes/maria-mutola,Athletics,2,maria_mutola
-11617,George Ezekiel KERR,West Indies Federation,WIF,https://olympics.com/en/athletes/george-ezekiel-kerr,Athletics,2,george_ezekiel_kerr
-1008,Wai Sze LEE,"Hong Kong, China",HKG,https://olympics.com/en/athletes/wai-sze-lee,Cycling Track,2,wai_sze_lee
-1587,Yulimar ROJAS,Venezuela,VEN,https://olympics.com/en/athletes/yulimar-rojas,Athletics,2,yulimar_rojas
-17006,Juan A. RODRIGUEZ,Uruguay,URU,https://olympics.com/en/athletes/juan-a-rodriguez,Rowing,2,juan_a._rodriguez
-7543,Marc GIRARDELLI,Luxembourg,LUX,https://olympics.com/en/athletes/marc-girardelli,Alpine Skiing,2,marc_girardelli
-6524,Falilat OGUNKOYA,Nigeria,NGR,https://olympics.com/en/athletes/falilat-ogunkoya,Athletics,2,falilat_ogunkoya
-1332,Or SASSON,Israel,ISR,https://olympics.com/en/athletes/or-sasson,Judo,2,or_sasson
-12977,Lloyd LABEACH,Panama,PAN,https://olympics.com/en/athletes/lloyd-labeach,Athletics,2,lloyd_labeach
-623,Xuan Vinh HOANG,Vietnam,VIE,https://olympics.com/en/athletes/xuan-vinh-hoang,Shooting,2,xuan_vinh_hoang
-2324,Dilshod NAZAROV,Tajikistan,TJK,https://olympics.com/en/athletes/dilshod-nazarov,Athletics,1,dilshod_nazarov
-1436,Man ASAAD,Syrian Arab Republic,SYR,https://olympics.com/en/athletes/man-asaad,Weightlifting,1,man_asaad
-8493,Peter HOLMBERG,"Virgin Islands, US",ISV,https://olympics.com/en/athletes/peter-holmberg,Sailing,1,peter_holmberg
-7193,Samuel MATETE,Zambia,ZAM,https://olympics.com/en/athletes/samuel-matete-1,Athletics,1,samuel_matete
-5343,Obadele THOMPSON,Barbados,BAR,https://olympics.com/en/athletes/obadele-thompson,Athletics,1,obadele_thompson
-3492,Benjamin BOUKPETI,Togo,TOG,https://olympics.com/en/athletes/benjamin-boukpeti,Canoe Slalom,1,benjamin_boukpeti
-7418,Paea WOLFGRAM,Tonga,TGA,https://olympics.com/en/athletes/paea-wolfgram,Boxing,1,paea_wolfgram
-855,Flora DUFFY,Bermuda,BER,https://olympics.com/en/athletes/flora-duffy,Triathlon,1,flora_duffy
-1596,Nijel AMOS,Botswana,BOT,https://olympics.com/en/athletes/nijel-amos,Athletics,1,nijel_amos
-1643,Kalkidan GEZAHEGNE,Bahrain,BRN,https://olympics.com/en/athletes/kalkidan-gezahegne,Athletics,1,kalkidan_gezahegne
-1439,Polina GURYEVA,Turkmenistan,TKM,https://olympics.com/en/athletes/polina-guryeva,Weightlifting,1,polina_guryeva
-8889,Filbert BAYI,United Republic of Tanzania,TAN,https://olympics.com/en/athletes/filbert-bayi,Athletics,1,filbert_bayi
-2953,Sergiu TOMA,United Arab Emirates,UAE,https://olympics.com/en/athletes/sergiu-toma,Judo,1,sergiu_toma
-1642,Francine NIYONSABA,Burundi,BDI,https://olympics.com/en/athletes/francine-niyonsaba,Athletics,1,francine_niyonsaba
-1513,Fabrice ZANGO HUGUES,Burkina Faso,BUR,https://olympics.com/en/athletes/fabrice-zango-hugues,Athletics,1,fabrice_zango_hugues
-1123,Akzhol MAKHMUDOV,Kyrgyzstan,KGZ,https://olympics.com/en/athletes/akzhol-makhmudov,Wrestling,1,akzhol_makhmudov
-4528,Ismail Ahmed ISMAIL,Sudan,SUD,https://olympics.com/en/athletes/ismail-ahmed-ismail-1,Athletics,1,ismail_ahmed_ismail
-6543,Susanthika JAYASINGHE,Sri Lanka,SRI,https://olympics.com/en/athletes/susanthika-jayasinghe,Athletics,1,susanthika_jayasinghe
-9136,Kheir Mohamed TARABULSI,Lebanon,LBN,https://olympics.com/en/athletes/kheir-mohamed-tarabulsi,Weightlifting,1,kheir_mohamed_tarabulsi
-939,Saleh ELSHARABATY,Jordan,JOR,https://olympics.com/en/athletes/saleh-elsharabaty,Taekwondo,1,saleh_elsharabaty
-12068,Abdul WAHID AZIZ,Iraq,IRQ,https://olympics.com/en/athletes/abdul-wahid-aziz,Weightlifting,1,abdul_wahid_aziz
-4425,Bruno JULIE,Mauritius,MRI,https://olympics.com/en/athletes/bruno-julie,Boxing,1,bruno_julie
-6485,Vala FLOSADOTTIR,Iceland,ISL,https://olympics.com/en/athletes/vala-flosadottir,Athletics,1,vala_flosadottir
-13494,Silvio M. CATOR,Haiti,HAI,https://olympics.com/en/athletes/silvio-m-cator,Athletics,1,silvio_m._cator
-8491,Jan D. BOERSMA,Netherlands Antilles,AHO,https://olympics.com/en/athletes/jan-d-boersma,Sailing,1,jan_d._boersma
-9620,Michael ANTHONY,Guyana,GUY,https://olympics.com/en/athletes/michael-anthony,Boxing,1,michael_anthony
-950,Abdoulrazak ISSOUFOU ALFAGA,Niger,NIG,https://olympics.com/en/athletes/abdoulrazak-issoufou-alfaga,Taekwondo,1,abdoulrazak_issoufou_alfaga
-948,Dejan GEORGIEVSKI,North Macedonia,MKD,https://olympics.com/en/athletes/dejan-georgievski,Taekwondo,1,dejan_georgievski
-1561,Erick BARRONDO,Guatemala,GUA,https://olympics.com/en/athletes/erick-barrondo,Athletics,1,erick_barrondo
-795,Samuel TAKYI,Ghana,GHA,https://olympics.com/en/athletes/samuel-takyi,Boxing,1,samuel_takyi
-2290,Francisco BOZA,Peru,PER,https://olympics.com/en/athletes/francisco-boza,Shooting,1,francisco_boza
-1629,Jasmine CAMACHO-QUINN,Puerto Rico,PUR,https://olympics.com/en/athletes/jasmine-camacho-quinn,Athletics,1,jasmine_camacho-quinn
-949,Anthony Mylann OBAME,Gabon,GAB,https://olympics.com/en/athletes/anthony-mylann-obame,Taekwondo,1,anthony_mylann_obame
-2495,Zersenay TADESSE,Eritrea,ERI,https://olympics.com/en/athletes/zersenay-tadesse,Athletics,1,zersenay_tadesse
-3941,Ele OPELOGE,Samoa,SAM,https://olympics.com/en/athletes/ele-opeloge,Weightlifting,1,ele_opeloge
-1933,Tareg HAMEDI,Saudi Arabia,KSA,https://olympics.com/en/athletes/tareg-hamedi,Karate,1,tareg_hamedi
-1288,Nora GJAKOVA,Kosovo,KOS,https://olympics.com/en/athletes/nora-gjakova,Judo,1,nora_gjakova
-7239,Hussein AHMED SALAH,Djibouti,DJI,https://olympics.com/en/athletes/hussein-ahmed-salah,Athletics,1,hussein_ahmed_salah
-1873,Pavlos KONTIDES,Cyprus,CYP,https://olympics.com/en/athletes/pavlos-kontides,Sailing,1,pavlos_kontides
-8110,El Hadji Amadou DIA BA,Senegal,SEN,https://olympics.com/en/athletes/el-hadji-amadou-dia-ba,Athletics,1,el_hadji_amadou_dia_ba
+country_name,athlete_full_name,country_name,country_3_letter_code,athlete_url,discipline_title,game_season,num_medals,athlete_full_name_lower
+United States of America,Michael PHELPS,United States of America,USA,https://olympics.com/en/athletes/michael-phelps-ii,Swimming,Summer,28,michael_phelps
+Soviet Union,Larisa LATYNINA,Soviet Union,URS,https://olympics.com/en/athletes/larisa-latynina,Gymnastics Artistic,Summer,18,larisa_latynina
+Italy,Edoardo MANGIAROTTI,Italy,ITA,https://olympics.com/en/athletes/edoardo-mangiarotti,Fencing,Summer,13,edoardo_mangiarotti
+Japan,Takashi ONO,Japan,JPN,https://olympics.com/en/athletes/takashi-ono,Gymnastics Artistic,Summer,13,takashi_ono
+Russian Federation,Alexei NEMOV,Russian Federation,RUS,https://olympics.com/en/athletes/alexei-nemov,Gymnastics Artistic,Summer,12,alexei_nemov
+Finland,Paavo NURMI,Finland,FIN,https://olympics.com/en/athletes/paavo-nurmi,Athletics,Summer,12,paavo_nurmi
+Germany,Isabell WERTH,Germany,GER,https://olympics.com/en/athletes/isabell-werth,Equestrian,Summer,12,isabell_werth
+German Democratic Republic (Germany),Birgit FISCHER,German Democratic Republic (Germany),GDR,https://olympics.com/en/athletes/birgit-fischer,Canoe Sprint,Summer,12,birgit_fischer
+Czechoslovakia,Vera CASLAVSKA,Czechoslovakia,TCH,https://olympics.com/en/athletes/vera-caslavska,Gymnastics Artistic,Summer,11,vera_caslavska
+Australia,Emma MCKEON,Australia,AUS,https://olympics.com/en/athletes/emma-mckeon,Swimming,Summer,11,emma_mckeon
+Unified Team,Vitaly SCHERBO,Unified Team,EUN,https://olympics.com/en/athletes/vitaly-scherbo,Gymnastics Artistic,Summer,10,vitaly_scherbo
+Belarus,Vitaly SCHERBO,Belarus,BLR,https://olympics.com/en/athletes/vitaly-scherbo,Gymnastics Artistic,Summer,10,vitaly_scherbo
+Belgium,Hubert VAN INNIS,Belgium,BEL,https://olympics.com/en/athletes/hubert-van-innis,Archery,Summer,10,hubert_van_innis
+Hungary,Aladar GEREVICH,Hungary,HUN,https://olympics.com/en/athletes/aladar-gerevich,Fencing,Summer,10,aladar_gerevich
+Romania,Nadia COMANECI,Romania,ROU,https://olympics.com/en/athletes/nadia-comaneci,Gymnastics Artistic,Summer,9,nadia_comaneci
+Sweden,Alfred SWAHN,Sweden,SWE,https://olympics.com/en/athletes/alfred-swahn,Shooting,Summer,9,alfred_swahn
+Netherlands,Annica VAN GRUNSVEN,Netherlands,NED,https://olympics.com/en/athletes/annica-van-grunsven,Equestrian Dressage,Summer,9,annica_van_grunsven
+Great Britain,Jason KENNY,Great Britain,GBR,https://olympics.com/en/athletes/jason-kenny,Cycling Track,Summer,9,jason_kenny
+Jamaica,Merlene OTTEY-PAGE,Jamaica,JAM,https://olympics.com/en/athletes/merlene-ottey-page,Athletics,Summer,9,merlene_ottey-page
+Norway,Otto M. OLSEN,Norway,NOR,https://olympics.com/en/athletes/otto-m-olsen,Shooting,Summer,8,otto_m._olsen
+France,Philippe CATTIAU,France,FRA,https://olympics.com/en/athletes/philippe-cattiau,Fencing,Summer,8,philippe_cattiau
+Federal Republic of Germany,Reiner KLIMKE,Federal Republic of Germany,FRG,https://olympics.com/en/athletes/reiner-klimke,Equestrian Dressage,Summer,8,reiner_klimke
+Switzerland,Eugen MACK,Switzerland,SUI,https://olympics.com/en/athletes/eugen-mack,Gymnastics Artistic,Summer,8,eugen_mack
+ROC,Denis ABLYAZIN,ROC,ROC,https://olympics.com/en/athletes/denis-ablyazin,Artistic Gymnastics,Summer,7,denis_ablyazin
+Poland,Irena Szewińska,Poland,POL,https://olympics.com/en/athletes/irena-szewinska,Athletics,Summer,7,irena_szewińska
+People's Republic of China,Minxia WU,People's Republic of China,CHN,https://olympics.com/en/athletes/minxia-wu,Diving,Summer,7,minxia_wu
+Zimbabwe,Kirsty Leigh COVENTRY,Zimbabwe,ZIM,https://olympics.com/en/athletes/kirsty-leigh-coventry,Swimming,Summer,7,kirsty_leigh_coventry
+Canada,Penny OLEKSIAK,Canada,CAN,https://olympics.com/en/athletes/penny-oleksiak,Swimming,Summer,7,penny_oleksiak
+Ethiopia,Tirunesh DIBABA,Ethiopia,ETH,https://olympics.com/en/athletes/tirunesh-dibaba,Athletics,Summer,6,tirunesh_dibaba
+New Zealand,Lisa CARRINGTON,New Zealand,NZL,https://olympics.com/en/athletes/lisa-carrington,Canoe Sprint,Summer,6,lisa_carrington
+Australasia,Frank DE BEAUREPAIRE,Australasia,ANZ,https://olympics.com/en/athletes/frank-de-beaurepaire,Swimming,Summer,6,frank_de_beaurepaire
+Republic of Korea,Jong Oh JIN,Republic of Korea,KOR,https://olympics.com/en/athletes/jong-oh-jin,Shooting,Summer,6,jong_oh_jin
+Yugoslavia,Leon STUKELJ,Yugoslavia,YUG,https://olympics.com/en/athletes/leon-stukelj,Gymnastics Artistic,Summer,6,leon_stukelj
+Cuba,Ramon FONST,Cuba,CUB,https://olympics.com/en/athletes/ramon-fonst,Fencing,Summer,5,ramon_fonst
+Azerbaijan,Inna OSIPENKO-RODOMSKA,Azerbaijan,AZE,https://olympics.com/en/athletes/inna-osipenko-rodomska,Canoe Sprint,Summer,5,inna_osipenko-rodomska
+Ukraine,Inna OSIPENKO-RODOMSKA,Ukraine,UKR,https://olympics.com/en/athletes/inna-osipenko-rodomska,Canoe Sprint,Summer,5,inna_osipenko-rodomska
+Independent Olympic Athletes,Jasna SEKARIC,Independent Olympic Athletes,IOA,https://olympics.com/en/athletes/jasna-sekaric,Shooting,Summer,5,jasna_sekaric
+Slovakia,Michal MARTIKAN,Slovakia,SVK,https://olympics.com/en/athletes/michal-martikan,Canoe Slalom,Summer,5,michal_martikan
+Brazil,Robert SCHEIDT,Brazil,BRA,https://olympics.com/en/athletes/robert-scheidt,Sailing,Summer,5,robert_scheidt
+Spain,Saul CRAVIOTTO,Spain,ESP,https://olympics.com/en/athletes/saul-craviotto,Canoe Sprint,Summer,5,saul_craviotto
+Serbia and Montenegro,Jasna SEKARIC,Serbia and Montenegro,SCG,https://olympics.com/en/athletes/jasna-sekaric,Shooting,Summer,5,jasna_sekaric
+Denmark,Lasse Norman HANSEN,Denmark,DEN,https://olympics.com/en/athletes/lasse-norman-hansen,Cycling Track,Summer,5,lasse_norman_hansen
+Chinese Taipei,Jing CHEN,Chinese Taipei,TPE,https://olympics.com/en/athletes/jing-chen-1,Table Tennis,Summer,4,jing_chen
+South Africa,Chad LE CLOS,South Africa,RSA,https://olympics.com/en/athletes/chad-le-clos,Swimming,Summer,4,chad_le_clos
+Kenya,Eliud KIPCHOGE,Kenya,KEN,https://olympics.com/en/athletes/eliud-kipchoge,Athletics,Summer,4,eliud_kipchoge
+Namibia,Frank FREDERICKS,Namibia,NAM,https://olympics.com/en/athletes/frankie-fredericks,Athletics,Summer,4,frank_fredericks
+Ireland,Michelle Marie SMITH,Ireland,IRL,https://olympics.com/en/athletes/michelle-marie-smith,Swimming,Summer,4,michelle_marie_smith
+Indonesia,Eko Yuli IRAWAN,Indonesia,INA,https://olympics.com/en/athletes/eko-yuli-irawan,Weightlifting,Summer,4,eko_yuli_irawan
+Tunisia,Mohamed GAMMOUDI,Tunisia,TUN,https://olympics.com/en/athletes/mohamed-gammoudi,Athletics,Summer,4,mohamed_gammoudi
+Trinidad and Tobago,Ato BOLDON,Trinidad and Tobago,TTO,https://olympics.com/en/athletes/ato-boldon,Athletics,Summer,4,ato_boldon
+Slovenia,Iztok COP,Slovenia,SLO,https://olympics.com/en/athletes/iztok-cop,Rowing,Summer,4,iztok_cop
+Croatia,Nikolay PECHALOV,Croatia,CRO,https://olympics.com/en/athletes/nikolay-pechalov,Weightlifting,Summer,4,nikolay_pechalov
+Argentina,Carlos ESPINOLA,Argentina,ARG,https://olympics.com/en/athletes/carlos-espinola,Sailing,Summer,4,carlos_espinola
+Czech Republic,Josef DOSTAL,Czech Republic,CZE,https://olympics.com/en/athletes/josef-dostal,Canoe Sprint,Summer,4,josef_dostal
+Bulgaria,Nikolay PECHALOV,Bulgaria,BUL,https://olympics.com/en/athletes/nikolay-pechalov,Weightlifting,Summer,4,nikolay_pechalov
+Mexico,Joaquin CAPILLA PEREZ,Mexico,MEX,https://olympics.com/en/athletes/joaquin-capilla-perez,Diving,Summer,4,joaquin_capilla_perez
+Greece,Pyrros DIMAS,Greece,GRE,https://olympics.com/en/athletes/pyrros-dimas,Weightlifting,Summer,4,pyrros_dimas
+Armenia,Artur ALEKSANYAN,Armenia,ARM,https://olympics.com/en/athletes/artur-aleksanyan,Wrestling,Summer,3,artur_aleksanyan
+Colombia,Mariana PAJÓN,Colombia,COL,https://olympics.com/en/athletes/mariana-pajon,Cycling BMX Racing,Summer,3,mariana_pajón
+Austria,Ellen S. PREIS-MÜLLER,Austria,AUT,https://olympics.com/en/athletes/ellen-s-preis-muller,Fencing,Summer,3,ellen_s._preis-müller
+Malaysia,Chong Wei LEE,Malaysia,MAS,https://olympics.com/en/athletes/chong-wei-lee,Badminton,Summer,3,chong_wei_lee
+MIX,Max DECUGIS,MIX,MIX,https://olympics.com/en/athletes/max-decugis,Tennis,Summer,3,max_decugis
+Morocco,Hicham EL GUERROUJ,Morocco,MAR,https://olympics.com/en/athletes/hicham-el-guerrouj,Athletics,Summer,3,hicham_el_guerrouj
+Lithuania,Virgilijus ALEKNA,Lithuania,LTU,https://olympics.com/en/athletes/virgilijus-alekna,Athletics,Summer,3,virgilijus_alekna
+Republic of Moldova,Nicolae JURAVSCHI,Republic of Moldova,MDA,https://olympics.com/en/athletes/nicolae-juravschi,Canoe Sprint,Summer,3,nicolae_juravschi
+Latvia,Ivans KLEMENTYEV,Latvia,LAT,https://olympics.com/en/athletes/ivans-klementyev,Canoe Sprint,Summer,3,ivans_klementyev
+Algeria,Taoufik MAKHLOUFI,Algeria,ALG,https://olympics.com/en/athletes/taoufik-makhloufi,Athletics,Summer,3,taoufik_makhloufi
+Kuwait,Fehaid ALDEEHANI,Kuwait,KUW,https://olympics.com/en/athletes/fehaid-aldeehani,Shooting,Summer,3,fehaid_aldeehani
+Democratic People's Republic of Korea,Sun Hui KYE,Democratic People's Republic of Korea,PRK,https://olympics.com/en/athletes/sun-hui-kye,Judo,Summer,3,sun_hui_kye
+Kazakhstan,Olga RYPAKOVA,Kazakhstan,KAZ,https://olympics.com/en/athletes/olga-rypakova,Athletics,Summer,3,olga_rypakova
+Singapore,Tianwei FENG,Singapore,SGP,https://olympics.com/en/athletes/tianwei-feng,Table Tennis,Summer,3,tianwei_feng
+Bahamas,Debbie FERGUSON-MCKENZIE,Bahamas,BAH,https://olympics.com/en/athletes/debbie-ferguson-mckenzie,Athletics,Summer,3,debbie_ferguson-mckenzie
+Grenada,Kirani JAMES,Grenada,GRN,https://olympics.com/en/athletes/kirani-james,Athletics,Summer,3,kirani_james
+Chile,Fernando GONZALEZ,Chile,CHI,https://olympics.com/en/athletes/fernando-gonzalez-2,Tennis,Summer,3,fernando_gonzalez
+Georgia,Nino SALUKVADZE,Georgia,GEO,https://olympics.com/en/athletes/nino-salukvadze,Shooting,Summer,3,nino_salukvadze
+Islamic Republic of Iran,Hadi SAEIBONEHKOHAL,Islamic Republic of Iran,IRI,https://olympics.com/en/athletes/hadi-saeibonehkohal,Taekwondo,Summer,3,hadi_saeibonehkohal
+Qatar,Mutaz Essa BARSHIM,Qatar,QAT,https://olympics.com/en/athletes/mutaz-essa-barshim,Athletics,Summer,3,mutaz_essa_barshim
+Turkey,Riza KAYAALP,Turkey,TUR,https://olympics.com/en/athletes/riza-kayaalp,Wrestling,Summer,3,riza_kayaalp
+Costa Rica,Claudia POLL AHRENS,Costa Rica,CRC,https://olympics.com/en/athletes/claudia-poll-ahrens,Swimming,Summer,3,claudia_poll_ahrens
+Uzbekistan,Rishod SOBIROV,Uzbekistan,UZB,https://olympics.com/en/athletes/rishod-sobirov,Judo,Summer,3,rishod_sobirov
+Portugal,Fernando PIMENTA,Portugal,POR,https://olympics.com/en/athletes/fernando-pimenta,Canoe Sprint,Summer,2,fernando_pimenta
+Philippines,Hidilyn DIAZ,Philippines,PHI,https://olympics.com/en/athletes/hidilyn-diaz,Weightlifting,Summer,2,hidilyn_diaz
+West Indies Federation,George Ezekiel KERR,West Indies Federation,WIF,https://olympics.com/en/athletes/george-ezekiel-kerr,Athletics,Summer,2,george_ezekiel_kerr
+Uganda,Joshua Kiprui CHEPTEGEI,Uganda,UGA,https://olympics.com/en/athletes/joshua-kiprui-cheptegei,Athletics,Summer,2,joshua_kiprui_cheptegei
+Vietnam,Xuan Vinh HOANG,Vietnam,VIE,https://olympics.com/en/athletes/xuan-vinh-hoang,Shooting,Summer,2,xuan_vinh_hoang
+San Marino,Alessandra PERILLI,San Marino,SMR,https://olympics.com/en/athletes/alessandra-perilli,Shooting,Summer,2,alessandra_perilli
+Serbia,Milica MANDIC,Serbia,SRB,https://olympics.com/en/athletes/milica-mandic,Taekwondo,Summer,2,milica_mandic
+Venezuela,Yulimar ROJAS,Venezuela,VEN,https://olympics.com/en/athletes/yulimar-rojas,Athletics,Summer,2,yulimar_rojas
+Thailand,Panipak WONGPATTANAKIT,Thailand,THA,https://olympics.com/en/athletes/panipak-wongpattanakit,Taekwondo,Summer,2,panipak_wongpattanakit
+Uruguay,Juan A. RODRIGUEZ,Uruguay,URU,https://olympics.com/en/athletes/juan-a-rodriguez,Rowing,Summer,2,juan_a._rodriguez
+Suriname,Anthony Conrad NESTY,Suriname,SUR,https://olympics.com/en/athletes/anthony-conrad-nesty,Swimming,Summer,2,anthony_conrad_nesty
+Panama,Lloyd LABEACH,Panama,PAN,https://olympics.com/en/athletes/lloyd-labeach,Athletics,Summer,2,lloyd_labeach
+Afghanistan,Rohullah NIKPAI,Afghanistan,AFG,https://olympics.com/en/athletes/rohullah-nikpai,Taekwondo,Summer,2,rohullah_nikpai
+Egypt,Hedaya WAHBA,Egypt,EGY,https://olympics.com/en/athletes/hedaya-wahba,Taekwondo,Summer,2,hedaya_wahba
+India,Pusarla Venkata SINDHU,India,IND,https://olympics.com/en/athletes/v-sindhu-pusarla,Badminton,Summer,2,pusarla_venkata_sindhu
+Côte d'Ivoire,Ruth Marie Christelle GBAGBI,Côte d'Ivoire,CIV,https://olympics.com/en/athletes/ruth-marie-christelle-gbagbi,Taekwondo,Summer,2,ruth_marie_christelle_gbagbi
+Israel,Or SASSON,Israel,ISR,https://olympics.com/en/athletes/or-sasson,Judo,Summer,2,or_sasson
+"Hong Kong, China",Wai Sze LEE,"Hong Kong, China",HKG,https://olympics.com/en/athletes/wai-sze-lee,Cycling Track,Summer,2,wai_sze_lee
+Dominican Republic,Marileidy PAULINO,Dominican Republic,DOM,https://olympics.com/en/athletes/marileidy-paulino,Athletics,Summer,2,marileidy_paulino
+Bohemia,"Vilém GOPPOLD Z LOBSDORFU, SR.",Bohemia,BOH,https://olympics.com/en/athletes/vilem-goppold-z-lobsdorfu-sr,Fencing,Summer,2,"vilém_goppold_z_lobsdorfu,_sr."
+Ecuador,Jefferson PEREZ,Ecuador,ECU,https://olympics.com/en/athletes/jefferson-perez,Athletics,Summer,2,jefferson_perez
+Mongolia,Tuvshinbayar NAIDAN,Mongolia,MGL,https://olympics.com/en/athletes/tuvshinbayar-naidan,Judo,Summer,2,tuvshinbayar_naidan
+Mozambique,Maria MUTOLA,Mozambique,MOZ,https://olympics.com/en/athletes/maria-mutola,Athletics,Summer,2,maria_mutola
+Nigeria,Falilat OGUNKOYA,Nigeria,NGR,https://olympics.com/en/athletes/falilat-ogunkoya,Athletics,Summer,2,falilat_ogunkoya
+Estonia,Katrina LEHIS,Estonia,EST,https://olympics.com/en/athletes/katrina-lehis,Fencing,Summer,2,katrina_lehis
+Cameroon,Françoise MBANGO ETONE,Cameroon,CMR,https://olympics.com/en/athletes/francoise-mbango-etone,Athletics,Summer,2,françoise_mbango_etone
+Tonga,Paea WOLFGRAM,Tonga,TGA,https://olympics.com/en/athletes/paea-wolfgram,Boxing,Summer,1,paea_wolfgram
+Djibouti,Hussein AHMED SALAH,Djibouti,DJI,https://olympics.com/en/athletes/hussein-ahmed-salah,Athletics,Summer,1,hussein_ahmed_salah
+Turkmenistan,Polina GURYEVA,Turkmenistan,TKM,https://olympics.com/en/athletes/polina-guryeva,Weightlifting,Summer,1,polina_guryeva
+Togo,Benjamin BOUKPETI,Togo,TOG,https://olympics.com/en/athletes/benjamin-boukpeti,Canoe Slalom,Summer,1,benjamin_boukpeti
+North Macedonia,Dejan GEORGIEVSKI,North Macedonia,MKD,https://olympics.com/en/athletes/dejan-georgievski,Taekwondo,Summer,1,dejan_georgievski
+Cyprus,Pavlos KONTIDES,Cyprus,CYP,https://olympics.com/en/athletes/pavlos-kontides,Sailing,Summer,1,pavlos_kontides
+Tajikistan,Dilshod NAZAROV,Tajikistan,TJK,https://olympics.com/en/athletes/dilshod-nazarov,Athletics,Summer,1,dilshod_nazarov
+United Republic of Tanzania,Filbert BAYI,United Republic of Tanzania,TAN,https://olympics.com/en/athletes/filbert-bayi,Athletics,Summer,1,filbert_bayi
+Burundi,Francine NIYONSABA,Burundi,BDI,https://olympics.com/en/athletes/francine-niyonsaba,Athletics,Summer,1,francine_niyonsaba
+Burkina Faso,Fabrice ZANGO HUGUES,Burkina Faso,BUR,https://olympics.com/en/athletes/fabrice-zango-hugues,Athletics,Summer,1,fabrice_zango_hugues
+Botswana,Nijel AMOS,Botswana,BOT,https://olympics.com/en/athletes/nijel-amos,Athletics,Summer,1,nijel_amos
+Bermuda,Flora DUFFY,Bermuda,BER,https://olympics.com/en/athletes/flora-duffy,Triathlon,Summer,1,flora_duffy
+"Virgin Islands, US",Peter HOLMBERG,"Virgin Islands, US",ISV,https://olympics.com/en/athletes/peter-holmberg,Sailing,Summer,1,peter_holmberg
+Barbados,Obadele THOMPSON,Barbados,BAR,https://olympics.com/en/athletes/obadele-thompson,Athletics,Summer,1,obadele_thompson
+Bahrain,Kalkidan GEZAHEGNE,Bahrain,BRN,https://olympics.com/en/athletes/kalkidan-gezahegne,Athletics,Summer,1,kalkidan_gezahegne
+Zambia,Samuel MATETE,Zambia,ZAM,https://olympics.com/en/athletes/samuel-matete-1,Athletics,Summer,1,samuel_matete
+United Arab Emirates,Sergiu TOMA,United Arab Emirates,UAE,https://olympics.com/en/athletes/sergiu-toma,Judo,Summer,1,sergiu_toma
+Gabon,Anthony Mylann OBAME,Gabon,GAB,https://olympics.com/en/athletes/anthony-mylann-obame,Taekwondo,Summer,1,anthony_mylann_obame
+Syrian Arab Republic,Man ASAAD,Syrian Arab Republic,SYR,https://olympics.com/en/athletes/man-asaad,Weightlifting,Summer,1,man_asaad
+Samoa,Ele OPELOGE,Samoa,SAM,https://olympics.com/en/athletes/ele-opeloge,Weightlifting,Summer,1,ele_opeloge
+Peru,Francisco BOZA,Peru,PER,https://olympics.com/en/athletes/francisco-boza,Shooting,Summer,1,francisco_boza
+Niger,Abdoulrazak ISSOUFOU ALFAGA,Niger,NIG,https://olympics.com/en/athletes/abdoulrazak-issoufou-alfaga,Taekwondo,Summer,1,abdoulrazak_issoufou_alfaga
+Netherlands Antilles,Jan D. BOERSMA,Netherlands Antilles,AHO,https://olympics.com/en/athletes/jan-d-boersma,Sailing,Summer,1,jan_d._boersma
+Puerto Rico,Jasmine CAMACHO-QUINN,Puerto Rico,PUR,https://olympics.com/en/athletes/jasmine-camacho-quinn,Athletics,Summer,1,jasmine_camacho-quinn
+Mauritius,Bruno JULIE,Mauritius,MRI,https://olympics.com/en/athletes/bruno-julie,Boxing,Summer,1,bruno_julie
+Luxembourg,Joseph BARTHEL,Luxembourg,LUX,https://olympics.com/en/athletes/joseph-barthel,Athletics,Summer,1,joseph_barthel
+Lebanon,Kheir Mohamed TARABULSI,Lebanon,LBN,https://olympics.com/en/athletes/kheir-mohamed-tarabulsi,Weightlifting,Summer,1,kheir_mohamed_tarabulsi
+Kosovo,Nora GJAKOVA,Kosovo,KOS,https://olympics.com/en/athletes/nora-gjakova,Judo,Summer,1,nora_gjakova
+Jordan,Saleh ELSHARABATY,Jordan,JOR,https://olympics.com/en/athletes/saleh-elsharabaty,Taekwondo,Summer,1,saleh_elsharabaty
+Saudi Arabia,Tareg HAMEDI,Saudi Arabia,KSA,https://olympics.com/en/athletes/tareg-hamedi,Karate,Summer,1,tareg_hamedi
+Eritrea,Zersenay TADESSE,Eritrea,ERI,https://olympics.com/en/athletes/zersenay-tadesse,Athletics,Summer,1,zersenay_tadesse
+Senegal,El Hadji Amadou DIA BA,Senegal,SEN,https://olympics.com/en/athletes/el-hadji-amadou-dia-ba,Athletics,Summer,1,el_hadji_amadou_dia_ba
+Iraq,Abdul WAHID AZIZ,Iraq,IRQ,https://olympics.com/en/athletes/abdul-wahid-aziz,Weightlifting,Summer,1,abdul_wahid_aziz
+Iceland,Vala FLOSADOTTIR,Iceland,ISL,https://olympics.com/en/athletes/vala-flosadottir,Athletics,Summer,1,vala_flosadottir
+Haiti,Silvio M. CATOR,Haiti,HAI,https://olympics.com/en/athletes/silvio-m-cator,Athletics,Summer,1,silvio_m._cator
+Guyana,Michael ANTHONY,Guyana,GUY,https://olympics.com/en/athletes/michael-anthony,Boxing,Summer,1,michael_anthony
+Guatemala,Erick BARRONDO,Guatemala,GUA,https://olympics.com/en/athletes/erick-barrondo,Athletics,Summer,1,erick_barrondo
+Ghana,Samuel TAKYI,Ghana,GHA,https://olympics.com/en/athletes/samuel-takyi,Boxing,Summer,1,samuel_takyi
+Sri Lanka,Susanthika JAYASINGHE,Sri Lanka,SRI,https://olympics.com/en/athletes/susanthika-jayasinghe,Athletics,Summer,1,susanthika_jayasinghe
+Sudan,Ismail Ahmed ISMAIL,Sudan,SUD,https://olympics.com/en/athletes/ismail-ahmed-ismail-1,Athletics,Summer,1,ismail_ahmed_ismail
+Kyrgyzstan,Akzhol MAKHMUDOV,Kyrgyzstan,KGZ,https://olympics.com/en/athletes/akzhol-makhmudov,Wrestling,Summer,1,akzhol_makhmudov
+Norway,Marit BJOERGEN,Norway,NOR,https://olympics.com/en/athletes/marit-bjoergen,Cross Country Skiing,Winter,15,marit_bjoergen
+Netherlands,Ireen WÜST,Netherlands,NED,https://olympics.com/en/athletes/ireen-wust,Speed skating,Winter,13,ireen_wüst
+Italy,Arianna FONTANA,Italy,ITA,https://olympics.com/en/athletes/arianna-fontana,Short Track Speed Skating,Winter,11,arianna_fontana
+Soviet Union,Raisa SMETANINA,Soviet Union,URS,https://olympics.com/en/athletes/raisa-smetanina,Cross Country Skiing,Winter,10,raisa_smetanina
+Sweden,Charlotte KALLA,Sweden,SWE,https://olympics.com/en/athletes/charlotte-kalla,Cross Country Skiing,Winter,9,charlotte_kalla
+Germany,Claudia PECHSTEIN,Germany,GER,https://olympics.com/en/athletes/claudia-pechstein,Speed skating,Winter,9,claudia_pechstein
+German Democratic Republic (Germany),Karin ENKE,German Democratic Republic (Germany),GDR,https://olympics.com/en/athletes/karin-kania,Speed skating,Winter,8,karin_enke
+Republic of Korea,Victor AN,Republic of Korea,KOR,https://olympics.com/en/athletes/victor-an,Short Track Speed Skating,Winter,8,victor_an
+United States of America,Apolo Anton OHNO,United States of America,USA,https://olympics.com/en/athletes/apolo-anton-ohno,Short Track Speed Skating,Winter,8,apolo_anton_ohno
+Russian Federation,Victor AN,Russian Federation,RUS,https://olympics.com/en/athletes/victor-an,Short Track Speed Skating,Winter,8,victor_an
+Kazakhstan,Vladimir SMIRNOV,Kazakhstan,KAZ,https://olympics.com/en/athletes/vladimir-smirnov,Cross Country Skiing,Winter,7,vladimir_smirnov
+Austria,Felix GOTTWALD,Austria,AUT,https://olympics.com/en/athletes/felix-gottwald,Nordic Combined,Winter,7,felix_gottwald
+Japan,Miho TAKAGI,Japan,JPN,https://olympics.com/en/athletes/miho-takagi,Speed skating,Winter,7,miho_takagi
+Unified Team,Elena VAELBE TRUBITSINA,Unified Team,EUN,https://olympics.com/en/athletes/elena-vaelbe,Cross Country Skiing,Winter,7,elena_vaelbe_trubitsina
+France,Martin FOURCADE,France,FRA,https://olympics.com/en/athletes/martin-fourcade,Biathlon,Winter,7,martin_fourcade
+Finland,Marja-Liisa KIRVESNIEMI HAEMAELAEINEN,Finland,FIN,https://olympics.com/en/athletes/marja-liisa-kirvesniemi,Cross Country Skiing,Winter,7,marja-liisa_kirvesniemi_haemaelaeinen
+Czech Republic,Martina SABLIKOVA,Czech Republic,CZE,https://olympics.com/en/athletes/martina-sablikova,Speed skating,Winter,7,martina_sablikova
+People's Republic of China,Meng WANG,People's Republic of China,CHN,https://olympics.com/en/athletes/meng-wang,Short Track Speed Skating,Winter,6,meng_wang
+Slovakia,Anastasiya KUZMINA,Slovakia,SVK,https://olympics.com/en/athletes/anastasiya-kuzmina-1,Biathlon,Winter,6,anastasiya_kuzmina
+Canada,Charles HAMELIN,Canada,CAN,https://olympics.com/en/athletes/charles-hamelin,Short Track Speed Skating,Winter,6,charles_hamelin
+Croatia,Janica KOSTELIC,Croatia,CRO,https://olympics.com/en/athletes/janica-kostelic,Alpine Skiing,Winter,6,janica_kostelic
+Belarus,Darya DOMRACHEVA,Belarus,BLR,https://olympics.com/en/athletes/darya-domracheva,Biathlon,Winter,6,darya_domracheva
+Federal Republic of Germany,Georg HACKL,Federal Republic of Germany,FRG,https://olympics.com/en/athletes/georg-hackl,Luge,Winter,5,georg_hackl
+Switzerland,Wendy HOLDENER,Switzerland,SUI,https://olympics.com/en/athletes/wendy-holdener,Alpine Skiing,Winter,5,wendy_holdener
+ROC,Denis SPITSOV,ROC,ROC,https://olympics.com/en/athletes/denis-spitsov,Cross Country Skiing,Winter,5,denis_spitsov
+Poland,Justyna KOWALCZYK,Poland,POL,https://olympics.com/en/athletes/justyna-kowalczyk,Cross Country Skiing,Winter,5,justyna_kowalczyk
+Olympic Athletes from Russia,Denis SPITSOV,Olympic Athletes from Russia,OAR,https://olympics.com/en/athletes/denis-spitsov,Cross Country Skiing,Winter,5,denis_spitsov
+Slovenia,Peter PREVC,Slovenia,SLO,https://olympics.com/en/athletes/peter-prevc,Ski Jumping,Winter,4,peter_prevc
+Liechtenstein,Hanni WENZEL,Liechtenstein,LIE,https://olympics.com/en/athletes/hanni-wenzel,Alpine Skiing,Winter,4,hanni_wenzel
+Hungary,Shaoang LIU,Hungary,HUN,https://olympics.com/en/athletes/shaoang-liu,Short Track Speed Skating,Winter,4,shaoang_liu
+New Zealand,Zoi SADOWSKI SYNNOTT,New Zealand,NZL,https://olympics.com/en/athletes/zoi-sadowski-synnott,Snowboard,Winter,3,zoi_sadowski_synnott
+Belgium,Bart VELDKAMP,Belgium,BEL,https://olympics.com/en/athletes/bart-veldkamp,Speed skating,Winter,3,bart_veldkamp
+Latvia,Andris SICS,Latvia,LAT,https://olympics.com/en/athletes/andris-sics,Luge,Winter,3,andris_sics
+Estonia,Andrus VEERPALU,Estonia,EST,https://olympics.com/en/athletes/andrus-veerpalu,Cross Country Skiing,Winter,3,andrus_veerpalu
+Czechoslovakia,Kvetoslava JERIOVA,Czechoslovakia,TCH,https://olympics.com/en/athletes/kvetoslava-jeriova,Cross Country Skiing,Winter,3,kvetoslava_jeriova
+Bulgaria,Evgeniya RADANOVA,Bulgaria,BUL,https://olympics.com/en/athletes/evgeniya-radanova,Short Track Speed Skating,Winter,3,evgeniya_radanova
+Ukraine,Oleksandr ABRAMENKO,Ukraine,UKR,https://olympics.com/en/athletes/oleksandr-abramenko,Freestyle Skiing,Winter,2,oleksandr_abramenko
+Australia,Scotty JAMES,Australia,AUS,https://olympics.com/en/athletes/scotty-james,Snowboard,Winter,2,scotty_james
+Luxembourg,Marc GIRARDELLI,Luxembourg,LUX,https://olympics.com/en/athletes/marc-girardelli,Alpine Skiing,Winter,2,marc_girardelli
+Great Britain,Lizzy YARNOLD,Great Britain,GBR,https://olympics.com/en/athletes/lizzy-yarnold,Skeleton,Winter,2,lizzy_yarnold
+Yugoslavia,Matjaz DEBELAK,Yugoslavia,YUG,https://olympics.com/en/athletes/matjaz-debelak,Ski Jumping,Winter,2,matjaz_debelak
+Spain,Queralt CASTELLET,Spain,ESP,https://olympics.com/en/athletes/queralt-castellet,Snowboard,Winter,1,queralt_castellet
+Romania,Ion PANTURU,Romania,ROU,https://olympics.com/en/athletes/ion-panturu,Bobsleigh,Winter,1,ion_panturu
+Democratic People's Republic of Korea,Ok Sil HWANG,Democratic People's Republic of Korea,PRK,https://olympics.com/en/athletes/ok-sil-hwang,Short Track Speed Skating,Winter,1,ok_sil_hwang
+Uzbekistan,Lina CHERYAZOVA,Uzbekistan,UZB,https://olympics.com/en/athletes/lina-cheryazova,Freestyle Skiing,Winter,1,lina_cheryazova
