@@ -609,7 +609,8 @@ async function fetchMedalData(countryCodeISO3,country_name) {
 // [ ] -------------------------------- END CREATE COUNTRY INFO PANEL ----------------------------------- //
 
 switchElement.addEventListener('change', function() {
-  var newSeason = switchElement.checked ? 'Summer' : 'Winter';
+  var newSeason = switchElement.checked ? 'Winter' : 'Summer';
+  console.log(newSeason);
   if (newSeason !== currentSeason && currentCountryISO3 !== null) {
     currentSeason = newSeason;
     console.log("Season changed to", currentSeason);
