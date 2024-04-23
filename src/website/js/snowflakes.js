@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Link the snowflake animation to the checkbox
     var checkbox = document.querySelector('input[type="checkbox"]');
     checkbox.addEventListener('change', function () {
-        if (!checkbox.checked) {
+        if (checkbox.checked) {
             // Start the snowflake animation
             if (intervalId === null) {
                 intervalId = setInterval(createSnowflakes, 200);

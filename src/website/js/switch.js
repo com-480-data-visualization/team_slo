@@ -22,7 +22,7 @@ function whenDocumentLoaded(action) {
 //Define the function that will be called when the document is loaded
 whenDocumentLoaded(function () {
   var checkbox = document.querySelector('input[type="checkbox"]');
-  var OlympicSeason = 'Winter';
+  var OlympicSeason = 'Summer';
 
   window.getOlympicSeason = function() {
     // Return the current Olympic season (Summer or Winter)
@@ -38,9 +38,9 @@ whenDocumentLoaded(function () {
   // Change the Olympic season when the checkbox changes
   checkbox.addEventListener('change', function () {
     if (checkbox.checked) {
-      OlympicSeason = 'Summer';
-    } else {
       OlympicSeason = 'Winter';
+    } else {
+      OlympicSeason = 'Summer';
     }
     // Store the checkbox state in the local storage when it changes
     localStorage.setItem('checkboxState', checkbox.checked);
