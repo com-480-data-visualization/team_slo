@@ -412,7 +412,7 @@ function displayCountryInfo(country, countryCodeISO3) {
   displayMedals(countryCodeISO3, country);
  
   // display best athlete below the medals
-  displayBestAthlete(countryCodeISO3);
+  displayBestAthlete(countryCodeISO3, country);
 }
 
 function hideCountryInfo() {
@@ -494,7 +494,7 @@ function displayMedals(countryCodeISO3, country_name) {
   medals.appendChild(medalsText)
 
   var nbGold = 0, nbSilver = 0, nbBronze = 0;
-  fetchMedalData(countryCodeISO3,country_name).then(function(result) {
+  fetchMedalData(countryCodeISO3, country_name).then(function(result) {
     if (result !== null) {
       nbGold = result.goldMedal;
       nbSilver = result.silverMedal;
@@ -586,7 +586,7 @@ function animateCounter(counterElement, finalValue, duration) {
   }, stepTime);
 }
 
-function displayBestAthlete(countryCodeISO3) {
+function displayBestAthlete(countryCodeISO3, countryName) {
   console.log("displaying best athlete");
   var countryInfo = document.getElementById("country-info");
   var oldAthlete = document.getElementById("best-athlete");
@@ -601,12 +601,12 @@ function displayBestAthlete(countryCodeISO3) {
   
   // Add "Best Athlete" text above the emojis
   var athleteText = document.createElement("h2");
-  athleteText.textContent = "Best Athlete";
+  athleteText.textContent = "Most decorated athlete";
   athleteText.style.fontSize = "20px";
   athlete.appendChild(athleteText)
 
   // Fetch best athlete data
-  fetchBestAthleteData(countryCodeISO3).then(function(result) {
+  fetchBestAthleteData(countryCodeISO3, countryName).then(function(result) {
     if (result !== null) {
       // Create containers for the athlete's name, sport, and medals
 
@@ -672,13 +672,13 @@ async function fetchMedalData(countryCodeISO3,country_name) {
   }
 }
 
-async function fetchBestAthleteData(countryCodeISO3) {
+async function fetchBestAthleteData(countryCodeISO3, country_name) {
   try {
     const data = await d3.csvParse(await (await fetch('../../data/olympic_top_athlete_per_country.csv')).text());
     const season = window.getOlympicSeason();
     console.log("Season:", season);
     console.log("Country code:", countryCodeISO3);
-    const athleteData = data.filter(d => d.country_3_letter_code === countryCodeISO3);
+    const athleteData = data.filter(d => (d.country_3_letter_code === countryCodeISO3 || d.country_name === country_name));
 
     if (athleteData.length === 0) {
       console.log("No athlete found for the country with code", countryCodeISO3);
