@@ -409,7 +409,10 @@ function displayCountryInfo(country, countryCodeISO3) {
   countryInfo.appendChild(countryFlagContainer);
 
   // display medals below the flag
-  displayMedals(countryCodeISO3,country);
+  displayMedals(countryCodeISO3, country);
+ 
+  // display best athlete below the medals
+  displayBestAthlete(countryCodeISO3);
 }
 
 function hideCountryInfo() {
@@ -563,6 +566,13 @@ function displayMedals(countryCodeISO3, country_name) {
 }
 
 function animateCounter(counterElement, finalValue, duration) {
+  /**
+   * Function to animate the counter element of the medals
+   * 
+   * @param {HTMLElement} counterElement - The element that displays the counter
+   * @param {number} finalValue - The final value of the counter
+   * @param {number} duration - The duration of the animation in milliseconds
+   */
   var start = 0;
   var stepTime = Math.abs(Math.floor(duration / finalValue));
   var obj = counterElement;
@@ -574,6 +584,62 @@ function animateCounter(counterElement, finalValue, duration) {
       clearInterval(timer);
     }
   }, stepTime);
+}
+
+function displayBestAthlete(countryCodeISO3) {
+  console.log("displaying best athlete");
+  var countryInfo = document.getElementById("country-info");
+  var oldAthlete = document.getElementById("best-athlete");
+  if (oldAthlete !== null) {
+    countryInfo.removeChild(oldAthlete);
+  }
+  var athlete = document.createElement("div");
+  athlete.id = "best-athlete";
+  athlete.classList.add("country-stats");
+  athlete.style.marginTop = "400px";
+  athlete.style.backgroundColor = "red";
+  
+  // Add "Best Athlete" text above the emojis
+  var athleteText = document.createElement("h2");
+  athleteText.textContent = "Best Athlete";
+  athleteText.style.fontSize = "20px";
+  athlete.appendChild(athleteText)
+
+  // Fetch best athlete data
+  fetchBestAthleteData(countryCodeISO3).then(function(result) {
+    if (result !== null) {
+      // Create containers for the athlete's name, sport, and medals
+
+      // Create container for the athlete's name
+      var athleteName = document.createElement("h1");
+      athleteName.textContent = result.name;
+      athleteName.style.fontSize = "30px";
+      athlete.appendChild(athleteName);
+
+      // Create container for the athlete's sport
+      var athleteSport = document.createElement("h2");
+      athleteSport.textContent = result.sport;
+      athleteSport.style.fontSize = "20px";
+      athlete.appendChild(athleteSport);
+
+      // Create container for the athlete's medals
+      var athleteMedals = document.createElement("h2");
+      athleteMedals.textContent = result.medals + " medals";
+      athleteMedals.style.fontSize = "20px";
+      athlete.appendChild(athleteMedals);
+    }
+    else {
+      // Display message if no data is found
+      var noData = document.createElement("h2");
+      noData.textContent = "Oops! No data found for the best athlete :(";
+      athlete.appendChild(noData);
+      console.log("No data found");
+    }
+  }).catch(function(error) {
+    console.log('Error:', error);
+  });
+  // Inserting athlete after existing elements in countryInfo
+  countryInfo.appendChild(athlete);
 }
 
 
@@ -599,6 +665,27 @@ async function fetchMedalData(countryCodeISO3,country_name) {
       bronzeMedal = parseInt(countryData[0].BRONZE);
     }
     return {goldMedal, silverMedal, bronzeMedal};
+  } 
+  catch (error) {
+    console.error('Error:', error);
+    return null;
+  }
+}
+
+async function fetchBestAthleteData(countryCodeISO3) {
+  try {
+    const data = await d3.csvParse(await (await fetch('../../data/olympic_top_athlete_per_country.csv')).text());
+    const season = window.getOlympicSeason();
+    console.log("Season:", season);
+    console.log("Country code:", countryCodeISO3);
+    const athleteData = data.filter(d => d.country_3_letter_code === countryCodeISO3);
+
+    if (athleteData.length === 0) {
+      console.log("No athlete found for the country with code", countryCodeISO3);
+      return null;
+    }
+    var bestAthlete = athleteData[0];
+    return {name: bestAthlete.athlete_full_name, sport: bestAthlete.discipline_title, medals: bestAthlete.num_medals};
   } 
   catch (error) {
     console.error('Error:', error);
