@@ -13,12 +13,12 @@
   
       // Iterate over the parsed data to create the labels and parents arrays
       parsedData.forEach(row => {
+        const season = row.season;
         const gameName = row.game_name;
         const disciplineTitle = row.discipline_title;
         const eventTitle = row.event_title;
 
-        
-  
+
         // Add game name to labels if not already present
         if (!labels.includes(gameName)) {
           labels.push(gameName);
@@ -32,8 +32,8 @@
         }
   
         // Add event title to labels
-        //labels.push(eventTitle);
-        //parents.push(disciplineTitle);
+        labels.push(eventTitle);
+        parents.push(disciplineTitle);
       });
   
       // Create sunburst data object
