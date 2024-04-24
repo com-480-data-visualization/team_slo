@@ -1,7 +1,5 @@
 # Project of Data Visualization (COM-480)
 
-[Website for Milestone 2](https://com-480-data-visualization.github.io/team_slo)
-
 | Student's name | SCIPER |
 | -------------- | ------ |
 |Vincent Roduit | 325140|
