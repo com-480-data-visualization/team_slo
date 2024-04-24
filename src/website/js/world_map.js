@@ -409,7 +409,10 @@ function displayCountryInfo(country, countryCodeISO3) {
   countryInfo.appendChild(countryFlagContainer);
 
   // display medals below the flag
-  displayMedals(countryCodeISO3,country);
+  displayMedals(countryCodeISO3, country);
+ 
+  // display best athlete below the medals
+  displayBestAthlete(countryCodeISO3, country);
 }
 
 function hideCountryInfo() {
@@ -461,12 +464,12 @@ async function getFlag(countryCodeISO3) {
   }
 }
 
-function displayMedals(countryCodeISO3,country_name, year = -1) {
+function displayMedals(countryCodeISO3, country_name) {
   /**
    * Function to display the medals of a country
    * 
    * @param {string} countryCodeISO3 - ISO 3166-1 alpha-3 code of the country
-   * @param {number} year - Year of the Olympics. Default is -1, which means all time
+   * @param {string} country_name - Name of the country
    */
 
   console.log("displaying medals");
@@ -491,7 +494,7 @@ function displayMedals(countryCodeISO3,country_name, year = -1) {
   medals.appendChild(medalsText)
 
   var nbGold = 0, nbSilver = 0, nbBronze = 0;
-  fetchMedalData(countryCodeISO3,country_name).then(function(result) {
+  fetchMedalData(countryCodeISO3, country_name).then(function(result) {
     if (result !== null) {
       nbGold = result.goldMedal;
       nbSilver = result.silverMedal;
@@ -528,6 +531,7 @@ function displayMedals(countryCodeISO3,country_name, year = -1) {
 
       var bronzeContainer = document.createElement("div");
       bronzeContainer.style.display = "inline-block";
+      bronzeContainer.style.margin = "20px";
       var bronzeMedal = document.createElement("div");
       bronzeMedal.textContent = "🥉";
       bronzeMedal.style.fontSize = medalsFontSize;
@@ -562,6 +566,13 @@ function displayMedals(countryCodeISO3,country_name, year = -1) {
 }
 
 function animateCounter(counterElement, finalValue, duration) {
+  /**
+   * Function to animate the counter element of the medals
+   * 
+   * @param {HTMLElement} counterElement - The element that displays the counter
+   * @param {number} finalValue - The final value of the counter
+   * @param {number} duration - The duration of the animation in milliseconds
+   */
   var start = 0;
   var stepTime = Math.abs(Math.floor(duration / finalValue));
   var obj = counterElement;
@@ -573,6 +584,105 @@ function animateCounter(counterElement, finalValue, duration) {
       clearInterval(timer);
     }
   }, stepTime);
+}
+
+function displayBestAthlete(countryCodeISO3, countryName) {
+  console.log("displaying best athlete");
+  var countryInfo = document.getElementById("country-info");
+  var oldAthlete = document.getElementById("best-athlete");
+  if (oldAthlete !== null) {
+    countryInfo.removeChild(oldAthlete);
+  }
+  var athlete = document.createElement("div");
+  athlete.id = "best-athlete";
+  athlete.classList.add("country-stats");
+  athlete.style.marginTop = "400px";
+  athlete.style.backgroundColor = "red";
+  
+  // Add "Best Athlete" text above the emojis
+  var athleteText = document.createElement("h1");
+  athleteText.textContent = "Most decorated athlete";
+  athleteText.style.fontSize = "30px";
+  athlete.appendChild(athleteText)
+
+  // Fetch best athlete data
+  fetchBestAthleteData(countryCodeISO3, countryName).then(function(result) {
+    if (result !== null) {
+      // Create containers for the athlete's name, sport, and medals
+
+      // Create container to the left of textual description for the athlete's image if available
+      var athleteContainer = document.createElement("div");
+      athleteContainer.style.display = "flex";
+      athleteContainer.style.alignItems = "center";
+      athleteContainer.style.margin = "20px";
+      athleteContainer.style.justifyContent = "center"; // Add this line to center the container horizontally
+
+      // Create container for the athlete's image
+      var athleteImageContainer = document.createElement("div");
+      athleteImageContainer.style.marginRight = "20px";
+      
+      var img_path = `../../data/image_athletes/${result.name_lower}.jpg`;
+
+  
+      if (img_path !== null) {
+        // Check if the image file exists
+        fetch(img_path)
+          .then(function(response) {
+        if (response.ok) {
+          var athleteImage = document.createElement("img");
+          athleteImage.src = `../../data/image_athletes/${result.name_lower}.jpg`;
+          athleteImage.alt = `${result.name} image`;
+          athleteImage.width = 150;
+          athleteImage.height = 150;
+          athleteImage.style.borderRadius = "50%";  
+          console.log(athleteImage.src);
+          athleteImageContainer.appendChild(athleteImage);
+          athleteContainer.insertBefore(athleteImageContainer, athleteInfoContainer); // Insert the image container before the info container
+        }
+          })
+          .catch(function(error) {
+        console.log('Error:', error);
+          });
+      }
+      // Create container for the athlete's name, sport, and medals
+      var athleteInfoContainer = document.createElement("div");
+      athleteInfoContainer.style.display = "flex";
+      athleteInfoContainer.style.flexDirection = "column";
+
+      // Create container for the athlete's name
+      var athleteName = document.createElement("h1");
+      athleteName.textContent = result.name;
+      athleteName.style.fontSize = "30px";
+      athleteInfoContainer.appendChild(athleteName);
+
+      // Create container for the athlete's sport
+      var athleteSport = document.createElement("h2");
+      athleteSport.textContent = result.sport;
+      athleteSport.style.fontSize = "20px";
+      athleteInfoContainer.appendChild(athleteSport);
+
+      // Create container for the athlete's medals
+      var athleteMedals = document.createElement("h2");
+      athleteMedals.textContent = result.medals + " medals";
+      athleteMedals.style.fontSize = "20px";
+      athleteInfoContainer.appendChild(athleteMedals);
+
+      athleteContainer.appendChild(athleteInfoContainer);
+      athlete.appendChild(athleteContainer);
+    }
+    else {
+      // Display message if no data is found
+      var noData = document.createElement("h2");
+      const season = window.getOlympicSeason();
+      noData.textContent = "No athlete has won any medals in the " + season + " Olympics for this country.";
+      athlete.appendChild(noData);
+      console.log("No data found");
+    }
+  }).catch(function(error) {
+    console.log('Error:', error);
+  });
+  // Inserting athlete after existing elements in countryInfo
+  countryInfo.appendChild(athlete);
 }
 
 
@@ -605,6 +715,32 @@ async function fetchMedalData(countryCodeISO3,country_name) {
   }
 }
 
+async function fetchBestAthleteData(countryCodeISO3, country_name) {
+  try {
+    const data = await d3.csvParse(await (await fetch('../../data/olympic_top_athlete_per_country.csv')).text());
+    const season = window.getOlympicSeason();
+    console.log("Season:", season);
+    console.log("Country code:", countryCodeISO3);
+    const athleteData = data.filter(d => d.game_season === season && (d.country_3_letter_code === countryCodeISO3 || d.country_name === country_name));
+
+    if (athleteData.length === 0) {
+      console.log("No athlete found for the country with code", countryCodeISO3);
+      return null;
+    }
+    var bestAthlete = athleteData[0];
+    return {
+      name: bestAthlete.athlete_full_name, 
+      sport: bestAthlete.discipline_title, 
+      medals: bestAthlete.num_medals, 
+      name_lower: bestAthlete.athlete_full_name_lower
+    };
+  } 
+  catch (error) {
+    console.error('Error:', error);
+    return null;
+  }
+}
+
 
 // [ ] -------------------------------- END CREATE COUNTRY INFO PANEL ----------------------------------- //
 
@@ -614,8 +750,10 @@ switchElement.addEventListener('change', function() {
   if (newSeason !== currentSeason && currentCountryISO3 !== null) {
     currentSeason = newSeason;
     console.log("Season changed to", currentSeason);
-    console.log("Current country:", currentCountryISO3);
+    console.log("Current country:", currentCountryISO3);  
     // Update the medals
     displayMedals(currentCountryISO3,current_country_name);
+    // Update the best athlete
+    displayBestAthlete(currentCountryISO3, current_country_name);
   }
 });
