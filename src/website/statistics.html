@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/statistics.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/switch.css">
     <link rel="stylesheet" href="../test/test.css">
     <!-- Load Plotly.js -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -21,18 +22,19 @@
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
         <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" id="season-switch" !checked>
             <span class="slider round"></span>
         </label>
     </div>
     <div class="content-block">
         <h1>Some Statistics</h1>
-        <p>There are relevant statistics visualization</p>
+        <p>Here are some statistics about the Olympics.</p>
     </div>
-    <!-- Placeholder for Plotly chart -->
-    <div id="myDiv"></div>
+    <div id="myDiv">
+        <div id="chart"></div>
+    </div>
+    <script type="text/javascript" src="./js/switch.js"></script>
     <script src="./js/statistics.js"></script>
-    <script src="./js/switch.js"></script>
 </body>
 </html>
 
