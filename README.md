@@ -42,7 +42,7 @@ Our project introduces a novel approach that sets it apart from other related wo
 
 **10% of the final grade**
 
-[Website for Milestone 2](https://com-480-data-visualization.github.io/team_slo)
+[Website for Milestone 2](https://com-480-data-visualization.github.io/team_slo) \\
 [Link to the report](./documents/data_visualization_m2_report.pdf)
 
 ## Milestone 3 (31st May, 5pm)
