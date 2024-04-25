@@ -1,6 +1,13 @@
 #world-map-container {
   height: calc(80vh - 40px);
   overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #2A2C39;
+  color: white;
 }
 
 #map-holder {

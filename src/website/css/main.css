@@ -42,3 +42,27 @@ body {
   background-color: #04AA6D;
   color: white;
 }
+
+#title {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Olympic_rings_without_rims.svg);
+  background-repeat:  no-repeat;
+  background-position: center 120px;
+  background-size: 120px;
+}
+.center-text {
+  text-align: center;
+
+}
+
+#todo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 20px;
+  text-align: justify;
+}
