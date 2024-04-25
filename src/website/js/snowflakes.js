@@ -6,11 +6,11 @@
 
   /Description:
   /This script is responsible for the snowflake animation when slider is toggled.
-*/ 
+*/
 
 document.addEventListener("DOMContentLoaded", function () {
     let intervalId = null;
-  
+
     // Function to create snowflakes
     function createSnowflakes() {
         const snowflake = document.createElement("div");
@@ -18,20 +18,20 @@ document.addEventListener("DOMContentLoaded", function () {
         snowflake.style.left = `${Math.random() * 100}vw`;
         snowflake.style.animationDuration = `${3 + Math.random() * 5}s`;
         snowflake.style.animationDelay = `${Math.random() * 2}s`;
-        
+
         snowflake.textContent = "❄️";
-  
+
         document.body.appendChild(snowflake);
 
         snowflake.addEventListener("animationend", () => {
             snowflake.remove();
         });
     }
-  
+
     function stopSnowflakeAnimation() {
         clearInterval(intervalId);
         intervalId = null;
-        
+
         const snowflakes = document.querySelectorAll('.snowflake');
         snowflakes.forEach(snowflake => {
             snowflake.style.transition = 'opacity 1s ease-out';
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     }
-  
+
     var checkbox = document.querySelector('input[type="checkbox"]');
     checkbox.addEventListener('change', function () {
         if (checkbox.checked) {
@@ -52,5 +52,4 @@ document.addEventListener("DOMContentLoaded", function () {
             stopSnowflakeAnimation();
         }
     });
-  });
-  
+});

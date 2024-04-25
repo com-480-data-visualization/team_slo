@@ -6,7 +6,7 @@
 
   /Description:
   /This script is responsible for the world map animation.
-*/ 
+*/
 
 //* ------------------------------ CONSTANTS ---------------------------------------- //
 
@@ -17,7 +17,7 @@ const dataPath = '../../data/world_map.json'
 //* ------------------------------ VARIABLES ---------------------------------------- // 
 const w = 3000; // width of the map
 const h = 1250; // height of the map
-  
+
 var minZoom;
 var maxZoom;
 
@@ -33,11 +33,11 @@ var projection = d3
   .center([0, 15]) //center map
   .scale([w / (2 * Math.PI)])
   .translate([w / 2, h / 2])
-;
+  ;
 
 var path = d3
-        .geoPath()
-        .projection(projection);
+  .geoPath()
+  .projection(projection);
 
 //* ----------------------------- END VARIABLES ------------------------------------ // 
 
@@ -49,19 +49,19 @@ function zoomed() {
   var translate = d3
     .event
     .transform
-  ;
+    ;
   countriesGroup
-    .attr("transform","translate(" + [translate.x, translate.y] + ")scale(" + translate.k + ")")
-  ;
+    .attr("transform", "translate(" + [translate.x, translate.y] + ")scale(" + translate.k + ")")
+    ;
 }
 
 function unZoomed() {
   var translate = d3
     .zoomIdentity
-  ;
+    ;
   countriesGroup
-    .attr("transform","translate(" + [translate.x, t.y] + ")scale(" + translate.k + ")")
-  ;
+    .attr("transform", "translate(" + [translate.x, t.y] + ")scale(" + translate.k + ")")
+    ;
 }
 
 function initiateZoom() {
@@ -70,7 +70,7 @@ function initiateZoom() {
   zoom
     .scaleExtent([minZoom, maxZoom])
     .translateExtent([[0, 0], [w, h]])
-  ;
+    ;
 
   center_X = ($("#map-holder").width() - minZoom * w) / 2;
   center_Y = ($("#map-holder").height() - minZoom * h) / 2;
@@ -81,11 +81,11 @@ function initiateZoom() {
 
 function boxZoom(box, centroid, paddingPercentage) {
   const [minPoint, maxPoint] = box;
-  
+
   zoomWidth = Math.abs(minPoint[0] - maxPoint[0]);
   zoomHeight = Math.abs(minPoint[1] - maxPoint[1]);
 
-  const [midX,midY] = centroid
+  const [midX, midY] = centroid
 
   zoomWidth = zoomWidth * (1 + paddingPercentage / 100);
   zoomHeight = zoomHeight * (1 + paddingPercentage / 100);
@@ -107,7 +107,7 @@ function boxZoom(box, centroid, paddingPercentage) {
 
   let translateX = Math.min(0, svgWidth / 2 - offsetMidX);
   let translateY = Math.min(0, svgHeight / 2 - offsetMidY);
-  
+
   translateX = Math.max(svgWidth - w * zoomFactor, translateX);
   translateY = Math.max(svgHeight - h * zoomFactor, translateY);
 
@@ -122,28 +122,28 @@ function boxZoom(box, centroid, paddingPercentage) {
 
 function boxUnZoom() {
   boxZoom([[0, 0], [w, h]], [w / 2, h / 2], 0);
-  }
+}
 
 // [ ] --------------------------- END ZOOM FUNCTIONS ----------------------------------- //
 
 // [ ] ---------------------------- TEXT BOX FUNCTIONS --------------------------------- //
 function getTextBox(selection) {
-    selection
-      .each(function(d) {
-        d.bbox = this
-          .getBBox();
-        })
+  selection
+    .each(function (d) {
+      d.bbox = this
+        .getBBox();
+    })
     ;
-  }
+}
 
-function addTextBox(labels){
+function addTextBox(labels) {
   labels
     .append("text")
     .attr("class", "countryName")
     .style("text-anchor", "middle")
     .attr("dx", 0)
     .attr("dy", 0)
-    .text(function(d) {
+    .text(function (d) {
       return d.properties.name;
     })
     .call(getTextBox);
@@ -151,13 +151,13 @@ function addTextBox(labels){
   labels
     .insert("rect", "text")
     .attr("class", "countryLabelBg")
-    .attr("transform", function(d) {
+    .attr("transform", function (d) {
       return "translate(" + (d.bbox.x - 2) + "," + d.bbox.y + ")";
     })
-    .attr("width", function(d) {
+    .attr("width", function (d) {
       return d.bbox.width + 4;
     })
-    .attr("height", function(d) {
+    .attr("height", function (d) {
       return d.bbox.height;
     });
 }
@@ -180,33 +180,33 @@ function addBackground(countriesGroup) {
 // [ ] ----------------------- CREATE COUNTRIES FUNCTIONS ----------------------------- //
 
 function createCountries(json, path, countriesGroup) {
-    countries = countriesGroup
-      .selectAll("path")
-      .data(json.features)
-      .enter()
-      .append("path")
-      .attr("d", path)
-      .attr("id", function(d, i) {
-        return "countryName" + d.properties.iso_a3;
-      })
-      .attr("class", "country")
-      .each(function() {
-          this.zoomed = false;
-      })
-      .call(createCountryActions);
-  }
+  countries = countriesGroup
+    .selectAll("path")
+    .data(json.features)
+    .enter()
+    .append("path")
+    .attr("d", path)
+    .attr("id", function (d, i) {
+      return "countryName" + d.properties.iso_a3;
+    })
+    .attr("class", "country")
+    .each(function () {
+      this.zoomed = false;
+    })
+    .call(createCountryActions);
+}
 
-function createCountryActions(countries){
+function createCountryActions(countries) {
   countries
-    .on("mouseover", function(d, i) {
+    .on("mouseover", function (d, i) {
       d3.select("#countryLabel" + d.properties.iso_a3).style("display", "block");
       d3.select(this).classed("country-over", true);
     })
-    .on("mouseout", function(d, i) {
-        d3.select("#countryLabel" + d.properties.iso_a3).style("display", "none");
-        if(!this.zoomed){
-          d3.select(this).classed("country-over", false);
-        }
+    .on("mouseout", function (d, i) {
+      d3.select("#countryLabel" + d.properties.iso_a3).style("display", "none");
+      if (!this.zoomed) {
+        d3.select(this).classed("country-over", false);
+      }
     })
     .on("click", clickCountry);
 }
@@ -220,96 +220,96 @@ function clickCountry(d, i) {
   d3.selectAll(".country").classed("country-over", false);
   d3.select(this).classed("country-selected", true);
   if (!isCountryZoomed) {
-      // reduce width of the map to 50%
-      displayCountryInfo(d.properties.name, d.properties.iso_a3);
-      // resize the width of the svg
-      // console.log(mapWidth);
-      svg.attr("width", $("#map-holder").width());
-      boxZoom(path.bounds(d), [path.centroid(d)[0], path.centroid(d)[1]], 20);
-      // put all other countries to false
-      d3.selectAll(".country").each(function() {
-          this.zoomed = false;
-      });
-      clickedCountry.zoomed = true;
+    // reduce width of the map to 50%
+    displayCountryInfo(d.properties.name, d.properties.iso_a3);
+    // resize the width of the svg
+    // console.log(mapWidth);
+    svg.attr("width", $("#map-holder").width());
+    boxZoom(path.bounds(d), [path.centroid(d)[0], path.centroid(d)[1]], 20);
+    // put all other countries to false
+    d3.selectAll(".country").each(function () {
+      this.zoomed = false;
+    });
+    clickedCountry.zoomed = true;
   } else {
-      hideCountryInfo();
-      svg.attr("width", $("#map-holder").width());
-      boxUnZoom();
-      d3.selectAll(".country").each(function() {
-        this.zoomed = false;
-      });
-      d3.selectAll(".country").classed("country-selected", false)
-      d3.selectAll(".country").classed("country-over", false);
+    hideCountryInfo();
+    svg.attr("width", $("#map-holder").width());
+    boxUnZoom();
+    d3.selectAll(".country").each(function () {
+      this.zoomed = false;
+    });
+    d3.selectAll(".country").classed("country-selected", false)
+    d3.selectAll(".country").classed("country-over", false);
   }
 }
 
 // [ ] ----------------------- END CREATE COUNTRIES FUNCTIONS ----------------------------- //
 
 // [ ] ----------------------- CREATE COUNTRY LABELS FUNCTIONS ----------------------------- //
-function createCountryLabels(json, path, countriesGroup){
+function createCountryLabels(json, path, countriesGroup) {
   countryLabels = countriesGroup
-  .selectAll("g")
-  .data(json.features)
-  .enter()
-  .append("g")
-  .attr("class", "countryLabel")
-  .attr("id", function(d) {
-    return "countryLabel" + d.properties.iso_a3;
-  })
-  .attr("transform", function(d) {
-    return (
-      "translate(" + path.centroid(d)[0] + "," + path.centroid(d)[1] + ")"
-    );
-  })
-  .each(function() {
+    .selectAll("g")
+    .data(json.features)
+    .enter()
+    .append("g")
+    .attr("class", "countryLabel")
+    .attr("id", function (d) {
+      return "countryLabel" + d.properties.iso_a3;
+    })
+    .attr("transform", function (d) {
+      return (
+        "translate(" + path.centroid(d)[0] + "," + path.centroid(d)[1] + ")"
+      );
+    })
+    .each(function () {
       this.zoomed = true;
-  })
-  .call(createLabelActions)
-  .call(addTextBox);
+    })
+    .call(createLabelActions)
+    .call(addTextBox);
 }
 
-function createLabelActions(labels){
+function createLabelActions(labels) {
   labels
-    .on("mouseover", function(d, i) {
+    .on("mouseover", function (d, i) {
       d3.select(this).style("display", "block");
       d3.select("#countryName" + d.properties.iso_a3).classed("country-over", true);
     })
-    .on("mouseout", function(d, i) {
-        d3.select(this).style("display", "none");
-        d3.select("#countryName" + d.properties.iso_a3).classed("country-over", false);
+    .on("mouseout", function (d, i) {
+      d3.select(this).style("display", "none");
+      d3.select("#countryName" + d.properties.iso_a3).classed("country-over", false);
     })
     .on("click", clickLabel);
 }
 
 function clickLabel(d, i) {
-    var clickedCountry = this;
-    var isCountryZoomed = clickedCountry.zoomed;
-    current_country_name = d.properties.name;
-    currentCountryISO3 = d.properties.iso_a3;
-    d3.selectAll(".country").classed("country-selected", false);
-    d3.select("#countryName" + d.properties.iso_a3).classed("country-selected", true);
-    currentCountryISO3 = d.properties.iso_a3;
-    if (!isCountryZoomed) {
-      // reduce width of the map to 50%
-      displayCountryInfo(d.properties.name, d.properties.iso_a3);
-      // resize the width of the svg
-      // console.log(mapWidth);
-      svg.attr("width", $("#map-holder").width());
-      boxZoom(path.bounds(d), [path.centroid(d)[0], path.centroid(d)[1]], 20);
-      // put all other countries to false
-      d3.selectAll(".countryLabel").each(function() {
-          this.zoomed = false;
-      });
-      clickedCountry.zoomed = true;
+  var clickedCountry = this;
+  var isCountryZoomed = clickedCountry.zoomed;
+  current_country_name = d.properties.name;
+  currentCountryISO3 = d.properties.iso_a3;
+  d3.selectAll(".country").classed("country-selected", false);
+  d3.select("#countryName" + d.properties.iso_a3).classed("country-selected", true);
+  currentCountryISO3 = d.properties.iso_a3;
+  if (!isCountryZoomed) {
+    // reduce width of the map to 50%
+    displayCountryInfo(d.properties.name, d.properties.iso_a3);
+    // resize the width of the svg
+    // console.log(mapWidth);
+    svg.attr("width", $("#map-holder").width());
+    boxZoom(path.bounds(d), [path.centroid(d)[0], path.centroid(d)[1]], 20);
+    // put all other countries to false
+    d3.selectAll(".countryLabel").each(function () {
+      this.zoomed = false;
+    });
+    clickedCountry.zoomed = true;
   } else {
-      hideCountryInfo();
-      svg.attr("width", $("#map-holder").width());
-      boxUnZoom();
-      d3.selectAll(".countryLabel").each(function() {
-        this.zoomed = false;
-      });
-      d3.selectAll(".country").classed("country-selected", false)
-      
+    hideCountryInfo();
+    svg.attr("width", $("#map-holder").width());
+    boxUnZoom();
+    d3.selectAll(".countryLabel").each(function () {
+      this.zoomed = false;
+    });
+    d3.selectAll(".country").classed("country-selected", false)
+
   }
 }
 
@@ -329,12 +329,12 @@ var unZoom = d3
   .on("zoom", unZoomed);
 
 // on window resize
-$(window).resize(function() {
+$(window).resize(function () {
   // Resize SVG
   svg
     .attr("width", $("#map-holder").width())
     .attr("height", $("#map-holder").height())
-  ;
+    ;
   initiateZoom();
 });
 //* ----------------------------- END OBJECTS -------------------------------------- //
@@ -343,15 +343,15 @@ $(window).resize(function() {
 
 // create an SVG
 var svg = d3
-.select("#map-holder")
-.append("svg")
-.attr("width", $("#map-holder").width())
-.attr("height", $("#map-holder").height())
-.call(zoom);
+  .select("#map-holder")
+  .append("svg")
+  .attr("width", $("#map-holder").width())
+  .attr("height", $("#map-holder").height())
+  .call(zoom);
 
 // get map data
-d3.json(dataPath, 
-  function(json) {
+d3.json(dataPath,
+  function (json) {
     //Bind data and create one path per GeoJSON feature
     countriesGroup = svg.append("g").attr("id", "map")
 
@@ -387,9 +387,9 @@ function displayCountryInfo(country, countryCodeISO3) {
   flag = getFlag(countryCodeISO3);
 
 
-  flag.then(function(result) {
-    if (result !== null) { 
-      countryFlagContainer.appendChild(result); 
+  flag.then(function (result) {
+    if (result !== null) {
+      countryFlagContainer.appendChild(result);
     }
     // add country name next to the flag
     var countryName = document.createElement("h1");
@@ -404,7 +404,7 @@ function displayCountryInfo(country, countryCodeISO3) {
 
   // display medals below the flag
   displayMedals(countryCodeISO3, country);
- 
+
   // display best athlete below the medals
   displayBestAthlete(countryCodeISO3, country);
 }
@@ -419,7 +419,7 @@ function hideCountryInfo() {
   map.style.width = "100%";
   // Reduce width of country info
   countryInfo.style.width = "0%";
-  
+
   // console.log($("#map-holder").width());
   // Clear country info
   countryInfo.innerHTML = "";
@@ -435,7 +435,7 @@ async function getFlag(countryCodeISO3) {
     const country = countries.find(country => country.cca3 === countryCodeISO3);
 
     if (!country) {
-        throw new Error('Country not found');
+      throw new Error('Country not found');
     }
     // Get country code
     const countryCode = country.cca2;
@@ -474,13 +474,13 @@ function displayMedals(countryCodeISO3, country_name) {
   }
   var medals = document.createElement("div");
   medals.id = "medals";
-  console.log("medals:",medals);
+  console.log("medals:", medals);
   medals.classList.add("country-stats");
   medals.style.marginTop = "100px";
   medals.style.backgroundColor = "darkblue";
-  
+
   var medalsFontSize = "50px";
-  
+
   // Add "Medals" text above the emojis
   var medalsText = document.createElement("h2");
   medalsText.textContent = "Medals";
@@ -488,13 +488,13 @@ function displayMedals(countryCodeISO3, country_name) {
   medals.appendChild(medalsText)
 
   var nbGold = 0, nbSilver = 0, nbBronze = 0;
-  fetchMedalData(countryCodeISO3, country_name).then(function(result) {
+  fetchMedalData(countryCodeISO3, country_name).then(function (result) {
     if (result !== null) {
       nbGold = result.goldMedal;
       nbSilver = result.silverMedal;
       nbBronze = result.bronzeMedal;
       console.log("Medals:", nbGold, nbSilver, nbBronze);
-        // Create containers for each medal and its counter
+      // Create containers for each medal and its counter
       var goldContainer = document.createElement("div");
       goldContainer.style.display = "inline-block";
       goldContainer.style.margin = "20px";
@@ -542,7 +542,7 @@ function displayMedals(countryCodeISO3, country_name) {
       medals.appendChild(silverContainer);
       medals.appendChild(bronzeContainer);
     }
-    else {  
+    else {
       // Display message if no data is found
       var noData = document.createElement("h2");
       noData.textContent = "Oops! This country never won any medals :(";
@@ -552,7 +552,7 @@ function displayMedals(countryCodeISO3, country_name) {
       medals.removeChild(bronzeContainer);
       console.log("No data found");
     }
-  }).catch(function(error) {
+  }).catch(function (error) {
     console.log('Error:', error);
   });
   // Inserting medals after existing elements in countryInfo
@@ -571,7 +571,7 @@ function animateCounter(counterElement, finalValue, duration) {
   var stepTime = Math.abs(Math.floor(duration / finalValue));
   var obj = counterElement;
   var current = start;
-  var timer = setInterval(function() {
+  var timer = setInterval(function () {
     current += 1;
     obj.textContent = current;
     if (current >= finalValue) {
@@ -592,7 +592,7 @@ function displayBestAthlete(countryCodeISO3, countryName) {
   athlete.classList.add("country-stats");
   athlete.style.marginTop = "400px";
   athlete.style.backgroundColor = "red";
-  
+
   // Add "Best Athlete" text above the emojis
   var athleteText = document.createElement("h1");
   athleteText.textContent = "Most decorated athlete";
@@ -600,7 +600,7 @@ function displayBestAthlete(countryCodeISO3, countryName) {
   athlete.appendChild(athleteText)
 
   // Fetch best athlete data
-  fetchBestAthleteData(countryCodeISO3, countryName).then(function(result) {
+  fetchBestAthleteData(countryCodeISO3, countryName).then(function (result) {
     if (result !== null) {
       // Create containers for the athlete's name, sport, and medals
 
@@ -614,28 +614,28 @@ function displayBestAthlete(countryCodeISO3, countryName) {
       // Create container for the athlete's image
       var athleteImageContainer = document.createElement("div");
       athleteImageContainer.style.marginRight = "20px";
-      
+
       var img_path = `../../data/image_athletes/${result.name_lower}.jpg`;
 
-  
+
       if (img_path !== null) {
         // Check if the image file exists
         fetch(img_path)
-          .then(function(response) {
-        if (response.ok) {
-          var athleteImage = document.createElement("img");
-          athleteImage.src = `../../data/image_athletes/${result.name_lower}.jpg`;
-          athleteImage.alt = `${result.name} image`;
-          athleteImage.width = 150;
-          athleteImage.height = 150;
-          athleteImage.style.borderRadius = "50%";  
-          console.log(athleteImage.src);
-          athleteImageContainer.appendChild(athleteImage);
-          athleteContainer.insertBefore(athleteImageContainer, athleteInfoContainer); // Insert the image container before the info container
-        }
+          .then(function (response) {
+            if (response.ok) {
+              var athleteImage = document.createElement("img");
+              athleteImage.src = `../../data/image_athletes/${result.name_lower}.jpg`;
+              athleteImage.alt = `${result.name} image`;
+              athleteImage.width = 150;
+              athleteImage.height = 150;
+              athleteImage.style.borderRadius = "50%";
+              console.log(athleteImage.src);
+              athleteImageContainer.appendChild(athleteImage);
+              athleteContainer.insertBefore(athleteImageContainer, athleteInfoContainer); // Insert the image container before the info container
+            }
           })
-          .catch(function(error) {
-        console.log('Error:', error);
+          .catch(function (error) {
+            console.log('Error:', error);
           });
       }
       // Create container for the athlete's name, sport, and medals
@@ -672,7 +672,7 @@ function displayBestAthlete(countryCodeISO3, countryName) {
       athlete.appendChild(noData);
       console.log("No data found");
     }
-  }).catch(function(error) {
+  }).catch(function (error) {
     console.log('Error:', error);
   });
   // Inserting athlete after existing elements in countryInfo
@@ -680,7 +680,7 @@ function displayBestAthlete(countryCodeISO3, countryName) {
 }
 
 
-async function fetchMedalData(countryCodeISO3,country_name) {
+async function fetchMedalData(countryCodeISO3, country_name) {
   try {
     const data = await d3.csvParse(await (await fetch('../../data/olympic_medals_processed.csv')).text());
     const season = window.getOlympicSeason();
@@ -701,8 +701,8 @@ async function fetchMedalData(countryCodeISO3,country_name) {
       // Get the total number of bronze medals
       bronzeMedal = parseInt(countryData[0].BRONZE);
     }
-    return {goldMedal, silverMedal, bronzeMedal};
-  } 
+    return { goldMedal, silverMedal, bronzeMedal };
+  }
   catch (error) {
     console.error('Error:', error);
     return null;
@@ -723,12 +723,12 @@ async function fetchBestAthleteData(countryCodeISO3, country_name) {
     }
     var bestAthlete = athleteData[0];
     return {
-      name: bestAthlete.athlete_full_name, 
-      sport: bestAthlete.discipline_title, 
-      medals: bestAthlete.num_medals, 
+      name: bestAthlete.athlete_full_name,
+      sport: bestAthlete.discipline_title,
+      medals: bestAthlete.num_medals,
       name_lower: bestAthlete.athlete_full_name_lower
     };
-  } 
+  }
   catch (error) {
     console.error('Error:', error);
     return null;
@@ -738,15 +738,15 @@ async function fetchBestAthleteData(countryCodeISO3, country_name) {
 
 // [ ] -------------------------------- END CREATE COUNTRY INFO PANEL ----------------------------------- //
 
-switchElement.addEventListener('change', function() {
+switchElement.addEventListener('change', function () {
   var newSeason = switchElement.checked ? 'Winter' : 'Summer';
   console.log(newSeason);
   if (newSeason !== currentSeason && currentCountryISO3 !== null) {
     currentSeason = newSeason;
     console.log("Season changed to", currentSeason);
-    console.log("Current country:", currentCountryISO3);  
+    console.log("Current country:", currentCountryISO3);
     // Update the medals
-    displayMedals(currentCountryISO3,current_country_name);
+    displayMedals(currentCountryISO3, current_country_name);
     // Update the best athlete
     displayBestAthlete(currentCountryISO3, current_country_name);
   }

@@ -6,7 +6,7 @@
 
   /Description:
   /This script is responsible for the switch that changes the Olympic season.
-*/ 
+*/
 
 
 function whenDocumentLoaded(action) {
@@ -23,7 +23,7 @@ whenDocumentLoaded(function () {
   var checkbox = document.querySelector('input[type="checkbox"]');
   var OlympicSeason = 'Summer';
 
-  window.getOlympicSeason = function() {
+  window.getOlympicSeason = function () {
     // Return the current Olympic season (Summer or Winter)
     return OlympicSeason;
   }
