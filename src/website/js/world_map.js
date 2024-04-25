@@ -1,17 +1,27 @@
+/* 
+  /Ecole Polytechnique Fédérale de Lausanne
+  /Course: COM-480: Data Visualization
+  /Project: Olympic History Data Visualization
+  /Students: Vincent Roduit, Yannis Laaroussi, Fabio Palmisano
+
+  /Description:
+  /This script is responsible for the world map animation.
+*/ 
+
 //* ------------------------------ CONSTANTS ---------------------------------------- //
 
-let dataPath = '../../data/world_map.json'
+const dataPath = '../../data/world_map.json'
 
 //* ------------------------------ END CONSTANTS ------------------------------------ //
 
 //* ------------------------------ VARIABLES ---------------------------------------- // 
-w = 3000; // width of the map
-h = 1250; // height of the map
+const w = 3000; // width of the map
+const h = 1250; // height of the map
   
 var minZoom;
 var maxZoom;
-var zoomBool = false; // Boolean to check if the map is zoomed or not
 
+// This variables check the selected country and season
 var currentCountryISO3 = null;
 var currentSeason = null;
 var current_country_name = null;
@@ -20,9 +30,9 @@ var switchElement = document.getElementById('season-switch');
 
 var projection = d3
   .geoEquirectangular()
-  .center([0, 15]) // set centre to further North as we are cropping more off bottom of map
-  .scale([w / (2 * Math.PI)]) // scale to fit group width
-  .translate([w / 2, h / 2]) // ensure centered in group
+  .center([0, 15]) //center map
+  .scale([w / (2 * Math.PI)])
+  .translate([w / 2, h / 2])
 ;
 
 var path = d3
@@ -31,97 +41,92 @@ var path = d3
 
 //* ----------------------------- END VARIABLES ------------------------------------ // 
 
+
 //* ------------------------------ FUNCTIONS ---------------------------------------- //
 
 //[ ] --------------------------- ZOOM FUNCTIONS ----------------------------------- //
 function zoomed() {
-  // This function is called when the map is zoomed
-  t = d3
+  var translate = d3
     .event
     .transform
   ;
   countriesGroup
-    .attr("transform","translate(" + [t.x, t.y] + ")scale(" + t.k + ")")
+    .attr("transform","translate(" + [translate.x, translate.y] + ")scale(" + translate.k + ")")
   ;
 }
 
 function unZoomed() {
-  // This function is called when the map is unzoomed
-  t = d3
+  var translate = d3
     .zoomIdentity
   ;
   countriesGroup
-    .attr("transform","translate(" + [t.x, t.y] + ")scale(" + t.k + ")")
+    .attr("transform","translate(" + [translate.x, t.y] + ")scale(" + translate.k + ")")
   ;
 }
 
-// Function that calculates zoom/pan limits and sets zoom to default value 
 function initiateZoom() {
-  // Define a "minzoom" whereby the "Countries" is as small possible without leaving white space at top/bottom or sides
   minZoom = Math.max($("#map-holder").width() / w, $("#map-holder").height() / h);
-  // set max zoom to a suitable factor of this value
   maxZoom = 20 * minZoom;
-  // set extent of zoom to chosen values
-  // set translate extent so that panning can't cause map to move out of viewport
   zoom
     .scaleExtent([minZoom, maxZoom])
     .translateExtent([[0, 0], [w, h]])
   ;
-  // define X and Y offset for centre of map to be shown in centre of holder
-  midX = ($("#map-holder").width() - minZoom * w) / 2;
-  midY = ($("#map-holder").height() - minZoom * h) / 2;
-  // change zoom transform to min zoom and centre offsets
-  svg.call(zoom.transform, d3.zoomIdentity.translate(midX, midY).scale(minZoom));
+
+  center_X = ($("#map-holder").width() - minZoom * w) / 2;
+  center_Y = ($("#map-holder").height() - minZoom * h) / 2;
+
+  svg.call(zoom.transform, d3.zoomIdentity.translate(center_X, center_Y).scale(minZoom));
 }
 
-// zoom to show a bounding box, with optional additional padding as percentage of box size
-function boxZoom(box, centroid, paddingPerc) {
-  minXY = box[0];
-  maxXY = box[1];
-  // find size of map area defined
-  zoomWidth = Math.abs(minXY[0] - maxXY[0]);
-  zoomHeight = Math.abs(minXY[1] - maxXY[1]);
-  // find midpoint of map area defined
-  zoomMidX = centroid[0];
-  zoomMidY = centroid[1];
-  // increase map area to include padding
-  zoomWidth = zoomWidth * (1 + paddingPerc / 100);
-  zoomHeight = zoomHeight * (1 + paddingPerc / 100);
-  // find scale required for area to fill svg
-  maxXscale = $("svg").width() / zoomWidth;
-  maxYscale = $("svg").height() / zoomHeight;
-  zoomScale = Math.min(maxXscale, maxYscale);
-  // handle some edge cases
-  // limit to max zoom (handles tiny countries)
-  zoomScale = Math.min(zoomScale, maxZoom);
-  // limit to min zoom (handles large countries and countries that span the date line)
-  zoomScale = Math.max(zoomScale, minZoom);
-  // Find screen pixel equivalent once scaled
-  offsetX = zoomScale * zoomMidX;
-  offsetY = zoomScale * zoomMidY;
-  // Find offset to centre, making sure no gap at left or top of holder
-  dleft = Math.min(0, $("svg").width() / 2 - offsetX);
-  dtop = Math.min(0, $("svg").height() / 2 - offsetY);
-  // Make sure no gap at bottom or right of holder
-  dleft = Math.max($("svg").width() - w * zoomScale, dleft);
-  dtop = Math.max($("svg").height() - h * zoomScale, dtop);
-  // set zoom
+
+function boxZoom(box, centroid, paddingPercentage) {
+  const [minPoint, maxPoint] = box;
+  
+  zoomWidth = Math.abs(minPoint[0] - maxPoint[0]);
+  zoomHeight = Math.abs(minPoint[1] - maxPoint[1]);
+
+  const [midX,midY] = centroid
+
+  zoomWidth = zoomWidth * (1 + paddingPercentage / 100);
+  zoomHeight = zoomHeight * (1 + paddingPercentage / 100);
+
+  const svgWidth = $("svg").width();
+  const svgHeight = $("svg").height();
+
+  const scaleX = svgWidth / zoomWidth;
+  const scaleY = svgHeight / zoomHeight;
+
+  let zoomFactor = Math.min(scaleX, scaleY);
+
+  zoomFactor = Math.min(zoomFactor, maxZoom);
+
+  zoomFactor = Math.max(zoomFactor, minZoom);
+
+  const offsetMidX = zoomFactor * midX;
+  const offsetMidY = zoomFactor * midY;
+
+  let translateX = Math.min(0, svgWidth / 2 - offsetMidX);
+  let translateY = Math.min(0, svgHeight / 2 - offsetMidY);
+  
+  translateX = Math.max(svgWidth - w * zoomFactor, translateX);
+  translateY = Math.max(svgHeight - h * zoomFactor, translateY);
+
   svg
     .transition()
-    .duration(500)
+    .duration(300)
     .call(
       zoom.transform,
-      d3.zoomIdentity.translate(dleft, dtop).scale(zoomScale)
+      d3.zoomIdentity.translate(translateX, translateY).scale(zoomFactor)
     );
 }
 
 function boxUnZoom() {
-  // This function is called when the map is unzoomed. It resets the zoom to the default value
   boxZoom([[0, 0], [w, h]], [w / 2, h / 2], 0);
   }
 
 // [ ] --------------------------- END ZOOM FUNCTIONS ----------------------------------- //
 
+// [ ] ---------------------------- TEXT BOX FUNCTIONS --------------------------------- //
 function getTextBox(selection) {
     selection
       .each(function(d) {
@@ -130,6 +135,47 @@ function getTextBox(selection) {
         })
     ;
   }
+
+function addTextBox(labels){
+  labels
+    .append("text")
+    .attr("class", "countryName")
+    .style("text-anchor", "middle")
+    .attr("dx", 0)
+    .attr("dy", 0)
+    .text(function(d) {
+      return d.properties.name;
+    })
+    .call(getTextBox);
+  // add a background rectangle the same size as the text
+  labels
+    .insert("rect", "text")
+    .attr("class", "countryLabelBg")
+    .attr("transform", function(d) {
+      return "translate(" + (d.bbox.x - 2) + "," + d.bbox.y + ")";
+    })
+    .attr("width", function(d) {
+      return d.bbox.width + 4;
+    })
+    .attr("height", function(d) {
+      return d.bbox.height;
+    });
+}
+
+function addBackground(countriesGroup) {
+  // add a background rectangle
+  countriesGroup
+    .append("rect")
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("width", w)
+    .attr("height", h)
+    .attr("class", "background")
+    .on("click", boxUnZoom);
+  return countriesGroup;
+}
+
+// [ ] ---------------------------- END TEXT BOX FUNCTIONS ------------------------------- //
 
 // [ ] ----------------------- CREATE COUNTRIES FUNCTIONS ----------------------------- //
 
@@ -171,7 +217,7 @@ function clickCountry(d, i) {
   currentCountryISO3 = d.properties.iso_a3;
   current_country_name = d.properties.name;
   d3.selectAll(".country").classed("country-selected", false);
-  d3.select(this).classed("country-on", false);
+  d3.selectAll(".country").classed("country-on", false);
   d3.select(this).classed("country-selected", true);
   if (!isCountryZoomed) {
       // reduce width of the map to 50%
@@ -193,7 +239,7 @@ function clickCountry(d, i) {
         this.zoomed = false;
       });
       d3.selectAll(".country").classed("country-selected", false)
-      
+      d3.selectAll(".country").classed("country-on", false);
   }
 }
 
@@ -216,7 +262,6 @@ function createCountryLabels(json, path, countriesGroup){
     );
   })
   .each(function() {
-      // Add zoom property to each country element
       this.zoomed = true;
   })
   .call(createLabelActions)
@@ -268,50 +313,7 @@ function clickLabel(d, i) {
   }
 }
 
-
-function addTextBox(labels){
-  labels
-    .append("text")
-    .attr("class", "countryName")
-    .style("text-anchor", "middle")
-    .attr("dx", 0)
-    .attr("dy", 0)
-    .text(function(d) {
-      return d.properties.name;
-    })
-    .call(getTextBox);
-  // add a background rectangle the same size as the text
-  labels
-    .insert("rect", "text")
-    .attr("class", "countryLabelBg")
-    .attr("transform", function(d) {
-      return "translate(" + (d.bbox.x - 2) + "," + d.bbox.y + ")";
-    })
-    .attr("width", function(d) {
-      return d.bbox.width + 4;
-    })
-    .attr("height", function(d) {
-      return d.bbox.height;
-    });
-}
-
 // [ ] ----------------------- END CREATE COUNTRY LABELS FUNCTIONS ------------------------ //
-
-// [ ] -------------------------------- OTHER MAP FUNCTION --------------------------------//
-function addBackground(countriesGroup) {
-  // add a background rectangle
-  countriesGroup
-    .append("rect")
-    .attr("x", 0)
-    .attr("y", 0)
-    .attr("width", w)
-    .attr("height", h)
-    .attr("class", "background")
-    .on("click", boxUnZoom);
-  return countriesGroup;
-}
-
-// [ ] -------------------------------- END OTHER MAP FUNCTION ---------------------- //
 
 //* ----------------------------- END FUNCTIONS ------------------------------------ //
 
@@ -361,20 +363,16 @@ d3.json(dataPath,
   }
 );
 
-//* ----------------------------- CREATE COUNTRY INFO PANEL ----------------------------------- //
+//* ----------------------------- CREATE COUNTRY INFO PANEL ------------------------------- //
 
 function displayCountryInfo(country, countryCodeISO3) {
   console.log("displaying country info");
   var countryInfo = document.getElementById("country-info");
   var map = document.getElementById("map-holder");
   // Reduce width of map
-  // console.log(map.style.width);
   map.style.width = "50%";
   // Expand width of country info
   countryInfo.style.width = "50%";
-  // console.log($("#map-holder").width());
-  // Display country info
-  // console.log(country);
 
   // Clear country info
   countryInfo.innerHTML = "";
@@ -382,12 +380,8 @@ function displayCountryInfo(country, countryCodeISO3) {
   // add country name and flag in the same div
   var countryFlagContainer = document.createElement("div");
   countryFlagContainer.classList.add("country-stats");
-  // countryFlagContainer.style.position = "absolute";
-  // // countryFlagContainer.style.left = 0;
-  // countryFlagContainer.style.width = "100%";
   countryFlagContainer.style.backgroundColor = "grey";
   countryFlagContainer.style.textAlign = "center";
-  // countryFlagContainer.style.top = 0;
 
   // add flag
   flag = getFlag(countryCodeISO3);
