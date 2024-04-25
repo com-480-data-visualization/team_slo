@@ -10,33 +10,34 @@
 }
 
 svg rect {
-  fill: #2A2C39;   /* map background colour */
+  fill: #2A2C39;
 }
 
 .country{
-  fill: #d0d0d0;   /* country colour */
-  stroke: #2A2C39; /* country border colour */
-  stroke-width: 1; /* country border width */
+  fill: #d0d0d0;
+  stroke: #2A2C39; 
+  stroke-width: 1;
 }
 
-.country-on{
-  fill: #4B5358;   /* highlight colour for selected country */
+.country-over{
+  fill: #4B5358; /*Change color when mouse over*/
 }
 
 .country-selected{
-  fill: #ae4d5a;   /* highlight colour for selected country */
+  fill: #ae4d5a;   /* change colour when country selected */
+  stroke-width: 2;
 }
 
 .countryLabel{
-  display: none;   /* hide all country labels by default */
+  display: none;
 }
 
 .countryName{
-  fill: #242124;   /* country label text colour */
+  fill: #242124; 
 }
 
 .countryLabelBg{
-  fill: #d0d0d0;   /* country label background colour */
+  fill: #d0d0d0;
 }
 
 #country-info {
@@ -58,12 +59,3 @@ svg rect {
   left: 0;
   text-align: center;
 }
-
-/* #country-flag {
-  background-color: #f625d3;
-}
-
-#country-medals {
-  background-color: green;
-} */
-

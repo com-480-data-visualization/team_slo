@@ -200,12 +200,12 @@ function createCountryActions(countries){
   countries
     .on("mouseover", function(d, i) {
       d3.select("#countryLabel" + d.properties.iso_a3).style("display", "block");
-      d3.select(this).classed("country-on", true);
+      d3.select(this).classed("country-over", true);
     })
     .on("mouseout", function(d, i) {
         d3.select("#countryLabel" + d.properties.iso_a3).style("display", "none");
         if(!this.zoomed){
-          d3.select(this).classed("country-on", false);
+          d3.select(this).classed("country-over", false);
         }
     })
     .on("click", clickCountry);
@@ -217,7 +217,7 @@ function clickCountry(d, i) {
   currentCountryISO3 = d.properties.iso_a3;
   current_country_name = d.properties.name;
   d3.selectAll(".country").classed("country-selected", false);
-  d3.selectAll(".country").classed("country-on", false);
+  d3.selectAll(".country").classed("country-over", false);
   d3.select(this).classed("country-selected", true);
   if (!isCountryZoomed) {
       // reduce width of the map to 50%
@@ -239,7 +239,7 @@ function clickCountry(d, i) {
         this.zoomed = false;
       });
       d3.selectAll(".country").classed("country-selected", false)
-      d3.selectAll(".country").classed("country-on", false);
+      d3.selectAll(".country").classed("country-over", false);
   }
 }
 
@@ -272,11 +272,11 @@ function createLabelActions(labels){
   labels
     .on("mouseover", function(d, i) {
       d3.select(this).style("display", "block");
-      d3.select("#countryName" + d.properties.iso_a3).classed("country-on", true);
+      d3.select("#countryName" + d.properties.iso_a3).classed("country-over", true);
     })
     .on("mouseout", function(d, i) {
         d3.select(this).style("display", "none");
-        d3.select("#countryName" + d.properties.iso_a3).classed("country-on", false);
+        d3.select("#countryName" + d.properties.iso_a3).classed("country-over", false);
     })
     .on("click", clickLabel);
 }

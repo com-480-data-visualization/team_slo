@@ -18,13 +18,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #FFD700; /* Changed to sun color */
+  background-color: #FFD700;
   transition: .4s;
 }
 
 .slider:before {
   position: absolute;
-  content: "🌞"; /* Changed to sun emoji */
+  content: "🌞";
   height: 26px;
   width: 26px;
   left: 4px;
@@ -39,20 +39,18 @@
 }
 
 input:checked + .slider {
-  background-color: #1d92c4; /* Changed to snow color */
+  background-color: #1d92c4;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #1d92c4; /* Changed to snow color */
+  box-shadow: 0 0 1px #1d92c4; 
 }
 
-/* Changing the snow emoji when the switch is on */
 input:checked + .slider:before {
-  content: "❄️"; /* Changed to snow emoji */
+  content: "❄️"; 
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
