@@ -1,21 +1,21 @@
-/* Add a black background color to the top navigation */
+/* Base styles */
 body {
   margin: 0;
-  background-color: #ffffff;
-  font-family: 'Times New Roman', Times, serif;
+  background-color: #F8F8FF;
+  font-family: 'Inter';
   font-weight: 200;
   font-size: 17px;
 }
 
 .topnav {
-    display: flex;
-    background-color: #333;
-    font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
-    align-items: center;
-    justify-content: flex-start;
+  display: flex;
+  background-color: #333;
+  font-family: 'Inter';
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-start;
 }
-  
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -49,20 +49,61 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Olympic_rings_without_rims.svg);
-  background-repeat:  no-repeat;
+  background-repeat: no-repeat;
   background-position: center 120px;
   background-size: 120px;
 }
+
 .center-text {
   text-align: center;
-
 }
 
-#todo {
+.paragraph {
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
   font-size: 20px;
   text-align: justify;
+  position: relative;
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 600px) {
+  .topnav a {
+      padding: 12px 10px; /* Adjust padding for smaller screens */
+      font-size: 15px; /* Adjust font size for smaller screens */
+  }
+
+  #title {
+      font-size: 30px; /* Adjust font size for smaller screens */
+      background-position: center 60px;
+      background-size: 80px;
+  }
+
+  .paragraph {
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Responsive styles for medium screens (tablets) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .topnav a {
+      padding: 13px 12px; /* Adjust padding for medium screens */
+      font-size: 16px; /* Adjust font size for medium screens */
+  }
+
+  #title {
+      font-size: 40px; /* Adjust font size for medium screens */
+      background-position: center 90px;
+      background-size: 100px;
+  }
+
+  .paragraph {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 18px; /* Adjust font size for medium screens */
+  }
 }
