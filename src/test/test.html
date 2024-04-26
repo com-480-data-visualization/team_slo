@@ -1,112 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        /* CSS styles for the switch and slider */
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
-        .switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
 
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #1d92c4;
-            transition: .4s;
-            border-radius: 34px;
-        }
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
 
-        .slider:before {
-            content: "❄️";
-            position: absolute;
-            left: 4px;
-            bottom: 4px;
-            height: 26px;
-            width: 26px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 18px;
-            background-color: white;
-            transition: transform 0.4s, font-size 0.4s;
-        }
-
-        input:checked + .slider {
-            background-color: #FFD700;
-        }
-
-        input:checked + .slider:before {
-            content: "🌞";
-            transform: translateX(26px);
-        }
-    </style>
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+</style>
 </head>
-<body>
-    <!-- Switch with checkbox input and slider -->
-    <label class="switch">
-        <input type="checkbox" id="sunSwitch">
-        <span class="slider round"></span>
-    </label>
-    <label class="switch">
-        <input type="checkbox" id="sunSwitch2">
-        <span class="slider round">
-        <span class="sun-emoji" aria-label="Sun emoji">🌞</span>
-    </label>
+<body style="text-align:center">
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Function to animate the sun emoji
-            function animateSun() {
-                // Get the slider element
-                const slider = document.querySelector('.switch input:checked + .slider');
+<h2>Popup</h2>
 
-                if (slider) {
-                    // Animate the sun emoji using the slider element's ::before pseudo-element
-                    slider.style.setProperty('--sun-translate-x', '10px');
-                    slider.style.setProperty('--sun-translate-y', '10px');
-                    slider.style.setProperty('--sun-scale', '1.5');
-                    slider.style.setProperty('--sun-rotation', '45deg');
+<div class="popup" onmouseover="showPopup()" onmouseout="hidePopup()">Hover over me to show the popup!
+  <span class="popuptext" id="myPopup">A Simple Popup!</span>
+</div>
 
-                    // Apply the animation using keyframes
-                    const keyframes = [
-                        { transform: 'scale(1) translate(0, 0)', offset: 0 },
-                        { transform: 'scale(1.5) translate(10px, 10px)', offset: 0.25 },
-                        { transform: 'scale(0.8) translate(-10px, -10px)', offset: 0.5 },
-                        { transform: 'scale(1) translate(0, 0)', offset: 1 }
-                    ];
+<script>
+// When the user clicks on div, open the popup
+function showPopup() {
+  var popup = document.getElementById("myPopup");
+  popup.style.opacity = 1;
+  popup.classList.add("show");
+}
 
-                    slider.animate(keyframes, {
-                        duration: 1000,
-                        iterations: 1
-                    });
-                } else {
-                    console.error('Unable to find slider element');
-                }
-            }
+// When the user moves the mouse away from the div, hide the popup
+function hidePopup() {
+  var popup = document.getElementById("myPopup");
+  var start = null;
+  function step(timestamp) {
+    if (!start) start = timestamp;
+    var progress = timestamp - start;
+    popup.style.opacity = Math.max(1 - progress / 1000, 0);
+    if (progress < 1000) {
+      window.requestAnimationFrame(step);
+    } else {
+      popup.classList.remove("show");
+    }
+  }
+  window.requestAnimationFrame(step);
+}
+</script>
 
-            // Get the input element
-            const sunSwitch = document.getElementById('sunSwitch2');
-
-            // Add event listener to input for 'change' event
-            sunSwitch.addEventListener('change', function() {
-                if (sunSwitch.checked) {
-                    animateSun();
-                }
-            });
-        });
-    </script>
 </body>
 </html>

@@ -1,29 +1,7 @@
-/* test.css */
-body {
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important; /* Hide scrollbars */
-  background-color: #7d3737 !important; /* Black background */
+#parent #popup {
+  display: none;
 }
 
-.snowflake {
-  position: absolute;
-  top: -70px;
-  width: 10px;
-  height: 10px;
-  opacity: 0.7;
-  font-size: 3rem;
-  animation-name: fall;
-  animation-timing-function: linear;
-  animation-iteration-count: 1; /* Each snowflake falls only once */
-  transition: opacity 1s;
-}
-
-@keyframes fall {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(100vh);
-  }
+#parent:hover #popup {
+  display: block;
 }
