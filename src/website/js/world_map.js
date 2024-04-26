@@ -158,6 +158,9 @@ function createCountries(json, path, countriesGroup) {
       return "countryName" + d.properties.iso_a3;
     })
     .attr("class", "country")
+    .attr("title", function (d, i) {
+      return d.properties.name;
+    })
     .each(function () {
       this.zoomed = false;
     })
@@ -169,12 +172,19 @@ function createCountryActions(countries) {
     .on("mouseover", function (d, i) {
       d3.select("#countryLabel" + d.properties.iso_a3).style("display", "block");
       d3.select(this).classed("country-over", true);
+      d3.select(this).style("cursor", "pointer");
+      showPopup(this);
     })
     .on("mouseout", function (d, i) {
+      hidePopup(this);
       d3.select("#countryLabel" + d.properties.iso_a3).style("display", "none");
       if (!this.zoomed) {
         d3.select(this).classed("country-over", false);
       }
+    }
+    )
+    .on("mousemove", function (d, i) {
+      movePopup(d3.event);
     })
     .on("click", clickCountry);
 }
@@ -665,6 +675,8 @@ async function fetchBestAthleteData(countryCodeISO3, country_name) {
 
 // [ ] -------------------------------- END CREATE COUNTRY INFO PANEL ----------------------------------- //
 
+// [ ] ---------------------------------------- SEASON SWITCH ------------------------------------------ //
+
 switchElement.addEventListener('change', function () {
   var newSeason = switchElement.checked ? 'Winter' : 'Summer';
   console.log(newSeason);
@@ -678,3 +690,82 @@ switchElement.addEventListener('change', function () {
     displayBestAthlete(currentCountryISO3, current_country_name);
   }
 });
+
+// [ ] -------------------------------------- END SEASON SWITCH ---------------------------------------- //
+
+// [ ] -------------------------------------- POPUP WINDOW ------------------------------------------ //
+// When the user hovers over the element, show the popup
+function showPopup(e) {
+  var popup = document.getElementById("myPopup"); // Ensure popup is properly referenced
+  popup.textContent = e.getAttribute('title'); // Set the text of the popup to the title of the hovered element
+  popup.classList.add("show");
+  fadeIn(popup);
+}
+
+// When the user moves the mouse away from the element, hide the popup
+function hidePopup() {
+  var popup = document.getElementById("myPopup"); // Ensure popup is properly referenced
+  popup.classList.remove("show");
+  fadeOut(popup);
+}
+
+// When the user moves the mouse, move the popup
+// When the user moves the mouse, move the popup
+function movePopup(e) {
+  var popup = document.getElementById("myPopup"); // Ensure popup is properly referenced
+  var div = document.getElementById("world-map-container"); // Replace "yourDivId" with the id of your div
+
+  // Get the div's offset
+  var divRect = div.getBoundingClientRect();
+
+  //check if the popup is visible
+  if (!popup.classList.contains("show")) {
+    showPopup(e.target);
+  }
+  // If event exists, show and move the popup
+  if (e) {
+    // Subtract the div's offset from the cursor's position
+    var x = e.clientX - divRect.left;
+    var y = e.clientY - divRect.top;
+
+    popup.style.left = `${x - 80}px`;
+    popup.style.top = `${y + 360}px`;
+    popup.style.display = 'block';
+  } else {
+    // If event does not exist, hide the popup
+    popup.style.display = 'none';
+    popup.textContent = '';
+  }
+}
+
+
+// Fade in function
+function fadeIn(element) {
+  var op = 0.1;  // initial opacity
+  element.style.display = 'block';
+  element.style.opacity = op;
+  var timer = setInterval(function () {
+      if (op >= 1){
+          clearInterval(timer);
+      }
+      op += op * 0.1;
+      element.style.opacity = op;
+      element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+  }, 10);
+}
+
+function fadeOut(element) {
+  var op = 1;  // initial opacity
+  element.style.opacity = op;
+  var timer = setInterval(function () {
+      if (op <= 0.1){
+          clearInterval(timer);
+          element.style.display = 'none';
+      }
+      op -= op * 0.1;
+      element.style.opacity = op;
+      element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+  }, 10);
+}
+
+// [ ] -------------------------------------- END POPUP WINDOW ------------------------------------------ //
