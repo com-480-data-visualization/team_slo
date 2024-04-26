@@ -77,3 +77,4 @@ var season_actual = 'Winter';
       console.log("Season changed to", season_actual);
     }
   });
+  
