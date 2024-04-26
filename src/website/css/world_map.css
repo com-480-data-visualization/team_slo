@@ -10,11 +10,11 @@
 }
 
 svg rect {
-  fill: #2A2C39;
+  fill: #050c3ea2;
 }
 
 .country{
-  fill: #d0d0d0;
+  fill: #dfdf7f;
   stroke: #2A2C39; 
   stroke-width: 1;
 }
