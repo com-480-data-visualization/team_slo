@@ -243,6 +243,15 @@ $(window).resize(function () {
     .attr("width", $("#map-holder").width())
     .attr("height", $("#map-holder").height())
     ;
+
+  if (selectedCountry !== null && selectedCountryISO3 !== null) {
+    console.log("Resizing country info");
+    displayCountryInfo(selectedCountry, selectedCountryISO3); // You need to get country and countryCodeISO3 from somewhere
+  }
+  // Resize font size of each element in the country info panel
+  
+
+
   initiateZoom();
 });
 //* ----------------------------- END OBJECTS -------------------------------------- //
@@ -284,10 +293,6 @@ function displayCountryInfo(country, countryCodeISO3) {
   map.style.width = "50%";
   countryInfo.style.width = "50%";
   
-  // // Set flexbox layout for responsive design
-  // map.style.flexGrow = "1";
-  // countryInfo.style.flexGrow = "1";
-
   // Clear country info
   countryInfo.innerHTML = "";
 
@@ -314,6 +319,7 @@ function displayCountryInfo(country, countryCodeISO3) {
     var countryName = document.createElement("h1");
     countryName.innerHTML = country;
     countryName.style.marginLeft = "10px"; // Add some space between the flag and the country name
+    countryName.style.fontSize = $(countryInfo).height() * 0.05 + "px";
 
     flagAndNameContainer.appendChild(countryName);
 
@@ -347,13 +353,13 @@ function hideCountryInfo() {
 }
 
 // Add event listener for window resize
-window.addEventListener("resize", function() {
-  console.log(selectedCountry, selectedCountryISO3);
-  if (selectedCountry !== null && selectedCountryISO3 !== null) {
-    console.log("Resizing country info");
-    displayCountryInfo(selectedCountry, selectedCountryISO3); // You need to get country and countryCodeISO3 from somewhere
-  }
-});
+// window.addEventListener("resize", function() {
+//   console.log(selectedCountry, selectedCountryISO3);
+//   if (selectedCountry !== null && selectedCountryISO3 !== null) {
+//     console.log("Resizing country info");
+//     displayCountryInfo(selectedCountry, selectedCountryISO3); // You need to get country and countryCodeISO3 from somewhere
+//   }
+// });
 
 async function getFlag(countryCodeISO3) {
   try {
@@ -379,7 +385,8 @@ async function getFlag(countryCodeISO3) {
     flagImage.src = URL.createObjectURL(flagDataURL);
     // flagImage.alt = `${countryName} flag`;
     flagImage.width = 100;
-    flagImage.height = 100;
+    var countryInfo = document.getElementById("country-info");
+    flagImage.height = $(countryInfo).height() * 0.1;
     return flagImage;
   } catch (error) {
     // console.error('Error:', error);
@@ -411,12 +418,12 @@ function displayMedals(countryCodeISO3, country_name) {
   medals.style.backgroundColor = "darkgoldenrod";
   medals.style.position = "absolute";
 
-  var medalsFontSize = "40px";
+  var medalsFontSize = $(countryInfo).height() * 0.05 + "px";
 
   // Add "Medals" text above the emojis
   var medalsText = document.createElement("h2");
   medalsText.textContent = "Medals";
-  medalsText.style.fontSize = "40px";
+  medalsText.style.fontSize = medalsFontSize;
   medals.appendChild(medalsText);
 
   var nbGold = 0,
@@ -530,10 +537,12 @@ function displayBestAthlete(countryCodeISO3, countryName) {
   athlete.style.backgroundColor = "darkred";
   athlete.style.position = "absolute";
 
+  var athleteFontSize = $(countryInfo).height() * 0.05 + "px";
+
   // Add "Best Athlete" text above the emojis
   var athleteText = document.createElement("h1");
   athleteText.textContent = "Most decorated athlete";
-  athleteText.style.fontSize = "30px";
+  athleteText.style.fontSize = athleteFontSize;
   athlete.appendChild(athleteText)
 
   // Fetch best athlete data
@@ -583,19 +592,19 @@ function displayBestAthlete(countryCodeISO3, countryName) {
       // Create container for the athlete's name
       var athleteName = document.createElement("h1");
       athleteName.textContent = result.name;
-      athleteName.style.fontSize = "30px";
+      athleteName.style.fontSize = athleteFontSize;
       athleteInfoContainer.appendChild(athleteName);
 
       // Create container for the athlete's sport
       var athleteSport = document.createElement("h2");
       athleteSport.textContent = result.sport;
-      athleteSport.style.fontSize = "20px";
+      athleteSport.style.fontSize = athleteFontSize;
       athleteInfoContainer.appendChild(athleteSport);
 
       // Create container for the athlete's medals
       var athleteMedals = document.createElement("h2");
       athleteMedals.textContent = result.medals + " medals";
-      athleteMedals.style.fontSize = "20px";
+      athleteMedals.style.fontSize = athleteFontSize;
       athleteInfoContainer.appendChild(athleteMedals);
 
       athleteContainer.appendChild(athleteInfoContainer);
