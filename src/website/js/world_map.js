@@ -703,37 +703,30 @@ switchElement.addEventListener('change', function () {
 // [ ] -------------------------------------- END SEASON SWITCH ---------------------------------------- //
 
 // [ ] -------------------------------------- POPUP WINDOW ------------------------------------------ //
-// When the user hovers over the element, show the popup
 function showPopup(e) {
-  var popup = document.getElementById("myPopup"); // Ensure popup is properly referenced
-  popup.textContent = e.getAttribute('title'); // Set the text of the popup to the title of the hovered element
+  var popup = document.getElementById("myPopup");
+  popup.textContent = e.getAttribute('title'); 
   popup.classList.add("show");
   fadeIn(popup);
 }
 
-// When the user moves the mouse away from the element, hide the popup
 function hidePopup() {
-  var popup = document.getElementById("myPopup"); // Ensure popup is properly referenced
+  var popup = document.getElementById("myPopup");
   popup.classList.remove("show");
   fadeOut(popup);
 }
 
-// When the user moves the mouse, move the popup
-// When the user moves the mouse, move the popup
 function movePopup(e) {
-  var popup = document.getElementById("myPopup"); // Ensure popup is properly referenced
-  var div = document.getElementById("world-map-container"); // Replace "yourDivId" with the id of your div
+  var popup = document.getElementById("myPopup");
+  var div = document.getElementById("world-map-container"); 
 
-  // Get the div's offset
   var divRect = div.getBoundingClientRect();
 
-  //check if the popup is visible
   if (!popup.classList.contains("show")) {
     showPopup(e.target);
   }
-  // If event exists, show and move the popup
+
   if (e) {
-    // Subtract the div's offset from the cursor's position
     var x = e.clientX - divRect.left;
     var y = e.clientY - divRect.top;
 
@@ -741,16 +734,13 @@ function movePopup(e) {
     popup.style.top = `${y + 360}px`;
     popup.style.display = 'block';
   } else {
-    // If event does not exist, hide the popup
     popup.style.display = 'none';
     popup.textContent = '';
   }
 }
 
-
-// Fade in function
 function fadeIn(element) {
-  var op = 0.1;  // initial opacity
+  var op = 0.1;
   element.style.display = 'block';
   element.style.opacity = op;
   var timer = setInterval(function () {
@@ -764,7 +754,7 @@ function fadeIn(element) {
 }
 
 function fadeOut(element) {
-  var op = 1;  // initial opacity
+  var op = 1; 
   element.style.opacity = op;
   var timer = setInterval(function () {
       if (op <= 0.1){
