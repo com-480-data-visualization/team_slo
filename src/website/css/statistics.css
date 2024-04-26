@@ -1,5 +1,5 @@
 #title-stats-img {
-    height: 30vh; /* 30% of the viewport's height */
+    height: 30vh;
     margin-bottom: 20px;
     background-image: url(https://img.olympics.com/images/image/private//f_auto/primary/its2n2ztxkvgofpf7zev);
     background-repeat: no-repeat;
@@ -9,13 +9,13 @@
 }
 
 #title-stats h1 {
-    font-size: 5vh; /* 5% of the viewport's height */
+    font-size: 5vh;
     text-align: center;
     padding-top: 0px;
 }
 
 #title-stats h2 {
-    font-size: 3vh; /* 3% of the viewport's height */
+    font-size: 3vh;
     text-align: center;
     padding-top: 0px;
 }
@@ -29,18 +29,17 @@
     border: 1px solid #000;
 }
 
-/* Responsive styles for small screens */
 @media screen and (max-width: 600px) {
     #title-stats-img {
-        height: 20vh; /* Adjust the height for smaller screens */
+        height: 20vh;
     }
 
     #title-stats h1 {
-        font-size: 4vh; /* Adjust the font size for smaller screens */
+        font-size: 4vh;
     }
 
     #title-stats h2 {
-        font-size: 2.5vh; /* Adjust the font size for smaller screens */
+        font-size: 2.5vh;
     }
 
     #treemap-viz, #wheel-viz {
@@ -50,18 +49,17 @@
     }
 }
 
-/* Responsive styles for medium screens (tablets) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     #title-stats-img {
-        height: 25vh; /* Adjust the height for medium screens */
+        height: 25vh;
     }
 
     #title-stats h1 {
-        font-size: 4.5vh; /* Adjust the font size for medium screens */
+        font-size: 4.5vh;
     }
 
     #title-stats h2 {
-        font-size: 2.8vh; /* Adjust the font size for medium screens */
+        font-size: 2.8vh;
     }
 
     #treemap-viz, #wheel-viz {
@@ -71,18 +69,17 @@
     }
 }
 
-/* Responsive styles for large screens */
 @media screen and (min-width: 1025px) {
     #title-stats-img {
-        height: 30vh; /* Keep the height as specified for large screens */
+        height: 30vh;
     }
 
     #title-stats h1 {
-        font-size: 5vh; /* Keep the font size as specified for large screens */
+        font-size: 5vh;
     }
 
     #title-stats h2 {
-        font-size: 3vh; /* Keep the font size as specified for large screens */
+        font-size: 3vh;
     }
 
     #treemap-viz, #wheel-viz {
