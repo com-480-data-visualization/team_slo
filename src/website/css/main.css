@@ -7,12 +7,16 @@ body {
 }
 
 .topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   background-color: #333;
   font-family: 'Inter';
   overflow: hidden;
   align-items: center;
   justify-content: flex-start;
+  z-index: 1000;
 }
 
 .topnav a {

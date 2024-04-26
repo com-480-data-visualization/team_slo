@@ -731,7 +731,7 @@ function movePopup(e) {
     var y = e.clientY - divRect.top;
 
     popup.style.left = `${x - 80}px`;
-    popup.style.top = `${y + 360}px`;
+    popup.style.top = `${y + 330}px`;
     popup.style.display = 'block';
   } else {
     popup.style.display = 'none';
