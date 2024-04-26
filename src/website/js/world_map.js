@@ -28,6 +28,9 @@ var current_country_name = null;
 
 var switchElement = document.getElementById('season-switch');
 
+var selectedCountry = null;
+var selectedCountryISO3 = null;
+
 var projection = d3
   .geoEquirectangular()
   .center([0, 15]) //center map
@@ -365,14 +368,23 @@ d3.json(dataPath,
 
 //* ----------------------------- CREATE COUNTRY INFO PANEL ------------------------------- //
 
+/* ----------------------------- CREATE COUNTRY INFO PANEL ------------------------------- */
+
 function displayCountryInfo(country, countryCodeISO3) {
   console.log("displaying country info");
   var countryInfo = document.getElementById("country-info");
   var map = document.getElementById("map-holder");
-  // Reduce width of map
+
+  selectedCountry = country;
+  selectedCountryISO3 = countryCodeISO3;
+
+  // Set width of the map and country info panel
   map.style.width = "50%";
-  // Expand width of country info
   countryInfo.style.width = "50%";
+  
+  // // Set flexbox layout for responsive design
+  // map.style.flexGrow = "1";
+  // countryInfo.style.flexGrow = "1";
 
   // Clear country info
   countryInfo.innerHTML = "";
@@ -386,18 +398,28 @@ function displayCountryInfo(country, countryCodeISO3) {
   // add flag
   flag = getFlag(countryCodeISO3);
 
-
   flag.then(function (result) {
+    // Create a container for the flag and country name
+    var flagAndNameContainer = document.createElement("div");
+    flagAndNameContainer.style.display = "flex";
+    flagAndNameContainer.style.justifyContent = "center"; // Align items horizontally in the center
+
     if (result !== null) {
-      countryFlagContainer.appendChild(result);
+      flagAndNameContainer.appendChild(result);
     }
+
     // add country name next to the flag
     var countryName = document.createElement("h1");
     countryName.innerHTML = country;
-    countryName.style.display = "inline-block";
-    countryName.style.position = "absolute"; // Adjust the margin-top value to move the name higher
-    countryFlagContainer.appendChild(countryName);
+    countryName.style.marginLeft = "10px"; // Add some space between the flag and the country name
+
+    flagAndNameContainer.appendChild(countryName);
+
+    // Append the container to the country flag container
+    countryFlagContainer.appendChild(flagAndNameContainer);
   });
+
+  countryFlagContainer.style.height = "12%";
 
   // append the country info div to the country info element
   countryInfo.appendChild(countryFlagContainer);
@@ -412,18 +434,24 @@ function displayCountryInfo(country, countryCodeISO3) {
 function hideCountryInfo() {
   console.log("hiding country info");
   var countryInfo = document.getElementById("country-info");
-  // get innerHTML
   var map = document.getElementById("map-holder");
 
-  // Expand width of map
+  // Reset 
   map.style.width = "100%";
-  // Reduce width of country info
-  countryInfo.style.width = "0%";
+  countryInfo.style.width = "0";
 
-  // console.log($("#map-holder").width());
   // Clear country info
   countryInfo.innerHTML = "";
 }
+
+// Add event listener for window resize
+window.addEventListener("resize", function() {
+  console.log(selectedCountry, selectedCountryISO3);
+  if (selectedCountry !== null && selectedCountryISO3 !== null) {
+    console.log("Resizing country info");
+    displayCountryInfo(selectedCountry, selectedCountryISO3); // You need to get country and countryCodeISO3 from somewhere
+  }
+});
 
 async function getFlag(countryCodeISO3) {
   try {
@@ -476,18 +504,23 @@ function displayMedals(countryCodeISO3, country_name) {
   medals.id = "medals";
   console.log("medals:", medals);
   medals.classList.add("country-stats");
-  medals.style.marginTop = "100px";
-  medals.style.backgroundColor = "darkblue";
+  medals.style.top = "12%";
+  medals.style.height = "38%";
+  medals.style.backgroundColor = "darkgoldenrod";
+  medals.style.position = "absolute";
 
-  var medalsFontSize = "50px";
+  var medalsFontSize = "40px";
 
   // Add "Medals" text above the emojis
   var medalsText = document.createElement("h2");
   medalsText.textContent = "Medals";
-  medalsText.style.fontSize = "50px";
-  medals.appendChild(medalsText)
+  medalsText.style.fontSize = "40px";
+  medals.appendChild(medalsText);
 
-  var nbGold = 0, nbSilver = 0, nbBronze = 0;
+  var nbGold = 0,
+    nbSilver = 0,
+    nbBronze = 0;
+
   fetchMedalData(countryCodeISO3, country_name).then(function (result) {
     if (result !== null) {
       nbGold = result.goldMedal;
@@ -590,8 +623,10 @@ function displayBestAthlete(countryCodeISO3, countryName) {
   var athlete = document.createElement("div");
   athlete.id = "best-athlete";
   athlete.classList.add("country-stats");
-  athlete.style.marginTop = "400px";
-  athlete.style.backgroundColor = "red";
+  athlete.style.top = "50%";
+  athlete.style.height = "50%";
+  athlete.style.backgroundColor = "darkred";
+  athlete.style.position = "absolute";
 
   // Add "Best Athlete" text above the emojis
   var athleteText = document.createElement("h1");
