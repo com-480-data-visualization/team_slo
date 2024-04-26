@@ -129,42 +129,7 @@ function boxUnZoom() {
 
 // [ ] --------------------------- END ZOOM FUNCTIONS ----------------------------------- //
 
-// [ ] ---------------------------- TEXT BOX FUNCTIONS --------------------------------- //
-function getTextBox(selection) {
-  selection
-    .each(function (d) {
-      d.bbox = this
-        .getBBox();
-    })
-    ;
-}
-
-function addTextBox(labels) {
-  labels
-    .append("text")
-    .attr("class", "countryName")
-    .style("text-anchor", "middle")
-    .attr("dx", 0)
-    .attr("dy", 0)
-    .text(function (d) {
-      return d.properties.name;
-    })
-    .call(getTextBox);
-  // add a background rectangle the same size as the text
-  labels
-    .insert("rect", "text")
-    .attr("class", "countryLabelBg")
-    .attr("transform", function (d) {
-      return "translate(" + (d.bbox.x - 2) + "," + d.bbox.y + ")";
-    })
-    .attr("width", function (d) {
-      return d.bbox.width + 4;
-    })
-    .attr("height", function (d) {
-      return d.bbox.height;
-    });
-}
-
+// [ ] ---------------------------- BACKGROUND FUNCTIONS --------------------------------- //
 function addBackground(countriesGroup) {
   // add a background rectangle
   countriesGroup
@@ -248,76 +213,6 @@ function clickCountry(d, i) {
 
 // [ ] ----------------------- END CREATE COUNTRIES FUNCTIONS ----------------------------- //
 
-// [ ] ----------------------- CREATE COUNTRY LABELS FUNCTIONS ----------------------------- //
-function createCountryLabels(json, path, countriesGroup) {
-  countryLabels = countriesGroup
-    .selectAll("g")
-    .data(json.features)
-    .enter()
-    .append("g")
-    .attr("class", "countryLabel")
-    .attr("id", function (d) {
-      return "countryLabel" + d.properties.iso_a3;
-    })
-    .attr("transform", function (d) {
-      return (
-        "translate(" + path.centroid(d)[0] + "," + path.centroid(d)[1] + ")"
-      );
-    })
-    .each(function () {
-      this.zoomed = true;
-    })
-    .call(createLabelActions)
-    .call(addTextBox);
-}
-
-function createLabelActions(labels) {
-  labels
-    .on("mouseover", function (d, i) {
-      d3.select(this).style("display", "block");
-      d3.select("#countryName" + d.properties.iso_a3).classed("country-over", true);
-    })
-    .on("mouseout", function (d, i) {
-      d3.select(this).style("display", "none");
-      d3.select("#countryName" + d.properties.iso_a3).classed("country-over", false);
-    })
-    .on("click", clickLabel);
-}
-
-function clickLabel(d, i) {
-  var clickedCountry = this;
-  var isCountryZoomed = clickedCountry.zoomed;
-  current_country_name = d.properties.name;
-  currentCountryISO3 = d.properties.iso_a3;
-  d3.selectAll(".country").classed("country-selected", false);
-  d3.select("#countryName" + d.properties.iso_a3).classed("country-selected", true);
-  currentCountryISO3 = d.properties.iso_a3;
-  if (!isCountryZoomed) {
-    // reduce width of the map to 50%
-    displayCountryInfo(d.properties.name, d.properties.iso_a3);
-    // resize the width of the svg
-    // console.log(mapWidth);
-    svg.attr("width", $("#map-holder").width());
-    boxZoom(path.bounds(d), [path.centroid(d)[0], path.centroid(d)[1]], 20);
-    // put all other countries to false
-    d3.selectAll(".countryLabel").each(function () {
-      this.zoomed = false;
-    });
-    clickedCountry.zoomed = true;
-  } else {
-    hideCountryInfo();
-    svg.attr("width", $("#map-holder").width());
-    boxUnZoom();
-    d3.selectAll(".countryLabel").each(function () {
-      this.zoomed = false;
-    });
-    d3.selectAll(".country").classed("country-selected", false)
-
-  }
-}
-
-// [ ] ----------------------- END CREATE COUNTRY LABELS FUNCTIONS ------------------------ //
-
 //* ----------------------------- END FUNCTIONS ------------------------------------ //
 
 //* ------------------------------ OBJECTS ----------------------------------------- //      
@@ -360,15 +255,12 @@ d3.json(dataPath,
 
     countriesGroup = addBackground(countriesGroup);
     createCountries(json, path, countriesGroup);
-    createCountryLabels(json, path, countriesGroup);
     initiateZoom();
     currentSeason = window.getOlympicSeason();
   }
 );
 
 //* ----------------------------- CREATE COUNTRY INFO PANEL ------------------------------- //
-
-/* ----------------------------- CREATE COUNTRY INFO PANEL ------------------------------- */
 
 function displayCountryInfo(country, countryCodeISO3) {
   console.log("displaying country info");
