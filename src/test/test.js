@@ -1,69 +1,74 @@
-// Wait Dom to be ready
-document.addEventListener('DOMContentLoaded', function() {
-  //get div
-  var popupTrigger = document.querySelector('.popup');
-  popup = document.getElementById('myPopup');
-  //add mouseover, mouseout and mousemove events
-  popupTrigger.addEventListener('mouseover', showPopup);
-  popupTrigger.addEventListener('mouseout', hidePopup);
-  popupTrigger.addEventListener('mousemove', movePopup);
-});
+import { fetch_discipline } from "./fetch_data.js";
 
-// When the user hovers over the element, show the popup
-function showPopup() {
-  popup.classList.add("show");
-  fadeIn(popup);
-}
+// Sample data in hierarchical format
+const data = [
+  { name: "Athletics", value: 80 },
+  { name: "Beach volley", value: 20 }
+];
 
-// When the user moves the mouse away from the element, hide the popup
-function hidePopup() {
-  popup.classList.remove("show");
-  fadeOut(popup);
-}
+const athletics = [
+  { name: "100m", value: 30 },
+  { name: "200m", value: 50 },
+  { name: "400m", value: 20 }
+];
 
-// When the user moves the mouse, move the popup
-// When the user moves the mouse, move the popup
-function movePopup(e) {
-  var popup = document.getElementById("myPopup"); // Ensure popup is properly referenced
+// Define dimensions of the treemap
+const width = 600;
+const height = 400;
 
-  // If event exists, show and move the popup
-  if (e) {
-    popup.style.left = `${e.clientX - 80}px`;
-    popup.style.top = `${e.clientY - 50}px`; // Subtract 20 pixels from the Y position
-    popup.style.display = 'block';
-  } else {
-    // If event does not exist, hide the popup
-    popup.style.display = 'none';
-    popup.textContent = '';
-  }
-}
+// Create treemap layout
+const treemap = d3.treemap()
+  .size([width, height])
+  .paddingInner(2);
 
+// Create root node and calculate treemap
+const root = d3.hierarchy({children: data})
+  .sum(d => d.value)
+  .sort((a, b) => b.value - a.value);
 
-// Fade in function
-function fadeIn(element) {
-  var op = 0.1;  // initial opacity
-  element.style.display = 'block';
-  element.style.opacity = op;
-  var timer = setInterval(function () {
-      if (op >= 1){
-          clearInterval(timer);
-      }
-      op += op * 0.1;
-      element.style.opacity = op;
-      element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-  }, 10);
-}
+// Create SVG container
+const svg = d3.select("body").append("svg")
+  .attr("width", width)
+  .attr("height", height);
 
-function fadeOut(element) {
-  var op = 1;  // initial opacity
-  element.style.opacity = op;
-  var timer = setInterval(function () {
-      if (op <= 0.1){
-          clearInterval(timer);
-          element.style.display = 'none';
-      }
-      op -= op * 0.1;
-      element.style.opacity = op;
-      element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-  }, 10);
+// Draw initial treemap
+drawTreemap(root);
+
+// Function to draw treemap
+function drawTreemap(root) {
+  // Clear existing nodes
+  svg.selectAll("*").remove();
+
+  // Calculate treemap
+  treemap(root);
+
+  // Create nodes
+  const nodes = svg.selectAll("g")
+    .data(root.leaves())
+    .enter().append("g")
+    .attr("transform", d => `translate(${d.x0},${d.y0})`);
+
+  // Create rectangles
+  nodes.append("rect")
+    .attr("width", d => d.x1 - d.x0)
+    .attr("height", d => d.y1 - d.y0)
+    .style("fill", "steelblue");
+
+  // Create labels
+  nodes.append("text")
+    .attr("dx", 4)
+    .attr("dy", 14)
+    .text(d => d.data.name);
+
+  // Add click event handler
+  nodes.on("click", function(event, d) {
+      if (d.data.name === "Athletics") {
+        fetch_discipline("USA", "United States").then(function(result) {
+          const root = d3.hierarchy({children: result})
+            .sum(d => d.value)
+            .sort((a, b) => b.value - a.value);
+          drawTreemap(root);
+        });
+      } 
+  });
 }

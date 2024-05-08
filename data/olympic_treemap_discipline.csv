@@ -1,0 +1,4748 @@
+,country_3_letter_code,discipline_title,game_season,percentage
+0,AFG,Athletics,Summer,7.8
+1,AFG,Boxing,Summer,7.8
+2,AFG,Football,Summer,1.6
+3,AFG,Hockey,Summer,4.7
+4,AFG,Judo,Summer,3.1
+5,AFG,Shooting,Summer,1.6
+6,AFG,Taekwondo,Summer,7.8
+7,AFG,Wrestling,Summer,65.6
+8,AHO,Athletics,Summer,2.2
+9,AHO,Bobsleigh,Winter,66.7
+10,AHO,Equestrian Eventing,Summer,4.3
+11,AHO,Football,Summer,2.2
+12,AHO,Judo,Summer,6.5
+13,AHO,Luge,Winter,33.3
+14,AHO,Sailing,Summer,13.0
+15,AHO,Shooting,Summer,15.2
+16,AHO,Swimming,Summer,26.1
+17,AHO,Synchronized Swimming,Summer,4.3
+18,AHO,Triathlon,Summer,2.2
+19,AHO,Weightlifting,Summer,23.9
+20,ALB,Alpine Skiing,Winter,100.0
+21,ALB,Athletics,Summer,3.4
+22,ALB,Cycling Road,Summer,1.7
+23,ALB,Judo,Summer,5.2
+24,ALB,Shooting,Summer,31.0
+25,ALB,Swimming,Summer,19.0
+26,ALB,Weightlifting,Summer,32.8
+27,ALB,Wrestling,Summer,6.9
+28,ALG,Alpine Skiing,Winter,83.3
+29,ALG,Athletics,Summer,18.6
+30,ALG,Badminton,Summer,0.3
+31,ALG,Boxing,Summer,22.9
+32,ALG,Canoe Sprint,Summer,0.6
+33,ALG,Cross Country Skiing,Winter,16.7
+34,ALG,Cycling Road,Summer,2.9
+35,ALG,Fencing,Summer,6.7
+36,ALG,Football,Summer,0.6
+37,ALG,Gymnastics Artistic,Summer,0.6
+38,ALG,Handball,Summer,1.2
+39,ALG,Judo,Summer,12.2
+40,ALG,Karate,Summer,0.3
+41,ALG,Marathon Swimming,Summer,0.3
+42,ALG,Rowing,Summer,2.9
+43,ALG,Sailing,Summer,1.4
+44,ALG,Shooting,Summer,0.9
+45,ALG,Swimming,Summer,10.4
+46,ALG,Table Tennis,Summer,2.3
+47,ALG,Taekwondo,Summer,0.3
+48,ALG,Tennis,Summer,0.6
+49,ALG,Volleyball,Summer,0.9
+50,ALG,Weightlifting,Summer,5.5
+51,ALG,Wrestling,Summer,7.8
+52,AND,Alpine Skiing,Winter,84.6
+53,AND,Athletics,Summer,11.4
+54,AND,Biathlon,Winter,1.4
+55,AND,Boxing,Summer,2.3
+56,AND,Canoe Slalom,Summer,6.8
+57,AND,Cross Country Skiing,Winter,11.2
+58,AND,Cycling Road,Summer,11.4
+59,AND,Judo,Summer,11.4
+60,AND,Sailing,Summer,6.8
+61,AND,Shooting,Summer,27.3
+62,AND,Snowboard,Winter,2.8
+63,AND,Swimming,Summer,22.7
+64,ANG,Athletics,Summer,9.8
+65,ANG,Basketball,Summer,6.5
+66,ANG,Beach Volleyball,Summer,1.1
+67,ANG,Boxing,Summer,8.7
+68,ANG,Canoe Sprint,Summer,3.3
+69,ANG,Handball,Summer,7.6
+70,ANG,Judo,Summer,15.2
+71,ANG,Rowing,Summer,1.1
+72,ANG,Sailing,Summer,5.4
+73,ANG,Shooting,Summer,3.3
+74,ANG,Swimming,Summer,38.0
+75,ANT,Athletics,Summer,6.1
+76,ANT,Boxing,Summer,9.1
+77,ANT,Cycling Mountain Bike,Summer,3.0
+78,ANT,Cycling Road,Summer,9.1
+79,ANT,Cycling Track,Summer,27.3
+80,ANT,Sailing,Summer,27.3
+81,ANT,Swimming,Summer,18.2
+82,ANZ,Athletics,Summer,42.0
+83,ANZ,Boxing,Summer,4.0
+84,ANZ,Rowing,Summer,2.0
+85,ANZ,Rugby,Summer,2.0
+86,ANZ,Shooting,Summer,6.0
+87,ANZ,Swimming,Summer,42.0
+88,ANZ,Tennis,Summer,2.0
+89,ARG,Alpine Skiing,Winter,70.3
+90,ARG,Archery,Summer,0.1
+91,ARG,Athletics,Summer,7.7
+92,ARG,Basketball,Summer,0.6
+93,ARG,Beach Volleyball,Summer,0.7
+94,ARG,Biathlon,Winter,10.0
+95,ARG,Bobsleigh,Winter,2.1
+96,ARG,Boxing,Summer,11.1
+97,ARG,Canoe Slalom,Summer,0.3
+98,ARG,Canoe Sprint,Summer,0.8
+99,ARG,Cross Country Skiing,Winter,12.3
+100,ARG,Cycling BMX,Summer,0.3
+101,ARG,Cycling BMX Racing,Summer,0.1
+102,ARG,Cycling Mountain Bike,Summer,0.7
+103,ARG,Cycling Road,Summer,3.3
+104,ARG,Cycling Track,Summer,3.2
+105,ARG,Diving,Summer,0.4
+106,ARG,Equestrian,Summer,0.4
+107,ARG,Equestrian Dressage,Summer,0.5
+108,ARG,Equestrian Eventing,Summer,2.5
+109,ARG,Equestrian Jumping,Summer,3.9
+110,ARG,Fencing,Summer,4.3
+111,ARG,Figure skating,Summer,0.1
+112,ARG,Football,Summer,0.7
+113,ARG,Freestyle Skiing,Winter,0.8
+114,ARG,Golf,Summer,0.2
+115,ARG,Gymnastics Artistic,Summer,4.8
+116,ARG,Handball,Summer,0.3
+117,ARG,Hockey,Summer,1.4
+118,ARG,Judo,Summer,4.1
+119,ARG,Luge,Winter,2.6
+120,ARG,Marathon Swimming,Summer,0.3
+121,ARG,Modern Pentathlon,Summer,1.1
+122,ARG,Polo,Summer,0.1
+123,ARG,Rowing,Summer,3.2
+124,ARG,Rugby,Summer,0.1
+125,ARG,Rugby Sevens,Summer,0.1
+126,ARG,Sailing,Summer,7.2
+127,ARG,Shooting,Summer,9.0
+128,ARG,Skeleton,Winter,0.3
+129,ARG,Snowboard,Winter,1.0
+130,ARG,Speed skating,Winter,0.5
+131,ARG,Swimming,Summer,10.3
+132,ARG,Synchronized Swimming,Summer,0.1
+133,ARG,Table Tennis,Summer,0.9
+134,ARG,Taekwondo,Summer,0.6
+135,ARG,Tennis,Summer,5.5
+136,ARG,Triathlon,Summer,0.5
+137,ARG,Volleyball,Summer,0.7
+138,ARG,Water Polo,Summer,0.3
+139,ARG,Weightlifting,Summer,2.6
+140,ARG,Wrestling,Summer,5.0
+141,ARM,Alpine Skiing,Winter,25.5
+142,ARM,Artistic Gymnastics,Summer,0.7
+143,ARM,Athletics,Summer,1.3
+144,ARM,Bobsleigh,Winter,3.9
+145,ARM,Boxing,Summer,14.0
+146,ARM,Cross Country Skiing,Winter,58.8
+147,ARM,Cycling Road,Summer,0.7
+148,ARM,Diving,Summer,2.0
+149,ARM,Figure skating,Winter,9.8
+150,ARM,Freestyle Skiing,Winter,2.0
+151,ARM,Gymnastics Artistic,Summer,0.7
+152,ARM,Judo,Summer,4.7
+153,ARM,Shooting,Summer,6.7
+154,ARM,Swimming,Summer,6.0
+155,ARM,Taekwondo,Summer,0.7
+156,ARM,Tennis,Summer,2.0
+157,ARM,Weightlifting,Summer,25.3
+158,ARM,Wrestling,Summer,35.3
+159,ARU,Athletics,Summer,11.4
+160,ARU,Boxing,Summer,5.7
+161,ARU,Cycling Road,Summer,8.6
+162,ARU,Fencing,Summer,5.7
+163,ARU,Judo,Summer,11.4
+164,ARU,Sailing,Summer,8.6
+165,ARU,Shooting,Summer,2.9
+166,ARU,Swimming,Summer,25.7
+167,ARU,Synchronized Swimming,Summer,8.6
+168,ARU,Taekwondo,Summer,2.9
+169,ARU,Weightlifting,Summer,8.6
+170,ASA,Archery,Summer,3.7
+171,ASA,Athletics,Summer,3.7
+172,ASA,Bobsleigh,Winter,50.0
+173,ASA,Boxing,Summer,18.5
+174,ASA,Judo,Summer,11.1
+175,ASA,Sailing,Summer,7.4
+176,ASA,Skeleton,Winter,50.0
+177,ASA,Swimming,Summer,14.8
+178,ASA,Weightlifting,Summer,29.6
+179,ASA,Wrestling,Summer,11.1
+180,AUS,Alpine Skiing,Winter,25.7
+181,AUS,Archery,Summer,1.8
+182,AUS,Artistic Gymnastics,Summer,0.0
+183,AUS,Artistic Swimming,Summer,0.1
+184,AUS,Athletics,Summer,14.4
+185,AUS,Badminton,Summer,1.1
+186,AUS,Baseball,Summer,0.1
+187,AUS,Baseball/Softball,Summer,0.0
+188,AUS,Basketball,Summer,0.7
+189,AUS,Beach Volleyball,Summer,0.6
+190,AUS,Biathlon,Winter,3.6
+191,AUS,Bobsleigh,Winter,3.3
+192,AUS,Boxing,Summer,3.8
+193,AUS,Canoe Marathon,Summer,0.1
+194,AUS,Canoe Slalom,Summer,0.9
+195,AUS,Canoe Sprint,Summer,2.3
+196,AUS,Cross Country Skiing,Winter,15.9
+197,AUS,Curling,Winter,0.2
+198,AUS,Cycling BMX,Summer,0.3
+199,AUS,Cycling BMX Freestyle,Summer,0.1
+200,AUS,Cycling BMX Racing,Summer,0.1
+201,AUS,Cycling Mountain Bike,Summer,0.5
+202,AUS,Cycling Road,Summer,4.1
+203,AUS,Cycling Track,Summer,4.1
+204,AUS,Diving,Summer,3.3
+205,AUS,Equestrian,Summer,0.4
+206,AUS,Equestrian Dressage,Summer,0.7
+207,AUS,Equestrian Eventing,Summer,2.0
+208,AUS,Equestrian Jumping,Summer,1.3
+209,AUS,Fencing,Summer,0.9
+210,AUS,Figure skating,Winter,5.2
+211,AUS,Football,Summer,0.3
+212,AUS,Freestyle Skiing,Winter,15.1
+213,AUS,Golf,Summer,0.2
+214,AUS,Gymnastics Artistic,Summer,3.1
+215,AUS,Gymnastics Rhythmic,Summer,0.1
+216,AUS,Handball,Summer,0.1
+217,AUS,Hockey,Summer,0.7
+218,AUS,Ice Hockey,Winter,0.2
+219,AUS,Judo,Summer,2.2
+220,AUS,Karate,Summer,0.0
+221,AUS,Luge,Winter,1.1
+222,AUS,Marathon Swimming,Summer,0.2
+223,AUS,Modern Pentathlon,Summer,1.2
+224,AUS,Nordic Combined,Winter,0.2
+225,AUS,Rowing,Summer,3.6
+226,AUS,Rugby,Summer,0.1
+227,AUS,Rugby Sevens,Summer,0.1
+228,AUS,Sailing,Summer,3.7
+229,AUS,Shooting,Summer,7.7
+230,AUS,Short Track,Winter,0.7
+231,AUS,Short Track Speed Skating,Winter,6.7
+232,AUS,Skateboarding,Summer,0.1
+233,AUS,Skeleton,Winter,2.0
+234,AUS,Snowboard,Winter,9.6
+235,AUS,Softball,Summer,0.1
+236,AUS,Speed skating,Winter,10.7
+237,AUS,Sport Climbing,Summer,0.1
+238,AUS,Surfing,Summer,0.1
+239,AUS,Swimming,Summer,20.2
+240,AUS,Synchronized Swimming,Summer,0.5
+241,AUS,Table Tennis,Summer,1.6
+242,AUS,Taekwondo,Summer,0.7
+243,AUS,Tennis,Summer,2.4
+244,AUS,Trampoline,Summer,0.0
+245,AUS,Trampoline Gymnastics,Summer,0.0
+246,AUS,Triathlon,Summer,1.0
+247,AUS,Volleyball,Summer,0.1
+248,AUS,Water Polo,Summer,0.7
+249,AUS,Weightlifting,Summer,2.4
+250,AUS,Wrestling,Summer,2.9
+251,AUT,Alpine Skiing,Winter,32.7
+252,AUT,Archery,Summer,0.2
+253,AUT,Artistic Swimming,Summer,0.1
+254,AUT,Athletics,Summer,11.7
+255,AUT,Badminton,Summer,0.5
+256,AUT,Beach Volleyball,Summer,0.6
+257,AUT,Biathlon,Winter,9.1
+258,AUT,Bobsleigh,Winter,3.9
+259,AUT,Boxing,Summer,2.9
+260,AUT,Canoe Marathon,Summer,0.3
+261,AUT,Canoe Slalom,Summer,1.4
+262,AUT,Canoe Sprint,Summer,2.1
+263,AUT,Cross Country Skiing,Winter,11.5
+264,AUT,Cycling Mountain Bike,Summer,0.6
+265,AUT,Cycling Road,Summer,5.5
+266,AUT,Cycling Track,Summer,1.7
+267,AUT,Diving,Summer,3.3
+268,AUT,Equestrian,Summer,0.3
+269,AUT,Equestrian Dressage,Summer,1.7
+270,AUT,Equestrian Eventing,Summer,0.9
+271,AUT,Equestrian Jumping,Summer,1.4
+272,AUT,Fencing,Summer,4.0
+273,AUT,Figure skating,Winter,4.1
+274,AUT,Football,Summer,0.2
+275,AUT,Freestyle Skiing,Winter,2.9
+276,AUT,Golf,Summer,0.3
+277,AUT,Gymnastics Artistic,Summer,13.6
+278,AUT,Gymnastics Rhythmic,Summer,0.1
+279,AUT,Handball,Summer,0.2
+280,AUT,Hockey,Summer,0.2
+281,AUT,Ice Hockey,Winter,0.7
+282,AUT,Judo,Summer,3.3
+283,AUT,Karate,Summer,0.1
+284,AUT,Luge,Winter,6.3
+285,AUT,Modern Pentathlon,Summer,1.6
+286,AUT,Nordic Combined,Winter,5.3
+287,AUT,Rowing,Summer,2.5
+288,AUT,Sailing,Summer,4.2
+289,AUT,Shooting,Summer,9.4
+290,AUT,Short Track Speed Skating,Winter,0.3
+291,AUT,Skateboarding,Summer,0.1
+292,AUT,Skeleton,Winter,0.8
+293,AUT,Ski Jumping,Winter,8.6
+294,AUT,Snowboard,Winter,5.3
+295,AUT,Speed skating,Winter,8.6
+296,AUT,Sport Climbing,Summer,0.1
+297,AUT,Swimming,Summer,9.3
+298,AUT,Synchronized Swimming,Summer,0.5
+299,AUT,Table Tennis,Summer,2.4
+300,AUT,Taekwondo,Summer,0.2
+301,AUT,Tennis,Summer,1.9
+302,AUT,Triathlon,Summer,1.0
+303,AUT,Water Polo,Summer,0.2
+304,AUT,Weightlifting,Summer,4.8
+305,AUT,Wrestling,Summer,4.5
+306,AZE,Alpine Skiing,Winter,50.0
+307,AZE,Archery,Summer,0.4
+308,AZE,Athletics,Summer,1.6
+309,AZE,Badminton,Summer,0.4
+310,AZE,Boxing,Summer,16.6
+311,AZE,Canoe Slalom,Summer,0.4
+312,AZE,Canoe Sprint,Summer,2.0
+313,AZE,Cycling Road,Summer,2.0
+314,AZE,Cycling Track,Summer,0.8
+315,AZE,Diving,Summer,0.8
+316,AZE,Equestrian Jumping,Summer,0.8
+317,AZE,Fencing,Summer,2.0
+318,AZE,Figure skating,Winter,50.0
+319,AZE,Gymnastics Artistic,Summer,0.4
+320,AZE,Gymnastics Rhythmic,Summer,1.6
+321,AZE,Judo,Summer,14.2
+322,AZE,Karate,Summer,1.2
+323,AZE,Rowing,Summer,1.2
+324,AZE,Shooting,Summer,6.7
+325,AZE,Swimming,Summer,4.3
+326,AZE,Taekwondo,Summer,4.3
+327,AZE,Triathlon,Summer,0.8
+328,AZE,Weightlifting,Summer,8.3
+329,AZE,Wrestling,Summer,29.2
+330,BAH,Athletics,Summer,39.0
+331,BAH,Boxing,Summer,5.0
+332,BAH,Cycling Track,Summer,0.7
+333,BAH,Rowing,Summer,0.7
+334,BAH,Sailing,Summer,18.4
+335,BAH,Swimming,Summer,29.1
+336,BAH,Tennis,Summer,5.7
+337,BAH,Wrestling,Summer,1.4
+338,BAN,Archery,Summer,17.2
+339,BAN,Golf,Summer,3.4
+340,BAN,Shooting,Summer,31.0
+341,BAN,Swimming,Summer,48.3
+342,BAR,Athletics,Summer,10.4
+343,BAR,Boxing,Summer,9.4
+344,BAR,Cycling Road,Summer,7.3
+345,BAR,Cycling Track,Summer,8.3
+346,BAR,Judo,Summer,3.1
+347,BAR,Sailing,Summer,11.5
+348,BAR,Shooting,Summer,8.3
+349,BAR,Swimming,Summer,36.5
+350,BAR,Synchronized Swimming,Summer,1.0
+351,BAR,Tennis,Summer,1.0
+352,BAR,Triathlon,Summer,1.0
+353,BAR,Weightlifting,Summer,2.1
+354,BDI,Athletics,Summer,64.3
+355,BDI,Boxing,Summer,3.6
+356,BDI,Judo,Summer,7.1
+357,BDI,Swimming,Summer,25.0
+358,BEL,3x3 Basketball,Summer,0.1
+359,BEL,Alpine Skiing,Winter,23.8
+360,BEL,Archery,Summer,3.0
+361,BEL,Artistic Gymnastics,Summer,0.2
+362,BEL,Athletics,Summer,14.8
+363,BEL,Badminton,Summer,0.4
+364,BEL,Basketball,Summer,0.2
+365,BEL,Beach Volleyball,Summer,0.1
+366,BEL,Biathlon,Winter,6.7
+367,BEL,Bobsleigh,Winter,9.5
+368,BEL,Boxing,Summer,4.2
+369,BEL,Canoe Marathon,Summer,0.2
+370,BEL,Canoe Slalom,Summer,0.2
+371,BEL,Canoe Sprint,Summer,1.3
+372,BEL,Cross Country Skiing,Winter,2.0
+373,BEL,Cycling BMX,Summer,0.1
+374,BEL,Cycling BMX Racing,Summer,0.1
+375,BEL,Cycling Mountain Bike,Summer,0.8
+376,BEL,Cycling Road,Summer,8.5
+377,BEL,Cycling Track,Summer,4.6
+378,BEL,Diving,Summer,0.1
+379,BEL,Equestrian,Summer,0.6
+380,BEL,Equestrian  Vaulting,Summer,0.4
+381,BEL,Equestrian Dressage,Summer,0.8
+382,BEL,Equestrian Eventing,Summer,2.6
+383,BEL,Equestrian Jumping,Summer,4.0
+384,BEL,Fencing,Summer,5.3
+385,BEL,Figure skating,Summer,0.1
+386,BEL,Figure skating,Winter,8.3
+387,BEL,Football,Summer,0.2
+388,BEL,Freestyle Skiing,Winter,0.4
+389,BEL,Golf,Summer,0.4
+390,BEL,Gymnastics Artistic,Summer,2.9
+391,BEL,Hockey,Summer,1.0
+392,BEL,Ice Hockey,Summer,0.1
+393,BEL,Ice Hockey,Winter,1.2
+394,BEL,Judo,Summer,3.5
+395,BEL,Marathon Swimming,Summer,0.1
+396,BEL,Modern Pentathlon,Summer,0.9
+397,BEL,Polo,Summer,0.1
+398,BEL,Rowing,Summer,2.0
+399,BEL,Sailing,Summer,3.2
+400,BEL,Shooting,Summer,9.2
+401,BEL,Short Track,Winter,0.8
+402,BEL,Short Track Speed Skating,Winter,12.3
+403,BEL,Skateboarding,Summer,0.1
+404,BEL,Skeleton,Winter,1.6
+405,BEL,Snowboard,Winter,3.6
+406,BEL,Speed skating,Winter,29.8
+407,BEL,Swimming,Summer,8.3
+408,BEL,Synchronized Swimming,Summer,0.2
+409,BEL,Table Tennis,Summer,0.7
+410,BEL,Taekwondo,Summer,0.3
+411,BEL,Tennis,Summer,3.6
+412,BEL,Triathlon,Summer,1.0
+413,BEL,Tug of War,Summer,0.1
+414,BEL,Volleyball,Summer,0.1
+415,BEL,Water Polo,Summer,0.7
+416,BEL,Weightlifting,Summer,2.8
+417,BEL,Wrestling,Summer,6.1
+418,BEN,Athletics,Summer,8.8
+419,BEN,Boxing,Summer,38.2
+420,BEN,Cycling Road,Summer,5.9
+421,BEN,Fencing,Summer,2.9
+422,BEN,Judo,Summer,11.8
+423,BEN,Rowing,Summer,2.9
+424,BEN,Swimming,Summer,20.6
+425,BEN,Taekwondo,Summer,5.9
+426,BEN,Tennis,Summer,2.9
+427,BER,Athletics,Summer,6.2
+428,BER,Boxing,Summer,4.1
+429,BER,Cross Country Skiing,Winter,37.5
+430,BER,Cycling Road,Summer,4.1
+431,BER,Diving,Summer,4.1
+432,BER,Equestrian Dressage,Summer,2.1
+433,BER,Equestrian Eventing,Summer,7.2
+434,BER,Equestrian Jumping,Summer,2.1
+435,BER,Luge,Winter,50.0
+436,BER,Rowing,Summer,2.1
+437,BER,Sailing,Summer,33.0
+438,BER,Skeleton,Winter,12.5
+439,BER,Swimming,Summer,27.8
+440,BER,Tennis,Summer,1.0
+441,BER,Triathlon,Summer,6.2
+442,BHU,Archery,Summer,87.9
+443,BHU,Judo,Summer,3.0
+444,BHU,Shooting,Summer,9.1
+445,BIH,Alpine Skiing,Winter,57.9
+446,BIH,Athletics,Summer,16.1
+447,BIH,Biathlon,Winter,10.5
+448,BIH,Bobsleigh,Winter,5.3
+449,BIH,Canoe Slalom,Summer,3.2
+450,BIH,Cross Country Skiing,Winter,21.1
+451,BIH,Judo,Summer,9.7
+452,BIH,Luge,Winter,5.3
+453,BIH,Shooting,Summer,32.3
+454,BIH,Swimming,Summer,24.2
+455,BIH,Table Tennis,Summer,3.2
+456,BIH,Taekwondo,Summer,3.2
+457,BIH,Tennis,Summer,4.8
+458,BIH,Weightlifting,Summer,1.6
+459,BIH,Wrestling,Summer,1.6
+460,BIZ,Athletics,Summer,12.1
+461,BIZ,Boxing,Summer,3.0
+462,BIZ,Canoe Sprint,Summer,6.1
+463,BIZ,Cycling Road,Summer,45.5
+464,BIZ,Cycling Track,Summer,3.0
+465,BIZ,Judo,Summer,6.1
+466,BIZ,Shooting,Summer,18.2
+467,BIZ,Taekwondo,Summer,3.0
+468,BIZ,Weightlifting,Summer,3.0
+469,BLR,Alpine Skiing,Winter,4.3
+470,BLR,Archery,Summer,1.8
+471,BLR,Artistic Swimming,Summer,0.1
+472,BLR,Athletics,Summer,18.9
+473,BLR,Badminton,Summer,0.6
+474,BLR,Basketball,Summer,0.3
+475,BLR,Biathlon,Winter,37.8
+476,BLR,Boxing,Summer,3.3
+477,BLR,Canoe Slalom,Summer,0.1
+478,BLR,Canoe Sprint,Summer,4.3
+479,BLR,Cross Country Skiing,Winter,34.6
+480,BLR,Cycling Road,Summer,3.4
+481,BLR,Cycling Track,Summer,1.8
+482,BLR,Diving,Summer,2.1
+483,BLR,Equestrian,Summer,0.3
+484,BLR,Equestrian Dressage,Summer,0.3
+485,BLR,Equestrian Eventing,Summer,0.5
+486,BLR,Fencing,Summer,2.1
+487,BLR,Figure skating,Winter,1.7
+488,BLR,Football,Summer,0.1
+489,BLR,Freestyle Skiing,Winter,8.6
+490,BLR,Gymnastics Artistic,Summer,3.6
+491,BLR,Gymnastics Rhythmic,Summer,2.1
+492,BLR,Ice Hockey,Winter,0.6
+493,BLR,Judo,Summer,2.3
+494,BLR,Modern Pentathlon,Summer,2.1
+495,BLR,Nordic Combined,Winter,0.9
+496,BLR,Rhythmic Gymnastics,Summer,0.4
+497,BLR,Rowing,Summer,3.1
+498,BLR,Sailing,Summer,2.1
+499,BLR,Shooting,Summer,11.8
+500,BLR,Short Track,Winter,0.2
+501,BLR,Short Track Speed Skating,Winter,1.3
+502,BLR,Ski Jumping,Winter,1.7
+503,BLR,Speed skating,Winter,8.4
+504,BLR,Swimming,Summer,9.3
+505,BLR,Synchronized Swimming,Summer,0.5
+506,BLR,Table Tennis,Summer,2.8
+507,BLR,Tennis,Summer,3.1
+508,BLR,Trampoline,Summer,1.0
+509,BLR,Trampoline Gymnastics,Summer,0.3
+510,BLR,Weightlifting,Summer,6.1
+511,BLR,Wrestling,Summer,9.4
+512,BOH,Athletics,Summer,43.6
+513,BOH,Cycling Road,Summer,7.7
+514,BOH,Cycling Track,Summer,1.3
+515,BOH,Fencing,Summer,7.7
+516,BOH,Football,Summer,1.3
+517,BOH,Gymnastics Artistic,Summer,5.1
+518,BOH,Rowing,Summer,1.3
+519,BOH,Swimming,Summer,3.8
+520,BOH,Tennis,Summer,23.1
+521,BOH,Wrestling,Summer,5.1
+522,BOL,Alpine Skiing,Winter,95.0
+523,BOL,Athletics,Summer,29.3
+524,BOL,Boxing,Summer,1.0
+525,BOL,Cross Country Skiing,Winter,5.0
+526,BOL,Cycling Road,Summer,3.0
+527,BOL,Cycling Track,Summer,4.0
+528,BOL,Diving,Summer,2.0
+529,BOL,Equestrian Jumping,Summer,3.0
+530,BOL,Fencing,Summer,4.0
+531,BOL,Judo,Summer,5.1
+532,BOL,Shooting,Summer,20.2
+533,BOL,Swimming,Summer,22.2
+534,BOL,Tennis,Summer,2.0
+535,BOL,Weightlifting,Summer,3.0
+536,BOL,Wrestling,Summer,1.0
+537,BOT,Athletics,Summer,55.0
+538,BOT,Boxing,Summer,30.0
+539,BOT,Judo,Summer,2.5
+540,BOT,Sailing,Summer,2.5
+541,BOT,Swimming,Summer,10.0
+542,BRA,Alpine Skiing,Winter,49.4
+543,BRA,Archery,Summer,1.2
+544,BRA,Artistic Gymnastics,Summer,0.5
+545,BRA,Athletics,Summer,12.3
+546,BRA,Badminton,Summer,0.2
+547,BRA,Basketball,Summer,1.3
+548,BRA,Beach Volleyball,Summer,1.7
+549,BRA,Biathlon,Winter,2.6
+550,BRA,Bobsleigh,Winter,10.4
+551,BRA,Boxing,Summer,5.3
+552,BRA,Canoe Slalom,Summer,0.9
+553,BRA,Canoe Sprint,Summer,0.9
+554,BRA,Cross Country Skiing,Winter,24.7
+555,BRA,Cycling BMX,Summer,0.2
+556,BRA,Cycling BMX Racing,Summer,0.1
+557,BRA,Cycling Mountain Bike,Summer,0.8
+558,BRA,Cycling Road,Summer,2.9
+559,BRA,Cycling Track,Summer,0.7
+560,BRA,Diving,Summer,2.3
+561,BRA,Equestrian,Summer,0.7
+562,BRA,Equestrian Dressage,Summer,0.6
+563,BRA,Equestrian Eventing,Summer,2.0
+564,BRA,Equestrian Jumping,Summer,3.8
+565,BRA,Fencing,Summer,2.5
+566,BRA,Figure skating,Winter,1.3
+567,BRA,Football,Summer,1.3
+568,BRA,Freestyle Skiing,Winter,2.6
+569,BRA,Golf,Summer,0.2
+570,BRA,Gymnastics Artistic,Summer,1.6
+571,BRA,Gymnastics Rhythmic,Summer,0.2
+572,BRA,Handball,Summer,0.7
+573,BRA,Hockey,Summer,0.1
+574,BRA,Judo,Summer,7.5
+575,BRA,Luge,Winter,2.6
+576,BRA,Marathon Swimming,Summer,0.5
+577,BRA,Modern Pentathlon,Summer,1.6
+578,BRA,Rowing,Summer,2.0
+579,BRA,Rugby,Summer,0.1
+580,BRA,Rugby Sevens,Summer,0.1
+581,BRA,Sailing,Summer,6.9
+582,BRA,Shooting,Summer,6.8
+583,BRA,Skateboarding,Summer,0.7
+584,BRA,Skeleton,Winter,1.3
+585,BRA,Snowboard,Winter,5.2
+586,BRA,Surfing,Summer,0.1
+587,BRA,Swimming,Summer,16.3
+588,BRA,Synchronized Swimming,Summer,1.0
+589,BRA,Table Tennis,Summer,2.6
+590,BRA,Taekwondo,Summer,1.0
+591,BRA,Tennis,Summer,2.0
+592,BRA,Triathlon,Summer,1.4
+593,BRA,Volleyball,Summer,1.6
+594,BRA,Water Polo,Summer,0.5
+595,BRA,Weightlifting,Summer,1.6
+596,BRA,Wrestling,Summer,1.0
+597,BRN,Athletics,Summer,50.0
+598,BRN,Boxing,Summer,1.1
+599,BRN,Cycling Road,Summer,4.5
+600,BRN,Fencing,Summer,4.5
+601,BRN,Handball,Summer,1.1
+602,BRN,Modern Pentathlon,Summer,9.1
+603,BRN,Sailing,Summer,3.4
+604,BRN,Shooting,Summer,11.4
+605,BRN,Swimming,Summer,13.6
+606,BRN,Wrestling,Summer,1.1
+607,BRU,Badminton,Summer,25.0
+608,BRU,Shooting,Summer,50.0
+609,BRU,Swimming,Summer,25.0
+610,BUL,Alpine Skiing,Winter,26.8
+611,BUL,Archery,Summer,0.5
+612,BUL,Athletics,Summer,9.4
+613,BUL,Badminton,Summer,1.8
+614,BUL,Basketball,Summer,0.5
+615,BUL,Beach Volleyball,Summer,0.1
+616,BUL,Biathlon,Winter,27.7
+617,BUL,Bobsleigh,Winter,1.4
+618,BUL,Boxing,Summer,6.9
+619,BUL,Canoe Sprint,Summer,4.2
+620,BUL,Cross Country Skiing,Winter,28.9
+621,BUL,Cycling Road,Summer,2.4
+622,BUL,Cycling Track,Summer,0.9
+623,BUL,Diving,Summer,0.3
+624,BUL,Equestrian Dressage,Summer,0.5
+625,BUL,Equestrian Eventing,Summer,2.0
+626,BUL,Equestrian Jumping,Summer,0.6
+627,BUL,Fencing,Summer,1.2
+628,BUL,Figure skating,Winter,1.9
+629,BUL,Football,Summer,0.3
+630,BUL,Gymnastics Artistic,Summer,19.3
+631,BUL,Gymnastics Rhythmic,Summer,1.0
+632,BUL,Ice Hockey,Winter,0.2
+633,BUL,Judo,Summer,1.9
+634,BUL,Karate,Summer,0.1
+635,BUL,Luge,Winter,1.9
+636,BUL,Marathon Swimming,Summer,0.2
+637,BUL,Modern Pentathlon,Summer,1.4
+638,BUL,Nordic Combined,Winter,0.4
+639,BUL,Rhythmic Gymnastics,Summer,0.1
+640,BUL,Rowing,Summer,3.9
+641,BUL,Sailing,Summer,0.6
+642,BUL,Shooting,Summer,9.9
+643,BUL,Short Track Speed Skating,Winter,4.9
+644,BUL,Ski Jumping,Winter,3.7
+645,BUL,Snowboard,Winter,2.3
+646,BUL,Swimming,Summer,5.8
+647,BUL,Synchronized Swimming,Summer,0.1
+648,BUL,Table Tennis,Summer,0.3
+649,BUL,Tennis,Summer,1.0
+650,BUL,Volleyball,Summer,0.6
+651,BUL,Water Polo,Summer,0.1
+652,BUL,Weightlifting,Summer,6.5
+653,BUL,Wrestling,Summer,15.6
+654,BUR,Athletics,Summer,8.0
+655,BUR,Boxing,Summer,32.0
+656,BUR,Cycling Road,Summer,4.0
+657,BUR,Fencing,Summer,4.0
+658,BUR,Judo,Summer,20.0
+659,BUR,Swimming,Summer,28.0
+660,BUR,Taekwondo,Summer,4.0
+661,CAF,Archery,Summer,3.3
+662,CAF,Athletics,Summer,23.3
+663,CAF,Basketball,Summer,3.3
+664,CAF,Boxing,Summer,20.0
+665,CAF,Cycling Road,Summer,13.3
+666,CAF,Judo,Summer,10.0
+667,CAF,Swimming,Summer,10.0
+668,CAF,Taekwondo,Summer,13.3
+669,CAF,Wrestling,Summer,3.3
+670,CAM,Athletics,Summer,18.2
+671,CAM,Boxing,Summer,18.2
+672,CAM,Cycling Road,Summer,3.0
+673,CAM,Cycling Track,Summer,3.0
+674,CAM,Judo,Summer,3.0
+675,CAM,Sailing,Summer,6.1
+676,CAM,Swimming,Summer,36.4
+677,CAM,Taekwondo,Summer,6.1
+678,CAM,Wrestling,Summer,6.1
+679,CAN,Alpine Skiing,Winter,19.0
+680,CAN,Archery,Summer,1.3
+681,CAN,Artistic Gymnastics,Summer,0.1
+682,CAN,Artistic Swimming,Summer,0.1
+683,CAN,Athletics,Summer,16.5
+684,CAN,Badminton,Summer,1.4
+685,CAN,Baseball,Summer,0.1
+686,CAN,Baseball/Softball,Summer,0.0
+687,CAN,Basketball,Summer,0.5
+688,CAN,Beach Volleyball,Summer,0.5
+689,CAN,Biathlon,Winter,6.6
+690,CAN,Bobsleigh,Winter,3.1
+691,CAN,Boxing,Summer,4.8
+692,CAN,Canoe Marathon,Summer,0.2
+693,CAN,Canoe Slalom,Summer,1.1
+694,CAN,Canoe Sprint,Summer,3.2
+695,CAN,Cross Country Skiing,Winter,15.1
+696,CAN,Curling,Winter,0.6
+697,CAN,Cycling BMX,Summer,0.1
+698,CAN,Cycling BMX Racing,Summer,0.1
+699,CAN,Cycling Mountain Bike,Summer,0.8
+700,CAN,Cycling Road,Summer,4.2
+701,CAN,Cycling Track,Summer,2.3
+702,CAN,Diving,Summer,3.5
+703,CAN,Equestrian,Summer,0.2
+704,CAN,Equestrian Dressage,Summer,1.4
+705,CAN,Equestrian Eventing,Summer,2.0
+706,CAN,Equestrian Jumping,Summer,1.6
+707,CAN,Fencing,Summer,3.3
+708,CAN,Figure skating,Winter,6.8
+709,CAN,Football,Summer,0.2
+710,CAN,Freestyle Skiing,Winter,7.1
+711,CAN,Golf,Summer,0.3
+712,CAN,Gymnastics Artistic,Summer,2.8
+713,CAN,Gymnastics Rhythmic,Summer,0.1
+714,CAN,Handball,Summer,0.1
+715,CAN,Hockey,Summer,0.3
+716,CAN,Ice Hockey,Summer,0.0
+717,CAN,Ice Hockey,Winter,1.2
+718,CAN,Judo,Summer,2.5
+719,CAN,Karate,Summer,0.0
+720,CAN,Lacrosse,Summer,0.1
+721,CAN,Luge,Winter,3.4
+722,CAN,Marathon Swimming,Summer,0.2
+723,CAN,Modern Pentathlon,Summer,0.7
+724,CAN,Nordic Combined,Winter,1.0
+725,CAN,Rowing,Summer,3.9
+726,CAN,Rugby,Summer,0.0
+727,CAN,Rugby Sevens,Summer,0.1
+728,CAN,Sailing,Summer,3.7
+729,CAN,Shooting,Summer,6.5
+730,CAN,Short Track,Winter,0.7
+731,CAN,Short Track Speed Skating,Winter,4.9
+732,CAN,Skateboarding,Summer,0.1
+733,CAN,Skeleton,Winter,1.1
+734,CAN,Ski Jumping,Winter,4.1
+735,CAN,Snowboard,Winter,5.8
+736,CAN,Softball,Summer,0.1
+737,CAN,Speed skating,Winter,19.3
+738,CAN,Sport Climbing,Summer,0.1
+739,CAN,Swimming,Summer,15.9
+740,CAN,Synchronized Swimming,Summer,0.7
+741,CAN,Table Tennis,Summer,1.1
+742,CAN,Taekwondo,Summer,0.4
+743,CAN,Tennis,Summer,1.4
+744,CAN,Trampoline,Summer,0.3
+745,CAN,Trampoline Gymnastics,Summer,0.0
+746,CAN,Triathlon,Summer,0.9
+747,CAN,Volleyball,Summer,0.2
+748,CAN,Water Polo,Summer,0.2
+749,CAN,Weightlifting,Summer,2.0
+750,CAN,Wrestling,Summer,5.5
+751,CAY,Alpine Skiing,Winter,100.0
+752,CAY,Athletics,Summer,6.1
+753,CAY,Cycling Road,Summer,30.6
+754,CAY,Cycling Track,Summer,8.2
+755,CAY,Sailing,Summer,22.4
+756,CAY,Swimming,Summer,32.7
+757,CGO,Athletics,Summer,13.5
+758,CGO,Boxing,Summer,13.5
+759,CGO,Fencing,Summer,2.7
+760,CGO,Handball,Summer,2.7
+761,CGO,Judo,Summer,13.5
+762,CGO,Swimming,Summer,32.4
+763,CGO,Table Tennis,Summer,21.6
+764,CHA,Archery,Summer,9.1
+765,CHA,Athletics,Summer,45.5
+766,CHA,Boxing,Summer,9.1
+767,CHA,Judo,Summer,36.4
+768,CHI,Alpine Skiing,Winter,90.1
+769,CHI,Archery,Summer,0.9
+770,CHI,Athletics,Summer,19.4
+771,CHI,Basketball,Summer,0.9
+772,CHI,Beach Volleyball,Summer,0.5
+773,CHI,Biathlon,Winter,4.2
+774,CHI,Boxing,Summer,8.8
+775,CHI,Canoe Slalom,Summer,0.2
+776,CHI,Canoe Sprint,Summer,0.5
+777,CHI,Cross Country Skiing,Winter,2.6
+778,CHI,Cycling BMX Freestyle,Summer,0.2
+779,CHI,Cycling Mountain Bike,Summer,0.7
+780,CHI,Cycling Road,Summer,7.9
+781,CHI,Cycling Track,Summer,3.6
+782,CHI,Diving,Summer,0.9
+783,CHI,Equestrian,Summer,0.5
+784,CHI,Equestrian Dressage,Summer,1.8
+785,CHI,Equestrian Eventing,Summer,1.4
+786,CHI,Equestrian Jumping,Summer,4.7
+787,CHI,Fencing,Summer,1.8
+788,CHI,Football,Summer,1.1
+789,CHI,Freestyle Skiing,Winter,3.1
+790,CHI,Golf,Summer,0.9
+791,CHI,Gymnastics Artistic,Summer,0.7
+792,CHI,Judo,Summer,1.1
+793,CHI,Marathon Swimming,Summer,0.2
+794,CHI,Modern Pentathlon,Summer,4.1
+795,CHI,Rowing,Summer,2.5
+796,CHI,Sailing,Summer,3.6
+797,CHI,Shooting,Summer,12.2
+798,CHI,Skateboarding,Summer,0.2
+799,CHI,Swimming,Summer,5.6
+800,CHI,Table Tennis,Summer,5.4
+801,CHI,Taekwondo,Summer,0.7
+802,CHI,Tennis,Summer,3.6
+803,CHI,Triathlon,Summer,1.6
+804,CHI,Water Polo,Summer,0.2
+805,CHI,Weightlifting,Summer,1.4
+806,CHI,Wrestling,Summer,0.5
+807,CHN,3x3 Basketball,Summer,0.1
+808,CHN,Alpine Skiing,Winter,5.8
+809,CHN,Archery,Summer,3.2
+810,CHN,Artistic Gymnastics,Summer,0.7
+811,CHN,Artistic Swimming,Summer,0.1
+812,CHN,Athletics,Summer,9.9
+813,CHN,Badminton,Summer,3.9
+814,CHN,Baseball,Summer,0.0
+815,CHN,Basketball,Summer,0.8
+816,CHN,Beach Volleyball,Summer,0.5
+817,CHN,Biathlon,Winter,14.2
+818,CHN,Bobsleigh,Winter,1.2
+819,CHN,Boxing,Summer,2.4
+820,CHN,Canoe Slalom,Summer,0.7
+821,CHN,Canoe Sprint,Summer,1.8
+822,CHN,Cross Country Skiing,Winter,18.3
+823,CHN,Curling,Winter,1.0
+824,CHN,Cycling Mountain Bike,Summer,0.5
+825,CHN,Cycling Road,Summer,1.1
+826,CHN,Cycling Track,Summer,1.7
+827,CHN,Diving,Summer,4.2
+828,CHN,Equestrian,Summer,0.3
+829,CHN,Equestrian Dressage,Summer,0.0
+830,CHN,Equestrian Eventing,Summer,0.1
+831,CHN,Equestrian Jumping,Summer,0.2
+832,CHN,Fencing,Summer,6.3
+833,CHN,Figure skating,Winter,5.7
+834,CHN,Football,Summer,0.4
+835,CHN,Freestyle Skiing,Winter,8.6
+836,CHN,Golf,Summer,0.3
+837,CHN,Gymnastics Artistic,Summer,7.3
+838,CHN,Gymnastics Rhythmic,Summer,0.3
+839,CHN,Handball,Summer,0.2
+840,CHN,Hockey,Summer,0.3
+841,CHN,Ice Hockey,Winter,0.5
+842,CHN,Judo,Summer,3.5
+843,CHN,Karate,Summer,0.1
+844,CHN,Luge,Winter,0.4
+845,CHN,Marathon Swimming,Summer,0.2
+846,CHN,Modern Pentathlon,Summer,0.9
+847,CHN,Nordic Combined,Winter,0.3
+848,CHN,Rhythmic Gymnastics,Summer,0.0
+849,CHN,Rowing,Summer,2.5
+850,CHN,Rugby Sevens,Summer,0.0
+851,CHN,Sailing,Summer,2.1
+852,CHN,Shooting,Summer,10.8
+853,CHN,Short Track,Winter,2.2
+854,CHN,Short Track Speed Skating,Winter,13.0
+855,CHN,Skateboarding,Summer,0.1
+856,CHN,Skeleton,Winter,0.5
+857,CHN,Ski Jumping,Winter,1.0
+858,CHN,Snowboard,Winter,4.1
+859,CHN,Softball,Summer,0.2
+860,CHN,Speed skating,Winter,23.2
+861,CHN,Sport Climbing,Summer,0.1
+862,CHN,Swimming,Summer,15.9
+863,CHN,Synchronized Swimming,Summer,0.8
+864,CHN,Table Tennis,Summer,3.1
+865,CHN,Taekwondo,Summer,0.9
+866,CHN,Tennis,Summer,1.6
+867,CHN,Trampoline,Summer,0.5
+868,CHN,Trampoline Gymnastics,Summer,0.1
+869,CHN,Triathlon,Summer,0.5
+870,CHN,Volleyball,Summer,0.5
+871,CHN,Water Polo,Summer,0.3
+872,CHN,Weightlifting,Summer,4.2
+873,CHN,Wrestling,Summer,3.8
+874,CIV,Archery,Summer,3.2
+875,CIV,Athletics,Summer,21.0
+876,CIV,Boxing,Summer,12.9
+877,CIV,Fencing,Summer,1.6
+878,CIV,Football,Summer,3.2
+879,CIV,Handball,Summer,1.6
+880,CIV,Judo,Summer,16.1
+881,CIV,Rowing,Summer,1.6
+882,CIV,Swimming,Summer,12.9
+883,CIV,Taekwondo,Summer,19.4
+884,CIV,Tennis,Summer,3.2
+885,CIV,Wrestling,Summer,3.2
+886,CMR,Athletics,Summer,7.4
+887,CMR,Boxing,Summer,34.2
+888,CMR,Cross Country Skiing,Winter,100.0
+889,CMR,Cycling Road,Summer,10.7
+890,CMR,Football,Summer,2.7
+891,CMR,Judo,Summer,12.1
+892,CMR,Rowing,Summer,1.3
+893,CMR,Swimming,Summer,3.4
+894,CMR,Table Tennis,Summer,2.0
+895,CMR,Volleyball,Summer,0.7
+896,CMR,Weightlifting,Summer,8.7
+897,CMR,Wrestling,Summer,16.8
+898,COD,Athletics,Summer,20.0
+899,COD,Basketball,Summer,1.7
+900,COD,Boxing,Summer,31.7
+901,COD,Cycling Road,Summer,20.0
+902,COD,Judo,Summer,16.7
+903,COD,Swimming,Summer,1.7
+904,COD,Table Tennis,Summer,5.0
+905,COD,Taekwondo,Summer,3.3
+906,COK,Athletics,Summer,3.1
+907,COK,Boxing,Summer,9.4
+908,COK,Canoe Slalom,Summer,15.6
+909,COK,Canoe Sprint,Summer,15.6
+910,COK,Sailing,Summer,15.6
+911,COK,Swimming,Summer,15.6
+912,COK,Weightlifting,Summer,25.0
+913,COL,Alpine Skiing,Winter,50.0
+914,COL,Archery,Summer,2.5
+915,COL,Artistic Swimming,Summer,0.2
+916,COL,Athletics,Summer,16.5
+917,COL,Boxing,Summer,8.2
+918,COL,Cross Country Skiing,Winter,25.0
+919,COL,Cycling BMX,Summer,1.1
+920,COL,Cycling BMX Racing,Summer,0.5
+921,COL,Cycling Mountain Bike,Summer,1.1
+922,COL,Cycling Road,Summer,12.5
+923,COL,Cycling Track,Summer,6.5
+924,COL,Diving,Summer,3.4
+925,COL,Equestrian,Summer,0.2
+926,COL,Equestrian Dressage,Summer,0.5
+927,COL,Equestrian Jumping,Summer,2.2
+928,COL,Fencing,Summer,2.5
+929,COL,Football,Summer,1.1
+930,COL,Golf,Summer,0.5
+931,COL,Gymnastics Artistic,Summer,0.5
+932,COL,Judo,Summer,1.5
+933,COL,Rowing,Summer,0.2
+934,COL,Rugby,Summer,0.2
+935,COL,Sailing,Summer,0.8
+936,COL,Shooting,Summer,9.4
+937,COL,Skateboarding,Summer,0.2
+938,COL,Speed skating,Winter,25.0
+939,COL,Swimming,Summer,9.1
+940,COL,Synchronized Swimming,Summer,0.2
+941,COL,Table Tennis,Summer,0.5
+942,COL,Taekwondo,Summer,1.7
+943,COL,Tennis,Summer,2.2
+944,COL,Triathlon,Summer,0.5
+945,COL,Weightlifting,Summer,10.5
+946,COL,Wrestling,Summer,4.0
+947,COM,Judo,Summer,16.7
+948,COM,Swimming,Summer,66.7
+949,COM,Weightlifting,Summer,16.7
+950,COR,Ice Hockey,Winter,100.0
+951,CPV,Athletics,Summer,41.7
+952,CPV,Boxing,Summer,25.0
+953,CPV,Gymnastics Rhythmic,Summer,8.3
+954,CPV,Judo,Summer,16.7
+955,CPV,Taekwondo,Summer,8.3
+956,CRC,Alpine Skiing,Winter,66.7
+957,CRC,Archery,Summer,3.2
+958,CRC,Athletics,Summer,11.4
+959,CRC,Beach Volleyball,Summer,0.6
+960,CRC,Biathlon,Winter,8.3
+961,CRC,Boxing,Summer,1.9
+962,CRC,Canoe Slalom,Summer,3.8
+963,CRC,Cross Country Skiing,Winter,25.0
+964,CRC,Cycling BMX Freestyle,Summer,0.6
+965,CRC,Cycling Mountain Bike,Summer,3.8
+966,CRC,Cycling Road,Summer,7.6
+967,CRC,Diving,Summer,1.3
+968,CRC,Fencing,Summer,0.6
+969,CRC,Football,Summer,1.9
+970,CRC,Judo,Summer,10.1
+971,CRC,Shooting,Summer,15.8
+972,CRC,Surfing,Summer,1.3
+973,CRC,Swimming,Summer,28.5
+974,CRC,Taekwondo,Summer,2.5
+975,CRC,Tennis,Summer,0.6
+976,CRC,Triathlon,Summer,1.9
+977,CRC,Weightlifting,Summer,2.5
+978,CRO,Alpine Skiing,Winter,59.4
+979,CRO,Artistic Gymnastics,Summer,0.3
+980,CRO,Athletics,Summer,4.4
+981,CRO,Basketball,Summer,1.4
+982,CRO,Biathlon,Winter,4.8
+983,CRO,Bobsleigh,Winter,2.4
+984,CRO,Boxing,Summer,2.7
+985,CRO,Canoe Slalom,Summer,3.0
+986,CRO,Canoe Sprint,Summer,1.6
+987,CRO,Cross Country Skiing,Winter,29.0
+988,CRO,Cycling Road,Summer,2.5
+989,CRO,Diving,Summer,0.3
+990,CRO,Equestrian Eventing,Summer,0.3
+991,CRO,Equestrian Jumping,Summer,0.3
+992,CRO,Fencing,Summer,0.3
+993,CRO,Figure skating,Winter,1.0
+994,CRO,Gymnastics Artistic,Summer,1.1
+995,CRO,Handball,Summer,1.6
+996,CRO,Judo,Summer,1.6
+997,CRO,Karate,Summer,0.3
+998,CRO,Luge,Winter,0.5
+999,CRO,Marathon Swimming,Summer,0.3
+1000,CRO,Rowing,Summer,4.7
+1001,CRO,Sailing,Summer,9.3
+1002,CRO,Shooting,Summer,15.1
+1003,CRO,Short Track Speed Skating,Winter,1.0
+1004,CRO,Skeleton,Winter,0.5
+1005,CRO,Snowboard,Winter,1.4
+1006,CRO,Swimming,Summer,23.0
+1007,CRO,Table Tennis,Summer,8.2
+1008,CRO,Taekwondo,Summer,3.8
+1009,CRO,Tennis,Summer,9.0
+1010,CRO,Volleyball,Summer,0.3
+1011,CRO,Water Polo,Summer,1.9
+1012,CRO,Weightlifting,Summer,0.8
+1013,CRO,Wrestling,Summer,1.9
+1014,CUB,Archery,Summer,0.7
+1015,CUB,Athletics,Summer,16.6
+1016,CUB,Badminton,Summer,0.1
+1017,CUB,Baseball,Summer,0.4
+1018,CUB,Basketball,Summer,0.8
+1019,CUB,Beach Volleyball,Summer,0.7
+1020,CUB,Boxing,Summer,11.1
+1021,CUB,Canoe Sprint,Summer,2.3
+1022,CUB,Cycling Road,Summer,2.2
+1023,CUB,Cycling Track,Summer,1.5
+1024,CUB,Diving,Summer,2.6
+1025,CUB,Fencing,Summer,5.8
+1026,CUB,Football,Summer,0.2
+1027,CUB,Gymnastics Artistic,Summer,9.6
+1028,CUB,Handball,Summer,0.2
+1029,CUB,Hockey,Summer,0.1
+1030,CUB,Judo,Summer,7.6
+1031,CUB,Modern Pentathlon,Summer,0.4
+1032,CUB,Rowing,Summer,2.8
+1033,CUB,Sailing,Summer,0.9
+1034,CUB,Shooting,Summer,8.5
+1035,CUB,Softball,Summer,0.1
+1036,CUB,Swimming,Summer,3.3
+1037,CUB,Synchronized Swimming,Summer,0.1
+1038,CUB,Table Tennis,Summer,1.3
+1039,CUB,Taekwondo,Summer,1.2
+1040,CUB,Volleyball,Summer,1.3
+1041,CUB,Water Polo,Summer,0.4
+1042,CUB,Weightlifting,Summer,6.0
+1043,CUB,Wrestling,Summer,11.3
+1044,CYP,Alpine Skiing,Winter,100.0
+1045,CYP,Archery,Summer,1.8
+1046,CYP,Athletics,Summer,8.8
+1047,CYP,Cycling Mountain Bike,Summer,1.8
+1048,CYP,Cycling Road,Summer,2.7
+1049,CYP,Gymnastics Rhythmic,Summer,0.9
+1050,CYP,Judo,Summer,9.7
+1051,CYP,Sailing,Summer,21.2
+1052,CYP,Shooting,Summer,23.9
+1053,CYP,Swimming,Summer,23.9
+1054,CYP,Tennis,Summer,1.8
+1055,CYP,Weightlifting,Summer,1.8
+1056,CYP,Wrestling,Summer,1.8
+1057,CZE,Alpine Skiing,Winter,18.6
+1058,CZE,Archery,Summer,0.4
+1059,CZE,Athletics,Summer,14.7
+1060,CZE,Badminton,Summer,0.9
+1061,CZE,Basketball,Summer,0.6
+1062,CZE,Beach Volleyball,Summer,1.6
+1063,CZE,Biathlon,Winter,21.8
+1064,CZE,Bobsleigh,Winter,2.5
+1065,CZE,Boxing,Summer,1.0
+1066,CZE,Canoe Slalom,Summer,5.7
+1067,CZE,Canoe Sprint,Summer,3.1
+1068,CZE,Cross Country Skiing,Winter,25.5
+1069,CZE,Curling,Winter,0.1
+1070,CZE,Cycling BMX,Summer,0.3
+1071,CZE,Cycling Mountain Bike,Summer,2.6
+1072,CZE,Cycling Road,Summer,4.4
+1073,CZE,Cycling Track,Summer,3.4
+1074,CZE,Diving,Summer,0.1
+1075,CZE,Equestrian,Summer,0.9
+1076,CZE,Equestrian Eventing,Summer,0.3
+1077,CZE,Fencing,Summer,0.7
+1078,CZE,Figure skating,Winter,2.5
+1079,CZE,Football,Summer,0.1
+1080,CZE,Freestyle Skiing,Winter,2.3
+1081,CZE,Golf,Summer,0.4
+1082,CZE,Gymnastics Artistic,Summer,0.3
+1083,CZE,Ice Hockey,Winter,1.0
+1084,CZE,Judo,Summer,2.2
+1085,CZE,Luge,Winter,2.3
+1086,CZE,Marathon Swimming,Summer,0.7
+1087,CZE,Modern Pentathlon,Summer,2.1
+1088,CZE,Nordic Combined,Winter,6.9
+1089,CZE,Rowing,Summer,4.4
+1090,CZE,Sailing,Summer,2.8
+1091,CZE,Shooting,Summer,15.5
+1092,CZE,Short Track,Winter,0.1
+1093,CZE,Short Track Speed Skating,Winter,1.5
+1094,CZE,Skeleton,Winter,0.2
+1095,CZE,Ski Jumping,Winter,8.0
+1096,CZE,Snowboard,Winter,3.4
+1097,CZE,Speed skating,Winter,3.2
+1098,CZE,Sport Climbing,Summer,0.1
+1099,CZE,Swimming,Summer,12.3
+1100,CZE,Synchronized Swimming,Summer,0.7
+1101,CZE,Table Tennis,Summer,3.1
+1102,CZE,Tennis,Summer,8.8
+1103,CZE,Triathlon,Summer,2.8
+1104,CZE,Weightlifting,Summer,1.0
+1105,CZE,Wrestling,Summer,1.8
+1106,DEN,Alpine Skiing,Winter,24.5
+1107,DEN,Archery,Summer,1.3
+1108,DEN,Athletics,Summer,8.5
+1109,DEN,Badminton,Summer,4.1
+1110,DEN,Biathlon,Winter,3.6
+1111,DEN,Boxing,Summer,5.5
+1112,DEN,Canoe Marathon,Summer,0.2
+1113,DEN,Canoe Sprint,Summer,3.4
+1114,DEN,Cross Country Skiing,Winter,33.6
+1115,DEN,Curling,Winter,10.9
+1116,DEN,Cycling BMX,Summer,0.2
+1117,DEN,Cycling BMX Racing,Summer,0.1
+1118,DEN,Cycling Mountain Bike,Summer,0.7
+1119,DEN,Cycling Road,Summer,7.2
+1120,DEN,Cycling Track,Summer,3.9
+1121,DEN,Diving,Summer,1.2
+1122,DEN,Equestrian,Summer,0.4
+1123,DEN,Equestrian Dressage,Summer,3.1
+1124,DEN,Equestrian Eventing,Summer,1.6
+1125,DEN,Equestrian Jumping,Summer,0.5
+1126,DEN,Fencing,Summer,1.9
+1127,DEN,Figure skating,Winter,6.4
+1128,DEN,Football,Summer,0.6
+1129,DEN,Freestyle Skiing,Winter,3.6
+1130,DEN,Golf,Summer,0.5
+1131,DEN,Gymnastics Artistic,Summer,7.1
+1132,DEN,Handball,Summer,0.7
+1133,DEN,Hockey,Summer,0.3
+1134,DEN,Ice Hockey,Winter,1.8
+1135,DEN,Judo,Summer,0.2
+1136,DEN,Modern Pentathlon,Summer,1.3
+1137,DEN,Rowing,Summer,3.8
+1138,DEN,Sailing,Summer,6.3
+1139,DEN,Shooting,Summer,14.0
+1140,DEN,Skateboarding,Summer,0.1
+1141,DEN,Snowboard,Winter,1.8
+1142,DEN,Speed skating,Winter,13.6
+1143,DEN,Swimming,Summer,11.8
+1144,DEN,Table Tennis,Summer,0.5
+1145,DEN,Taekwondo,Summer,0.2
+1146,DEN,Tennis,Summer,2.4
+1147,DEN,Triathlon,Summer,0.4
+1148,DEN,Weightlifting,Summer,1.5
+1149,DEN,Wrestling,Summer,4.7
+1150,DJI,Athletics,Summer,52.0
+1151,DJI,Judo,Summer,20.0
+1152,DJI,Sailing,Summer,16.0
+1153,DJI,Swimming,Summer,8.0
+1154,DJI,Table Tennis,Summer,4.0
+1155,DMA,Athletics,Summer,25.0
+1156,DMA,Cross Country Skiing,Winter,100.0
+1157,DMA,Swimming,Summer,75.0
+1158,DOM,Archery,Summer,0.6
+1159,DOM,Athletics,Summer,5.1
+1160,DOM,Baseball,Summer,0.6
+1161,DOM,Baseball/Softball,Summer,0.6
+1162,DOM,Boxing,Summer,33.1
+1163,DOM,Cycling Road,Summer,0.6
+1164,DOM,Diving,Summer,1.7
+1165,DOM,Equestrian,Summer,1.1
+1166,DOM,Equestrian Dressage,Summer,0.6
+1167,DOM,Gymnastics Artistic,Summer,0.6
+1168,DOM,Judo,Summer,10.1
+1169,DOM,Rowing,Summer,0.6
+1170,DOM,Sailing,Summer,1.1
+1171,DOM,Shooting,Summer,5.6
+1172,DOM,Swimming,Summer,3.4
+1173,DOM,Synchronized Swimming,Summer,1.7
+1174,DOM,Table Tennis,Summer,6.7
+1175,DOM,Taekwondo,Summer,5.1
+1176,DOM,Tennis,Summer,1.1
+1177,DOM,Volleyball,Summer,1.7
+1178,DOM,Weightlifting,Summer,14.6
+1179,DOM,Wrestling,Summer,3.9
+1180,ECU,Alpine Skiing,Winter,50.0
+1181,ECU,Archery,Summer,0.4
+1182,ECU,Athletics,Summer,29.3
+1183,ECU,Boxing,Summer,11.2
+1184,ECU,Canoe Sprint,Summer,0.8
+1185,ECU,Cross Country Skiing,Winter,50.0
+1186,ECU,Cycling BMX,Summer,0.8
+1187,ECU,Cycling BMX Racing,Summer,0.8
+1188,ECU,Cycling Road,Summer,5.2
+1189,ECU,Cycling Track,Summer,2.0
+1190,ECU,Equestrian,Summer,0.4
+1191,ECU,Equestrian Dressage,Summer,0.4
+1192,ECU,Equestrian Eventing,Summer,0.8
+1193,ECU,Golf,Summer,0.4
+1194,ECU,Gymnastics Artistic,Summer,1.2
+1195,ECU,Judo,Summer,6.4
+1196,ECU,Marathon Swimming,Summer,2.0
+1197,ECU,Modern Pentathlon,Summer,0.4
+1198,ECU,Rowing,Summer,0.4
+1199,ECU,Sailing,Summer,0.4
+1200,ECU,Shooting,Summer,8.0
+1201,ECU,Surfing,Summer,0.4
+1202,ECU,Swimming,Summer,11.2
+1203,ECU,Table Tennis,Summer,0.8
+1204,ECU,Taekwondo,Summer,0.4
+1205,ECU,Tennis,Summer,2.0
+1206,ECU,Triathlon,Summer,1.2
+1207,ECU,Weightlifting,Summer,8.0
+1208,ECU,Wrestling,Summer,4.4
+1209,EGY,Alpine Skiing,Winter,100.0
+1210,EGY,Archery,Summer,1.5
+1211,EGY,Artistic Swimming,Summer,0.2
+1212,EGY,Athletics,Summer,1.3
+1213,EGY,Badminton,Summer,0.5
+1214,EGY,Basketball,Summer,0.7
+1215,EGY,Beach Volleyball,Summer,0.1
+1216,EGY,Boxing,Summer,9.4
+1217,EGY,Canoe Sprint,Summer,0.7
+1218,EGY,Cycling Road,Summer,0.7
+1219,EGY,Cycling Track,Summer,0.5
+1220,EGY,Diving,Summer,2.4
+1221,EGY,Equestrian,Summer,0.4
+1222,EGY,Equestrian Jumping,Summer,1.2
+1223,EGY,Fencing,Summer,8.1
+1224,EGY,Football,Summer,1.2
+1225,EGY,Gymnastics Artistic,Summer,12.4
+1226,EGY,Gymnastics Rhythmic,Summer,0.1
+1227,EGY,Handball,Summer,0.7
+1228,EGY,Hockey,Summer,0.2
+1229,EGY,Judo,Summer,3.5
+1230,EGY,Karate,Summer,0.5
+1231,EGY,Marathon Swimming,Summer,0.4
+1232,EGY,Modern Pentathlon,Summer,3.0
+1233,EGY,Rowing,Summer,1.5
+1234,EGY,Sailing,Summer,0.5
+1235,EGY,Shooting,Summer,10.6
+1236,EGY,Swimming,Summer,8.1
+1237,EGY,Synchronized Swimming,Summer,1.3
+1238,EGY,Table Tennis,Summer,3.6
+1239,EGY,Taekwondo,Summer,2.0
+1240,EGY,Tennis,Summer,0.2
+1241,EGY,Triathlon,Summer,0.1
+1242,EGY,Volleyball,Summer,0.5
+1243,EGY,Water Polo,Summer,0.5
+1244,EGY,Weightlifting,Summer,9.1
+1245,EGY,Wrestling,Summer,12.1
+1246,EOR,Athletics,Summer,4.5
+1247,EOR,Badminton,Summer,4.5
+1248,EOR,Boxing,Summer,9.1
+1249,EOR,Canoe Sprint,Summer,4.5
+1250,EOR,Cycling Road,Summer,9.1
+1251,EOR,Judo,Summer,31.8
+1252,EOR,Karate,Summer,9.1
+1253,EOR,Shooting,Summer,4.5
+1254,EOR,Taekwondo,Summer,13.6
+1255,EOR,Weightlifting,Summer,4.5
+1256,EOR,Wrestling,Summer,4.5
+1257,ERI,Alpine Skiing,Winter,100.0
+1258,ERI,Athletics,Summer,85.7
+1259,ERI,Cycling Road,Summer,14.3
+1260,ESA,Archery,Summer,1.7
+1261,ESA,Athletics,Summer,10.8
+1262,ESA,Boxing,Summer,2.5
+1263,ESA,Cycling Road,Summer,7.5
+1264,ESA,Cycling Track,Summer,4.2
+1265,ESA,Football,Summer,0.8
+1266,ESA,Judo,Summer,7.5
+1267,ESA,Rowing,Summer,2.5
+1268,ESA,Sailing,Summer,3.3
+1269,ESA,Shooting,Summer,20.0
+1270,ESA,Swimming,Summer,27.5
+1271,ESA,Tennis,Summer,0.8
+1272,ESA,Weightlifting,Summer,6.7
+1273,ESA,Wrestling,Summer,4.2
+1274,ESP,Alpine Skiing,Winter,54.0
+1275,ESP,Archery,Summer,1.6
+1276,ESP,Artistic Gymnastics,Summer,0.1
+1277,ESP,Artistic Swimming,Summer,0.1
+1278,ESP,Athletics,Summer,15.3
+1279,ESP,Badminton,Summer,0.6
+1280,ESP,Baseball,Summer,0.0
+1281,ESP,Basketball,Summer,0.9
+1282,ESP,Basque Pelota,Summer,0.0
+1283,ESP,Beach Volleyball,Summer,0.5
+1284,ESP,Biathlon,Winter,3.1
+1285,ESP,Bobsleigh,Winter,1.4
+1286,ESP,Boxing,Summer,4.6
+1287,ESP,Canoe Slalom,Summer,1.4
+1288,ESP,Canoe Sprint,Summer,3.0
+1289,ESP,Cross Country Skiing,Winter,26.3
+1290,ESP,Cycling Mountain Bike,Summer,1.0
+1291,ESP,Cycling Road,Summer,5.1
+1292,ESP,Cycling Track,Summer,2.3
+1293,ESP,Diving,Summer,1.2
+1294,ESP,Equestrian,Summer,0.3
+1295,ESP,Equestrian Dressage,Summer,1.4
+1296,ESP,Equestrian Eventing,Summer,1.5
+1297,ESP,Equestrian Jumping,Summer,2.9
+1298,ESP,Fencing,Summer,2.4
+1299,ESP,Figure skating,Winter,3.1
+1300,ESP,Football,Summer,0.5
+1301,ESP,Freestyle Skiing,Winter,2.8
+1302,ESP,Golf,Summer,0.4
+1303,ESP,Gymnastics Artistic,Summer,3.7
+1304,ESP,Gymnastics Rhythmic,Summer,0.8
+1305,ESP,Handball,Summer,0.8
+1306,ESP,Hockey,Summer,1.2
+1307,ESP,Judo,Summer,3.4
+1308,ESP,Karate,Summer,0.1
+1309,ESP,Luge,Winter,1.4
+1310,ESP,Marathon Swimming,Summer,0.3
+1311,ESP,Modern Pentathlon,Summer,1.1
+1312,ESP,Polo,Summer,0.1
+1313,ESP,Rowing,Summer,1.4
+1314,ESP,Rugby,Summer,0.1
+1315,ESP,Sailing,Summer,5.7
+1316,ESP,Shooting,Summer,8.8
+1317,ESP,Skateboarding,Summer,0.2
+1318,ESP,Skeleton,Winter,0.9
+1319,ESP,Ski Jumping,Winter,1.7
+1320,ESP,Snowboard,Winter,5.2
+1321,ESP,Sport Climbing,Summer,0.0
+1322,ESP,Swimming,Summer,10.8
+1323,ESP,Synchronized Swimming,Summer,0.9
+1324,ESP,Table Tennis,Summer,1.0
+1325,ESP,Taekwondo,Summer,1.0
+1326,ESP,Tennis,Summer,5.0
+1327,ESP,Triathlon,Summer,1.5
+1328,ESP,Volleyball,Summer,0.1
+1329,ESP,Water Polo,Summer,1.0
+1330,ESP,Weightlifting,Summer,1.8
+1331,ESP,Wrestling,Summer,1.9
+1332,EST,Alpine Skiing,Winter,4.9
+1333,EST,Archery,Summer,1.4
+1334,EST,Athletics,Summer,23.7
+1335,EST,Badminton,Summer,1.9
+1336,EST,Basketball,Summer,0.3
+1337,EST,Beach Volleyball,Summer,0.6
+1338,EST,Biathlon,Winter,31.8
+1339,EST,Boxing,Summer,1.4
+1340,EST,Cross Country Skiing,Winter,44.8
+1341,EST,Cycling Mountain Bike,Summer,0.8
+1342,EST,Cycling Road,Summer,8.1
+1343,EST,Cycling Track,Summer,0.8
+1344,EST,Equestrian,Summer,0.3
+1345,EST,Fencing,Summer,7.0
+1346,EST,Figure skating,Winter,2.2
+1347,EST,Football,Summer,0.6
+1348,EST,Freestyle Skiing,Winter,0.7
+1349,EST,Judo,Summer,2.5
+1350,EST,Luge,Winter,0.7
+1351,EST,Modern Pentathlon,Summer,0.8
+1352,EST,Nordic Combined,Winter,7.1
+1353,EST,Rowing,Summer,4.5
+1354,EST,Sailing,Summer,6.7
+1355,EST,Shooting,Summer,3.9
+1356,EST,Ski Jumping,Winter,4.0
+1357,EST,Speed skating,Winter,4.0
+1358,EST,Swimming,Summer,12.3
+1359,EST,Table Tennis,Summer,0.3
+1360,EST,Tennis,Summer,1.7
+1361,EST,Triathlon,Summer,1.1
+1362,EST,Weightlifting,Summer,5.6
+1363,EST,Wrestling,Summer,13.9
+1364,ETH,Athletics,Summer,72.4
+1365,ETH,Boxing,Summer,12.7
+1366,ETH,Cross Country Skiing,Winter,100.0
+1367,ETH,Cycling Road,Summer,13.1
+1368,ETH,Swimming,Summer,1.5
+1369,ETH,Taekwondo,Summer,0.4
+1370,EUN,Alpine Skiing,Winter,12.3
+1371,EUN,Archery,Summer,2.4
+1372,EUN,Athletics,Summer,20.3
+1373,EUN,Badminton,Summer,0.6
+1374,EUN,Basketball,Summer,0.6
+1375,EUN,Biathlon,Winter,11.0
+1376,EUN,Bobsleigh,Winter,2.5
+1377,EUN,Boxing,Summer,3.6
+1378,EUN,Canoe Sprint,Summer,1.8
+1379,EUN,Cross Country Skiing,Winter,20.9
+1380,EUN,Cycling Road,Summer,2.1
+1381,EUN,Cycling Track,Summer,2.1
+1382,EUN,Diving,Summer,2.1
+1383,EUN,Equestrian Dressage,Summer,1.2
+1384,EUN,Equestrian Eventing,Summer,1.5
+1385,EUN,Equestrian Jumping,Summer,0.3
+1386,EUN,Fencing,Summer,4.8
+1387,EUN,Figure skating,Winter,6.7
+1388,EUN,Freestyle Skiing,Winter,7.4
+1389,EUN,Gymnastics Artistic,Summer,8.1
+1390,EUN,Gymnastics Rhythmic,Summer,0.6
+1391,EUN,Handball,Summer,0.6
+1392,EUN,Hockey,Summer,0.3
+1393,EUN,Ice Hockey,Winter,0.6
+1394,EUN,Judo,Summer,3.9
+1395,EUN,Luge,Winter,4.9
+1396,EUN,Modern Pentathlon,Summer,1.2
+1397,EUN,Nordic Combined,Winter,3.1
+1398,EUN,Rowing,Summer,3.6
+1399,EUN,Sailing,Summer,2.1
+1400,EUN,Shooting,Summer,8.4
+1401,EUN,Short Track Speed Skating,Winter,3.1
+1402,EUN,Ski Jumping,Winter,5.5
+1403,EUN,Speed skating,Winter,22.1
+1404,EUN,Swimming,Summer,12.8
+1405,EUN,Synchronized Swimming,Summer,1.2
+1406,EUN,Table Tennis,Summer,2.4
+1407,EUN,Tennis,Summer,1.8
+1408,EUN,Volleyball,Summer,0.6
+1409,EUN,Water Polo,Summer,0.3
+1410,EUN,Weightlifting,Summer,3.0
+1411,EUN,Wrestling,Summer,6.0
+1412,FIJ,Alpine Skiing,Winter,40.0
+1413,FIJ,Archery,Summer,2.2
+1414,FIJ,Athletics,Summer,9.6
+1415,FIJ,Boxing,Summer,3.7
+1416,FIJ,Cross Country Skiing,Winter,60.0
+1417,FIJ,Cycling Road,Summer,0.7
+1418,FIJ,Football,Summer,0.7
+1419,FIJ,Judo,Summer,10.4
+1420,FIJ,Rugby,Summer,1.5
+1421,FIJ,Rugby Sevens,Summer,1.5
+1422,FIJ,Sailing,Summer,12.6
+1423,FIJ,Shooting,Summer,3.0
+1424,FIJ,Swimming,Summer,46.7
+1425,FIJ,Table Tennis,Summer,1.5
+1426,FIJ,Weightlifting,Summer,5.9
+1427,FIN,Alpine Skiing,Winter,6.5
+1428,FIN,Archery,Summer,1.7
+1429,FIN,Athletics,Summer,25.7
+1430,FIN,Badminton,Summer,0.7
+1431,FIN,Basketball,Summer,0.1
+1432,FIN,Biathlon,Winter,12.1
+1433,FIN,Boxing,Summer,3.5
+1434,FIN,Canoe Marathon,Summer,0.2
+1435,FIN,Canoe Sprint,Summer,1.2
+1436,FIN,Cross Country Skiing,Winter,36.8
+1437,FIN,Curling,Winter,0.2
+1438,FIN,Cycling Road,Summer,2.8
+1439,FIN,Cycling Track,Summer,0.7
+1440,FIN,Diving,Summer,1.0
+1441,FIN,Equestrian,Summer,0.0
+1442,FIN,Equestrian Dressage,Summer,0.6
+1443,FIN,Equestrian Eventing,Summer,0.6
+1444,FIN,Equestrian Jumping,Summer,0.3
+1445,FIN,Fencing,Summer,0.5
+1446,FIN,Figure skating,Summer,0.1
+1447,FIN,Figure skating,Winter,1.5
+1448,FIN,Football,Summer,0.2
+1449,FIN,Freestyle Skiing,Winter,2.9
+1450,FIN,Golf,Summer,0.3
+1451,FIN,Gymnastics Artistic,Summer,19.2
+1452,FIN,Gymnastics Rhythmic,Summer,0.0
+1453,FIN,Hockey,Summer,0.0
+1454,FIN,Ice Hockey,Winter,1.6
+1455,FIN,Judo,Summer,1.1
+1456,FIN,Military Patrol,Winter,0.1
+1457,FIN,Modern Pentathlon,Summer,2.2
+1458,FIN,Nordic Combined,Winter,7.8
+1459,FIN,Rowing,Summer,0.8
+1460,FIN,Sailing,Summer,3.8
+1461,FIN,Shooting,Summer,12.7
+1462,FIN,Skateboarding,Summer,0.0
+1463,FIN,Ski Jumping,Winter,10.5
+1464,FIN,Snowboard,Winter,3.8
+1465,FIN,Speed skating,Winter,16.2
+1466,FIN,Swimming,Summer,5.8
+1467,FIN,Synchronized Swimming,Summer,0.0
+1468,FIN,Table Tennis,Summer,0.0
+1469,FIN,Taekwondo,Summer,0.2
+1470,FIN,Tennis,Summer,0.4
+1471,FIN,Weightlifting,Summer,2.8
+1472,FIN,Wrestling,Summer,10.6
+1473,FRA,3x3 Basketball,Summer,0.0
+1474,FRA,Alpine Skiing,Winter,27.8
+1475,FRA,Archery,Summer,2.7
+1476,FRA,Artistic Gymnastics,Summer,0.1
+1477,FRA,Artistic Swimming,Summer,0.0
+1478,FRA,Athletics,Summer,15.2
+1479,FRA,Badminton,Summer,0.4
+1480,FRA,Basketball,Summer,0.3
+1481,FRA,Beach Volleyball,Summer,0.1
+1482,FRA,Biathlon,Winter,14.5
+1483,FRA,Bobsleigh,Winter,2.8
+1484,FRA,Boxing,Summer,3.9
+1485,FRA,Canoe Marathon,Summer,0.1
+1486,FRA,Canoe Slalom,Summer,1.0
+1487,FRA,Canoe Sprint,Summer,1.6
+1488,FRA,Croquet,Summer,0.2
+1489,FRA,Cross Country Skiing,Winter,18.5
+1490,FRA,Curling,Winter,0.2
+1491,FRA,Cycling BMX,Summer,0.2
+1492,FRA,Cycling BMX Freestyle,Summer,0.0
+1493,FRA,Cycling BMX Racing,Summer,0.1
+1494,FRA,Cycling Mountain Bike,Summer,0.5
+1495,FRA,Cycling Road,Summer,3.2
+1496,FRA,Cycling Track,Summer,4.6
+1497,FRA,Diving,Summer,0.9
+1498,FRA,Equestrian,Summer,0.3
+1499,FRA,Equestrian  Vaulting,Summer,0.1
+1500,FRA,Equestrian Dressage,Summer,1.2
+1501,FRA,Equestrian Eventing,Summer,1.8
+1502,FRA,Equestrian Jumping,Summer,1.8
+1503,FRA,Fencing,Summer,6.9
+1504,FRA,Figure skating,Summer,0.0
+1505,FRA,Figure skating,Winter,5.2
+1506,FRA,Football,Summer,0.3
+1507,FRA,Freestyle Skiing,Winter,5.2
+1508,FRA,Golf,Summer,0.3
+1509,FRA,Gymnastics Artistic,Summer,12.4
+1510,FRA,Gymnastics Rhythmic,Summer,0.1
+1511,FRA,Handball,Summer,0.3
+1512,FRA,Hockey,Summer,0.2
+1513,FRA,Ice Hockey,Summer,0.0
+1514,FRA,Ice Hockey,Winter,0.5
+1515,FRA,Judo,Summer,2.6
+1516,FRA,Karate,Summer,0.1
+1517,FRA,Luge,Winter,1.0
+1518,FRA,Marathon Swimming,Summer,0.2
+1519,FRA,Military Patrol,Winter,0.1
+1520,FRA,Modern Pentathlon,Summer,1.4
+1521,FRA,Nordic Combined,Winter,4.4
+1522,FRA,Polo,Summer,0.0
+1523,FRA,Rowing,Summer,2.2
+1524,FRA,Rugby,Summer,0.1
+1525,FRA,Rugby Sevens,Summer,0.0
+1526,FRA,Sailing,Summer,4.5
+1527,FRA,Shooting,Summer,8.2
+1528,FRA,Short Track,Winter,0.6
+1529,FRA,Short Track Speed Skating,Winter,3.6
+1530,FRA,Skateboarding,Summer,0.1
+1531,FRA,Skeleton,Winter,0.3
+1532,FRA,Ski Jumping,Winter,4.7
+1533,FRA,Snowboard,Winter,5.0
+1534,FRA,Speed skating,Winter,5.8
+1535,FRA,Sport Climbing,Summer,0.1
+1536,FRA,Surfing,Summer,0.0
+1537,FRA,Swimming,Summer,9.9
+1538,FRA,Synchronized Swimming,Summer,0.3
+1539,FRA,Table Tennis,Summer,0.7
+1540,FRA,Taekwondo,Summer,0.3
+1541,FRA,Tennis,Summer,2.4
+1542,FRA,Trampoline,Summer,0.1
+1543,FRA,Triathlon,Summer,0.6
+1544,FRA,Volleyball,Summer,0.1
+1545,FRA,Water Motorsports,Summer,0.0
+1546,FRA,Water Polo,Summer,0.2
+1547,FRA,Weightlifting,Summer,2.3
+1548,FRA,Wrestling,Summer,3.2
+1549,FRG,Alpine Skiing,Winter,28.1
+1550,FRG,Archery,Summer,1.9
+1551,FRG,Athletics,Summer,18.2
+1552,FRG,Basketball,Summer,0.2
+1553,FRG,Biathlon,Winter,6.4
+1554,FRG,Bobsleigh,Winter,4.5
+1555,FRG,Boxing,Summer,3.5
+1556,FRG,Canoe Slalom,Summer,1.1
+1557,FRG,Canoe Sprint,Summer,3.4
+1558,FRG,Cross Country Skiing,Winter,19.9
+1559,FRG,Cycling Road,Summer,2.9
+1560,FRG,Cycling Track,Summer,2.4
+1561,FRG,Diving,Summer,1.4
+1562,FRG,Equestrian Dressage,Summer,2.0
+1563,FRG,Equestrian Eventing,Summer,2.4
+1564,FRG,Equestrian Jumping,Summer,2.0
+1565,FRG,Fencing,Summer,5.8
+1566,FRG,Figure skating,Winter,5.6
+1567,FRG,Football,Summer,0.3
+1568,FRG,Gymnastics Artistic,Summer,4.1
+1569,FRG,Gymnastics Rhythmic,Summer,0.4
+1570,FRG,Handball,Summer,0.4
+1571,FRG,Hockey,Summer,0.7
+1572,FRG,Ice Hockey,Winter,1.1
+1573,FRG,Judo,Summer,2.8
+1574,FRG,Luge,Winter,8.2
+1575,FRG,Modern Pentathlon,Summer,1.9
+1576,FRG,Nordic Combined,Winter,4.3
+1577,FRG,Rowing,Summer,4.3
+1578,FRG,Sailing,Summer,3.0
+1579,FRG,Shooting,Summer,7.7
+1580,FRG,Ski Jumping,Winter,7.1
+1581,FRG,Speed skating,Winter,14.8
+1582,FRG,Swimming,Summer,14.5
+1583,FRG,Synchronized Swimming,Summer,0.8
+1584,FRG,Table Tennis,Summer,0.7
+1585,FRG,Tennis,Summer,0.7
+1586,FRG,Volleyball,Summer,0.3
+1587,FRG,Water Polo,Summer,0.5
+1588,FRG,Weightlifting,Summer,2.9
+1589,FRG,Wrestling,Summer,7.2
+1590,FSM,Athletics,Summer,5.9
+1591,FSM,Boxing,Summer,5.9
+1592,FSM,Swimming,Summer,58.8
+1593,FSM,Weightlifting,Summer,23.5
+1594,FSM,Wrestling,Summer,5.9
+1595,GAB,Athletics,Summer,3.3
+1596,GAB,Boxing,Summer,46.7
+1597,GAB,Football,Summer,3.3
+1598,GAB,Judo,Summer,30.0
+1599,GAB,Swimming,Summer,3.3
+1600,GAB,Taekwondo,Summer,13.3
+1601,GAM,Athletics,Summer,12.5
+1602,GAM,Boxing,Summer,12.5
+1603,GAM,Judo,Summer,25.0
+1604,GAM,Swimming,Summer,12.5
+1605,GAM,Wrestling,Summer,37.5
+1606,GBR,Alpine Skiing,Winter,30.7
+1607,GBR,Archery,Summer,2.3
+1608,GBR,Artistic Gymnastics,Summer,0.2
+1609,GBR,Artistic Swimming,Summer,0.0
+1610,GBR,Athletics,Summer,20.6
+1611,GBR,Badminton,Summer,1.1
+1612,GBR,Basketball,Summer,0.1
+1613,GBR,Beach Volleyball,Summer,0.1
+1614,GBR,Biathlon,Winter,7.1
+1615,GBR,Bobsleigh,Winter,6.7
+1616,GBR,Boxing,Summer,5.2
+1617,GBR,Canoe Marathon,Summer,0.0
+1618,GBR,Canoe Slalom,Summer,1.0
+1619,GBR,Canoe Sprint,Summer,1.0
+1620,GBR,Cricket,Summer,0.0
+1621,GBR,Cross Country Skiing,Winter,12.7
+1622,GBR,Curling,Winter,1.4
+1623,GBR,Cycling BMX,Summer,0.1
+1624,GBR,Cycling BMX Freestyle,Summer,0.0
+1625,GBR,Cycling BMX Racing,Summer,0.0
+1626,GBR,Cycling Mountain Bike,Summer,0.3
+1627,GBR,Cycling Road,Summer,3.7
+1628,GBR,Cycling Track,Summer,3.4
+1629,GBR,Diving,Summer,2.8
+1630,GBR,Equestrian,Summer,0.3
+1631,GBR,Equestrian Dressage,Summer,1.1
+1632,GBR,Equestrian Eventing,Summer,1.8
+1633,GBR,Equestrian Jumping,Summer,1.5
+1634,GBR,Fencing,Summer,2.9
+1635,GBR,Figure skating,Summer,0.3
+1636,GBR,Figure skating,Winter,9.4
+1637,GBR,Football,Summer,0.2
+1638,GBR,Freestyle Skiing,Winter,4.5
+1639,GBR,Golf,Summer,0.5
+1640,GBR,Gymnastics Artistic,Summer,7.2
+1641,GBR,Gymnastics Rhythmic,Summer,0.0
+1642,GBR,Handball,Summer,0.0
+1643,GBR,Hockey,Summer,0.6
+1644,GBR,Ice Hockey,Winter,0.3
+1645,GBR,Jeu de Paume,Summer,0.2
+1646,GBR,Judo,Summer,2.1
+1647,GBR,Lacrosse,Summer,0.0
+1648,GBR,Luge,Winter,3.6
+1649,GBR,Marathon Swimming,Summer,0.2
+1650,GBR,Modern Pentathlon,Summer,1.7
+1651,GBR,Nordic Combined,Winter,0.3
+1652,GBR,Polo,Summer,0.1
+1653,GBR,Rackets,Summer,0.2
+1654,GBR,Rowing,Summer,3.3
+1655,GBR,Rugby,Summer,0.1
+1656,GBR,Rugby Sevens,Summer,0.0
+1657,GBR,Sailing,Summer,3.1
+1658,GBR,Shooting,Summer,7.5
+1659,GBR,Short Track,Winter,1.0
+1660,GBR,Short Track Speed Skating,Winter,5.6
+1661,GBR,Skateboarding,Summer,0.0
+1662,GBR,Skeleton,Winter,2.4
+1663,GBR,Ski Jumping,Winter,0.4
+1664,GBR,Snowboard,Winter,2.6
+1665,GBR,Speed skating,Winter,11.2
+1666,GBR,Sport Climbing,Summer,0.0
+1667,GBR,Swimming,Summer,12.3
+1668,GBR,Synchronized Swimming,Summer,0.3
+1669,GBR,Table Tennis,Summer,0.5
+1670,GBR,Taekwondo,Summer,0.4
+1671,GBR,Tennis,Summer,2.6
+1672,GBR,Trampoline,Summer,0.1
+1673,GBR,Trampoline Gymnastics,Summer,0.0
+1674,GBR,Triathlon,Summer,0.7
+1675,GBR,Tug of War,Summer,0.1
+1676,GBR,Volleyball,Summer,0.0
+1677,GBR,Water Motorsports,Summer,0.1
+1678,GBR,Water Polo,Summer,0.2
+1679,GBR,Weightlifting,Summer,2.5
+1680,GBR,Wrestling,Summer,3.5
+1681,GBS,Judo,Summer,16.7
+1682,GBS,Wrestling,Summer,83.3
+1683,GDR,Alpine Skiing,Winter,0.7
+1684,GDR,Athletics,Summer,25.4
+1685,GDR,Biathlon,Winter,8.7
+1686,GDR,Bobsleigh,Winter,3.8
+1687,GDR,Boxing,Summer,4.3
+1688,GDR,Canoe Slalom,Summer,1.1
+1689,GDR,Canoe Sprint,Summer,4.2
+1690,GDR,Cross Country Skiing,Winter,27.9
+1691,GDR,Cycling Road,Summer,2.0
+1692,GDR,Cycling Track,Summer,1.9
+1693,GDR,Diving,Summer,3.4
+1694,GDR,Equestrian Dressage,Summer,0.8
+1695,GDR,Equestrian Eventing,Summer,0.9
+1696,GDR,Fencing,Summer,2.1
+1697,GDR,Figure skating,Winter,7.3
+1698,GDR,Football,Summer,0.3
+1699,GDR,Gymnastics Artistic,Summer,10.6
+1700,GDR,Handball,Summer,0.5
+1701,GDR,Hockey,Summer,0.1
+1702,GDR,Ice Hockey,Winter,0.2
+1703,GDR,Judo,Summer,2.0
+1704,GDR,Luge,Winter,11.8
+1705,GDR,Modern Pentathlon,Summer,0.4
+1706,GDR,Nordic Combined,Winter,5.2
+1707,GDR,Rowing,Summer,5.2
+1708,GDR,Sailing,Summer,2.1
+1709,GDR,Shooting,Summer,6.7
+1710,GDR,Ski Jumping,Winter,10.4
+1711,GDR,Speed skating,Winter,23.9
+1712,GDR,Swimming,Summer,17.1
+1713,GDR,Volleyball,Summer,0.5
+1714,GDR,Water Polo,Summer,0.1
+1715,GDR,Weightlifting,Summer,2.9
+1716,GDR,Wrestling,Summer,5.4
+1717,GEO,Alpine Skiing,Winter,62.7
+1718,GEO,Archery,Summer,6.3
+1719,GEO,Athletics,Summer,1.3
+1720,GEO,Beach Volleyball,Summer,0.9
+1721,GEO,Boxing,Summer,6.7
+1722,GEO,Canoe Sprint,Summer,0.4
+1723,GEO,Cycling Road,Summer,0.4
+1724,GEO,Diving,Summer,1.3
+1725,GEO,Fencing,Summer,1.3
+1726,GEO,Figure skating,Winter,21.6
+1727,GEO,Gymnastics Artistic,Summer,1.3
+1728,GEO,Gymnastics Rhythmic,Summer,0.4
+1729,GEO,Judo,Summer,19.7
+1730,GEO,Karate,Summer,0.4
+1731,GEO,Luge,Winter,7.8
+1732,GEO,Modern Pentathlon,Summer,0.4
+1733,GEO,Sailing,Summer,0.4
+1734,GEO,Shooting,Summer,9.4
+1735,GEO,Ski Jumping,Winter,7.8
+1736,GEO,Swimming,Summer,3.1
+1737,GEO,Tennis,Summer,1.8
+1738,GEO,Trampoline,Summer,1.8
+1739,GEO,Weightlifting,Summer,9.0
+1740,GEO,Wrestling,Summer,33.2
+1741,GEQ,Athletics,Summer,40.0
+1742,GEQ,Judo,Summer,20.0
+1743,GEQ,Swimming,Summer,40.0
+1744,GER,Alpine Skiing,Winter,15.6
+1745,GER,Archery,Summer,0.9
+1746,GER,Artistic Gymnastics,Summer,0.2
+1747,GER,Athletics,Summer,19.0
+1748,GER,Badminton,Summer,0.9
+1749,GER,Basketball,Summer,0.1
+1750,GER,Beach Volleyball,Summer,0.6
+1751,GER,Biathlon,Winter,13.4
+1752,GER,Bobsleigh,Winter,4.4
+1753,GER,Boxing,Summer,3.1
+1754,GER,Canoe Marathon,Summer,0.1
+1755,GER,Canoe Slalom,Summer,1.3
+1756,GER,Canoe Sprint,Summer,3.1
+1757,GER,Cross Country Skiing,Winter,18.1
+1758,GER,Curling,Winter,0.4
+1759,GER,Cycling BMX,Summer,0.1
+1760,GER,Cycling BMX Freestyle,Summer,0.0
+1761,GER,Cycling Mountain Bike,Summer,0.7
+1762,GER,Cycling Road,Summer,3.5
+1763,GER,Cycling Track,Summer,3.5
+1764,GER,Diving,Summer,3.5
+1765,GER,Equestrian,Summer,0.4
+1766,GER,Equestrian Dressage,Summer,1.4
+1767,GER,Equestrian Eventing,Summer,1.6
+1768,GER,Equestrian Jumping,Summer,1.6
+1769,GER,Fencing,Summer,3.8
+1770,GER,Figure skating,Summer,0.1
+1771,GER,Figure skating,Winter,4.4
+1772,GER,Football,Summer,0.3
+1773,GER,Freestyle Skiing,Winter,2.5
+1774,GER,Golf,Summer,0.2
+1775,GER,Gymnastics Artistic,Summer,10.1
+1776,GER,Gymnastics Rhythmic,Summer,0.2
+1777,GER,Handball,Summer,0.3
+1778,GER,Hockey,Summer,0.6
+1779,GER,Ice Hockey,Winter,0.9
+1780,GER,Judo,Summer,2.4
+1781,GER,Karate,Summer,0.1
+1782,GER,Luge,Winter,4.4
+1783,GER,Marathon Swimming,Summer,0.3
+1784,GER,Modern Pentathlon,Summer,1.2
+1785,GER,Nordic Combined,Winter,4.7
+1786,GER,Polo,Summer,0.0
+1787,GER,Rowing,Summer,3.4
+1788,GER,Rugby,Summer,0.0
+1789,GER,Sailing,Summer,2.3
+1790,GER,Shooting,Summer,6.7
+1791,GER,Short Track,Winter,0.3
+1792,GER,Short Track Speed Skating,Winter,2.4
+1793,GER,Skateboarding,Summer,0.1
+1794,GER,Skeleton,Winter,1.7
+1795,GER,Ski Jumping,Winter,6.3
+1796,GER,Snowboard,Winter,4.5
+1797,GER,Speed skating,Winter,15.9
+1798,GER,Sport Climbing,Summer,0.1
+1799,GER,Swimming,Summer,10.8
+1800,GER,Synchronized Swimming,Summer,0.1
+1801,GER,Table Tennis,Summer,1.5
+1802,GER,Taekwondo,Summer,0.3
+1803,GER,Tennis,Summer,1.9
+1804,GER,Trampoline,Summer,0.1
+1805,GER,Triathlon,Summer,0.7
+1806,GER,Volleyball,Summer,0.1
+1807,GER,Water Polo,Summer,0.3
+1808,GER,Weightlifting,Summer,2.4
+1809,GER,Wrestling,Summer,4.1
+1810,GHA,Alpine Skiing,Winter,66.7
+1811,GHA,Athletics,Summer,19.8
+1812,GHA,Boxing,Summer,62.2
+1813,GHA,Football,Summer,5.4
+1814,GHA,Judo,Summer,2.7
+1815,GHA,Skeleton,Winter,33.3
+1816,GHA,Swimming,Summer,1.8
+1817,GHA,Table Tennis,Summer,5.4
+1818,GHA,Weightlifting,Summer,2.7
+1819,GRE,Alpine Skiing,Winter,54.5
+1820,GRE,Archery,Summer,1.0
+1821,GRE,Artistic Gymnastics,Summer,0.1
+1822,GRE,Artistic Swimming,Summer,0.1
+1823,GRE,Athletics,Summer,20.7
+1824,GRE,Badminton,Summer,0.1
+1825,GRE,Baseball,Summer,0.1
+1826,GRE,Basketball,Summer,0.4
+1827,GRE,Beach Volleyball,Summer,0.5
+1828,GRE,Biathlon,Winter,8.4
+1829,GRE,Bobsleigh,Winter,2.0
+1830,GRE,Boxing,Summer,2.4
+1831,GRE,Canoe Slalom,Summer,0.4
+1832,GRE,Cross Country Skiing,Winter,29.7
+1833,GRE,Cycling Mountain Bike,Summer,0.3
+1834,GRE,Cycling Road,Summer,1.1
+1835,GRE,Cycling Track,Summer,2.0
+1836,GRE,Diving,Summer,1.3
+1837,GRE,Equestrian Dressage,Summer,0.1
+1838,GRE,Equestrian Eventing,Summer,0.1
+1839,GRE,Equestrian Jumping,Summer,0.4
+1840,GRE,Fencing,Summer,2.0
+1841,GRE,Football,Summer,0.3
+1842,GRE,Golf,Summer,0.1
+1843,GRE,Gymnastics Artistic,Summer,1.6
+1844,GRE,Gymnastics Rhythmic,Summer,0.6
+1845,GRE,Handball,Summer,0.1
+1846,GRE,Judo,Summer,1.1
+1847,GRE,Luge,Winter,1.5
+1848,GRE,Marathon Swimming,Summer,0.5
+1849,GRE,Modern Pentathlon,Summer,0.4
+1850,GRE,Rowing,Summer,1.8
+1851,GRE,Sailing,Summer,6.3
+1852,GRE,Shooting,Summer,16.0
+1853,GRE,Skeleton,Winter,1.5
+1854,GRE,Ski Jumping,Winter,1.0
+1855,GRE,Snowboard,Winter,1.5
+1856,GRE,Softball,Summer,0.1
+1857,GRE,Swimming,Summer,17.0
+1858,GRE,Synchronized Swimming,Summer,0.5
+1859,GRE,Table Tennis,Summer,1.2
+1860,GRE,Taekwondo,Summer,0.8
+1861,GRE,Tennis,Summer,2.4
+1862,GRE,Triathlon,Summer,0.2
+1863,GRE,Tug of War,Summer,0.1
+1864,GRE,Volleyball,Summer,0.1
+1865,GRE,Water Polo,Summer,1.3
+1866,GRE,Weightlifting,Summer,5.3
+1867,GRE,Wrestling,Summer,9.2
+1868,GRN,Athletics,Summer,39.3
+1869,GRN,Boxing,Summer,35.7
+1870,GRN,Swimming,Summer,21.4
+1871,GRN,Taekwondo,Summer,3.6
+1872,GUA,Alpine Skiing,Winter,75.0
+1873,GUA,Athletics,Summer,22.0
+1874,GUA,Badminton,Summer,2.3
+1875,GUA,Boxing,Summer,2.7
+1876,GUA,Canoe Slalom,Summer,0.3
+1877,GUA,Cross Country Skiing,Winter,25.0
+1878,GUA,Cycling Road,Summer,6.7
+1879,GUA,Cycling Track,Summer,1.3
+1880,GUA,Equestrian Eventing,Summer,0.7
+1881,GUA,Equestrian Jumping,Summer,1.3
+1882,GUA,Fencing,Summer,0.3
+1883,GUA,Football,Summer,1.0
+1884,GUA,Gymnastics Artistic,Summer,0.7
+1885,GUA,Judo,Summer,2.0
+1886,GUA,Modern Pentathlon,Summer,2.3
+1887,GUA,Rowing,Summer,0.3
+1888,GUA,Sailing,Summer,3.3
+1889,GUA,Shooting,Summer,18.0
+1890,GUA,Swimming,Summer,20.3
+1891,GUA,Taekwondo,Summer,1.7
+1892,GUA,Weightlifting,Summer,4.7
+1893,GUA,Wrestling,Summer,8.0
+1894,GUI,Athletics,Summer,3.2
+1895,GUI,Boxing,Summer,22.6
+1896,GUI,Football,Summer,3.2
+1897,GUI,Judo,Summer,32.3
+1898,GUI,Swimming,Summer,25.8
+1899,GUI,Taekwondo,Summer,3.2
+1900,GUI,Wrestling,Summer,9.7
+1901,GUM,Archery,Summer,1.1
+1902,GUM,Athletics,Summer,10.3
+1903,GUM,Biathlon,Winter,100.0
+1904,GUM,Boxing,Summer,1.1
+1905,GUM,Cycling Mountain Bike,Summer,3.4
+1906,GUM,Cycling Road,Summer,6.9
+1907,GUM,Cycling Track,Summer,2.3
+1908,GUM,Judo,Summer,9.2
+1909,GUM,Marathon Swimming,Summer,1.1
+1910,GUM,Sailing,Summer,9.2
+1911,GUM,Swimming,Summer,42.5
+1912,GUM,Weightlifting,Summer,4.6
+1913,GUM,Wrestling,Summer,8.0
+1914,GUY,Athletics,Summer,10.9
+1915,GUY,Boxing,Summer,43.6
+1916,GUY,Cycling Road,Summer,7.3
+1917,GUY,Cycling Track,Summer,9.1
+1918,GUY,Judo,Summer,1.8
+1919,GUY,Swimming,Summer,10.9
+1920,GUY,Table Tennis,Summer,1.8
+1921,GUY,Weightlifting,Summer,14.5
+1922,HAI,Alpine Skiing,Winter,100.0
+1923,HAI,Athletics,Summer,30.9
+1924,HAI,Boxing,Summer,12.7
+1925,HAI,Fencing,Summer,3.6
+1926,HAI,Judo,Summer,21.8
+1927,HAI,Shooting,Summer,9.1
+1928,HAI,Swimming,Summer,5.5
+1929,HAI,Taekwondo,Summer,5.5
+1930,HAI,Tennis,Summer,5.5
+1931,HAI,Weightlifting,Summer,3.6
+1932,HAI,Wrestling,Summer,1.8
+1933,HKG,Alpine Skiing,Winter,27.8
+1934,HKG,Archery,Summer,2.4
+1935,HKG,Athletics,Summer,1.1
+1936,HKG,Badminton,Summer,6.5
+1937,HKG,Boxing,Summer,0.4
+1938,HKG,Cycling Mountain Bike,Summer,0.6
+1939,HKG,Cycling Road,Summer,5.4
+1940,HKG,Cycling Track,Summer,4.1
+1941,HKG,Diving,Summer,0.4
+1942,HKG,Equestrian,Summer,0.2
+1943,HKG,Equestrian Jumping,Summer,0.6
+1944,HKG,Fencing,Summer,11.2
+1945,HKG,Golf,Summer,0.4
+1946,HKG,Gymnastics Artistic,Summer,0.2
+1947,HKG,Hockey,Summer,0.2
+1948,HKG,Judo,Summer,3.7
+1949,HKG,Karate,Summer,0.2
+1950,HKG,Marathon Swimming,Summer,0.4
+1951,HKG,Rowing,Summer,3.0
+1952,HKG,Sailing,Summer,6.7
+1953,HKG,Shooting,Summer,7.3
+1954,HKG,Short Track Speed Skating,Winter,72.2
+1955,HKG,Swimming,Summer,30.5
+1956,HKG,Table Tennis,Summer,13.2
+1957,HKG,Triathlon,Summer,0.9
+1958,HKG,Weightlifting,Summer,0.2
+1959,HON,Athletics,Summer,13.7
+1960,HON,Boxing,Summer,5.9
+1961,HON,Cross Country Skiing,Winter,100.0
+1962,HON,Fencing,Summer,1.0
+1963,HON,Football,Summer,4.9
+1964,HON,Judo,Summer,6.9
+1965,HON,Rowing,Summer,1.0
+1966,HON,Shooting,Summer,1.0
+1967,HON,Swimming,Summer,57.8
+1968,HON,Table Tennis,Summer,1.0
+1969,HON,Taekwondo,Summer,2.9
+1970,HON,Weightlifting,Summer,2.9
+1971,HON,Wrestling,Summer,1.0
+1972,HUN,Alpine Skiing,Winter,25.1
+1973,HUN,Archery,Summer,0.4
+1974,HUN,Artistic Gymnastics,Summer,0.0
+1975,HUN,Athletics,Summer,16.8
+1976,HUN,Badminton,Summer,0.2
+1977,HUN,Basketball,Summer,0.1
+1978,HUN,Biathlon,Winter,12.2
+1979,HUN,Bobsleigh,Winter,1.5
+1980,HUN,Boxing,Summer,3.7
+1981,HUN,Canoe Marathon,Summer,0.2
+1982,HUN,Canoe Sprint,Summer,4.9
+1983,HUN,Cross Country Skiing,Winter,12.2
+1984,HUN,Cycling Mountain Bike,Summer,0.2
+1985,HUN,Cycling Road,Summer,1.6
+1986,HUN,Cycling Track,Summer,0.6
+1987,HUN,Diving,Summer,1.1
+1988,HUN,Equestrian Dressage,Summer,0.1
+1989,HUN,Equestrian Eventing,Summer,0.7
+1990,HUN,Equestrian Jumping,Summer,0.6
+1991,HUN,Fencing,Summer,8.1
+1992,HUN,Figure skating,Winter,10.5
+1993,HUN,Football,Summer,0.3
+1994,HUN,Freestyle Skiing,Winter,0.2
+1995,HUN,Gymnastics Artistic,Summer,13.9
+1996,HUN,Gymnastics Rhythmic,Summer,0.1
+1997,HUN,Handball,Summer,0.4
+1998,HUN,Hockey,Summer,0.0
+1999,HUN,Ice Hockey,Winter,0.6
+2000,HUN,Judo,Summer,2.2
+2001,HUN,Karate,Summer,0.0
+2002,HUN,Marathon Swimming,Summer,0.2
+2003,HUN,Modern Pentathlon,Summer,2.3
+2004,HUN,Nordic Combined,Winter,1.3
+2005,HUN,Polo,Summer,0.0
+2006,HUN,Rowing,Summer,1.3
+2007,HUN,Sailing,Summer,1.6
+2008,HUN,Shooting,Summer,8.4
+2009,HUN,Short Track,Winter,3.4
+2010,HUN,Short Track Speed Skating,Winter,14.1
+2011,HUN,Ski Jumping,Winter,3.2
+2012,HUN,Snowboard,Winter,0.6
+2013,HUN,Speed skating,Winter,15.0
+2014,HUN,Swimming,Summer,14.8
+2015,HUN,Synchronized Swimming,Summer,0.1
+2016,HUN,Table Tennis,Summer,1.1
+2017,HUN,Taekwondo,Summer,0.1
+2018,HUN,Tennis,Summer,1.3
+2019,HUN,Triathlon,Summer,0.5
+2020,HUN,Volleyball,Summer,0.1
+2021,HUN,Water Polo,Summer,0.8
+2022,HUN,Weightlifting,Summer,3.0
+2023,HUN,Wrestling,Summer,8.1
+2024,INA,Archery,Summer,12.3
+2025,INA,Athletics,Summer,1.4
+2026,INA,Badminton,Summer,23.6
+2027,INA,Beach Volleyball,Summer,0.7
+2028,INA,Boxing,Summer,7.2
+2029,INA,Cycling BMX,Summer,0.3
+2030,INA,Cycling Road,Summer,1.7
+2031,INA,Cycling Track,Summer,0.7
+2032,INA,Diving,Summer,1.0
+2033,INA,Fencing,Summer,1.7
+2034,INA,Football,Summer,0.3
+2035,INA,Judo,Summer,2.4
+2036,INA,Rowing,Summer,1.4
+2037,INA,Sailing,Summer,3.4
+2038,INA,Shooting,Summer,3.4
+2039,INA,Swimming,Summer,11.0
+2040,INA,Table Tennis,Summer,3.1
+2041,INA,Taekwondo,Summer,1.0
+2042,INA,Tennis,Summer,4.1
+2043,INA,Weightlifting,Summer,18.5
+2044,INA,Wrestling,Summer,0.7
+2045,IND,Alpine Skiing,Winter,66.7
+2046,IND,Archery,Summer,5.8
+2047,IND,Athletics,Summer,14.8
+2048,IND,Badminton,Summer,3.3
+2049,IND,Basketball,Summer,0.1
+2050,IND,Boxing,Summer,9.2
+2051,IND,Cross Country Skiing,Winter,14.8
+2052,IND,Cycling Road,Summer,1.5
+2053,IND,Cycling Track,Summer,0.4
+2054,IND,Diving,Summer,0.3
+2055,IND,Equestrian,Summer,0.1
+2056,IND,Equestrian Eventing,Summer,0.9
+2057,IND,Fencing,Summer,0.1
+2058,IND,Football,Summer,0.5
+2059,IND,Golf,Summer,0.9
+2060,IND,Gymnastics Artistic,Summer,5.7
+2061,IND,Hockey,Summer,3.2
+2062,IND,Judo,Summer,2.0
+2063,IND,Luge,Winter,18.5
+2064,IND,Rowing,Summer,0.9
+2065,IND,Sailing,Summer,1.3
+2066,IND,Shooting,Summer,16.5
+2067,IND,Swimming,Summer,3.8
+2068,IND,Table Tennis,Summer,3.7
+2069,IND,Tennis,Summer,4.5
+2070,IND,Water Polo,Summer,0.3
+2071,IND,Weightlifting,Summer,5.4
+2072,IND,Wrestling,Summer,14.8
+2073,IOA,Athletics,Summer,6.9
+2074,IOA,Boxing,Summer,1.4
+2075,IOA,Canoe Slalom,Summer,4.2
+2076,IOA,Cycling Road,Summer,5.6
+2077,IOA,Cycling Track,Summer,1.4
+2078,IOA,Fencing,Summer,2.8
+2079,IOA,Judo,Summer,6.9
+2080,IOA,Luge,Winter,100.0
+2081,IOA,Rowing,Summer,1.4
+2082,IOA,Sailing,Summer,1.4
+2083,IOA,Shooting,Summer,26.4
+2084,IOA,Swimming,Summer,13.9
+2085,IOA,Synchronized Swimming,Summer,5.6
+2086,IOA,Table Tennis,Summer,6.9
+2087,IOA,Tennis,Summer,1.4
+2088,IOA,Weightlifting,Summer,1.4
+2089,IOA,Wrestling,Summer,12.5
+2090,IRI,Alpine Skiing,Winter,89.5
+2091,IRI,Archery,Summer,1.1
+2092,IRI,Athletics,Summer,2.7
+2093,IRI,Badminton,Summer,0.4
+2094,IRI,Basketball,Summer,0.5
+2095,IRI,Boxing,Summer,11.0
+2096,IRI,Canoe Sprint,Summer,0.9
+2097,IRI,Cross Country Skiing,Winter,10.5
+2098,IRI,Cycling Road,Summer,6.8
+2099,IRI,Cycling Track,Summer,1.8
+2100,IRI,Diving,Summer,0.2
+2101,IRI,Equestrian Jumping,Summer,0.2
+2102,IRI,Fencing,Summer,4.4
+2103,IRI,Football,Summer,0.5
+2104,IRI,Gymnastics Artistic,Summer,0.4
+2105,IRI,Judo,Summer,2.6
+2106,IRI,Karate,Summer,0.5
+2107,IRI,Rowing,Summer,1.1
+2108,IRI,Shooting,Summer,7.9
+2109,IRI,Swimming,Summer,1.1
+2110,IRI,Table Tennis,Summer,1.8
+2111,IRI,Taekwondo,Summer,3.1
+2112,IRI,Volleyball,Summer,0.4
+2113,IRI,Water Polo,Summer,0.2
+2114,IRI,Weightlifting,Summer,13.7
+2115,IRI,Wrestling,Summer,36.6
+2116,IRL,Alpine Skiing,Winter,50.8
+2117,IRL,Archery,Summer,1.4
+2118,IRL,Artistic Gymnastics,Summer,0.1
+2119,IRL,Athletics,Summer,17.8
+2120,IRL,Badminton,Summer,1.0
+2121,IRL,Basketball,Summer,0.1
+2122,IRL,Bobsleigh,Winter,11.9
+2123,IRL,Boxing,Summer,18.2
+2124,IRL,Canoe Slalom,Summer,2.0
+2125,IRL,Canoe Sprint,Summer,0.1
+2126,IRL,Cross Country Skiing,Winter,18.6
+2127,IRL,Cycling Mountain Bike,Summer,0.8
+2128,IRL,Cycling Road,Summer,6.3
+2129,IRL,Cycling Track,Summer,1.4
+2130,IRL,Diving,Summer,0.7
+2131,IRL,Equestrian,Summer,1.2
+2132,IRL,Equestrian Dressage,Summer,0.9
+2133,IRL,Equestrian Eventing,Summer,9.0
+2134,IRL,Equestrian Jumping,Summer,4.5
+2135,IRL,Fencing,Summer,0.3
+2136,IRL,Football,Summer,0.3
+2137,IRL,Freestyle Skiing,Winter,3.4
+2138,IRL,Golf,Summer,1.0
+2139,IRL,Hockey,Summer,0.3
+2140,IRL,Judo,Summer,2.4
+2141,IRL,Luge,Winter,1.7
+2142,IRL,Modern Pentathlon,Summer,1.2
+2143,IRL,Rowing,Summer,3.1
+2144,IRL,Rugby Sevens,Summer,0.1
+2145,IRL,Sailing,Summer,7.1
+2146,IRL,Shooting,Summer,3.4
+2147,IRL,Skeleton,Winter,6.8
+2148,IRL,Snowboard,Winter,6.8
+2149,IRL,Swimming,Summer,10.9
+2150,IRL,Taekwondo,Summer,0.1
+2151,IRL,Tennis,Summer,1.6
+2152,IRL,Triathlon,Summer,0.9
+2153,IRL,Water Polo,Summer,0.3
+2154,IRL,Weightlifting,Summer,0.4
+2155,IRL,Wrestling,Summer,1.2
+2156,IRQ,Archery,Summer,1.0
+2157,IRQ,Athletics,Summer,5.7
+2158,IRQ,Basketball,Summer,1.0
+2159,IRQ,Boxing,Summer,21.9
+2160,IRQ,Cycling Road,Summer,2.9
+2161,IRQ,Football,Summer,4.8
+2162,IRQ,Judo,Summer,1.0
+2163,IRQ,Rowing,Summer,2.9
+2164,IRQ,Shooting,Summer,3.8
+2165,IRQ,Swimming,Summer,3.8
+2166,IRQ,Table Tennis,Summer,1.0
+2167,IRQ,Taekwondo,Summer,1.0
+2168,IRQ,Weightlifting,Summer,27.6
+2169,IRQ,Wrestling,Summer,21.9
+2170,ISL,Alpine Skiing,Winter,69.5
+2171,ISL,Athletics,Summer,19.6
+2172,ISL,Badminton,Summer,4.2
+2173,ISL,Cross Country Skiing,Winter,29.1
+2174,ISL,Gymnastics Artistic,Summer,1.2
+2175,ISL,Handball,Summer,4.2
+2176,ISL,Judo,Summer,8.9
+2177,ISL,Sailing,Summer,2.4
+2178,ISL,Shooting,Summer,3.0
+2179,ISL,Ski Jumping,Winter,1.4
+2180,ISL,Swimming,Summer,51.2
+2181,ISL,Water Polo,Summer,0.6
+2182,ISL,Weightlifting,Summer,4.2
+2183,ISL,Wrestling,Summer,0.6
+2184,ISR,Alpine Skiing,Winter,34.9
+2185,ISR,Archery,Summer,0.3
+2186,ISR,Artistic Gymnastics,Summer,0.3
+2187,ISR,Artistic Swimming,Summer,0.3
+2188,ISR,Athletics,Summer,9.0
+2189,ISR,Badminton,Summer,1.0
+2190,ISR,Baseball/Softball,Summer,0.3
+2191,ISR,Basketball,Summer,0.3
+2192,ISR,Boxing,Summer,1.5
+2193,ISR,Canoe Sprint,Summer,1.0
+2194,ISR,Cycling Mountain Bike,Summer,0.5
+2195,ISR,Cycling Road,Summer,1.3
+2196,ISR,Diving,Summer,0.8
+2197,ISR,Equestrian,Summer,0.8
+2198,ISR,Fencing,Summer,3.8
+2199,ISR,Figure skating,Winter,34.9
+2200,ISR,Football,Summer,0.5
+2201,ISR,Golf,Summer,0.3
+2202,ISR,Gymnastics Artistic,Summer,2.3
+2203,ISR,Gymnastics Rhythmic,Summer,1.5
+2204,ISR,Judo,Summer,10.0
+2205,ISR,Marathon Swimming,Summer,0.3
+2206,ISR,Rhythmic Gymnastics,Summer,0.8
+2207,ISR,Sailing,Summer,9.8
+2208,ISR,Shooting,Summer,15.8
+2209,ISR,Short Track,Winter,7.0
+2210,ISR,Short Track Speed Skating,Winter,20.9
+2211,ISR,Skeleton,Winter,2.3
+2212,ISR,Surfing,Summer,0.3
+2213,ISR,Swimming,Summer,23.6
+2214,ISR,Synchronized Swimming,Summer,1.0
+2215,ISR,Table Tennis,Summer,0.3
+2216,ISR,Taekwondo,Summer,1.0
+2217,ISR,Tennis,Summer,3.8
+2218,ISR,Triathlon,Summer,0.8
+2219,ISR,Weightlifting,Summer,3.3
+2220,ISR,Wrestling,Summer,4.3
+2221,ISV,Alpine Skiing,Winter,30.3
+2222,ISV,Archery,Summer,0.6
+2223,ISV,Athletics,Summer,7.1
+2224,ISV,Bobsleigh,Winter,42.4
+2225,ISV,Boxing,Summer,7.1
+2226,ISV,Cycling Road,Summer,1.3
+2227,ISV,Equestrian Eventing,Summer,1.3
+2228,ISV,Equestrian Jumping,Summer,1.3
+2229,ISV,Fencing,Summer,3.2
+2230,ISV,Luge,Winter,24.2
+2231,ISV,Sailing,Summer,21.3
+2232,ISV,Shooting,Summer,14.8
+2233,ISV,Skeleton,Winter,3.0
+2234,ISV,Swimming,Summer,38.7
+2235,ISV,Weightlifting,Summer,0.6
+2236,ISV,Wrestling,Summer,2.6
+2237,ITA,3x3 Basketball,Summer,0.0
+2238,ITA,Alpine Skiing,Winter,25.2
+2239,ITA,Archery,Summer,1.8
+2240,ITA,Artistic Gymnastics,Summer,0.1
+2241,ITA,Artistic Swimming,Summer,0.0
+2242,ITA,Athletics,Summer,13.5
+2243,ITA,Badminton,Summer,0.1
+2244,ITA,Baseball,Summer,0.1
+2245,ITA,Baseball/Softball,Summer,0.0
+2246,ITA,Basketball,Summer,0.4
+2247,ITA,Beach Volleyball,Summer,0.4
+2248,ITA,Biathlon,Winter,10.4
+2249,ITA,Bobsleigh,Winter,3.6
+2250,ITA,Boxing,Summer,5.1
+2251,ITA,Canoe Slalom,Summer,0.7
+2252,ITA,Canoe Sprint,Summer,1.5
+2253,ITA,Cross Country Skiing,Winter,22.4
+2254,ITA,Curling,Winter,0.2
+2255,ITA,Cycling BMX,Summer,0.0
+2256,ITA,Cycling BMX Racing,Summer,0.0
+2257,ITA,Cycling Mountain Bike,Summer,0.5
+2258,ITA,Cycling Road,Summer,4.1
+2259,ITA,Cycling Track,Summer,2.7
+2260,ITA,Diving,Summer,1.8
+2261,ITA,Equestrian,Summer,0.1
+2262,ITA,Equestrian Dressage,Summer,0.4
+2263,ITA,Equestrian Eventing,Summer,2.4
+2264,ITA,Equestrian Jumping,Summer,1.7
+2265,ITA,Fencing,Summer,8.4
+2266,ITA,Figure skating,Winter,2.9
+2267,ITA,Football,Summer,0.4
+2268,ITA,Freestyle Skiing,Winter,1.8
+2269,ITA,Golf,Summer,0.2
+2270,ITA,Gymnastics Artistic,Summer,12.3
+2271,ITA,Gymnastics Rhythmic,Summer,0.3
+2272,ITA,Hockey,Summer,0.0
+2273,ITA,Ice Hockey,Winter,0.4
+2274,ITA,Judo,Summer,2.0
+2275,ITA,Karate,Summer,0.1
+2276,ITA,Luge,Winter,5.5
+2277,ITA,Marathon Swimming,Summer,0.2
+2278,ITA,Military Patrol,Winter,0.0
+2279,ITA,Modern Pentathlon,Summer,1.9
+2280,ITA,Nordic Combined,Winter,3.2
+2281,ITA,Rhythmic Gymnastics,Summer,0.0
+2282,ITA,Rowing,Summer,3.1
+2283,ITA,Sailing,Summer,3.5
+2284,ITA,Shooting,Summer,7.5
+2285,ITA,Short Track,Winter,0.6
+2286,ITA,Short Track Speed Skating,Winter,4.8
+2287,ITA,Skateboarding,Summer,0.1
+2288,ITA,Skeleton,Winter,0.6
+2289,ITA,Ski Jumping,Winter,4.5
+2290,ITA,Snowboard,Winter,4.3
+2291,ITA,Softball,Summer,0.0
+2292,ITA,Speed skating,Winter,9.5
+2293,ITA,Sport Climbing,Summer,0.1
+2294,ITA,Swimming,Summer,11.1
+2295,ITA,Synchronized Swimming,Summer,0.3
+2296,ITA,Table Tennis,Summer,0.4
+2297,ITA,Taekwondo,Summer,0.3
+2298,ITA,Tennis,Summer,2.2
+2299,ITA,Triathlon,Summer,0.6
+2300,ITA,Tug of War,Summer,0.0
+2301,ITA,Volleyball,Summer,0.4
+2302,ITA,Water Polo,Summer,0.6
+2303,ITA,Weightlifting,Summer,2.4
+2304,ITA,Wrestling,Summer,3.8
+2305,IVB,Athletics,Summer,25.0
+2306,IVB,Freestyle Skiing,Winter,33.3
+2307,IVB,Sailing,Summer,62.5
+2308,IVB,Speed skating,Winter,66.7
+2309,IVB,Swimming,Summer,12.5
+2310,JAM,Alpine Skiing,Winter,5.6
+2311,JAM,Athletics,Summer,69.3
+2312,JAM,Badminton,Summer,0.3
+2313,JAM,Bobsleigh,Winter,83.3
+2314,JAM,Boxing,Summer,7.4
+2315,JAM,Cycling Road,Summer,3.6
+2316,JAM,Cycling Track,Summer,2.7
+2317,JAM,Diving,Summer,0.3
+2318,JAM,Equestrian Eventing,Summer,0.6
+2319,JAM,Freestyle Skiing,Winter,5.6
+2320,JAM,Judo,Summer,0.3
+2321,JAM,Sailing,Summer,2.1
+2322,JAM,Shooting,Summer,0.6
+2323,JAM,Skeleton,Winter,5.6
+2324,JAM,Swimming,Summer,9.2
+2325,JAM,Table Tennis,Summer,1.5
+2326,JAM,Taekwondo,Summer,0.3
+2327,JAM,Triathlon,Summer,0.3
+2328,JAM,Weightlifting,Summer,1.5
+2329,JOR,Archery,Summer,1.4
+2330,JOR,Athletics,Summer,5.4
+2331,JOR,Boxing,Summer,13.5
+2332,JOR,Equestrian,Summer,1.4
+2333,JOR,Equestrian Jumping,Summer,5.4
+2334,JOR,Fencing,Summer,2.7
+2335,JOR,Judo,Summer,2.7
+2336,JOR,Karate,Summer,1.4
+2337,JOR,Shooting,Summer,23.0
+2338,JOR,Swimming,Summer,16.2
+2339,JOR,Table Tennis,Summer,6.8
+2340,JOR,Taekwondo,Summer,13.5
+2341,JOR,Triathlon,Summer,1.4
+2342,JOR,Wrestling,Summer,5.4
+2343,JPN,3x3 Basketball,Summer,0.1
+2344,JPN,Alpine Skiing,Winter,10.7
+2345,JPN,Archery,Summer,2.4
+2346,JPN,Artistic Gymnastics,Summer,0.3
+2347,JPN,Artistic Swimming,Summer,0.1
+2348,JPN,Athletics,Summer,11.2
+2349,JPN,Badminton,Summer,1.8
+2350,JPN,Baseball,Summer,0.2
+2351,JPN,Baseball/Softball,Summer,0.1
+2352,JPN,Basketball,Summer,0.4
+2353,JPN,Beach Volleyball,Summer,0.3
+2354,JPN,Biathlon,Winter,7.9
+2355,JPN,Bobsleigh,Winter,1.8
+2356,JPN,Boxing,Summer,2.5
+2357,JPN,Canoe Slalom,Summer,0.7
+2358,JPN,Canoe Sprint,Summer,0.6
+2359,JPN,Cross Country Skiing,Winter,15.7
+2360,JPN,Curling,Winter,0.5
+2361,JPN,Cycling BMX,Summer,0.0
+2362,JPN,Cycling BMX Freestyle,Summer,0.1
+2363,JPN,Cycling BMX Racing,Summer,0.1
+2364,JPN,Cycling Mountain Bike,Summer,0.4
+2365,JPN,Cycling Road,Summer,1.5
+2366,JPN,Cycling Track,Summer,1.7
+2367,JPN,Diving,Summer,2.3
+2368,JPN,Equestrian,Summer,0.4
+2369,JPN,Equestrian Dressage,Summer,0.7
+2370,JPN,Equestrian Eventing,Summer,1.3
+2371,JPN,Equestrian Jumping,Summer,2.0
+2372,JPN,Fencing,Summer,3.0
+2373,JPN,Figure skating,Winter,4.6
+2374,JPN,Football,Summer,0.5
+2375,JPN,Freestyle Skiing,Winter,3.7
+2376,JPN,Golf,Summer,0.2
+2377,JPN,Gymnastics Artistic,Summer,13.6
+2378,JPN,Gymnastics Rhythmic,Summer,0.2
+2379,JPN,Handball,Summer,0.2
+2380,JPN,Hockey,Summer,0.3
+2381,JPN,Ice Hockey,Winter,0.6
+2382,JPN,Judo,Summer,4.4
+2383,JPN,Karate,Summer,0.2
+2384,JPN,Luge,Winter,2.6
+2385,JPN,Marathon Swimming,Summer,0.2
+2386,JPN,Modern Pentathlon,Summer,1.1
+2387,JPN,Nordic Combined,Winter,5.4
+2388,JPN,Rhythmic Gymnastics,Summer,0.0
+2389,JPN,Rowing,Summer,0.9
+2390,JPN,Rugby,Summer,0.1
+2391,JPN,Rugby Sevens,Summer,0.1
+2392,JPN,Sailing,Summer,2.6
+2393,JPN,Shooting,Summer,6.5
+2394,JPN,Short Track,Winter,0.8
+2395,JPN,Short Track Speed Skating,Winter,5.3
+2396,JPN,Skateboarding,Summer,0.3
+2397,JPN,Skeleton,Winter,0.8
+2398,JPN,Ski Jumping,Winter,8.7
+2399,JPN,Snowboard,Winter,5.1
+2400,JPN,Softball,Summer,0.1
+2401,JPN,Speed skating,Winter,26.0
+2402,JPN,Sport Climbing,Summer,0.1
+2403,JPN,Surfing,Summer,0.1
+2404,JPN,Swimming,Summer,15.7
+2405,JPN,Synchronized Swimming,Summer,0.7
+2406,JPN,Table Tennis,Summer,2.3
+2407,JPN,Taekwondo,Summer,0.3
+2408,JPN,Tennis,Summer,1.9
+2409,JPN,Trampoline,Summer,0.2
+2410,JPN,Trampoline Gymnastics,Summer,0.1
+2411,JPN,Triathlon,Summer,0.9
+2412,JPN,Volleyball,Summer,0.7
+2413,JPN,Water Polo,Summer,0.3
+2414,JPN,Weightlifting,Summer,3.6
+2415,JPN,Wrestling,Summer,7.7
+2416,KAZ,Alpine Skiing,Winter,6.8
+2417,KAZ,Archery,Summer,4.0
+2418,KAZ,Artistic Gymnastics,Summer,0.5
+2419,KAZ,Artistic Swimming,Summer,0.2
+2420,KAZ,Athletics,Summer,9.0
+2421,KAZ,Biathlon,Winter,16.6
+2422,KAZ,Boxing,Summer,10.4
+2423,KAZ,Canoe Slalom,Summer,0.8
+2424,KAZ,Canoe Sprint,Summer,4.0
+2425,KAZ,Cross Country Skiing,Winter,40.8
+2426,KAZ,Cycling Road,Summer,5.6
+2427,KAZ,Cycling Track,Summer,1.9
+2428,KAZ,Diving,Summer,2.1
+2429,KAZ,Fencing,Summer,1.8
+2430,KAZ,Figure skating,Winter,1.1
+2431,KAZ,Freestyle Skiing,Winter,6.5
+2432,KAZ,Gymnastics Artistic,Summer,0.5
+2433,KAZ,Gymnastics Rhythmic,Summer,0.6
+2434,KAZ,Handball,Summer,0.2
+2435,KAZ,Ice Hockey,Winter,0.5
+2436,KAZ,Judo,Summer,7.1
+2437,KAZ,Karate,Summer,0.8
+2438,KAZ,Luge,Winter,0.3
+2439,KAZ,Marathon Swimming,Summer,0.5
+2440,KAZ,Modern Pentathlon,Summer,1.9
+2441,KAZ,Nordic Combined,Winter,0.3
+2442,KAZ,Rowing,Summer,1.3
+2443,KAZ,Shooting,Summer,9.3
+2444,KAZ,Short Track,Winter,1.9
+2445,KAZ,Short Track Speed Skating,Winter,3.4
+2446,KAZ,Ski Jumping,Winter,6.8
+2447,KAZ,Snowboard,Winter,0.3
+2448,KAZ,Speed skating,Winter,14.7
+2449,KAZ,Sport Climbing,Summer,0.2
+2450,KAZ,Swimming,Summer,9.1
+2451,KAZ,Synchronized Swimming,Summer,0.8
+2452,KAZ,Table Tennis,Summer,0.6
+2453,KAZ,Taekwondo,Summer,1.8
+2454,KAZ,Tennis,Summer,2.2
+2455,KAZ,Triathlon,Summer,1.0
+2456,KAZ,Volleyball,Summer,0.2
+2457,KAZ,Water Polo,Summer,1.0
+2458,KAZ,Weightlifting,Summer,6.7
+2459,KAZ,Wrestling,Summer,14.1
+2460,KEN,Alpine Skiing,Winter,40.0
+2461,KEN,Archery,Summer,0.9
+2462,KEN,Athletics,Summer,63.1
+2463,KEN,Beach Volleyball,Summer,0.2
+2464,KEN,Boxing,Summer,15.9
+2465,KEN,Cross Country Skiing,Winter,60.0
+2466,KEN,Cycling Mountain Bike,Summer,0.2
+2467,KEN,Hockey,Summer,1.7
+2468,KEN,Judo,Summer,1.7
+2469,KEN,Rowing,Summer,0.4
+2470,KEN,Rugby,Summer,0.4
+2471,KEN,Rugby Sevens,Summer,0.4
+2472,KEN,Sailing,Summer,0.6
+2473,KEN,Shooting,Summer,6.9
+2474,KEN,Swimming,Summer,2.8
+2475,KEN,Taekwondo,Summer,0.6
+2476,KEN,Volleyball,Summer,0.6
+2477,KEN,Weightlifting,Summer,1.9
+2478,KEN,Wrestling,Summer,1.5
+2479,KGZ,Alpine Skiing,Winter,47.4
+2480,KGZ,Athletics,Summer,8.0
+2481,KGZ,Biathlon,Winter,31.6
+2482,KGZ,Boxing,Summer,6.9
+2483,KGZ,Cross Country Skiing,Winter,10.5
+2484,KGZ,Cycling Road,Summer,2.3
+2485,KGZ,Cycling Track,Summer,0.6
+2486,KGZ,Fencing,Summer,1.7
+2487,KGZ,Judo,Summer,6.9
+2488,KGZ,Modern Pentathlon,Summer,1.7
+2489,KGZ,Sailing,Summer,0.6
+2490,KGZ,Shooting,Summer,10.9
+2491,KGZ,Ski Jumping,Winter,10.5
+2492,KGZ,Swimming,Summer,30.3
+2493,KGZ,Taekwondo,Summer,1.1
+2494,KGZ,Weightlifting,Summer,4.6
+2495,KGZ,Wrestling,Summer,24.6
+2496,KIR,Judo,Summer,16.7
+2497,KIR,Weightlifting,Summer,83.3
+2498,KOR,Alpine Skiing,Winter,10.4
+2499,KOR,Archery,Summer,4.2
+2500,KOR,Artistic Gymnastics,Summer,0.3
+2501,KOR,Athletics,Summer,6.2
+2502,KOR,Badminton,Summer,4.2
+2503,KOR,Baseball,Summer,0.2
+2504,KOR,Baseball/Softball,Summer,0.1
+2505,KOR,Basketball,Summer,0.7
+2506,KOR,Biathlon,Winter,6.4
+2507,KOR,Bobsleigh,Winter,1.6
+2508,KOR,Boxing,Summer,6.0
+2509,KOR,Canoe Sprint,Summer,0.2
+2510,KOR,Cross Country Skiing,Winter,14.0
+2511,KOR,Curling,Winter,0.6
+2512,KOR,Cycling Mountain Bike,Summer,0.1
+2513,KOR,Cycling Road,Summer,2.5
+2514,KOR,Cycling Track,Summer,1.5
+2515,KOR,Diving,Summer,1.5
+2516,KOR,Equestrian,Summer,0.1
+2517,KOR,Equestrian Dressage,Summer,0.2
+2518,KOR,Equestrian Eventing,Summer,0.6
+2519,KOR,Equestrian Jumping,Summer,1.2
+2520,KOR,Fencing,Summer,7.2
+2521,KOR,Figure skating,Winter,3.1
+2522,KOR,Football,Summer,0.6
+2523,KOR,Freestyle Skiing,Winter,2.2
+2524,KOR,Golf,Summer,0.6
+2525,KOR,Gymnastics Artistic,Summer,3.2
+2526,KOR,Gymnastics Rhythmic,Summer,0.1
+2527,KOR,Handball,Summer,0.9
+2528,KOR,Hockey,Summer,0.8
+2529,KOR,Ice Hockey,Winter,0.1
+2530,KOR,Judo,Summer,7.1
+2531,KOR,Karate,Summer,0.1
+2532,KOR,Luge,Winter,2.4
+2533,KOR,Modern Pentathlon,Summer,1.6
+2534,KOR,Nordic Combined,Winter,0.5
+2535,KOR,Rowing,Summer,1.1
+2536,KOR,Rugby Sevens,Summer,0.1
+2537,KOR,Sailing,Summer,1.7
+2538,KOR,Shooting,Summer,12.2
+2539,KOR,Short Track,Winter,2.3
+2540,KOR,Short Track Speed Skating,Winter,13.6
+2541,KOR,Skeleton,Winter,1.3
+2542,KOR,Ski Jumping,Winter,4.6
+2543,KOR,Snowboard,Winter,2.6
+2544,KOR,Speed skating,Winter,34.5
+2545,KOR,Sport Climbing,Summer,0.1
+2546,KOR,Swimming,Summer,9.8
+2547,KOR,Synchronized Swimming,Summer,0.4
+2548,KOR,Table Tennis,Summer,4.1
+2549,KOR,Taekwondo,Summer,1.5
+2550,KOR,Tennis,Summer,1.2
+2551,KOR,Triathlon,Summer,0.1
+2552,KOR,Volleyball,Summer,1.1
+2553,KOR,Water Polo,Summer,0.1
+2554,KOR,Weightlifting,Summer,6.6
+2555,KOR,Wrestling,Summer,8.5
+2556,KOS,Alpine Skiing,Winter,100.0
+2557,KOS,Boxing,Summer,7.1
+2558,KOS,Cycling Road,Summer,7.1
+2559,KOS,Judo,Summer,50.0
+2560,KOS,Shooting,Summer,14.3
+2561,KOS,Swimming,Summer,14.3
+2562,KOS,Wrestling,Summer,7.1
+2563,KSA,Alpine Skiing,Winter,100.0
+2564,KSA,Archery,Summer,4.9
+2565,KSA,Athletics,Summer,10.8
+2566,KSA,Cycling Road,Summer,8.8
+2567,KSA,Equestrian Jumping,Summer,18.6
+2568,KSA,Fencing,Summer,8.8
+2569,KSA,Football,Summer,2.9
+2570,KSA,Judo,Summer,5.9
+2571,KSA,Karate,Summer,1.0
+2572,KSA,Rowing,Summer,1.0
+2573,KSA,Shooting,Summer,14.7
+2574,KSA,Swimming,Summer,9.8
+2575,KSA,Table Tennis,Summer,2.9
+2576,KSA,Taekwondo,Summer,1.0
+2577,KSA,Weightlifting,Summer,8.8
+2578,KUW,Athletics,Summer,3.5
+2579,KUW,Boxing,Summer,2.1
+2580,KUW,Diving,Summer,2.1
+2581,KUW,Fencing,Summer,23.9
+2582,KUW,Football,Summer,2.1
+2583,KUW,Handball,Summer,1.4
+2584,KUW,Judo,Summer,16.2
+2585,KUW,Karate,Summer,0.7
+2586,KUW,Rowing,Summer,0.7
+2587,KUW,Shooting,Summer,19.7
+2588,KUW,Swimming,Summer,23.2
+2589,KUW,Table Tennis,Summer,2.1
+2590,KUW,Taekwondo,Summer,0.7
+2591,KUW,Weightlifting,Summer,1.4
+2592,LAO,Archery,Summer,3.2
+2593,LAO,Athletics,Summer,12.9
+2594,LAO,Boxing,Summer,29.0
+2595,LAO,Cycling Road,Summer,3.2
+2596,LAO,Judo,Summer,6.5
+2597,LAO,Shooting,Summer,19.4
+2598,LAO,Swimming,Summer,25.8
+2599,LAT,3x3 Basketball,Summer,0.3
+2600,LAT,Alpine Skiing,Winter,8.7
+2601,LAT,Athletics,Summer,28.2
+2602,LAT,Basketball,Summer,0.7
+2603,LAT,Beach Volleyball,Summer,2.0
+2604,LAT,Biathlon,Winter,25.7
+2605,LAT,Bobsleigh,Winter,7.7
+2606,LAT,Boxing,Summer,1.3
+2607,LAT,Canoe Slalom,Summer,1.0
+2608,LAT,Canoe Sprint,Summer,3.4
+2609,LAT,Cross Country Skiing,Winter,22.0
+2610,LAT,Cycling BMX,Summer,2.3
+2611,LAT,Cycling BMX Racing,Summer,0.7
+2612,LAT,Cycling Road,Summer,10.4
+2613,LAT,Cycling Track,Summer,2.3
+2614,LAT,Equestrian,Summer,0.3
+2615,LAT,Fencing,Summer,0.3
+2616,LAT,Figure skating,Winter,2.7
+2617,LAT,Football,Summer,0.3
+2618,LAT,Freestyle Skiing,Winter,0.5
+2619,LAT,Gymnastics Artistic,Summer,1.3
+2620,LAT,Ice Hockey,Winter,1.5
+2621,LAT,Judo,Summer,3.4
+2622,LAT,Karate,Summer,0.3
+2623,LAT,Luge,Winter,16.5
+2624,LAT,Modern Pentathlon,Summer,5.0
+2625,LAT,Nordic Combined,Winter,0.7
+2626,LAT,Rowing,Summer,1.7
+2627,LAT,Sailing,Summer,2.7
+2628,LAT,Shooting,Summer,5.4
+2629,LAT,Short Track,Winter,1.0
+2630,LAT,Short Track Speed Skating,Winter,2.4
+2631,LAT,Skeleton,Winter,3.1
+2632,LAT,Speed skating,Winter,7.5
+2633,LAT,Swimming,Summer,9.7
+2634,LAT,Table Tennis,Summer,0.3
+2635,LAT,Tennis,Summer,2.7
+2636,LAT,Weightlifting,Summer,7.4
+2637,LAT,Wrestling,Summer,6.4
+2638,LBA,Archery,Summer,1.9
+2639,LBA,Athletics,Summer,18.5
+2640,LBA,Boxing,Summer,7.4
+2641,LBA,Cycling Road,Summer,16.7
+2642,LBA,Cycling Track,Summer,1.9
+2643,LBA,Judo,Summer,11.1
+2644,LBA,Rowing,Summer,3.7
+2645,LBA,Swimming,Summer,14.8
+2646,LBA,Table Tennis,Summer,1.9
+2647,LBA,Taekwondo,Summer,7.4
+2648,LBA,Volleyball,Summer,1.9
+2649,LBA,Weightlifting,Summer,13.0
+2650,LBN,Alpine Skiing,Winter,95.2
+2651,LBN,Athletics,Summer,2.7
+2652,LBN,Boxing,Summer,4.9
+2653,LBN,Canoe Slalom,Summer,0.5
+2654,LBN,Cross Country Skiing,Winter,3.8
+2655,LBN,Cycling Road,Summer,4.9
+2656,LBN,Cycling Track,Summer,0.5
+2657,LBN,Fencing,Summer,11.0
+2658,LBN,Judo,Summer,10.4
+2659,LBN,Rowing,Summer,0.5
+2660,LBN,Sailing,Summer,1.1
+2661,LBN,Shooting,Summer,14.3
+2662,LBN,Skeleton,Winter,1.0
+2663,LBN,Swimming,Summer,26.4
+2664,LBN,Table Tennis,Summer,1.6
+2665,LBN,Taekwondo,Summer,0.5
+2666,LBN,Weightlifting,Summer,7.7
+2667,LBN,Wrestling,Summer,12.6
+2668,LBR,Athletics,Summer,72.2
+2669,LBR,Boxing,Summer,22.2
+2670,LBR,Judo,Summer,5.6
+2671,LCA,Athletics,Summer,26.7
+2672,LCA,Sailing,Summer,33.3
+2673,LCA,Swimming,Summer,40.0
+2674,LES,Athletics,Summer,58.3
+2675,LES,Boxing,Summer,27.8
+2676,LES,Cycling Mountain Bike,Summer,2.8
+2677,LES,Swimming,Summer,2.8
+2678,LES,Taekwondo,Summer,8.3
+2679,LIE,Alpine Skiing,Winter,76.2
+2680,LIE,Artistic Swimming,Summer,1.7
+2681,LIE,Athletics,Summer,21.7
+2682,LIE,Bobsleigh,Winter,1.1
+2683,LIE,Cross Country Skiing,Winter,16.7
+2684,LIE,Cycling Road,Summer,15.0
+2685,LIE,Cycling Track,Summer,3.3
+2686,LIE,Equestrian Jumping,Summer,1.7
+2687,LIE,Judo,Summer,26.7
+2688,LIE,Luge,Winter,6.0
+2689,LIE,Shooting,Summer,20.0
+2690,LIE,Swimming,Summer,6.7
+2691,LIE,Tennis,Summer,3.3
+2692,LTU,Alpine Skiing,Winter,11.0
+2693,LTU,Athletics,Summer,20.9
+2694,LTU,Badminton,Summer,0.8
+2695,LTU,Basketball,Summer,1.9
+2696,LTU,Biathlon,Winter,32.3
+2697,LTU,Boxing,Summer,5.0
+2698,LTU,Canoe Sprint,Summer,3.1
+2699,LTU,Cross Country Skiing,Winter,47.7
+2700,LTU,Cycling BMX,Summer,0.3
+2701,LTU,Cycling Road,Summer,14.5
+2702,LTU,Cycling Track,Summer,7.5
+2703,LTU,Figure skating,Winter,4.5
+2704,LTU,Football,Summer,0.3
+2705,LTU,Gymnastics Artistic,Summer,0.3
+2706,LTU,Judo,Summer,1.9
+2707,LTU,Modern Pentathlon,Summer,5.8
+2708,LTU,Rowing,Summer,5.6
+2709,LTU,Sailing,Summer,3.1
+2710,LTU,Shooting,Summer,2.2
+2711,LTU,Short Track Speed Skating,Winter,1.9
+2712,LTU,Speed skating,Winter,2.6
+2713,LTU,Swimming,Summer,18.7
+2714,LTU,Table Tennis,Summer,1.1
+2715,LTU,Tennis,Summer,0.3
+2716,LTU,Weightlifting,Summer,1.9
+2717,LTU,Wrestling,Summer,4.7
+2718,LUX,Alpine Skiing,Winter,80.8
+2719,LUX,Archery,Summer,1.9
+2720,LUX,Athletics,Summer,6.8
+2721,LUX,Bobsleigh,Winter,11.5
+2722,LUX,Boxing,Summer,6.1
+2723,LUX,Canoe Marathon,Summer,0.4
+2724,LUX,Canoe Sprint,Summer,0.2
+2725,LUX,Cross Country Skiing,Winter,3.8
+2726,LUX,Cycling Road,Summer,9.8
+2727,LUX,Cycling Track,Summer,0.4
+2728,LUX,Equestrian,Summer,0.2
+2729,LUX,Fencing,Summer,1.6
+2730,LUX,Figure skating,Winter,3.8
+2731,LUX,Football,Summer,1.1
+2732,LUX,Gymnastics Artistic,Summer,52.6
+2733,LUX,Judo,Summer,0.7
+2734,LUX,Sailing,Summer,0.2
+2735,LUX,Shooting,Summer,3.5
+2736,LUX,Swimming,Summer,5.6
+2737,LUX,Table Tennis,Summer,1.2
+2738,LUX,Tennis,Summer,1.4
+2739,LUX,Triathlon,Summer,0.9
+2740,LUX,Water Polo,Summer,0.2
+2741,LUX,Weightlifting,Summer,2.5
+2742,LUX,Wrestling,Summer,2.8
+2743,MAD,Alpine Skiing,Winter,100.0
+2744,MAD,Athletics,Summer,16.9
+2745,MAD,Boxing,Summer,20.0
+2746,MAD,Cycling Road,Summer,1.5
+2747,MAD,Judo,Summer,18.5
+2748,MAD,Swimming,Summer,24.6
+2749,MAD,Tennis,Summer,9.2
+2750,MAD,Weightlifting,Summer,7.7
+2751,MAD,Wrestling,Summer,1.5
+2752,MAL,Athletics,Summer,23.1
+2753,MAL,Hockey,Summer,7.7
+2754,MAL,Shooting,Summer,30.8
+2755,MAL,Weightlifting,Summer,38.5
+2756,MAR,Alpine Skiing,Winter,86.0
+2757,MAR,Archery,Summer,0.3
+2758,MAR,Athletics,Summer,27.5
+2759,MAR,Basketball,Summer,0.3
+2760,MAR,Beach Volleyball,Summer,0.3
+2761,MAR,Boxing,Summer,24.1
+2762,MAR,Canoe Slalom,Summer,1.3
+2763,MAR,Cross Country Skiing,Winter,14.0
+2764,MAR,Cycling Road,Summer,4.8
+2765,MAR,Equestrian,Summer,1.3
+2766,MAR,Equestrian Dressage,Summer,0.3
+2767,MAR,Equestrian Jumping,Summer,0.3
+2768,MAR,Fencing,Summer,1.9
+2769,MAR,Football,Summer,1.9
+2770,MAR,Golf,Summer,0.5
+2771,MAR,Gymnastics Artistic,Summer,1.9
+2772,MAR,Judo,Summer,7.4
+2773,MAR,Karate,Summer,0.3
+2774,MAR,Modern Pentathlon,Summer,0.5
+2775,MAR,Rowing,Summer,0.3
+2776,MAR,Sailing,Summer,0.5
+2777,MAR,Shooting,Summer,1.3
+2778,MAR,Swimming,Summer,2.4
+2779,MAR,Table Tennis,Summer,0.3
+2780,MAR,Taekwondo,Summer,4.8
+2781,MAR,Tennis,Summer,1.6
+2782,MAR,Triathlon,Summer,0.3
+2783,MAR,Weightlifting,Summer,3.2
+2784,MAR,Wrestling,Summer,10.8
+2785,MAS,Alpine Skiing,Winter,100.0
+2786,MAS,Archery,Summer,6.2
+2787,MAS,Athletics,Summer,2.5
+2788,MAS,Badminton,Summer,14.2
+2789,MAS,Boxing,Summer,1.1
+2790,MAS,Canoe Slalom,Summer,0.4
+2791,MAS,Cycling Road,Summer,6.2
+2792,MAS,Cycling Track,Summer,8.0
+2793,MAS,Diving,Summer,12.4
+2794,MAS,Fencing,Summer,0.4
+2795,MAS,Football,Summer,0.4
+2796,MAS,Golf,Summer,2.2
+2797,MAS,Gymnastics Artistic,Summer,0.4
+2798,MAS,Hockey,Summer,2.9
+2799,MAS,Judo,Summer,0.4
+2800,MAS,Marathon Swimming,Summer,0.7
+2801,MAS,Sailing,Summer,3.6
+2802,MAS,Shooting,Summer,8.4
+2803,MAS,Swimming,Summer,22.5
+2804,MAS,Table Tennis,Summer,1.1
+2805,MAS,Taekwondo,Summer,1.5
+2806,MAS,Weightlifting,Summer,4.0
+2807,MAS,Wrestling,Summer,0.7
+2808,MAW,Archery,Summer,4.3
+2809,MAW,Athletics,Summer,21.3
+2810,MAW,Boxing,Summer,34.0
+2811,MAW,Cycling Road,Summer,23.4
+2812,MAW,Judo,Summer,2.1
+2813,MAW,Swimming,Summer,14.9
+2814,MDA,Alpine Skiing,Winter,10.5
+2815,MDA,Archery,Summer,4.1
+2816,MDA,Athletics,Summer,17.8
+2817,MDA,Biathlon,Winter,63.2
+2818,MDA,Boxing,Summer,4.7
+2819,MDA,Canoe Sprint,Summer,5.3
+2820,MDA,Cross Country Skiing,Winter,17.5
+2821,MDA,Cycling Road,Summer,6.5
+2822,MDA,Cycling Track,Summer,0.6
+2823,MDA,Judo,Summer,5.9
+2824,MDA,Luge,Winter,8.8
+2825,MDA,Shooting,Summer,4.1
+2826,MDA,Swimming,Summer,23.7
+2827,MDA,Taekwondo,Summer,0.6
+2828,MDA,Tennis,Summer,0.6
+2829,MDA,Weightlifting,Summer,13.6
+2830,MDA,Wrestling,Summer,12.4
+2831,MDV,Athletics,Summer,15.0
+2832,MDV,Badminton,Summer,10.0
+2833,MDV,Swimming,Summer,75.0
+2834,MEX,Alpine Skiing,Winter,71.6
+2835,MEX,Archery,Summer,3.3
+2836,MEX,Artistic Gymnastics,Summer,0.1
+2837,MEX,Artistic Swimming,Summer,0.1
+2838,MEX,Athletics,Summer,15.5
+2839,MEX,Badminton,Summer,0.3
+2840,MEX,Baseball/Softball,Summer,0.1
+2841,MEX,Basketball,Summer,0.5
+2842,MEX,Beach Volleyball,Summer,0.5
+2843,MEX,Bobsleigh,Winter,10.4
+2844,MEX,Boxing,Summer,6.9
+2845,MEX,Canoe Slalom,Summer,0.1
+2846,MEX,Canoe Sprint,Summer,0.5
+2847,MEX,Cross Country Skiing,Winter,13.4
+2848,MEX,Cycling Mountain Bike,Summer,0.3
+2849,MEX,Cycling Road,Summer,4.3
+2850,MEX,Cycling Track,Summer,1.6
+2851,MEX,Diving,Summer,9.5
+2852,MEX,Equestrian,Summer,0.3
+2853,MEX,Equestrian Dressage,Summer,0.8
+2854,MEX,Equestrian Eventing,Summer,2.6
+2855,MEX,Equestrian Jumping,Summer,4.6
+2856,MEX,Fencing,Summer,1.6
+2857,MEX,Figure skating,Winter,1.5
+2858,MEX,Football,Summer,0.9
+2859,MEX,Freestyle Skiing,Winter,1.5
+2860,MEX,Golf,Summer,0.5
+2861,MEX,Gymnastics Artistic,Summer,3.8
+2862,MEX,Hockey,Summer,0.1
+2863,MEX,Judo,Summer,1.8
+2864,MEX,Marathon Swimming,Summer,0.3
+2865,MEX,Modern Pentathlon,Summer,4.0
+2866,MEX,Polo,Summer,0.1
+2867,MEX,Rowing,Summer,1.7
+2868,MEX,Sailing,Summer,3.1
+2869,MEX,Shooting,Summer,7.7
+2870,MEX,Skeleton,Winter,1.5
+2871,MEX,Swimming,Summer,9.7
+2872,MEX,Synchronized Swimming,Summer,1.2
+2873,MEX,Table Tennis,Summer,0.3
+2874,MEX,Taekwondo,Summer,1.3
+2875,MEX,Tennis,Summer,1.6
+2876,MEX,Trampoline Gymnastics,Summer,0.1
+2877,MEX,Triathlon,Summer,1.1
+2878,MEX,Volleyball,Summer,0.2
+2879,MEX,Water Polo,Summer,0.3
+2880,MEX,Weightlifting,Summer,2.1
+2881,MEX,Wrestling,Summer,4.8
+2882,MGL,3x3 Basketball,Summer,0.2
+2883,MGL,Archery,Summer,5.4
+2884,MGL,Athletics,Summer,4.2
+2885,MGL,Biathlon,Winter,6.0
+2886,MGL,Boxing,Summer,13.3
+2887,MGL,Cross Country Skiing,Winter,63.0
+2888,MGL,Cycling Road,Summer,3.5
+2889,MGL,Gymnastics Artistic,Summer,2.1
+2890,MGL,Judo,Summer,20.5
+2891,MGL,Shooting,Summer,16.8
+2892,MGL,Short Track Speed Skating,Winter,6.0
+2893,MGL,Speed skating,Winter,25.0
+2894,MGL,Swimming,Summer,2.1
+2895,MGL,Table Tennis,Summer,0.5
+2896,MGL,Taekwondo,Summer,0.2
+2897,MGL,Weightlifting,Summer,3.5
+2898,MGL,Wrestling,Summer,27.7
+2899,MHL,Swimming,Summer,75.0
+2900,MHL,Taekwondo,Summer,12.5
+2901,MHL,Weightlifting,Summer,12.5
+2902,MIX,Athletics,Summer,5.6
+2903,MIX,Cricket,Summer,2.8
+2904,MIX,Cycling Track,Summer,8.3
+2905,MIX,Fencing,Summer,2.8
+2906,MIX,Football,Summer,2.8
+2907,MIX,Gymnastics Artistic,Summer,11.1
+2908,MIX,Ice Hockey,Winter,100.0
+2909,MIX,Polo,Summer,11.1
+2910,MIX,Rowing,Summer,5.6
+2911,MIX,Rugby,Summer,2.8
+2912,MIX,Sailing,Summer,8.3
+2913,MIX,Tennis,Summer,22.2
+2914,MIX,Tug of War,Summer,8.3
+2915,MIX,Water Polo,Summer,8.3
+2916,MKD,Alpine Skiing,Winter,48.4
+2917,MKD,Canoe Slalom,Summer,10.5
+2918,MKD,Cross Country Skiing,Winter,51.6
+2919,MKD,Judo,Summer,3.5
+2920,MKD,Karate,Summer,1.8
+2921,MKD,Shooting,Summer,14.0
+2922,MKD,Swimming,Summer,52.6
+2923,MKD,Taekwondo,Summer,1.8
+2924,MKD,Wrestling,Summer,15.8
+2925,MLI,Athletics,Summer,8.6
+2926,MLI,Basketball,Summer,2.9
+2927,MLI,Boxing,Summer,11.4
+2928,MLI,Football,Summer,2.9
+2929,MLI,Judo,Summer,34.3
+2930,MLI,Swimming,Summer,28.6
+2931,MLI,Taekwondo,Summer,11.4
+2932,MLT,Alpine Skiing,Winter,80.0
+2933,MLT,Archery,Summer,5.5
+2934,MLT,Athletics,Summer,1.4
+2935,MLT,Badminton,Summer,1.4
+2936,MLT,Cycling Road,Summer,13.7
+2937,MLT,Judo,Summer,8.2
+2938,MLT,Sailing,Summer,12.3
+2939,MLT,Shooting,Summer,27.4
+2940,MLT,Snowboard,Winter,20.0
+2941,MLT,Swimming,Summer,19.2
+2942,MLT,Water Polo,Summer,2.7
+2943,MLT,Weightlifting,Summer,2.7
+2944,MLT,Wrestling,Summer,5.5
+2945,MNE,Alpine Skiing,Winter,81.2
+2946,MNE,Athletics,Summer,13.8
+2947,MNE,Boxing,Summer,6.9
+2948,MNE,Cross Country Skiing,Winter,18.8
+2949,MNE,Handball,Summer,10.3
+2950,MNE,Judo,Summer,13.8
+2951,MNE,Sailing,Summer,10.3
+2952,MNE,Shooting,Summer,17.2
+2953,MNE,Swimming,Summer,10.3
+2954,MNE,Tennis,Summer,3.4
+2955,MNE,Water Polo,Summer,13.8
+2956,MON,Alpine Skiing,Winter,70.6
+2957,MON,Archery,Summer,2.0
+2958,MON,Athletics,Summer,10.2
+2959,MON,Bobsleigh,Winter,29.4
+2960,MON,Cycling Road,Summer,1.0
+2961,MON,Fencing,Summer,2.0
+2962,MON,Gymnastics Artistic,Summer,2.0
+2963,MON,Judo,Summer,9.2
+2964,MON,Rowing,Summer,3.1
+2965,MON,Sailing,Summer,6.1
+2966,MON,Shooting,Summer,49.0
+2967,MON,Swimming,Summer,10.2
+2968,MON,Table Tennis,Summer,1.0
+2969,MON,Taekwondo,Summer,1.0
+2970,MON,Triathlon,Summer,1.0
+2971,MON,Weightlifting,Summer,2.0
+2972,MOZ,Athletics,Summer,16.7
+2973,MOZ,Boxing,Summer,14.6
+2974,MOZ,Canoe Sprint,Summer,8.3
+2975,MOZ,Judo,Summer,8.3
+2976,MOZ,Sailing,Summer,4.2
+2977,MOZ,Swimming,Summer,47.9
+2978,MRI,Archery,Summer,3.1
+2979,MRI,Athletics,Summer,9.3
+2980,MRI,Badminton,Summer,20.6
+2981,MRI,Beach Volleyball,Summer,1.0
+2982,MRI,Boxing,Summer,16.5
+2983,MRI,Cycling Road,Summer,2.1
+2984,MRI,Judo,Summer,7.2
+2985,MRI,Sailing,Summer,1.0
+2986,MRI,Swimming,Summer,22.7
+2987,MRI,Table Tennis,Summer,4.1
+2988,MRI,Triathlon,Summer,2.1
+2989,MRI,Weightlifting,Summer,8.2
+2990,MRI,Wrestling,Summer,2.1
+2991,MTN,Athletics,Summer,12.5
+2992,MTN,Wrestling,Summer,87.5
+2993,MYA,Archery,Summer,6.0
+2994,MYA,Athletics,Summer,19.3
+2995,MYA,Badminton,Summer,1.2
+2996,MYA,Boxing,Summer,27.7
+2997,MYA,Football,Summer,1.2
+2998,MYA,Judo,Summer,3.6
+2999,MYA,Rowing,Summer,2.4
+3000,MYA,Sailing,Summer,4.8
+3001,MYA,Shooting,Summer,8.4
+3002,MYA,Swimming,Summer,4.8
+3003,MYA,Weightlifting,Summer,20.5
+3004,NAM,Athletics,Summer,31.9
+3005,NAM,Boxing,Summer,19.4
+3006,NAM,Cycling Mountain Bike,Summer,8.3
+3007,NAM,Cycling Road,Summer,9.7
+3008,NAM,Marathon Swimming,Summer,1.4
+3009,NAM,Rowing,Summer,1.4
+3010,NAM,Shooting,Summer,11.1
+3011,NAM,Swimming,Summer,13.9
+3012,NAM,Wrestling,Summer,2.8
+3013,NBO,Athletics,Summer,100.0
+3014,NCA,Athletics,Summer,13.2
+3015,NCA,Baseball,Summer,1.3
+3016,NCA,Boxing,Summer,19.7
+3017,NCA,Cycling Road,Summer,6.6
+3018,NCA,Cycling Track,Summer,1.3
+3019,NCA,Judo,Summer,7.9
+3020,NCA,Rowing,Summer,2.6
+3021,NCA,Shooting,Summer,11.8
+3022,NCA,Swimming,Summer,17.1
+3023,NCA,Taekwondo,Summer,1.3
+3024,NCA,Weightlifting,Summer,15.8
+3025,NCA,Wrestling,Summer,1.3
+3026,NED,3x3 Basketball,Summer,0.0
+3027,NED,Alpine Skiing,Winter,1.2
+3028,NED,Archery,Summer,1.7
+3029,NED,Artistic Gymnastics,Summer,0.1
+3030,NED,Artistic Swimming,Summer,0.0
+3031,NED,Athletics,Summer,10.8
+3032,NED,Badminton,Summer,1.1
+3033,NED,Baseball,Summer,0.2
+3034,NED,Beach Volleyball,Summer,0.8
+3035,NED,Bobsleigh,Winter,2.8
+3036,NED,Boxing,Summer,3.6
+3037,NED,Canoe Marathon,Summer,0.1
+3038,NED,Canoe Slalom,Summer,0.4
+3039,NED,Canoe Sprint,Summer,1.0
+3040,NED,Cycling BMX,Summer,0.5
+3041,NED,Cycling BMX Racing,Summer,0.3
+3042,NED,Cycling Mountain Bike,Summer,0.9
+3043,NED,Cycling Road,Summer,7.6
+3044,NED,Cycling Track,Summer,6.5
+3045,NED,Diving,Summer,0.9
+3046,NED,Equestrian,Summer,0.6
+3047,NED,Equestrian Dressage,Summer,2.8
+3048,NED,Equestrian Eventing,Summer,2.0
+3049,NED,Equestrian Jumping,Summer,2.6
+3050,NED,Fencing,Summer,1.5
+3051,NED,Figure skating,Winter,1.2
+3052,NED,Football,Summer,0.4
+3053,NED,Freestyle Skiing,Winter,0.6
+3054,NED,Golf,Summer,0.1
+3055,NED,Gymnastics Artistic,Summer,6.2
+3056,NED,Handball,Summer,0.1
+3057,NED,Hockey,Summer,1.3
+3058,NED,Ice Hockey,Winter,0.1
+3059,NED,Judo,Summer,4.3
+3060,NED,Marathon Swimming,Summer,0.3
+3061,NED,Modern Pentathlon,Summer,0.7
+3062,NED,Rowing,Summer,5.2
+3063,NED,Sailing,Summer,5.5
+3064,NED,Shooting,Summer,5.6
+3065,NED,Short Track,Winter,2.5
+3066,NED,Short Track Speed Skating,Winter,11.2
+3067,NED,Skateboarding,Summer,0.1
+3068,NED,Skeleton,Winter,0.3
+3069,NED,Snowboard,Winter,3.3
+3070,NED,Softball,Summer,0.1
+3071,NED,Speed skating,Winter,76.8
+3072,NED,Swimming,Summer,15.0
+3073,NED,Synchronized Swimming,Summer,0.5
+3074,NED,Table Tennis,Summer,1.4
+3075,NED,Taekwondo,Summer,0.3
+3076,NED,Tennis,Summer,1.8
+3077,NED,Trampoline,Summer,0.1
+3078,NED,Triathlon,Summer,0.7
+3079,NED,Tug of War,Summer,0.0
+3080,NED,Volleyball,Summer,0.4
+3081,NED,Water Polo,Summer,1.0
+3082,NED,Weightlifting,Summer,1.1
+3083,NED,Wrestling,Summer,1.5
+3084,NEP,Archery,Summer,1.4
+3085,NEP,Athletics,Summer,27.4
+3086,NEP,Boxing,Summer,23.3
+3087,NEP,Cross Country Skiing,Winter,100.0
+3088,NEP,Judo,Summer,6.8
+3089,NEP,Shooting,Summer,11.0
+3090,NEP,Swimming,Summer,16.4
+3091,NEP,Taekwondo,Summer,4.1
+3092,NEP,Weightlifting,Summer,9.6
+3093,NFL,Athletics,Summer,100.0
+3094,NGR,Athletics,Summer,22.4
+3095,NGR,Badminton,Summer,1.7
+3096,NGR,Basketball,Summer,1.5
+3097,NGR,Bobsleigh,Winter,25.0
+3098,NGR,Boxing,Summer,23.3
+3099,NGR,Canoe Slalom,Summer,0.6
+3100,NGR,Canoe Sprint,Summer,0.3
+3101,NGR,Cross Country Skiing,Winter,50.0
+3102,NGR,Football,Summer,2.9
+3103,NGR,Handball,Summer,0.3
+3104,NGR,Judo,Summer,2.0
+3105,NGR,Rowing,Summer,0.6
+3106,NGR,Skeleton,Winter,25.0
+3107,NGR,Swimming,Summer,5.0
+3108,NGR,Table Tennis,Summer,16.0
+3109,NGR,Taekwondo,Summer,2.3
+3110,NGR,Tennis,Summer,1.5
+3111,NGR,Weightlifting,Summer,7.9
+3112,NGR,Wrestling,Summer,11.7
+3113,NIG,Athletics,Summer,13.5
+3114,NIG,Boxing,Summer,43.2
+3115,NIG,Judo,Summer,8.1
+3116,NIG,Rowing,Summer,2.7
+3117,NIG,Swimming,Summer,21.6
+3118,NIG,Taekwondo,Summer,10.8
+3119,NOR,Alpine Skiing,Winter,18.7
+3120,NOR,Archery,Summer,1.2
+3121,NOR,Athletics,Summer,17.3
+3122,NOR,Badminton,Summer,0.2
+3123,NOR,Beach Volleyball,Summer,0.9
+3124,NOR,Biathlon,Winter,12.8
+3125,NOR,Bobsleigh,Winter,0.7
+3126,NOR,Boxing,Summer,4.4
+3127,NOR,Canoe Marathon,Summer,0.2
+3128,NOR,Canoe Sprint,Summer,2.2
+3129,NOR,Cross Country Skiing,Winter,26.0
+3130,NOR,Curling,Winter,0.5
+3131,NOR,Cycling BMX,Summer,0.1
+3132,NOR,Cycling BMX Racing,Summer,0.1
+3133,NOR,Cycling Mountain Bike,Summer,0.8
+3134,NOR,Cycling Road,Summer,7.9
+3135,NOR,Cycling Track,Summer,0.7
+3136,NOR,Diving,Summer,0.9
+3137,NOR,Equestrian,Summer,0.1
+3138,NOR,Equestrian Dressage,Summer,0.7
+3139,NOR,Equestrian Eventing,Summer,0.7
+3140,NOR,Equestrian Jumping,Summer,1.6
+3141,NOR,Fencing,Summer,1.2
+3142,NOR,Figure skating,Summer,0.4
+3143,NOR,Figure skating,Winter,0.7
+3144,NOR,Football,Summer,0.6
+3145,NOR,Freestyle Skiing,Winter,2.3
+3146,NOR,Golf,Summer,0.4
+3147,NOR,Gymnastics Artistic,Summer,7.3
+3148,NOR,Gymnastics Rhythmic,Summer,0.1
+3149,NOR,Handball,Summer,0.7
+3150,NOR,Ice Hockey,Winter,0.5
+3151,NOR,Judo,Summer,0.3
+3152,NOR,Luge,Winter,1.1
+3153,NOR,Modern Pentathlon,Summer,0.4
+3154,NOR,Nordic Combined,Winter,5.9
+3155,NOR,Rowing,Summer,3.3
+3156,NOR,Sailing,Summer,7.9
+3157,NOR,Shooting,Summer,23.4
+3158,NOR,Short Track Speed Skating,Winter,0.2
+3159,NOR,Skeleton,Winter,0.2
+3160,NOR,Ski Jumping,Winter,8.3
+3161,NOR,Snowboard,Winter,2.5
+3162,NOR,Speed skating,Winter,19.5
+3163,NOR,Swimming,Summer,5.1
+3164,NOR,Taekwondo,Summer,0.4
+3165,NOR,Tennis,Summer,1.8
+3166,NOR,Triathlon,Summer,0.4
+3167,NOR,Weightlifting,Summer,1.0
+3168,NOR,Wrestling,Summer,5.4
+3169,NRU,Athletics,Summer,6.7
+3170,NRU,Judo,Summer,13.3
+3171,NRU,Weightlifting,Summer,80.0
+3172,NZL,Alpine Skiing,Winter,50.0
+3173,NZL,Archery,Summer,0.9
+3174,NZL,Athletics,Summer,13.3
+3175,NZL,Badminton,Summer,0.9
+3176,NZL,Basketball,Summer,0.5
+3177,NZL,Beach Volleyball,Summer,0.1
+3178,NZL,Biathlon,Winter,1.7
+3179,NZL,Bobsleigh,Winter,3.4
+3180,NZL,Boxing,Summer,2.7
+3181,NZL,Canoe Slalom,Summer,0.9
+3182,NZL,Canoe Sprint,Summer,3.1
+3183,NZL,Cross Country Skiing,Winter,3.0
+3184,NZL,Curling,Winter,0.4
+3185,NZL,Cycling BMX,Summer,0.5
+3186,NZL,Cycling BMX Racing,Summer,0.1
+3187,NZL,Cycling Mountain Bike,Summer,0.9
+3188,NZL,Cycling Road,Summer,6.9
+3189,NZL,Cycling Track,Summer,7.6
+3190,NZL,Diving,Summer,0.2
+3191,NZL,Equestrian,Summer,0.8
+3192,NZL,Equestrian Dressage,Summer,0.4
+3193,NZL,Equestrian Eventing,Summer,4.1
+3194,NZL,Equestrian Jumping,Summer,2.5
+3195,NZL,Fencing,Summer,0.5
+3196,NZL,Football,Summer,0.6
+3197,NZL,Freestyle Skiing,Winter,13.6
+3198,NZL,Golf,Summer,0.5
+3199,NZL,Gymnastics Artistic,Summer,0.3
+3200,NZL,Hockey,Summer,1.9
+3201,NZL,Judo,Summer,1.5
+3202,NZL,Karate,Summer,0.1
+3203,NZL,Luge,Winter,0.8
+3204,NZL,Marathon Swimming,Summer,0.1
+3205,NZL,Modern Pentathlon,Summer,0.1
+3206,NZL,Rowing,Summer,7.3
+3207,NZL,Rugby,Summer,0.2
+3208,NZL,Rugby Sevens,Summer,0.2
+3209,NZL,Sailing,Summer,8.8
+3210,NZL,Shooting,Summer,4.0
+3211,NZL,Short Track Speed Skating,Winter,6.8
+3212,NZL,Skeleton,Winter,3.8
+3213,NZL,Snowboard,Winter,11.0
+3214,NZL,Softball,Summer,0.1
+3215,NZL,Speed skating,Winter,5.5
+3216,NZL,Surfing,Summer,0.1
+3217,NZL,Swimming,Summer,17.6
+3218,NZL,Synchronized Swimming,Summer,0.4
+3219,NZL,Table Tennis,Summer,1.2
+3220,NZL,Taekwondo,Summer,0.8
+3221,NZL,Tennis,Summer,0.7
+3222,NZL,Trampoline,Summer,0.1
+3223,NZL,Trampoline Gymnastics,Summer,0.1
+3224,NZL,Triathlon,Summer,2.6
+3225,NZL,Weightlifting,Summer,2.5
+3226,NZL,Wrestling,Summer,1.5
+3227,OAR,Alpine Skiing,Winter,4.4
+3228,OAR,Biathlon,Winter,8.2
+3229,OAR,Bobsleigh,Winter,3.2
+3230,OAR,Cross Country Skiing,Winter,20.9
+3231,OAR,Curling,Winter,1.3
+3232,OAR,Figure skating,Winter,7.0
+3233,OAR,Freestyle Skiing,Winter,13.9
+3234,OAR,Ice Hockey,Winter,1.3
+3235,OAR,Luge,Winter,4.4
+3236,OAR,Nordic Combined,Winter,1.3
+3237,OAR,Short Track,Winter,10.1
+3238,OAR,Skeleton,Winter,1.3
+3239,OAR,Ski Jumping,Winter,8.2
+3240,OAR,Snowboard,Winter,11.4
+3241,OAR,Speed skating,Winter,3.2
+3242,OMA,Athletics,Summer,11.8
+3243,OMA,Boxing,Summer,5.9
+3244,OMA,Cycling Road,Summer,2.9
+3245,OMA,Sailing,Summer,2.9
+3246,OMA,Shooting,Summer,64.7
+3247,OMA,Swimming,Summer,8.8
+3248,OMA,Weightlifting,Summer,2.9
+3249,PAK,Alpine Skiing,Winter,83.3
+3250,PAK,Athletics,Summer,7.0
+3251,PAK,Badminton,Summer,0.5
+3252,PAK,Boxing,Summer,26.7
+3253,PAK,Cross Country Skiing,Winter,16.7
+3254,PAK,Cycling Road,Summer,4.3
+3255,PAK,Cycling Track,Summer,3.2
+3256,PAK,Hockey,Summer,8.6
+3257,PAK,Judo,Summer,1.1
+3258,PAK,Rowing,Summer,1.1
+3259,PAK,Sailing,Summer,2.7
+3260,PAK,Shooting,Summer,11.8
+3261,PAK,Swimming,Summer,8.6
+3262,PAK,Table Tennis,Summer,0.5
+3263,PAK,Weightlifting,Summer,7.0
+3264,PAK,Wrestling,Summer,17.1
+3265,PAN,Athletics,Summer,18.8
+3266,PAN,Basketball,Summer,1.0
+3267,PAN,Boxing,Summer,5.9
+3268,PAN,Canoe Slalom,Summer,1.0
+3269,PAN,Cycling Road,Summer,1.0
+3270,PAN,Fencing,Summer,3.0
+3271,PAN,Judo,Summer,5.0
+3272,PAN,Shooting,Summer,4.0
+3273,PAN,Swimming,Summer,23.8
+3274,PAN,Taekwondo,Summer,2.0
+3275,PAN,Weightlifting,Summer,16.8
+3276,PAN,Wrestling,Summer,17.8
+3277,PAR,Athletics,Summer,11.4
+3278,PAR,Boxing,Summer,5.1
+3279,PAR,Cycling Road,Summer,1.3
+3280,PAR,Fencing,Summer,10.1
+3281,PAR,Football,Summer,2.5
+3282,PAR,Freestyle Skiing,Winter,100.0
+3283,PAR,Golf,Summer,3.8
+3284,PAR,Judo,Summer,6.3
+3285,PAR,Rowing,Summer,7.6
+3286,PAR,Sailing,Summer,2.5
+3287,PAR,Shooting,Summer,12.7
+3288,PAR,Swimming,Summer,22.8
+3289,PAR,Table Tennis,Summer,3.8
+3290,PAR,Tennis,Summer,10.1
+3291,PER,Alpine Skiing,Winter,83.3
+3292,PER,Athletics,Summer,14.1
+3293,PER,Badminton,Summer,1.8
+3294,PER,Basketball,Summer,0.9
+3295,PER,Boxing,Summer,4.9
+3296,PER,Canoe Slalom,Summer,0.3
+3297,PER,Cross Country Skiing,Winter,16.7
+3298,PER,Cycling Road,Summer,5.2
+3299,PER,Diving,Summer,0.9
+3300,PER,Equestrian Dressage,Summer,0.3
+3301,PER,Equestrian Jumping,Summer,0.3
+3302,PER,Fencing,Summer,0.6
+3303,PER,Football,Summer,0.6
+3304,PER,Judo,Summer,1.8
+3305,PER,Karate,Summer,0.3
+3306,PER,Modern Pentathlon,Summer,0.6
+3307,PER,Rowing,Summer,1.8
+3308,PER,Sailing,Summer,3.1
+3309,PER,Shooting,Summer,27.3
+3310,PER,Skateboarding,Summer,0.3
+3311,PER,Surfing,Summer,0.6
+3312,PER,Swimming,Summer,16.0
+3313,PER,Table Tennis,Summer,2.5
+3314,PER,Taekwondo,Summer,0.9
+3315,PER,Tennis,Summer,1.2
+3316,PER,Volleyball,Summer,2.1
+3317,PER,Weightlifting,Summer,4.3
+3318,PER,Wrestling,Summer,7.1
+3319,PHI,Alpine Skiing,Winter,81.8
+3320,PHI,Archery,Summer,2.4
+3321,PHI,Artistic Gymnastics,Summer,0.2
+3322,PHI,Athletics,Summer,5.5
+3323,PHI,Badminton,Summer,0.2
+3324,PHI,Basketball,Summer,1.7
+3325,PHI,Boxing,Summer,18.9
+3326,PHI,Cycling BMX,Summer,0.2
+3327,PHI,Cycling Road,Summer,2.4
+3328,PHI,Cycling Track,Summer,1.0
+3329,PHI,Diving,Summer,1.0
+3330,PHI,Equestrian Jumping,Summer,0.7
+3331,PHI,Fencing,Summer,0.5
+3332,PHI,Figure skating,Winter,9.1
+3333,PHI,Golf,Summer,1.0
+3334,PHI,Gymnastics Artistic,Summer,1.2
+3335,PHI,Judo,Summer,3.8
+3336,PHI,Luge,Winter,9.1
+3337,PHI,Rowing,Summer,0.5
+3338,PHI,Sailing,Summer,2.6
+3339,PHI,Shooting,Summer,17.4
+3340,PHI,Skateboarding,Summer,0.2
+3341,PHI,Swimming,Summer,23.6
+3342,PHI,Table Tennis,Summer,0.2
+3343,PHI,Taekwondo,Summer,2.6
+3344,PHI,Weightlifting,Summer,6.0
+3345,PHI,Wrestling,Summer,6.2
+3346,PLE,Athletics,Summer,13.3
+3347,PLE,Equestrian Dressage,Summer,6.7
+3348,PLE,Judo,Summer,20.0
+3349,PLE,Swimming,Summer,53.3
+3350,PLE,Weightlifting,Summer,6.7
+3351,PLW,Canoe Sprint,Summer,12.5
+3352,PLW,Judo,Summer,6.2
+3353,PLW,Swimming,Summer,43.8
+3354,PLW,Weightlifting,Summer,12.5
+3355,PLW,Wrestling,Summer,25.0
+3356,PNG,Athletics,Summer,13.1
+3357,PNG,Boxing,Summer,26.2
+3358,PNG,Judo,Summer,3.3
+3359,PNG,Sailing,Summer,6.6
+3360,PNG,Shooting,Summer,4.9
+3361,PNG,Swimming,Summer,19.7
+3362,PNG,Taekwondo,Summer,6.6
+3363,PNG,Weightlifting,Summer,19.7
+3364,POL,3x3 Basketball,Summer,0.0
+3365,POL,Alpine Skiing,Winter,12.5
+3366,POL,Archery,Summer,2.1
+3367,POL,Athletics,Summer,17.2
+3368,POL,Badminton,Summer,0.9
+3369,POL,Basketball,Summer,0.3
+3370,POL,Beach Volleyball,Summer,0.2
+3371,POL,Biathlon,Winter,16.0
+3372,POL,Bobsleigh,Winter,1.2
+3373,POL,Boxing,Summer,5.8
+3374,POL,Canoe Marathon,Summer,0.1
+3375,POL,Canoe Slalom,Summer,1.7
+3376,POL,Canoe Sprint,Summer,3.9
+3377,POL,Cross Country Skiing,Winter,24.0
+3378,POL,Cycling Mountain Bike,Summer,0.7
+3379,POL,Cycling Road,Summer,4.1
+3380,POL,Cycling Track,Summer,2.6
+3381,POL,Diving,Summer,0.6
+3382,POL,Equestrian,Summer,0.2
+3383,POL,Equestrian Dressage,Summer,0.4
+3384,POL,Equestrian Eventing,Summer,1.9
+3385,POL,Equestrian Jumping,Summer,1.0
+3386,POL,Fencing,Summer,6.7
+3387,POL,Figure skating,Winter,2.0
+3388,POL,Football,Summer,0.3
+3389,POL,Freestyle Skiing,Winter,0.2
+3390,POL,Golf,Summer,0.0
+3391,POL,Gymnastics Artistic,Summer,7.7
+3392,POL,Gymnastics Rhythmic,Summer,0.2
+3393,POL,Handball,Summer,0.2
+3394,POL,Hockey,Summer,0.2
+3395,POL,Ice Hockey,Winter,1.1
+3396,POL,Judo,Summer,2.9
+3397,POL,Luge,Winter,4.9
+3398,POL,Marathon Swimming,Summer,0.1
+3399,POL,Military Patrol,Winter,0.1
+3400,POL,Modern Pentathlon,Summer,1.9
+3401,POL,Nordic Combined,Winter,4.9
+3402,POL,Rowing,Summer,3.6
+3403,POL,Sailing,Summer,2.7
+3404,POL,Shooting,Summer,7.3
+3405,POL,Short Track,Winter,0.4
+3406,POL,Short Track Speed Skating,Winter,2.1
+3407,POL,Skateboarding,Summer,0.0
+3408,POL,Skeleton,Winter,0.1
+3409,POL,Ski Jumping,Winter,12.0
+3410,POL,Snowboard,Winter,3.1
+3411,POL,Speed skating,Winter,15.4
+3412,POL,Sport Climbing,Summer,0.0
+3413,POL,Swimming,Summer,6.9
+3414,POL,Table Tennis,Summer,1.3
+3415,POL,Taekwondo,Summer,0.2
+3416,POL,Tennis,Summer,1.3
+3417,POL,Triathlon,Summer,0.3
+3418,POL,Volleyball,Summer,0.5
+3419,POL,Weightlifting,Summer,4.8
+3420,POL,Wrestling,Summer,7.3
+3421,POR,Alpine Skiing,Winter,62.5
+3422,POR,Archery,Summer,0.9
+3423,POR,Athletics,Summer,19.9
+3424,POR,Badminton,Summer,1.3
+3425,POR,Beach Volleyball,Summer,0.5
+3426,POR,Bobsleigh,Winter,12.5
+3427,POR,Boxing,Summer,0.1
+3428,POR,Canoe Slalom,Summer,0.6
+3429,POR,Canoe Sprint,Summer,2.3
+3430,POR,Cross Country Skiing,Winter,16.7
+3431,POR,Cycling Mountain Bike,Summer,0.5
+3432,POR,Cycling Road,Summer,4.1
+3433,POR,Cycling Track,Summer,0.1
+3434,POR,Equestrian,Summer,0.7
+3435,POR,Equestrian Dressage,Summer,1.8
+3436,POR,Equestrian Eventing,Summer,2.2
+3437,POR,Equestrian Jumping,Summer,4.3
+3438,POR,Fencing,Summer,2.5
+3439,POR,Football,Summer,0.6
+3440,POR,Freestyle Skiing,Winter,4.2
+3441,POR,Golf,Summer,0.2
+3442,POR,Gymnastics Artistic,Summer,7.7
+3443,POR,Gymnastics Rhythmic,Summer,0.1
+3444,POR,Handball,Summer,0.1
+3445,POR,Judo,Summer,6.6
+3446,POR,Marathon Swimming,Summer,0.7
+3447,POR,Modern Pentathlon,Summer,1.6
+3448,POR,Rowing,Summer,0.6
+3449,POR,Sailing,Summer,8.6
+3450,POR,Shooting,Summer,11.2
+3451,POR,Skateboarding,Summer,0.1
+3452,POR,Speed skating,Winter,4.2
+3453,POR,Surfing,Summer,0.2
+3454,POR,Swimming,Summer,11.5
+3455,POR,Table Tennis,Summer,2.0
+3456,POR,Taekwondo,Summer,0.3
+3457,POR,Tennis,Summer,1.3
+3458,POR,Trampoline,Summer,0.1
+3459,POR,Triathlon,Summer,1.4
+3460,POR,Water Polo,Summer,0.1
+3461,POR,Weightlifting,Summer,1.2
+3462,POR,Wrestling,Summer,2.1
+3463,PRK,Alpine Skiing,Winter,6.9
+3464,PRK,Archery,Summer,4.6
+3465,PRK,Athletics,Summer,12.0
+3466,PRK,Boxing,Summer,6.8
+3467,PRK,Cross Country Skiing,Winter,17.6
+3468,PRK,Cycling Road,Summer,0.8
+3469,PRK,Diving,Summer,6.6
+3470,PRK,Figure skating,Winter,3.8
+3471,PRK,Football,Summer,0.8
+3472,PRK,Gymnastics Artistic,Summer,8.2
+3473,PRK,Gymnastics Rhythmic,Summer,0.3
+3474,PRK,Judo,Summer,8.5
+3475,PRK,Shooting,Summer,16.9
+3476,PRK,Short Track,Winter,1.5
+3477,PRK,Short Track Speed Skating,Winter,13.0
+3478,PRK,Speed skating,Winter,57.3
+3479,PRK,Swimming,Summer,0.3
+3480,PRK,Synchronized Swimming,Summer,0.8
+3481,PRK,Table Tennis,Summer,10.4
+3482,PRK,Volleyball,Summer,0.3
+3483,PRK,Weightlifting,Summer,13.9
+3484,PRK,Wrestling,Summer,8.7
+3485,PUR,Alpine Skiing,Winter,51.5
+3486,PUR,Archery,Summer,1.5
+3487,PUR,Athletics,Summer,6.4
+3488,PUR,Baseball,Summer,0.2
+3489,PUR,Basketball,Summer,2.1
+3490,PUR,Beach Volleyball,Summer,0.2
+3491,PUR,Biathlon,Winter,6.1
+3492,PUR,Bobsleigh,Winter,21.2
+3493,PUR,Boxing,Summer,19.3
+3494,PUR,Cross Country Skiing,Winter,3.0
+3495,PUR,Cycling Road,Summer,0.4
+3496,PUR,Cycling Track,Summer,0.4
+3497,PUR,Diving,Summer,3.0
+3498,PUR,Equestrian,Summer,0.2
+3499,PUR,Equestrian Dressage,Summer,0.2
+3500,PUR,Equestrian Eventing,Summer,0.6
+3501,PUR,Equestrian Jumping,Summer,0.6
+3502,PUR,Fencing,Summer,1.7
+3503,PUR,Freestyle Skiing,Winter,6.1
+3504,PUR,Golf,Summer,0.4
+3505,PUR,Gymnastics Artistic,Summer,0.6
+3506,PUR,Judo,Summer,7.6
+3507,PUR,Luge,Winter,9.1
+3508,PUR,Rowing,Summer,0.4
+3509,PUR,Sailing,Summer,5.5
+3510,PUR,Shooting,Summer,13.2
+3511,PUR,Skateboarding,Summer,0.4
+3512,PUR,Skeleton,Winter,3.0
+3513,PUR,Softball,Summer,0.2
+3514,PUR,Swimming,Summer,18.3
+3515,PUR,Synchronized Swimming,Summer,0.2
+3516,PUR,Table Tennis,Summer,1.1
+3517,PUR,Taekwondo,Summer,1.1
+3518,PUR,Tennis,Summer,0.8
+3519,PUR,Triathlon,Summer,0.2
+3520,PUR,Volleyball,Summer,0.2
+3521,PUR,Weightlifting,Summer,7.0
+3522,PUR,Wrestling,Summer,5.7
+3523,QAT,Archery,Summer,1.1
+3524,QAT,Athletics,Summer,37.1
+3525,QAT,Beach Volleyball,Summer,2.2
+3526,QAT,Boxing,Summer,2.2
+3527,QAT,Equestrian Jumping,Summer,5.6
+3528,QAT,Fencing,Summer,1.1
+3529,QAT,Football,Summer,2.2
+3530,QAT,Handball,Summer,1.1
+3531,QAT,Judo,Summer,2.2
+3532,QAT,Rowing,Summer,1.1
+3533,QAT,Sailing,Summer,2.2
+3534,QAT,Shooting,Summer,21.3
+3535,QAT,Swimming,Summer,7.9
+3536,QAT,Table Tennis,Summer,4.5
+3537,QAT,Taekwondo,Summer,1.1
+3538,QAT,Weightlifting,Summer,6.7
+3539,RHO,Boxing,Summer,26.7
+3540,RHO,Diving,Summer,6.7
+3541,RHO,Sailing,Summer,6.7
+3542,RHO,Shooting,Summer,6.7
+3543,RHO,Swimming,Summer,53.3
+3544,ROC,3x3 Basketball,Summer,0.7
+3545,ROC,Alpine Skiing,Winter,6.4
+3546,ROC,Archery,Summer,2.2
+3547,ROC,Artistic Gymnastics,Summer,7.3
+3548,ROC,Artistic Swimming,Summer,0.7
+3549,ROC,Athletics,Summer,2.9
+3550,ROC,Badminton,Summer,1.1
+3551,ROC,Beach Volleyball,Summer,1.1
+3552,ROC,Biathlon,Winter,14.1
+3553,ROC,Bobsleigh,Winter,3.0
+3554,ROC,Boxing,Summer,4.0
+3555,ROC,Canoe Slalom,Summer,1.5
+3556,ROC,Canoe Sprint,Summer,6.6
+3557,ROC,Cross Country Skiing,Winter,15.4
+3558,ROC,Curling,Winter,0.9
+3559,ROC,Cycling BMX Freestyle,Summer,0.7
+3560,ROC,Cycling BMX Racing,Summer,1.1
+3561,ROC,Cycling Mountain Bike,Summer,0.7
+3562,ROC,Cycling Road,Summer,1.8
+3563,ROC,Cycling Track,Summer,4.4
+3564,ROC,Diving,Summer,3.3
+3565,ROC,Equestrian,Summer,2.6
+3566,ROC,Fencing,Summer,8.8
+3567,ROC,Figure skating,Winter,5.6
+3568,ROC,Freestyle Skiing,Winter,10.7
+3569,ROC,Handball,Summer,0.4
+3570,ROC,Ice Hockey,Winter,0.9
+3571,ROC,Judo,Summer,5.1
+3572,ROC,Luge,Winter,3.8
+3573,ROC,Marathon Swimming,Summer,0.7
+3574,ROC,Modern Pentathlon,Summer,1.1
+3575,ROC,Nordic Combined,Winter,2.6
+3576,ROC,Rhythmic Gymnastics,Summer,1.1
+3577,ROC,Rowing,Summer,2.2
+3578,ROC,Rugby Sevens,Summer,0.4
+3579,ROC,Sailing,Summer,1.8
+3580,ROC,Shooting,Summer,8.8
+3581,ROC,Short Track Speed Skating,Winter,8.1
+3582,ROC,Skeleton,Winter,2.6
+3583,ROC,Ski Jumping,Winter,6.0
+3584,ROC,Snowboard,Winter,7.3
+3585,ROC,Speed skating,Winter,12.8
+3586,ROC,Sport Climbing,Summer,1.1
+3587,ROC,Swimming,Summer,7.3
+3588,ROC,Table Tennis,Summer,1.1
+3589,ROC,Taekwondo,Summer,1.5
+3590,ROC,Tennis,Summer,4.8
+3591,ROC,Trampoline Gymnastics,Summer,1.1
+3592,ROC,Triathlon,Summer,1.8
+3593,ROC,Volleyball,Summer,0.7
+3594,ROC,Water Polo,Summer,0.4
+3595,ROC,Weightlifting,Summer,0.7
+3596,ROC,Wrestling,Summer,6.2
+3597,ROU,3x3 Basketball,Summer,0.1
+3598,ROU,Alpine Skiing,Winter,22.5
+3599,ROU,Archery,Summer,0.3
+3600,ROU,Athletics,Summer,11.1
+3601,ROU,Badminton,Summer,0.1
+3602,ROU,Basketball,Summer,0.1
+3603,ROU,Biathlon,Winter,19.9
+3604,ROU,Bobsleigh,Winter,11.7
+3605,ROU,Boxing,Summer,6.7
+3606,ROU,Canoe Marathon,Summer,0.1
+3607,ROU,Canoe Sprint,Summer,5.7
+3608,ROU,Cross Country Skiing,Winter,19.7
+3609,ROU,Cycling Mountain Bike,Summer,0.1
+3610,ROU,Cycling Road,Summer,1.2
+3611,ROU,Cycling Track,Summer,0.2
+3612,ROU,Diving,Summer,0.8
+3613,ROU,Equestrian Dressage,Summer,0.2
+3614,ROU,Equestrian Eventing,Summer,0.7
+3615,ROU,Equestrian Jumping,Summer,0.7
+3616,ROU,Fencing,Summer,7.2
+3617,ROU,Figure skating,Winter,2.5
+3618,ROU,Football,Summer,0.2
+3619,ROU,Freestyle Skiing,Winter,0.2
+3620,ROU,Gymnastics Artistic,Summer,21.0
+3621,ROU,Gymnastics Rhythmic,Summer,0.2
+3622,ROU,Handball,Summer,0.6
+3623,ROU,Ice Hockey,Winter,0.8
+3624,ROU,Judo,Summer,2.3
+3625,ROU,Luge,Winter,7.4
+3626,ROU,Modern Pentathlon,Summer,0.8
+3627,ROU,Nordic Combined,Winter,0.4
+3628,ROU,Rowing,Summer,5.2
+3629,ROU,Rugby,Summer,0.1
+3630,ROU,Sailing,Summer,0.3
+3631,ROU,Shooting,Summer,7.4
+3632,ROU,Short Track Speed Skating,Winter,1.3
+3633,ROU,Skeleton,Winter,0.9
+3634,ROU,Ski Jumping,Winter,2.3
+3635,ROU,Speed skating,Winter,10.4
+3636,ROU,Swimming,Summer,8.0
+3637,ROU,Table Tennis,Summer,2.0
+3638,ROU,Tennis,Summer,2.0
+3639,ROU,Triathlon,Summer,0.1
+3640,ROU,Volleyball,Summer,0.3
+3641,ROU,Water Polo,Summer,0.5
+3642,ROU,Weightlifting,Summer,4.0
+3643,ROU,Wrestling,Summer,9.8
+3644,RSA,Alpine Skiing,Winter,53.8
+3645,RSA,Archery,Summer,1.1
+3646,RSA,Artistic Swimming,Summer,0.1
+3647,RSA,Athletics,Summer,21.3
+3648,RSA,Badminton,Summer,1.4
+3649,RSA,Baseball,Summer,0.1
+3650,RSA,Beach Volleyball,Summer,0.4
+3651,RSA,Boxing,Summer,7.8
+3652,RSA,Canoe Slalom,Summer,0.5
+3653,RSA,Canoe Sprint,Summer,0.8
+3654,RSA,Cross Country Skiing,Winter,15.4
+3655,RSA,Cycling BMX,Summer,0.2
+3656,RSA,Cycling BMX Racing,Summer,0.1
+3657,RSA,Cycling Mountain Bike,Summer,1.0
+3658,RSA,Cycling Road,Summer,5.8
+3659,RSA,Cycling Track,Summer,3.0
+3660,RSA,Diving,Summer,0.8
+3661,RSA,Equestrian,Summer,0.2
+3662,RSA,Equestrian Dressage,Summer,0.1
+3663,RSA,Equestrian Eventing,Summer,0.2
+3664,RSA,Equestrian Jumping,Summer,0.2
+3665,RSA,Fencing,Summer,2.2
+3666,RSA,Figure skating,Winter,19.2
+3667,RSA,Football,Summer,0.5
+3668,RSA,Golf,Summer,0.6
+3669,RSA,Gymnastics Artistic,Summer,3.7
+3670,RSA,Hockey,Summer,1.0
+3671,RSA,Judo,Summer,0.7
+3672,RSA,Marathon Swimming,Summer,0.8
+3673,RSA,Modern Pentathlon,Summer,0.9
+3674,RSA,Rowing,Summer,2.2
+3675,RSA,Rugby,Summer,0.1
+3676,RSA,Rugby Sevens,Summer,0.1
+3677,RSA,Sailing,Summer,2.9
+3678,RSA,Shooting,Summer,6.5
+3679,RSA,Short Track Speed Skating,Winter,7.7
+3680,RSA,Skateboarding,Summer,0.3
+3681,RSA,Skeleton,Winter,3.8
+3682,RSA,Sport Climbing,Summer,0.2
+3683,RSA,Surfing,Summer,0.1
+3684,RSA,Swimming,Summer,20.7
+3685,RSA,Synchronized Swimming,Summer,0.3
+3686,RSA,Table Tennis,Summer,0.2
+3687,RSA,Taekwondo,Summer,0.2
+3688,RSA,Tennis,Summer,4.0
+3689,RSA,Triathlon,Summer,1.6
+3690,RSA,Tug of War,Summer,0.1
+3691,RSA,Water Polo,Summer,0.4
+3692,RSA,Weightlifting,Summer,1.5
+3693,RSA,Wrestling,Summer,2.9
+3694,RUS,Alpine Skiing,Winter,10.6
+3695,RUS,Archery,Summer,1.6
+3696,RUS,Athletics,Summer,16.9
+3697,RUS,Badminton,Summer,1.0
+3698,RUS,Basketball,Summer,0.4
+3699,RUS,Beach Volleyball,Summer,0.4
+3700,RUS,Biathlon,Winter,14.5
+3701,RUS,Bobsleigh,Winter,2.7
+3702,RUS,Boxing,Summer,3.2
+3703,RUS,Canoe Slalom,Summer,0.6
+3704,RUS,Canoe Sprint,Summer,2.2
+3705,RUS,Cross Country Skiing,Winter,19.7
+3706,RUS,Curling,Winter,0.5
+3707,RUS,Cycling BMX,Summer,0.1
+3708,RUS,Cycling Mountain Bike,Summer,0.6
+3709,RUS,Cycling Road,Summer,3.6
+3710,RUS,Cycling Track,Summer,2.7
+3711,RUS,Diving,Summer,2.8
+3712,RUS,Equestrian Dressage,Summer,0.4
+3713,RUS,Equestrian Eventing,Summer,0.4
+3714,RUS,Equestrian Jumping,Summer,0.5
+3715,RUS,Fencing,Summer,5.7
+3716,RUS,Figure skating,Summer,0.1
+3717,RUS,Figure skating,Winter,5.6
+3718,RUS,Football,Summer,0.0
+3719,RUS,Freestyle Skiing,Winter,6.9
+3720,RUS,Golf,Summer,0.0
+3721,RUS,Gymnastics Artistic,Summer,5.9
+3722,RUS,Gymnastics Rhythmic,Summer,0.9
+3723,RUS,Handball,Summer,0.3
+3724,RUS,Ice Hockey,Winter,0.9
+3725,RUS,Judo,Summer,3.1
+3726,RUS,Luge,Winter,4.2
+3727,RUS,Marathon Swimming,Summer,0.4
+3728,RUS,Modern Pentathlon,Summer,1.3
+3729,RUS,Nordic Combined,Winter,2.7
+3730,RUS,Rowing,Summer,1.2
+3731,RUS,Sailing,Summer,2.2
+3732,RUS,Shooting,Summer,11.8
+3733,RUS,Short Track Speed Skating,Winter,5.5
+3734,RUS,Skeleton,Winter,1.3
+3735,RUS,Ski Jumping,Winter,4.5
+3736,RUS,Snowboard,Winter,3.5
+3737,RUS,Speed skating,Winter,17.0
+3738,RUS,Swimming,Summer,13.3
+3739,RUS,Synchronized Swimming,Summer,0.5
+3740,RUS,Table Tennis,Summer,1.4
+3741,RUS,Taekwondo,Summer,0.5
+3742,RUS,Tennis,Summer,2.9
+3743,RUS,Trampoline,Summer,0.6
+3744,RUS,Triathlon,Summer,1.0
+3745,RUS,Volleyball,Summer,0.6
+3746,RUS,Water Polo,Summer,0.4
+3747,RUS,Weightlifting,Summer,2.2
+3748,RUS,Wrestling,Summer,5.5
+3749,RWA,Athletics,Summer,51.4
+3750,RWA,Cycling Mountain Bike,Summer,5.4
+3751,RWA,Cycling Road,Summer,13.5
+3752,RWA,Judo,Summer,2.7
+3753,RWA,Swimming,Summer,27.0
+3754,SAA,Boxing,Summer,5.4
+3755,SAA,Canoe Sprint,Summer,1.8
+3756,SAA,Football,Summer,1.8
+3757,SAA,Gymnastics Artistic,Summer,76.8
+3758,SAA,Rowing,Summer,1.8
+3759,SAA,Shooting,Summer,5.4
+3760,SAA,Swimming,Summer,1.8
+3761,SAA,Wrestling,Summer,5.4
+3762,SAM,Archery,Summer,3.4
+3763,SAM,Boxing,Summer,33.9
+3764,SAM,Canoe Sprint,Summer,18.6
+3765,SAM,Cycling Road,Summer,1.7
+3766,SAM,Judo,Summer,6.8
+3767,SAM,Sailing,Summer,1.7
+3768,SAM,Swimming,Summer,3.4
+3769,SAM,Taekwondo,Summer,3.4
+3770,SAM,Weightlifting,Summer,22.0
+3771,SAM,Wrestling,Summer,5.1
+3772,SCG,Alpine Skiing,Winter,70.6
+3773,SCG,Athletics,Summer,9.8
+3774,SCG,Basketball,Summer,2.7
+3775,SCG,Biathlon,Winter,11.8
+3776,SCG,Bobsleigh,Winter,5.9
+3777,SCG,Boxing,Summer,0.9
+3778,SCG,Canoe Sprint,Summer,1.8
+3779,SCG,Cross Country Skiing,Winter,11.8
+3780,SCG,Cycling Road,Summer,0.9
+3781,SCG,Diving,Summer,1.8
+3782,SCG,Fencing,Summer,1.8
+3783,SCG,Football,Summer,0.9
+3784,SCG,Handball,Summer,0.9
+3785,SCG,Judo,Summer,1.8
+3786,SCG,Rowing,Summer,3.6
+3787,SCG,Shooting,Summer,28.6
+3788,SCG,Swimming,Summer,25.0
+3789,SCG,Table Tennis,Summer,8.9
+3790,SCG,Tennis,Summer,1.8
+3791,SCG,Volleyball,Summer,2.7
+3792,SCG,Water Polo,Summer,2.7
+3793,SCG,Weightlifting,Summer,0.9
+3794,SCG,Wrestling,Summer,2.7
+3795,SEN,Alpine Skiing,Winter,100.0
+3796,SEN,Athletics,Summer,9.9
+3797,SEN,Basketball,Summer,3.1
+3798,SEN,Boxing,Summer,3.7
+3799,SEN,Canoe Slalom,Summer,1.2
+3800,SEN,Canoe Sprint,Summer,1.2
+3801,SEN,Fencing,Summer,4.9
+3802,SEN,Football,Summer,0.6
+3803,SEN,Judo,Summer,28.4
+3804,SEN,Sailing,Summer,0.6
+3805,SEN,Shooting,Summer,1.9
+3806,SEN,Swimming,Summer,16.0
+3807,SEN,Table Tennis,Summer,1.2
+3808,SEN,Taekwondo,Summer,1.9
+3809,SEN,Wrestling,Summer,25.3
+3810,SEY,Athletics,Summer,1.6
+3811,SEY,Badminton,Summer,1.6
+3812,SEY,Boxing,Summer,23.0
+3813,SEY,Judo,Summer,6.6
+3814,SEY,Sailing,Summer,19.7
+3815,SEY,Swimming,Summer,39.3
+3816,SEY,Weightlifting,Summer,8.2
+3817,SGP,Athletics,Summer,1.2
+3818,SGP,Badminton,Summer,7.4
+3819,SGP,Basketball,Summer,0.4
+3820,SGP,Boxing,Summer,0.4
+3821,SGP,Canoe Sprint,Summer,0.8
+3822,SGP,Diving,Summer,0.8
+3823,SGP,Equestrian,Summer,0.4
+3824,SGP,Fencing,Summer,2.3
+3825,SGP,Hockey,Summer,0.4
+3826,SGP,Judo,Summer,0.8
+3827,SGP,Marathon Swimming,Summer,0.4
+3828,SGP,Rowing,Summer,0.8
+3829,SGP,Sailing,Summer,10.9
+3830,SGP,Shooting,Summer,6.2
+3831,SGP,Short Track,Winter,100.0
+3832,SGP,Swimming,Summer,50.2
+3833,SGP,Table Tennis,Summer,12.1
+3834,SGP,Water Polo,Summer,0.4
+3835,SGP,Weightlifting,Summer,4.3
+3836,SKN,Athletics,Summer,100.0
+3837,SLE,Athletics,Summer,38.5
+3838,SLE,Boxing,Summer,34.6
+3839,SLE,Cycling Road,Summer,3.8
+3840,SLE,Judo,Summer,3.8
+3841,SLE,Swimming,Summer,11.5
+3842,SLE,Weightlifting,Summer,7.7
+3843,SLO,Alpine Skiing,Winter,36.6
+3844,SLO,Archery,Summer,2.3
+3845,SLO,Athletics,Summer,9.4
+3846,SLO,Badminton,Summer,0.9
+3847,SLO,Basketball,Summer,0.3
+3848,SLO,Biathlon,Winter,23.9
+3849,SLO,Canoe Slalom,Summer,8.8
+3850,SLO,Canoe Sprint,Summer,2.3
+3851,SLO,Cross Country Skiing,Winter,14.3
+3852,SLO,Cycling Mountain Bike,Summer,2.0
+3853,SLO,Cycling Road,Summer,10.2
+3854,SLO,Figure skating,Winter,0.3
+3855,SLO,Freestyle Skiing,Winter,1.7
+3856,SLO,Golf,Summer,0.3
+3857,SLO,Gymnastics Artistic,Summer,0.3
+3858,SLO,Handball,Summer,0.9
+3859,SLO,Ice Hockey,Winter,0.3
+3860,SLO,Judo,Summer,7.4
+3861,SLO,Luge,Winter,0.4
+3862,SLO,Marathon Swimming,Summer,0.9
+3863,SLO,Nordic Combined,Winter,3.0
+3864,SLO,Rowing,Summer,4.5
+3865,SLO,Sailing,Summer,6.8
+3866,SLO,Shooting,Summer,7.7
+3867,SLO,Skeleton,Winter,0.1
+3868,SLO,Ski Jumping,Winter,13.5
+3869,SLO,Snowboard,Winter,5.8
+3870,SLO,Sport Climbing,Summer,0.6
+3871,SLO,Swimming,Summer,26.7
+3872,SLO,Table Tennis,Summer,2.0
+3873,SLO,Taekwondo,Summer,1.4
+3874,SLO,Tennis,Summer,4.0
+3875,SLO,Triathlon,Summer,0.6
+3876,SMR,Alpine Skiing,Winter,83.7
+3877,SMR,Archery,Summer,2.5
+3878,SMR,Athletics,Summer,3.3
+3879,SMR,Bobsleigh,Winter,2.3
+3880,SMR,Cross Country Skiing,Winter,14.0
+3881,SMR,Cycling Road,Summer,10.8
+3882,SMR,Judo,Summer,8.3
+3883,SMR,Sailing,Summer,2.5
+3884,SMR,Shooting,Summer,46.7
+3885,SMR,Swimming,Summer,21.7
+3886,SMR,Tennis,Summer,0.8
+3887,SMR,Weightlifting,Summer,1.7
+3888,SMR,Wrestling,Summer,1.7
+3889,SOL,Archery,Summer,6.7
+3890,SOL,Athletics,Summer,20.0
+3891,SOL,Boxing,Summer,13.3
+3892,SOL,Judo,Summer,6.7
+3893,SOL,Weightlifting,Summer,53.3
+3894,SOM,Athletics,Summer,90.9
+3895,SOM,Boxing,Summer,9.1
+3896,SRB,3x3 Basketball,Summer,0.4
+3897,SRB,Alpine Skiing,Winter,61.7
+3898,SRB,Athletics,Summer,12.3
+3899,SRB,Basketball,Summer,1.3
+3900,SRB,Biathlon,Winter,8.5
+3901,SRB,Bobsleigh,Winter,4.3
+3902,SRB,Boxing,Summer,0.9
+3903,SRB,Canoe Sprint,Summer,8.8
+3904,SRB,Cross Country Skiing,Winter,21.3
+3905,SRB,Cycling Mountain Bike,Summer,0.4
+3906,SRB,Cycling Road,Summer,2.2
+3907,SRB,Football,Summer,0.4
+3908,SRB,Handball,Summer,0.4
+3909,SRB,Judo,Summer,3.1
+3910,SRB,Karate,Summer,0.4
+3911,SRB,Rowing,Summer,3.5
+3912,SRB,Shooting,Summer,26.9
+3913,SRB,Snowboard,Winter,4.3
+3914,SRB,Swimming,Summer,13.2
+3915,SRB,Table Tennis,Summer,3.1
+3916,SRB,Taekwondo,Summer,3.1
+3917,SRB,Tennis,Summer,10.6
+3918,SRB,Volleyball,Summer,2.6
+3919,SRB,Water Polo,Summer,1.8
+3920,SRB,Wrestling,Summer,4.4
+3921,SRI,Athletics,Summer,18.2
+3922,SRI,Badminton,Summer,6.1
+3923,SRI,Boxing,Summer,16.2
+3924,SRI,Cycling Road,Summer,1.0
+3925,SRI,Diving,Summer,2.0
+3926,SRI,Equestrian,Summer,1.0
+3927,SRI,Judo,Summer,2.0
+3928,SRI,Sailing,Summer,3.0
+3929,SRI,Shooting,Summer,23.2
+3930,SRI,Swimming,Summer,22.2
+3931,SRI,Weightlifting,Summer,4.0
+3932,SRI,Wrestling,Summer,1.0
+3933,SSD,Athletics,Summer,100.0
+3934,STP,Athletics,Summer,20.0
+3935,STP,Canoe Sprint,Summer,80.0
+3936,SUD,Athletics,Summer,22.0
+3937,SUD,Boxing,Summer,40.0
+3938,SUD,Football,Summer,2.0
+3939,SUD,Judo,Summer,8.0
+3940,SUD,Rowing,Summer,2.0
+3941,SUD,Shooting,Summer,4.0
+3942,SUD,Swimming,Summer,12.0
+3943,SUD,Table Tennis,Summer,2.0
+3944,SUD,Weightlifting,Summer,8.0
+3945,SUI,Alpine Skiing,Winter,32.3
+3946,SUI,Archery,Summer,0.8
+3947,SUI,Artistic Gymnastics,Summer,0.2
+3948,SUI,Athletics,Summer,9.5
+3949,SUI,Badminton,Summer,0.5
+3950,SUI,Basketball,Summer,0.1
+3951,SUI,Beach Volleyball,Summer,0.7
+3952,SUI,Biathlon,Winter,6.5
+3953,SUI,Bobsleigh,Winter,5.2
+3954,SUI,Boxing,Summer,1.9
+3955,SUI,Canoe Marathon,Summer,0.1
+3956,SUI,Canoe Slalom,Summer,1.2
+3957,SUI,Canoe Sprint,Summer,0.2
+3958,SUI,Cross Country Skiing,Winter,21.5
+3959,SUI,Curling,Winter,0.9
+3960,SUI,Cycling BMX,Summer,0.1
+3961,SUI,Cycling BMX Freestyle,Summer,0.0
+3962,SUI,Cycling BMX Racing,Summer,0.1
+3963,SUI,Cycling Mountain Bike,Summer,1.6
+3964,SUI,Cycling Road,Summer,6.4
+3965,SUI,Cycling Track,Summer,2.7
+3966,SUI,Diving,Summer,0.7
+3967,SUI,Equestrian,Summer,0.5
+3968,SUI,Equestrian Dressage,Summer,3.0
+3969,SUI,Equestrian Eventing,Summer,1.9
+3970,SUI,Equestrian Jumping,Summer,3.6
+3971,SUI,Fencing,Summer,2.9
+3972,SUI,Figure skating,Summer,0.0
+3973,SUI,Figure skating,Winter,2.9
+3974,SUI,Football,Summer,0.2
+3975,SUI,Freestyle Skiing,Winter,6.2
+3976,SUI,Golf,Summer,0.2
+3977,SUI,Gymnastics Artistic,Summer,18.3
+3978,SUI,Gymnastics Rhythmic,Summer,0.0
+3979,SUI,Handball,Summer,0.2
+3980,SUI,Hockey,Summer,0.2
+3981,SUI,Ice Hockey,Summer,0.0
+3982,SUI,Ice Hockey,Winter,1.2
+3983,SUI,Judo,Summer,1.5
+3984,SUI,Karate,Summer,0.0
+3985,SUI,Luge,Winter,1.2
+3986,SUI,Marathon Swimming,Summer,0.1
+3987,SUI,Military Patrol,Winter,0.1
+3988,SUI,Modern Pentathlon,Summer,1.6
+3989,SUI,Nordic Combined,Winter,4.1
+3990,SUI,Rowing,Summer,3.7
+3991,SUI,Sailing,Summer,4.1
+3992,SUI,Shooting,Summer,11.1
+3993,SUI,Skeleton,Winter,1.0
+3994,SUI,Ski Jumping,Winter,7.0
+3995,SUI,Snowboard,Winter,7.7
+3996,SUI,Speed skating,Winter,2.3
+3997,SUI,Sport Climbing,Summer,0.0
+3998,SUI,Swimming,Summer,6.6
+3999,SUI,Synchronized Swimming,Summer,0.8
+4000,SUI,Table Tennis,Summer,0.1
+4001,SUI,Taekwondo,Summer,0.0
+4002,SUI,Tennis,Summer,2.2
+4003,SUI,Triathlon,Summer,1.5
+4004,SUI,Water Polo,Summer,0.2
+4005,SUI,Weightlifting,Summer,2.0
+4006,SUI,Wrestling,Summer,5.7
+4007,SUR,Athletics,Summer,2.3
+4008,SUR,Badminton,Summer,9.1
+4009,SUR,Cycling Road,Summer,4.5
+4010,SUR,Cycling Track,Summer,6.8
+4011,SUR,Judo,Summer,11.4
+4012,SUR,Swimming,Summer,65.9
+4013,SVK,Alpine Skiing,Winter,23.6
+4014,SVK,Archery,Summer,0.9
+4015,SVK,Athletics,Summer,14.9
+4016,SVK,Badminton,Summer,0.9
+4017,SVK,Basketball,Summer,0.3
+4018,SVK,Biathlon,Winter,34.5
+4019,SVK,Bobsleigh,Winter,1.8
+4020,SVK,Boxing,Summer,0.9
+4021,SVK,Canoe Slalom,Summer,9.8
+4022,SVK,Canoe Sprint,Summer,7.8
+4023,SVK,Cross Country Skiing,Winter,23.6
+4024,SVK,Cycling Mountain Bike,Summer,2.3
+4025,SVK,Cycling Road,Summer,7.5
+4026,SVK,Cycling Track,Summer,0.9
+4027,SVK,Figure skating,Winter,1.1
+4028,SVK,Football,Summer,0.3
+4029,SVK,Freestyle Skiing,Winter,0.4
+4030,SVK,Golf,Summer,0.3
+4031,SVK,Ice Hockey,Winter,2.0
+4032,SVK,Judo,Summer,1.7
+4033,SVK,Luge,Winter,6.9
+4034,SVK,Marathon Swimming,Summer,0.3
+4035,SVK,Nordic Combined,Winter,1.1
+4036,SVK,Rowing,Summer,0.9
+4037,SVK,Sailing,Summer,1.7
+4038,SVK,Shooting,Summer,15.5
+4039,SVK,Short Track Speed Skating,Winter,1.6
+4040,SVK,Ski Jumping,Winter,1.6
+4041,SVK,Snowboard,Winter,1.8
+4042,SVK,Swimming,Summer,11.2
+4043,SVK,Synchronized Swimming,Summer,0.9
+4044,SVK,Table Tennis,Summer,2.3
+4045,SVK,Tennis,Summer,10.9
+4046,SVK,Triathlon,Summer,0.9
+4047,SVK,Water Polo,Summer,0.3
+4048,SVK,Weightlifting,Summer,2.9
+4049,SVK,Wrestling,Summer,4.0
+4050,SWE,Alpine Skiing,Winter,18.6
+4051,SWE,Archery,Summer,1.6
+4052,SWE,Athletics,Summer,21.2
+4053,SWE,Badminton,Summer,0.8
+4054,SWE,Basketball,Summer,0.0
+4055,SWE,Beach Volleyball,Summer,0.1
+4056,SWE,Biathlon,Winter,13.1
+4057,SWE,Bobsleigh,Winter,1.4
+4058,SWE,Boxing,Summer,2.4
+4059,SWE,Canoe Marathon,Summer,0.2
+4060,SWE,Canoe Slalom,Summer,0.1
+4061,SWE,Canoe Sprint,Summer,2.7
+4062,SWE,Cross Country Skiing,Winter,32.2
+4063,SWE,Curling,Winter,0.9
+4064,SWE,Cycling Mountain Bike,Summer,0.2
+4065,SWE,Cycling Road,Summer,4.4
+4066,SWE,Cycling Track,Summer,0.1
+4067,SWE,Diving,Summer,2.6
+4068,SWE,Equestrian,Summer,0.4
+4069,SWE,Equestrian  Vaulting,Summer,0.2
+4070,SWE,Equestrian Dressage,Summer,2.6
+4071,SWE,Equestrian Eventing,Summer,2.3
+4072,SWE,Equestrian Jumping,Summer,2.4
+4073,SWE,Fencing,Summer,1.9
+4074,SWE,Figure skating,Summer,0.3
+4075,SWE,Figure skating,Winter,1.2
+4076,SWE,Football,Summer,0.5
+4077,SWE,Freestyle Skiing,Winter,4.6
+4078,SWE,Golf,Summer,0.2
+4079,SWE,Gymnastics Artistic,Summer,5.3
+4080,SWE,Gymnastics Rhythmic,Summer,0.0
+4081,SWE,Handball,Summer,0.4
+4082,SWE,Ice Hockey,Summer,0.0
+4083,SWE,Ice Hockey,Winter,1.6
+4084,SWE,Judo,Summer,0.9
+4085,SWE,Luge,Winter,1.9
+4086,SWE,Marathon Swimming,Summer,0.0
+4087,SWE,Modern Pentathlon,Summer,2.4
+4088,SWE,Nordic Combined,Winter,1.1
+4089,SWE,Rowing,Summer,1.0
+4090,SWE,Sailing,Summer,4.3
+4091,SWE,Shooting,Summer,13.7
+4092,SWE,Short Track Speed Skating,Winter,0.4
+4093,SWE,Skateboarding,Summer,0.0
+4094,SWE,Ski Jumping,Winter,4.7
+4095,SWE,Snowboard,Winter,2.4
+4096,SWE,Speed skating,Winter,15.8
+4097,SWE,Swimming,Summer,10.5
+4098,SWE,Synchronized Swimming,Summer,0.0
+4099,SWE,Table Tennis,Summer,1.4
+4100,SWE,Taekwondo,Summer,0.2
+4101,SWE,Tennis,Summer,2.9
+4102,SWE,Triathlon,Summer,0.1
+4103,SWE,Tug of War,Summer,0.1
+4104,SWE,Volleyball,Summer,0.0
+4105,SWE,Water Polo,Summer,0.2
+4106,SWE,Weightlifting,Summer,1.9
+4107,SWE,Wrestling,Summer,7.5
+4108,SWZ,Alpine Skiing,Winter,100.0
+4109,SWZ,Athletics,Summer,20.0
+4110,SWZ,Boxing,Summer,28.9
+4111,SWZ,Shooting,Summer,4.4
+4112,SWZ,Swimming,Summer,37.8
+4113,SWZ,Taekwondo,Summer,2.2
+4114,SWZ,Weightlifting,Summer,6.7
+4115,SYR,Athletics,Summer,7.3
+4116,SYR,Boxing,Summer,15.4
+4117,SYR,Cycling Road,Summer,0.8
+4118,SYR,Diving,Summer,1.6
+4119,SYR,Equestrian,Summer,0.8
+4120,SYR,Equestrian Jumping,Summer,0.8
+4121,SYR,Football,Summer,0.8
+4122,SYR,Judo,Summer,6.5
+4123,SYR,Marathon Swimming,Summer,0.8
+4124,SYR,Shooting,Summer,9.8
+4125,SYR,Swimming,Summer,10.6
+4126,SYR,Table Tennis,Summer,1.6
+4127,SYR,Triathlon,Summer,1.6
+4128,SYR,Weightlifting,Summer,10.6
+4129,SYR,Wrestling,Summer,30.9
+4130,TAN,Athletics,Summer,54.6
+4131,TAN,Boxing,Summer,37.1
+4132,TAN,Hockey,Summer,1.0
+4133,TAN,Judo,Summer,1.0
+4134,TAN,Swimming,Summer,6.2
+4135,TCH,Alpine Skiing,Winter,17.6
+4136,TCH,Archery,Summer,0.3
+4137,TCH,Athletics,Summer,14.2
+4138,TCH,Badminton,Summer,0.1
+4139,TCH,Basketball,Summer,0.6
+4140,TCH,Biathlon,Winter,7.6
+4141,TCH,Bobsleigh,Winter,1.8
+4142,TCH,Boxing,Summer,3.8
+4143,TCH,Canoe Marathon,Summer,0.4
+4144,TCH,Canoe Slalom,Summer,1.4
+4145,TCH,Canoe Sprint,Summer,3.3
+4146,TCH,Cross Country Skiing,Winter,34.2
+4147,TCH,Cycling Road,Summer,3.8
+4148,TCH,Cycling Track,Summer,2.1
+4149,TCH,Diving,Summer,1.0
+4150,TCH,Equestrian Dressage,Summer,0.8
+4151,TCH,Equestrian Eventing,Summer,0.9
+4152,TCH,Equestrian Jumping,Summer,0.8
+4153,TCH,Fencing,Summer,1.3
+4154,TCH,Figure skating,Winter,6.7
+4155,TCH,Football,Summer,0.3
+4156,TCH,Freestyle Skiing,Winter,0.3
+4157,TCH,Gymnastics Artistic,Summer,31.5
+4158,TCH,Gymnastics Rhythmic,Summer,0.2
+4159,TCH,Handball,Summer,0.4
+4160,TCH,Hockey,Summer,0.1
+4161,TCH,Ice Hockey,Summer,0.1
+4162,TCH,Ice Hockey,Winter,2.2
+4163,TCH,Judo,Summer,1.1
+4164,TCH,Luge,Winter,5.4
+4165,TCH,Military Patrol,Winter,0.1
+4166,TCH,Modern Pentathlon,Summer,1.6
+4167,TCH,Nordic Combined,Winter,7.0
+4168,TCH,Rowing,Summer,3.1
+4169,TCH,Sailing,Summer,0.4
+4170,TCH,Shooting,Summer,10.0
+4171,TCH,Ski Jumping,Winter,12.0
+4172,TCH,Speed skating,Winter,5.0
+4173,TCH,Swimming,Summer,3.0
+4174,TCH,Synchronized Swimming,Summer,0.1
+4175,TCH,Table Tennis,Summer,0.6
+4176,TCH,Tennis,Summer,1.7
+4177,TCH,Volleyball,Summer,0.4
+4178,TCH,Water Polo,Summer,0.3
+4179,TCH,Weightlifting,Summer,4.3
+4180,TCH,Wrestling,Summer,6.1
+4181,TGA,Archery,Summer,10.3
+4182,TGA,Athletics,Summer,6.9
+4183,TGA,Boxing,Summer,44.8
+4184,TGA,Cross Country Skiing,Winter,50.0
+4185,TGA,Luge,Winter,50.0
+4186,TGA,Swimming,Summer,10.3
+4187,TGA,Taekwondo,Summer,10.3
+4188,TGA,Weightlifting,Summer,17.2
+4189,THA,Alpine Skiing,Winter,45.8
+4190,THA,Archery,Summer,1.3
+4191,THA,Athletics,Summer,2.1
+4192,THA,Badminton,Summer,7.3
+4193,THA,Basketball,Summer,0.2
+4194,THA,Boxing,Summer,16.6
+4195,THA,Canoe Slalom,Summer,0.2
+4196,THA,Canoe Sprint,Summer,0.2
+4197,THA,Cross Country Skiing,Winter,54.2
+4198,THA,Cycling BMX,Summer,0.2
+4199,THA,Cycling BMX Racing,Summer,0.2
+4200,THA,Cycling Road,Summer,4.3
+4201,THA,Cycling Track,Summer,0.9
+4202,THA,Diving,Summer,0.9
+4203,THA,Equestrian,Summer,0.8
+4204,THA,Equestrian Eventing,Summer,0.4
+4205,THA,Fencing,Summer,2.3
+4206,THA,Football,Summer,0.4
+4207,THA,Golf,Summer,1.5
+4208,THA,Judo,Summer,2.1
+4209,THA,Rowing,Summer,0.9
+4210,THA,Sailing,Summer,5.5
+4211,THA,Shooting,Summer,23.0
+4212,THA,Swimming,Summer,14.5
+4213,THA,Table Tennis,Summer,1.7
+4214,THA,Taekwondo,Summer,2.8
+4215,THA,Tennis,Summer,1.7
+4216,THA,Weightlifting,Summer,8.1
+4217,TJK,Alpine Skiing,Winter,100.0
+4218,TJK,Archery,Summer,3.2
+4219,TJK,Athletics,Summer,11.1
+4220,TJK,Boxing,Summer,20.6
+4221,TJK,Diving,Summer,3.2
+4222,TJK,Judo,Summer,22.2
+4223,TJK,Shooting,Summer,6.3
+4224,TJK,Swimming,Summer,11.1
+4225,TJK,Taekwondo,Summer,3.2
+4226,TJK,Weightlifting,Summer,1.6
+4227,TJK,Wrestling,Summer,17.5
+4228,TKM,Boxing,Summer,14.9
+4229,TKM,Judo,Summer,21.3
+4230,TKM,Shooting,Summer,10.6
+4231,TKM,Swimming,Summer,17.0
+4232,TKM,Table Tennis,Summer,4.3
+4233,TKM,Weightlifting,Summer,27.7
+4234,TKM,Wrestling,Summer,4.3
+4235,TLS,Alpine Skiing,Winter,100.0
+4236,TLS,Athletics,Summer,85.7
+4237,TLS,Cycling Mountain Bike,Summer,14.3
+4238,TOG,Alpine Skiing,Winter,40.0
+4239,TOG,Athletics,Summer,11.1
+4240,TOG,Boxing,Summer,38.9
+4241,TOG,Canoe Slalom,Summer,8.3
+4242,TOG,Cross Country Skiing,Winter,60.0
+4243,TOG,Cycling Road,Summer,13.9
+4244,TOG,Judo,Summer,5.6
+4245,TOG,Rowing,Summer,5.6
+4246,TOG,Swimming,Summer,8.3
+4247,TOG,Table Tennis,Summer,5.6
+4248,TOG,Tennis,Summer,2.8
+4249,TPE,Alpine Skiing,Winter,36.9
+4250,TPE,Archery,Summer,10.5
+4251,TPE,Artistic Gymnastics,Summer,0.5
+4252,TPE,Athletics,Summer,5.1
+4253,TPE,Badminton,Summer,4.5
+4254,TPE,Baseball,Summer,0.5
+4255,TPE,Basketball,Summer,0.2
+4256,TPE,Biathlon,Winter,4.8
+4257,TPE,Bobsleigh,Winter,14.3
+4258,TPE,Boxing,Summer,4.0
+4259,TPE,Canoe Slalom,Summer,0.2
+4260,TPE,Cross Country Skiing,Winter,8.3
+4261,TPE,Cycling Road,Summer,2.6
+4262,TPE,Cycling Track,Summer,2.0
+4263,TPE,Diving,Summer,0.9
+4264,TPE,Equestrian,Summer,0.2
+4265,TPE,Equestrian Jumping,Summer,0.2
+4266,TPE,Fencing,Summer,1.4
+4267,TPE,Figure skating,Winter,1.2
+4268,TPE,Football,Summer,0.2
+4269,TPE,Golf,Summer,1.1
+4270,TPE,Gymnastics Artistic,Summer,1.9
+4271,TPE,Judo,Summer,6.0
+4272,TPE,Karate,Summer,0.3
+4273,TPE,Luge,Winter,20.2
+4274,TPE,Modern Pentathlon,Summer,0.5
+4275,TPE,Rowing,Summer,0.9
+4276,TPE,Sailing,Summer,1.4
+4277,TPE,Shooting,Summer,10.0
+4278,TPE,Short Track Speed Skating,Winter,2.4
+4279,TPE,Softball,Summer,0.5
+4280,TPE,Speed skating,Winter,11.9
+4281,TPE,Swimming,Summer,19.8
+4282,TPE,Table Tennis,Summer,7.6
+4283,TPE,Taekwondo,Summer,3.4
+4284,TPE,Tennis,Summer,2.3
+4285,TPE,Weightlifting,Summer,10.5
+4286,TPE,Wrestling,Summer,1.1
+4287,TTO,Athletics,Summer,39.1
+4288,TTO,Badminton,Summer,0.6
+4289,TTO,Bobsleigh,Winter,100.0
+4290,TTO,Boxing,Summer,3.7
+4291,TTO,Cycling Road,Summer,4.3
+4292,TTO,Cycling Track,Summer,13.7
+4293,TTO,Judo,Summer,1.2
+4294,TTO,Rowing,Summer,1.2
+4295,TTO,Sailing,Summer,3.7
+4296,TTO,Shooting,Summer,5.0
+4297,TTO,Swimming,Summer,19.9
+4298,TTO,Table Tennis,Summer,1.2
+4299,TTO,Taekwondo,Summer,1.2
+4300,TTO,Weightlifting,Summer,5.0
+4301,TUN,Archery,Summer,0.9
+4302,TUN,Athletics,Summer,14.3
+4303,TUN,Basketball,Summer,0.3
+4304,TUN,Beach Volleyball,Summer,0.3
+4305,TUN,Boxing,Summer,14.6
+4306,TUN,Canoe Sprint,Summer,3.4
+4307,TUN,Cycling Road,Summer,2.0
+4308,TUN,Fencing,Summer,7.4
+4309,TUN,Football,Summer,1.1
+4310,TUN,Gymnastics Artistic,Summer,0.3
+4311,TUN,Handball,Summer,1.4
+4312,TUN,Judo,Summer,9.1
+4313,TUN,Marathon Swimming,Summer,0.9
+4314,TUN,Modern Pentathlon,Summer,1.1
+4315,TUN,Rowing,Summer,2.0
+4316,TUN,Sailing,Summer,2.3
+4317,TUN,Shooting,Summer,2.0
+4318,TUN,Swimming,Summer,9.4
+4319,TUN,Table Tennis,Summer,4.6
+4320,TUN,Taekwondo,Summer,2.6
+4321,TUN,Tennis,Summer,2.0
+4322,TUN,Volleyball,Summer,2.0
+4323,TUN,Weightlifting,Summer,4.6
+4324,TUN,Wrestling,Summer,11.4
+4325,TUR,Alpine Skiing,Winter,58.2
+4326,TUR,Archery,Summer,4.9
+4327,TUR,Artistic Gymnastics,Summer,0.8
+4328,TUR,Athletics,Summer,11.9
+4329,TUR,Badminton,Summer,0.3
+4330,TUR,Basketball,Summer,0.4
+4331,TUR,Boxing,Summer,8.4
+4332,TUR,Canoe Sprint,Summer,0.2
+4333,TUR,Cross Country Skiing,Winter,37.6
+4334,TUR,Cycling Road,Summer,2.7
+4335,TUR,Cycling Track,Summer,0.3
+4336,TUR,Equestrian Eventing,Summer,0.7
+4337,TUR,Equestrian Jumping,Summer,1.5
+4338,TUR,Fencing,Summer,0.6
+4339,TUR,Figure skating,Winter,1.5
+4340,TUR,Football,Summer,0.7
+4341,TUR,Gymnastics Artistic,Summer,0.1
+4342,TUR,Judo,Summer,4.0
+4343,TUR,Karate,Summer,0.8
+4344,TUR,Modern Pentathlon,Summer,0.2
+4345,TUR,Rowing,Summer,0.3
+4346,TUR,Sailing,Summer,4.6
+4347,TUR,Shooting,Summer,4.8
+4348,TUR,Short Track Speed Skating,Winter,0.5
+4349,TUR,Ski Jumping,Winter,2.1
+4350,TUR,Swimming,Summer,10.1
+4351,TUR,Table Tennis,Summer,0.7
+4352,TUR,Taekwondo,Summer,1.9
+4353,TUR,Tennis,Summer,0.1
+4354,TUR,Volleyball,Summer,0.2
+4355,TUR,Weightlifting,Summer,7.5
+4356,TUR,Wrestling,Summer,30.9
+4357,TUV,Weightlifting,Summer,100.0
+4358,UAE,Athletics,Summer,4.6
+4359,UAE,Cycling Road,Summer,11.5
+4360,UAE,Equestrian Jumping,Summer,1.1
+4361,UAE,Football,Summer,1.1
+4362,UAE,Judo,Summer,8.0
+4363,UAE,Sailing,Summer,1.1
+4364,UAE,Shooting,Summer,19.5
+4365,UAE,Swimming,Summer,49.4
+4366,UAE,Taekwondo,Summer,1.1
+4367,UAE,Weightlifting,Summer,2.3
+4368,UAR,Boxing,Summer,11.1
+4369,UAR,Diving,Summer,11.1
+4370,UAR,Equestrian Jumping,Summer,11.1
+4371,UAR,Fencing,Summer,2.8
+4372,UAR,Football,Summer,2.8
+4373,UAR,Gymnastics Artistic,Summer,19.4
+4374,UAR,Shooting,Summer,8.3
+4375,UAR,Water Polo,Summer,2.8
+4376,UAR,Weightlifting,Summer,19.4
+4377,UAR,Wrestling,Summer,11.1
+4378,UGA,Archery,Summer,0.6
+4379,UGA,Athletics,Summer,31.9
+4380,UGA,Badminton,Summer,1.2
+4381,UGA,Boxing,Summer,49.4
+4382,UGA,Cycling Road,Summer,1.2
+4383,UGA,Hockey,Summer,0.6
+4384,UGA,Rowing,Summer,0.6
+4385,UGA,Swimming,Summer,6.6
+4386,UGA,Table Tennis,Summer,3.6
+4387,UGA,Weightlifting,Summer,4.2
+4388,UKR,Alpine Skiing,Winter,8.7
+4389,UKR,Archery,Summer,3.9
+4390,UKR,Artistic Gymnastics,Summer,0.3
+4391,UKR,Artistic Swimming,Summer,0.2
+4392,UKR,Athletics,Summer,15.8
+4393,UKR,Badminton,Summer,1.3
+4394,UKR,Basketball,Summer,0.1
+4395,UKR,Biathlon,Winter,32.6
+4396,UKR,Bobsleigh,Winter,1.0
+4397,UKR,Boxing,Summer,3.8
+4398,UKR,Canoe Slalom,Summer,0.2
+4399,UKR,Canoe Sprint,Summer,2.4
+4400,UKR,Cross Country Skiing,Winter,27.3
+4401,UKR,Cycling Mountain Bike,Summer,0.6
+4402,UKR,Cycling Road,Summer,3.8
+4403,UKR,Cycling Track,Summer,2.7
+4404,UKR,Diving,Summer,4.5
+4405,UKR,Equestrian,Summer,0.2
+4406,UKR,Equestrian Dressage,Summer,0.2
+4407,UKR,Equestrian Jumping,Summer,1.1
+4408,UKR,Fencing,Summer,5.3
+4409,UKR,Figure skating,Winter,6.4
+4410,UKR,Freestyle Skiing,Winter,6.7
+4411,UKR,Gymnastics Artistic,Summer,4.7
+4412,UKR,Gymnastics Rhythmic,Summer,1.1
+4413,UKR,Handball,Summer,0.1
+4414,UKR,Ice Hockey,Winter,0.2
+4415,UKR,Judo,Summer,3.4
+4416,UKR,Karate,Summer,0.2
+4417,UKR,Luge,Winter,5.9
+4418,UKR,Marathon Swimming,Summer,0.4
+4419,UKR,Modern Pentathlon,Summer,1.3
+4420,UKR,Nordic Combined,Winter,2.2
+4421,UKR,Rhythmic Gymnastics,Summer,0.2
+4422,UKR,Rowing,Summer,1.8
+4423,UKR,Sailing,Summer,2.3
+4424,UKR,Shooting,Summer,8.7
+4425,UKR,Short Track Speed Skating,Winter,2.0
+4426,UKR,Skeleton,Winter,0.3
+4427,UKR,Ski Jumping,Winter,2.5
+4428,UKR,Snowboard,Winter,1.3
+4429,UKR,Speed skating,Winter,2.9
+4430,UKR,Swimming,Summer,12.5
+4431,UKR,Synchronized Swimming,Summer,0.5
+4432,UKR,Table Tennis,Summer,1.0
+4433,UKR,Taekwondo,Summer,0.2
+4434,UKR,Tennis,Summer,1.6
+4435,UKR,Trampoline,Summer,0.5
+4436,UKR,Triathlon,Summer,0.9
+4437,UKR,Volleyball,Summer,0.1
+4438,UKR,Water Polo,Summer,0.1
+4439,UKR,Weightlifting,Summer,4.0
+4440,UKR,Wrestling,Summer,7.9
+4441,URS,Alpine Skiing,Winter,13.8
+4442,URS,Archery,Summer,0.9
+4443,URS,Athletics,Summer,23.6
+4444,URS,Basketball,Summer,0.5
+4445,URS,Biathlon,Winter,5.8
+4446,URS,Bobsleigh,Winter,1.0
+4447,URS,Boxing,Summer,4.3
+4448,URS,Canoe Marathon,Summer,0.2
+4449,URS,Canoe Slalom,Summer,0.1
+4450,URS,Canoe Sprint,Summer,2.9
+4451,URS,Cross Country Skiing,Winter,25.6
+4452,URS,Cycling Road,Summer,2.0
+4453,URS,Cycling Track,Summer,1.5
+4454,URS,Diving,Summer,3.8
+4455,URS,Equestrian Dressage,Summer,1.3
+4456,URS,Equestrian Eventing,Summer,1.5
+4457,URS,Equestrian Jumping,Summer,1.2
+4458,URS,Fencing,Summer,4.4
+4459,URS,Figure skating,Winter,7.4
+4460,URS,Football,Summer,0.3
+4461,URS,Gymnastics Artistic,Summer,17.3
+4462,URS,Gymnastics Rhythmic,Summer,0.1
+4463,URS,Handball,Summer,0.3
+4464,URS,Hockey,Summer,0.1
+4465,URS,Ice Hockey,Winter,1.2
+4466,URS,Judo,Summer,1.3
+4467,URS,Luge,Winter,4.7
+4468,URS,Modern Pentathlon,Summer,1.5
+4469,URS,Nordic Combined,Winter,4.5
+4470,URS,Rowing,Summer,3.1
+4471,URS,Sailing,Summer,2.2
+4472,URS,Shooting,Summer,6.0
+4473,URS,Ski Jumping,Winter,7.3
+4474,URS,Speed skating,Winter,28.6
+4475,URS,Swimming,Summer,8.1
+4476,URS,Synchronized Swimming,Summer,0.2
+4477,URS,Table Tennis,Summer,0.3
+4478,URS,Tennis,Summer,0.3
+4479,URS,Volleyball,Summer,0.5
+4480,URS,Water Polo,Summer,0.4
+4481,URS,Weightlifting,Summer,3.0
+4482,URS,Wrestling,Summer,6.9
+4483,URU,Alpine Skiing,Winter,100.0
+4484,URU,Athletics,Summer,6.0
+4485,URU,Basketball,Summer,3.0
+4486,URU,Boxing,Summer,16.3
+4487,URU,Cycling Road,Summer,18.0
+4488,URU,Cycling Track,Summer,7.3
+4489,URU,Diving,Summer,0.4
+4490,URU,Equestrian Eventing,Summer,0.9
+4491,URU,Equestrian Jumping,Summer,2.1
+4492,URU,Football,Summer,1.3
+4493,URU,Judo,Summer,3.0
+4494,URU,Modern Pentathlon,Summer,3.9
+4495,URU,Rowing,Summer,5.6
+4496,URU,Sailing,Summer,9.4
+4497,URU,Shooting,Summer,3.0
+4498,URU,Swimming,Summer,16.3
+4499,URU,Tennis,Summer,0.9
+4500,URU,Water Polo,Summer,0.9
+4501,URU,Weightlifting,Summer,1.7
+4502,USA,3x3 Basketball,Summer,0.0
+4503,USA,Alpine Skiing,Winter,19.1
+4504,USA,Archery,Summer,1.6
+4505,USA,Artistic Gymnastics,Summer,0.2
+4506,USA,Artistic Swimming,Summer,0.0
+4507,USA,Athletics,Summer,27.7
+4508,USA,Badminton,Summer,0.3
+4509,USA,Baseball,Summer,0.0
+4510,USA,Baseball/Softball,Summer,0.0
+4511,USA,Basketball,Summer,0.3
+4512,USA,Beach Volleyball,Summer,0.3
+4513,USA,Biathlon,Winter,7.0
+4514,USA,Bobsleigh,Winter,3.3
+4515,USA,Boxing,Summer,3.6
+4516,USA,Canoe Marathon,Summer,0.1
+4517,USA,Canoe Slalom,Summer,0.7
+4518,USA,Canoe Sprint,Summer,0.5
+4519,USA,Cross Country Skiing,Winter,15.6
+4520,USA,Curling,Winter,0.5
+4521,USA,Cycling BMX,Summer,0.2
+4522,USA,Cycling BMX Freestyle,Summer,0.0
+4523,USA,Cycling BMX Racing,Summer,0.1
+4524,USA,Cycling Mountain Bike,Summer,0.3
+4525,USA,Cycling Road,Summer,2.1
+4526,USA,Cycling Track,Summer,1.7
+4527,USA,Diving,Summer,2.9
+4528,USA,Equestrian,Summer,0.2
+4529,USA,Equestrian Dressage,Summer,1.0
+4530,USA,Equestrian Eventing,Summer,1.2
+4531,USA,Equestrian Jumping,Summer,1.1
+4532,USA,Fencing,Summer,2.9
+4533,USA,Figure skating,Summer,0.1
+4534,USA,Figure skating,Winter,6.8
+4535,USA,Football,Summer,0.3
+4536,USA,Freestyle Skiing,Winter,5.6
+4537,USA,Golf,Summer,1.5
+4538,USA,Gymnastics Artistic,Summer,11.8
+4539,USA,Gymnastics Rhythmic,Summer,0.1
+4540,USA,Handball,Summer,0.1
+4541,USA,Hockey,Summer,0.1
+4542,USA,Ice Hockey,Summer,0.0
+4543,USA,Ice Hockey,Winter,0.9
+4544,USA,Jeu de Paume,Summer,0.0
+4545,USA,Judo,Summer,1.1
+4546,USA,Karate,Summer,0.0
+4547,USA,Lacrosse,Summer,0.0
+4548,USA,Luge,Winter,3.9
+4549,USA,Marathon Swimming,Summer,0.1
+4550,USA,Modern Pentathlon,Summer,0.9
+4551,USA,Nordic Combined,Winter,4.0
+4552,USA,Polo,Summer,0.0
+4553,USA,Roque,Summer,0.0
+4554,USA,Rowing,Summer,2.5
+4555,USA,Rugby,Summer,0.0
+4556,USA,Rugby Sevens,Summer,0.0
+4557,USA,Sailing,Summer,1.9
+4558,USA,Shooting,Summer,6.8
+4559,USA,Short Track,Winter,0.5
+4560,USA,Short Track Speed Skating,Winter,3.3
+4561,USA,Skateboarding,Summer,0.1
+4562,USA,Skeleton,Winter,1.0
+4563,USA,Ski Jumping,Winter,5.1
+4564,USA,Snowboard,Winter,4.7
+4565,USA,Softball,Summer,0.0
+4566,USA,Speed skating,Winter,18.8
+4567,USA,Sport Climbing,Summer,0.0
+4568,USA,Surfing,Summer,0.0
+4569,USA,Swimming,Summer,13.1
+4570,USA,Synchronized Swimming,Summer,0.2
+4571,USA,Table Tennis,Summer,0.6
+4572,USA,Taekwondo,Summer,0.2
+4573,USA,Tennis,Summer,1.8
+4574,USA,Trampoline,Summer,0.0
+4575,USA,Trampoline Gymnastics,Summer,0.0
+4576,USA,Triathlon,Summer,0.4
+4577,USA,Tug of War,Summer,0.1
+4578,USA,Volleyball,Summer,0.3
+4579,USA,Water Polo,Summer,0.4
+4580,USA,Weightlifting,Summer,1.9
+4581,USA,Wrestling,Summer,4.2
+4582,UZB,Alpine Skiing,Winter,53.3
+4583,UZB,Athletics,Summer,7.7
+4584,UZB,Boxing,Summer,17.3
+4585,UZB,Canoe Sprint,Summer,3.4
+4586,UZB,Cycling Road,Summer,2.0
+4587,UZB,Fencing,Summer,1.7
+4588,UZB,Figure skating,Winter,33.3
+4589,UZB,Freestyle Skiing,Winter,13.3
+4590,UZB,Gymnastics Artistic,Summer,1.4
+4591,UZB,Gymnastics Rhythmic,Summer,0.9
+4592,UZB,Judo,Summer,11.9
+4593,UZB,Modern Pentathlon,Summer,0.6
+4594,UZB,Rowing,Summer,1.4
+4595,UZB,Shooting,Summer,6.2
+4596,UZB,Swimming,Summer,13.4
+4597,UZB,Table Tennis,Summer,0.6
+4598,UZB,Taekwondo,Summer,4.3
+4599,UZB,Tennis,Summer,2.0
+4600,UZB,Trampoline,Summer,0.6
+4601,UZB,Weightlifting,Summer,7.7
+4602,UZB,Wrestling,Summer,17.0
+4603,VAN,Archery,Summer,6.2
+4604,VAN,Athletics,Summer,6.2
+4605,VAN,Boxing,Summer,25.0
+4606,VAN,Judo,Summer,18.8
+4607,VAN,Rowing,Summer,12.5
+4608,VAN,Table Tennis,Summer,31.2
+4609,VEN,Alpine Skiing,Winter,14.3
+4610,VEN,Archery,Summer,0.9
+4611,VEN,Athletics,Summer,6.4
+4612,VEN,Basketball,Summer,0.3
+4613,VEN,Beach Volleyball,Summer,0.3
+4614,VEN,Boxing,Summer,14.7
+4615,VEN,Cycling BMX,Summer,0.5
+4616,VEN,Cycling BMX Freestyle,Summer,0.2
+4617,VEN,Cycling Road,Summer,9.0
+4618,VEN,Cycling Track,Summer,3.6
+4619,VEN,Diving,Summer,2.2
+4620,VEN,Equestrian Jumping,Summer,0.7
+4621,VEN,Fencing,Summer,6.2
+4622,VEN,Football,Summer,0.2
+4623,VEN,Golf,Summer,0.3
+4624,VEN,Gymnastics Artistic,Summer,0.9
+4625,VEN,Judo,Summer,4.7
+4626,VEN,Karate,Summer,0.5
+4627,VEN,Luge,Winter,85.7
+4628,VEN,Marathon Swimming,Summer,1.2
+4629,VEN,Rowing,Summer,0.5
+4630,VEN,Sailing,Summer,2.9
+4631,VEN,Shooting,Summer,10.2
+4632,VEN,Softball,Summer,0.2
+4633,VEN,Swimming,Summer,15.4
+4634,VEN,Synchronized Swimming,Summer,0.7
+4635,VEN,Table Tennis,Summer,1.7
+4636,VEN,Taekwondo,Summer,1.7
+4637,VEN,Tennis,Summer,1.4
+4638,VEN,Triathlon,Summer,0.3
+4639,VEN,Volleyball,Summer,0.5
+4640,VEN,Weightlifting,Summer,5.4
+4641,VEN,Wrestling,Summer,6.1
+4642,VIE,Archery,Summer,2.6
+4643,VIE,Athletics,Summer,5.2
+4644,VIE,Badminton,Summer,6.1
+4645,VIE,Boxing,Summer,3.5
+4646,VIE,Cycling Road,Summer,0.9
+4647,VIE,Fencing,Summer,4.3
+4648,VIE,Gymnastics Artistic,Summer,5.2
+4649,VIE,Judo,Summer,3.5
+4650,VIE,Rowing,Summer,3.5
+4651,VIE,Shooting,Summer,20.9
+4652,VIE,Swimming,Summer,18.3
+4653,VIE,Table Tennis,Summer,1.7
+4654,VIE,Taekwondo,Summer,8.7
+4655,VIE,Weightlifting,Summer,8.7
+4656,VIE,Wrestling,Summer,7.0
+4657,VIN,Athletics,Summer,27.3
+4658,VIN,Boxing,Summer,9.1
+4659,VIN,Swimming,Summer,63.6
+4660,VNM,Athletics,Summer,13.5
+4661,VNM,Boxing,Summer,5.4
+4662,VNM,Cycling Road,Summer,45.9
+4663,VNM,Cycling Track,Summer,8.1
+4664,VNM,Judo,Summer,8.1
+4665,VNM,Shooting,Summer,13.5
+4666,VNM,Swimming,Summer,5.4
+4667,WIF,Athletics,Summer,44.4
+4668,WIF,Cycling Road,Summer,11.1
+4669,WIF,Cycling Track,Summer,11.1
+4670,WIF,Sailing,Summer,11.1
+4671,WIF,Shooting,Summer,11.1
+4672,WIF,Weightlifting,Summer,11.1
+4673,XXB,Athletics,Summer,14.3
+4674,XXB,Judo,Summer,28.6
+4675,XXB,Swimming,Summer,57.1
+4676,YAR,Athletics,Summer,20.0
+4677,YAR,Judo,Summer,40.0
+4678,YAR,Wrestling,Summer,40.0
+4679,YEM,Athletics,Summer,10.5
+4680,YEM,Judo,Summer,47.4
+4681,YEM,Shooting,Summer,5.3
+4682,YEM,Swimming,Summer,21.1
+4683,YEM,Taekwondo,Summer,10.5
+4684,YEM,Wrestling,Summer,5.3
+4685,YMD,Boxing,Summer,100.0
+4686,YUG,Alpine Skiing,Winter,36.3
+4687,YUG,Archery,Summer,0.2
+4688,YUG,Athletics,Summer,12.4
+4689,YUG,Basketball,Summer,1.2
+4690,YUG,Biathlon,Winter,4.9
+4691,YUG,Bobsleigh,Winter,2.0
+4692,YUG,Boxing,Summer,5.1
+4693,YUG,Canoe Slalom,Summer,0.8
+4694,YUG,Canoe Sprint,Summer,1.9
+4695,YUG,Cross Country Skiing,Winter,28.4
+4696,YUG,Cycling Road,Summer,5.5
+4697,YUG,Cycling Track,Summer,0.1
+4698,YUG,Diving,Summer,0.2
+4699,YUG,Equestrian Dressage,Summer,0.6
+4700,YUG,Figure skating,Winter,1.5
+4701,YUG,Football,Summer,1.2
+4702,YUG,Gymnastics Artistic,Summer,40.7
+4703,YUG,Gymnastics Rhythmic,Summer,0.3
+4704,YUG,Handball,Summer,0.9
+4705,YUG,Ice Hockey,Winter,1.2
+4706,YUG,Judo,Summer,2.7
+4707,YUG,Luge,Winter,1.2
+4708,YUG,Nordic Combined,Winter,1.7
+4709,YUG,Rowing,Summer,2.0
+4710,YUG,Sailing,Summer,1.3
+4711,YUG,Shooting,Summer,6.3
+4712,YUG,Ski Jumping,Winter,16.9
+4713,YUG,Speed skating,Winter,5.9
+4714,YUG,Swimming,Summer,4.4
+4715,YUG,Table Tennis,Summer,0.8
+4716,YUG,Tennis,Summer,0.6
+4717,YUG,Volleyball,Summer,0.1
+4718,YUG,Water Polo,Summer,1.3
+4719,YUG,Weightlifting,Summer,0.4
+4720,YUG,Wrestling,Summer,8.9
+4721,ZAM,Athletics,Summer,13.5
+4722,ZAM,Badminton,Summer,1.0
+4723,ZAM,Boxing,Summer,58.7
+4724,ZAM,Football,Summer,2.9
+4725,ZAM,Judo,Summer,12.5
+4726,ZAM,Swimming,Summer,9.6
+4727,ZAM,Wrestling,Summer,1.9
+4728,ZIM,Alpine Skiing,Winter,100.0
+4729,ZIM,Archery,Summer,3.9
+4730,ZIM,Athletics,Summer,15.5
+4731,ZIM,Boxing,Summer,6.1
+4732,ZIM,Cycling Road,Summer,2.8
+4733,ZIM,Cycling Track,Summer,1.1
+4734,ZIM,Diving,Summer,7.7
+4735,ZIM,Equestrian Eventing,Summer,0.6
+4736,ZIM,Football,Summer,0.6
+4737,ZIM,Golf,Summer,0.6
+4738,ZIM,Hockey,Summer,1.1
+4739,ZIM,Judo,Summer,4.4
+4740,ZIM,Rowing,Summer,3.9
+4741,ZIM,Sailing,Summer,3.3
+4742,ZIM,Shooting,Summer,11.6
+4743,ZIM,Swimming,Summer,27.1
+4744,ZIM,Tennis,Summer,7.7
+4745,ZIM,Triathlon,Summer,1.7
+4746,ZIM,Weightlifting,Summer,0.6
