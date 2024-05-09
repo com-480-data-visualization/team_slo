@@ -8,7 +8,7 @@
   /This script is the main script that draws the treemap visualization.
 */
 
-import {fetch_discipline, fetch_event, fetch_country} from "./fetch_data.js";
+import {fetch_discipline, fetch_country} from "./fetch_data.js";
 import { drawTreemap } from "./draw_treemap.js";
 
 //* ------------------------------ CONSTANTS ---------------------------------------- //
@@ -55,8 +55,10 @@ function makeVisualization() {
     // Select the country-select dropdown
     const country_names = result.map(d => d.country_name);
     country_names.sort();
-    country_name = country_names[0];
-    countryISO = result.filter(d => d.country_name === country_name)[0].country_3_letter_code;
+    if (country_name === null || countryISO === null)  {
+      country_name = country_names[0];
+      countryISO = result.filter(d => d.country_name === country_name)[0].country_3_letter_code;
+    }
     const countrySelect = d3.select('#country-select');
     
     // Clear any existing options in the dropdown
@@ -89,7 +91,13 @@ function makeVisualization() {
 
 function createTreeMap() {
   fetch_discipline(countryISO, country_name).then(function(result) {
-    const root = d3.hierarchy({children: result})
+    const countryISO_ret = result[0];
+    countryISO = countryISO_ret;
+    const country_name_ret = result[1];
+    country_name = country_name_ret;
+    countrySelect.property('value', country_name);
+    const data = result[2].children;
+    const root = d3.hierarchy({children: data})
       .sum(d => d.value)
       .sort((a, b) => b.value - a.value);
   

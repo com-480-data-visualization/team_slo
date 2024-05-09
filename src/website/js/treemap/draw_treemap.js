@@ -18,7 +18,6 @@ export function drawTreemap(treemap, svg, root) {
   // Calculate treemap
   treemap(root);
 
-  // Create nodes
   const nodes = svg.selectAll("g")
     .data(root.leaves())
     .enter().append("g")
@@ -32,6 +31,16 @@ export function drawTreemap(treemap, svg, root) {
 
   // Create labels
   nodes.append("text")
+    .attr("dx", 4)
+    .attr("dy", 14)
+    .text(d => d.data.name);
+
+  // Add a transition to the rectangles and labels
+  nodes.selectAll("rect, text")
+    .transition()
+    .duration(1000)
+    .attr("width", d => d.x1 - d.x0)
+    .attr("height", d => d.y1 - d.y0)
     .attr("dx", 4)
     .attr("dy", 14)
     .text(d => d.data.name);
