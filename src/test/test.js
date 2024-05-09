@@ -1,66 +1,104 @@
-// Sample hierarchical data (modify as needed)
-const data = {
-    name: 'root',
-    children: [
-        {
-            name: 'Category 1',
-            children: [
-                { name: 'Country A', size: 100 },
-                { name: 'Country B', size: 150 }
-            ]
-        },
-        {
-            name: 'Category 2',
-            children: [
-                { name: 'Country C', size: 200 },
-                { name: 'Country D', size: 50 }
-            ]
-        }
-    ]
-};
+/* 
+  /Ecole Polytechnique Fédérale de Lausanne
+  /Course: COM-480: Data Visualization
+  /Project: Olympic History Data Visualization
+  /Students: Vincent Roduit, Yannis Laaroussi, Fabio Palmisano
 
-const width = 800;
-const height = 600;
+  /Description:
+  /This script is responsible for the switch that changes the Olympic season.
+*/
 
-// Create a treemap layout
-const treemap = d3.treemap()
-    .size([width, height]) // Set the size of the treemap
-    .padding(2); // Padding between rectangles
 
-// Initialize the treemap with data
-const root = d3.hierarchy(data)
-    .sum(d => d.size); // Use size for area calculation
+function whenDocumentLoaded(action) {
+    //Function that checks if the document is already loaded or not
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", action);
+    } else {
+      action();
+    }
+  }
+  
+  //Define the function that will be called when the document is loaded
+  whenDocumentLoaded(function () {
+    createCheckbox();
+    document.querySelector('.switch').style.display = 'block';
+    });
+  
+function createCheckbox() {
+  var checkbox = document.querySelector('.switch input[type="checkbox"]');
+  var OlympicSeason = checkbox.checked ? 'Winter' : 'Summer';
+  console.log('Initial Olympic season:', OlympicSeason);
+  checkbox.addEventListener('change', function () {
+    if (checkbox.checked) {
+      OlympicSeason = 'Winter';
+    } else {
+      OlympicSeason = 'Summer';
+    }
+  });
+}
 
-treemap(root);
 
-// Create an SVG element to contain the treemap
-const svg = d3.select('#treemap')
-    .append('svg')
-    .attr('width', width)
-    .attr('height', height);
-const color = d3.scaleOrdinal(d3.schemeCategory10);
-// Add rectangles for each node
-svg.selectAll('rect')
-    .data(root.leaves())
-    .enter()
-    .append('rect')
-    .attr('x', d => d.x0)
-    .attr('y', d => d.y0)
-    .attr('width', d => d.x1 - d.x0)
-    .attr('height', d => d.y1 - d.y0)
-    .style('fill', d => color(d.data.name)); // Color based on category or other property
 
-// Populate the country-select dropdown
-const countrySelect = d3.select('#country-select');
-root.leaves().forEach(d => {
-    countrySelect.append('option')
-        .attr('value', d.data.name)
-        .text(d.data.name);
-});
-// Add an event listener to handle user selections
-countrySelect.on('change', function() {
-    const selectedCountry = d3.select(this).property('value');
-    // Handle the selected country (e.g., highlight the corresponding rectangle in the treemap)
-    svg.selectAll('rect')
-        .style('opacity', d => (d.data.name === selectedCountry) ? 1 : 0.5);
-});
+
+
+
+
+
+
+
+
+
+
+/* 
+  /Ecole Polytechnique Fédérale de Lausanne
+  /Course: COM-480: Data Visualization
+  /Project: Olympic History Data Visualization
+  /Students: Vincent Roduit, Yannis Laaroussi, Fabio Palmisano
+
+  /Description:
+  /This script is responsible for the switch that changes the Olympic season.
+*/
+
+
+function whenDocumentLoaded(action) {
+  //Function that checks if the document is already loaded or not
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", action);
+  } else {
+    action();
+  }
+}
+
+//Define the function that will be called when the document is loaded
+whenDocumentLoaded(function () {
+  var checkbox = document.querySelector('.switch input[type="checkbox"]');
+  document.querySelector('.switch').style.display = 'block';
+  const slider = document.querySelector('.slider');
+  slider.classList.add('.slider')
+  var OlympicSeason = checkbox.checked ? 'Winter' : 'Summer';
+  console.log('Initial Olympic season:', OlympicSeason);
+
+  window.getOlympicSeason = function () {
+    // Return the current Olympic season (Summer or Winter)
+    return OlympicSeason;
+  }
+
+  var checkboxState = sessionStorage.getItem('checkboxState');
+  if (checkboxState !== null) {
+    checkbox.checked = checkboxState === 'true';
+  }
+
+  // Change the Olympic season when the checkbox changes
+  checkbox.addEventListener('change', function () {
+    console.log('Checkbox state:', checkbox.checked);
+    if (checkbox.checked) {
+      OlympicSeason = 'Winter';
+      slider.style.backgroundColor = '#1d92c4'; // Color for "checked" state
+      slider.style.boxShadow = '0 0 1px #1d92c4';
+    } else {
+      OlympicSeason = 'Summer';
+    }
+    // Store the checkbox state in the session storage when it changes
+    sessionStorage.setItem('checkboxState', checkbox.checked);
+  });
+  });

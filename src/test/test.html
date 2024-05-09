@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Treemap Example</title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./test.css">
-</head>
-<body>
-    <div id="container">
-        <div id="treemap"></div>
-        <div id="control-panel">
-            <label for="country-select">Select a country:</label>
-            <select id="country-select">
-              <!-- Options will be added here dynamically -->
-            </select>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../website/css/main.css">
+        <link rel="stylesheet" href="./test.css">
+        <!-- Load d3.js -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="topnav">
+            <a href="world_map.html">World Map</a>
+            <a class ="active" href ="statistics.html">Statistics</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <label class="switch">
+                <input type="checkbox" id="season-switch">
+                <span class="slider round"></span>
+            </label>
         </div>
-    </div>
-    <script type="module" src="./test.js"></script>
-</body>
+        <script type="text/javascript" src="./test.js"></script>
+    </body>
+
 </html>
