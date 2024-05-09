@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <title>Treemap Example</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="./test.css">
 </head>
 <body>
-    <div id="treemap"></div>
-
+    <div id="container">
+        <div id="treemap"></div>
+        <div id="control-panel">
+            <label for="country-select">Select a country:</label>
+            <select id="country-select">
+              <!-- Options will be added here dynamically -->
+            </select>
+        </div>
+    </div>
     <script type="module" src="./test.js"></script>
 </body>
 </html>

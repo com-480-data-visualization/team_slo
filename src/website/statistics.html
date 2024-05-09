@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="./css/statistics.css">
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/switch.css">
+        <link rel="stylesheet" href="./css/treemap.css">
+        <!-- Load d3.js -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     </head>
     
     <body>
@@ -48,10 +52,17 @@
         <div id="stats-text">
             <p class="paragraph">A first case study is the presence of a country in the disciplines featured at the Olympic Games. Clearly, some countries have very uneven situations depending on the season. Countries in the southern hemisphere will find it harder to field athletes at the winter games, while Nordic countries will have the opposite tendency. On the other hand, countries with temperate climates are more likely to achieve good results in both seasons. Use this visualization to discover the distribution for the country of your choice!</p>
         </div>
-        <div id="treemap-viz">
-            <p>Here the treemap will be displayed (see milestone 2 for details)</p>
+        <div id="container">
+            <div id="treemap"></div>
+            <div id="control-panel">
+                <label for="country-select">Select a country:</label>
+                <select id="country-select">
+                  <!-- Options will be added here dynamically -->
+                </select>
+            </div>
         </div>
         <script type="text/javascript" src="./js/switch.js"></script>
+        <script type="module" src="./js/treemap/treemap.js"></script>
     </body>
 
 </html>

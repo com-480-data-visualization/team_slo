@@ -1,0 +1,19 @@
+#container {
+    display: flex; /* Use flexbox for layout */
+    padding-left: 50px; /* Add some padding to the left */
+    padding-right: 200px; /* Add some padding to the right */
+    height: 60vh;
+  }
+  
+  #treemap {
+    flex-grow: 1; /* Allow treemap to take up the remaining space */
+  }
+  
+  #control-panel {
+    margin-left: 20px;
+    width: 250px; /* Fixed width for the control panel */
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
