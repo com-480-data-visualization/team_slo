@@ -3,17 +3,22 @@
     padding-left: 50px; /* Add some padding to the left */
     padding-right: 200px; /* Add some padding to the right */
     height: 60vh;
-  }
+}
   
-  #treemap {
+#treemap {
     flex-grow: 1; /* Allow treemap to take up the remaining space */
   }
   
-  #control-panel {
+#control-panel {
     margin-left: 20px;
     width: 250px; /* Fixed width for the control panel */
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #ccc;
   }
-  
+#country-select {
+    display: block; /* Make sure the select is not hidden */
+    width: 80%; /* Take up the full width of its container */
+    padding: 5px; /* Add some padding for aesthetics */
+    font-size: 16px; /* Increase font size for readability */
+  }
