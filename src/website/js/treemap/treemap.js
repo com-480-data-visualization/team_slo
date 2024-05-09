@@ -26,10 +26,9 @@ const svg = d3.select("#treemap").append("svg")
   .attr("width", width)
   .attr("height", height);
 
-let season = null;
-let country_name = null;
-let discipline = null;
-let countryISO = null;
+export let season = null;
+export let country_name = null;
+export let countryISO = null;
 
   const countrySelect = d3.select('#country-select');
 
