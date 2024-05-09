@@ -17,7 +17,7 @@ export function drawTreemap(treemap, svg, root) {
 
   // Calculate treemap
   treemap(root);
-
+  console.log(root);
   const nodes = svg.selectAll("g")
     .data(root.leaves())
     .enter().append("g")
@@ -27,22 +27,38 @@ export function drawTreemap(treemap, svg, root) {
   nodes.append("rect")
     .attr("width", d => d.x1 - d.x0)
     .attr("height", d => d.y1 - d.y0)
-    .style("fill", "steelblue");
+    .attr("class", "node")
 
   // Create labels
-  nodes.append("text")
-    .attr("dx", 4)
-    .attr("dy", 14)
-    .text(d => d.data.name);
+nodes.append("text")
+  .attr("class", "node-label")
+  .style("font-size", d => {
+    const fontSize = Math.min(d.x1 - d.x0, d.y1 - d.y0) / 10; // Adjust the denominator to get the desired font size
+    return fontSize >= 10 ? fontSize + "px" : 0;
+  })
+  .attr("display", d => {
+    const fontSize = Math.min(d.x1 - d.x0, d.y1 - d.y0) / 10; // Adjust the denominator to get the desired font size
+    return fontSize >= 10 ? "inline" : "none";
+  })
+  .text(d => d.data.name)
+  .each(function(d) {
+    const self = d3.select(this);
+    const textLength = self.node().getComputedTextLength();
+    const rectWidth = d.x1 - d.x0;
+    if (textLength > rectWidth) {
+      self.attr("textLength", rectWidth)
+        .attr("lengthAdjust", "spacingAndGlyphs"); // Adjust spacing and glyphs
+    }
+  });
+
+
 
   // Add a transition to the rectangles and labels
   nodes.selectAll("rect, text")
-    .transition()
-    .duration(1000)
     .attr("width", d => d.x1 - d.x0)
     .attr("height", d => d.y1 - d.y0)
-    .attr("dx", 4)
-    .attr("dy", 14)
+    .attr("dx", d => (d.x1 - d.x0) / 2)
+    .attr("dy", d => (d.y1 - d.y0) / 2)
     .text(d => d.data.name);
 
   // Add click event handler to rectangles
@@ -61,4 +77,12 @@ export function drawTreemap(treemap, svg, root) {
       drawTreemap(treemap, svg, eventRoot);
     });
   });
+  nodes.on("mouseover", function(event, d) {
+    d3.select(this).select("rect").style("fill", "orange");
+  }
+  );
+  nodes.on("mouseout", function(event, d) {
+    d3.select(this).select("rect").style("fill", "steelblue");
+  }
+  );
 }

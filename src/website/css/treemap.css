@@ -3,6 +3,7 @@
     padding-left: 50px; /* Add some padding to the left */
     padding-right: 200px; /* Add some padding to the right */
     height: 60vh;
+    padding-bottom: 50px;
 }
   
 #treemap {
@@ -22,3 +23,13 @@
     padding: 5px; /* Add some padding for aesthetics */
     font-size: 16px; /* Increase font size for readability */
   }
+
+.node{
+  fill: steelblue;
+}
+.node-label {
+  text-anchor: middle;
+}
+.node:hover rect {
+  fill: orange;
+}
