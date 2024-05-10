@@ -10,6 +10,7 @@
 
 import {fetch_discipline,fetch_event} from "./fetch_data.js";
 import { season, country_name, countryISO} from "./treemap.js";
+import { showPopup, hidePopup, movePopup } from "./popup.js";
 
 export function drawTreemap(treemap, svg, root) {
   // Clear existing nodes
@@ -28,30 +29,29 @@ export function drawTreemap(treemap, svg, root) {
     .attr("width", d => d.x1 - d.x0)
     .attr("height", d => d.y1 - d.y0)
     .attr("class", "node")
+    .attr("name", d => d.data.name)
+    .attr("percentage", d => d.data.value)
 
-  // Create labels
-nodes.append("text")
-  .attr("class", "node-label")
-  .style("font-size", d => {
-    const fontSize = Math.min(d.x1 - d.x0, d.y1 - d.y0) / 10; // Adjust the denominator to get the desired font size
-    return fontSize >= 10 ? fontSize + "px" : 0;
-  })
-  .attr("display", d => {
-    const fontSize = Math.min(d.x1 - d.x0, d.y1 - d.y0) / 10; // Adjust the denominator to get the desired font size
-    return fontSize >= 10 ? "inline" : "none";
-  })
-  .text(d => d.data.name)
-  .each(function(d) {
-    const self = d3.select(this);
-    const textLength = self.node().getComputedTextLength();
-    const rectWidth = d.x1 - d.x0;
-    if (textLength > rectWidth) {
-      self.attr("textLength", rectWidth)
-        .attr("lengthAdjust", "spacingAndGlyphs"); // Adjust spacing and glyphs
-    }
-  });
-
-
+  nodes.append("text")
+    .attr("class", "node-label")
+    .style("font-size", d => {
+      const fontSize = Math.min(d.x1 - d.x0, d.y1 - d.y0) / 10; // Adjust the denominator to get the desired font size
+      return fontSize >= 10 ? fontSize + "px" : 0;
+    })
+    .attr("display", d => {
+      const fontSize = Math.min(d.x1 - d.x0, d.y1 - d.y0) / 10; // Adjust the denominator to get the desired font size
+      return fontSize >= 10 ? "inline" : "none";
+    })
+    .text(d => d.data.name)
+    .each(function(d) {
+      const self = d3.select(this);
+      const textLength = self.node().getComputedTextLength();
+      const rectWidth = d.x1 - d.x0;
+      if (textLength > rectWidth) {
+        self.attr("textLength", rectWidth)
+          .attr("lengthAdjust", "spacingAndGlyphs"); // Adjust spacing and glyphs
+      }
+    });
 
   // Add a transition to the rectangles and labels
   nodes.selectAll("rect, text")
@@ -59,7 +59,6 @@ nodes.append("text")
     .attr("height", d => d.y1 - d.y0)
     .attr("dx", d => (d.x1 - d.x0) / 2)
     .attr("dy", d => (d.y1 - d.y0) / 2)
-    .text(d => d.data.name);
 
   // Add click event handler to rectangles
   nodes.on("click", function(event, d) {  
@@ -78,11 +77,15 @@ nodes.append("text")
     });
   });
   nodes.on("mouseover", function(event, d) {
-    d3.select(this).select("rect").style("fill", "orange");
-  }
+    showPopup(event);
+    }
   );
   nodes.on("mouseout", function(event, d) {
-    d3.select(this).select("rect").style("fill", "steelblue");
-  }
+    hidePopup(event);
+    }
+  );
+  nodes.on("mousemove", function(event, d) {
+    movePopup(d3.event);
+    }
   );
 }

@@ -30,6 +30,14 @@
 .node-label {
   text-anchor: middle;
 }
-.node:hover rect {
-  fill: orange;
+.node:hover {
+  fill: rgba(70, 131, 180, 0.378);
+  border-radius: 10px;
+}
+
+#back-button {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }

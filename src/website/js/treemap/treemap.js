@@ -30,25 +30,26 @@ export let season = null;
 export let country_name = null;
 export let countryISO = null;
 
-  const countrySelect = d3.select('#country-select');
+const countrySelect = d3.select('#country-select');
 
-  //* ------------------------------ END CONSTANTS ----------------------------------- //
+const returnButton = document.getElementById('back-button');
+//* ------------------------------ END CONSTANTS ----------------------------------- //
 
-  //* ------------------------------ FUNCTIONS --------------------------------------- //
-  function whenDocumentLoaded(action) {
-    //Function that checks if the document is already loaded or not
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", action);
-    } else {
-      action();
-    }
+//* ------------------------------ FUNCTIONS --------------------------------------- //
+function whenDocumentLoaded(action) {
+  //Function that checks if the document is already loaded or not
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", action);
+  } else {
+    action();
   }
+}
 
-  whenDocumentLoaded(function () {
+whenDocumentLoaded(function () {
 
-    makeVisualization();
+  makeVisualization();
 
-  });
+});
 
 function makeVisualization() {
   fetch_country().then(function(result) {
@@ -117,5 +118,9 @@ function createSeasonSelector() {
       }
     });
 }
+
+returnButton.addEventListener('click', function() {
+  createTreeMap();
+});
 
 //* ------------------------------ END FUNCTIONS ----------------------------------- //
