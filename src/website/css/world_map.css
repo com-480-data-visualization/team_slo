@@ -19,12 +19,24 @@ svg rect {
   stroke-width: 1;
 }
 
+.country-summer{
+  fill: #dfdf7f;
+  stroke: #2A2C39; 
+  stroke-width: 1;
+}
+
+.country-winter{
+  fill: #00d9ff;
+  stroke: #2A2C39; 
+  stroke-width: 1;
+}
+
 .country-over{
   fill: #4B5358; /*Change color when mouse over*/
 }
 
 .country-selected{
-  fill: #ae4d5a;   /* change colour when country selected */
+  fill: #df2841;   /* change colour when country selected */
   stroke-width: 2;
 }
 
@@ -50,6 +62,20 @@ svg rect {
   position: absolute;
   left: 0;
   text-align: center;
+}
+
+.host-popup {
+  position: absolute;
+  z-index: 1000; /* Ensure the popup appears above other elements */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 5px 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.host-popuptext {
+  /* Additional styles for the text inside the popup */
+  color: black;
+  font-size: 12px;
 }
 
 
