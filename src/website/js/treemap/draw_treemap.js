@@ -35,11 +35,11 @@ export function drawTreemap(treemap, svg, root) {
   nodes.append("text")
     .attr("class", "node-label")
     .style("font-size", d => {
-      const fontSize = Math.min(d.x1 - d.x0, d.y1 - d.y0) / 10; // Adjust the denominator to get the desired font size
+      const fontSize = Math.min(d.x1 - d.x0, d.y1 - d.y0) / 5; // Adjust the denominator to get the desired font size
       return fontSize >= 10 ? fontSize + "px" : 0;
     })
     .attr("display", d => {
-      const fontSize = Math.min(d.x1 - d.x0, d.y1 - d.y0) / 10; // Adjust the denominator to get the desired font size
+      const fontSize = Math.min(d.x1 - d.x0, d.y1 - d.y0) / 5; // Adjust the denominator to get the desired font size
       return fontSize >= 10 ? "inline" : "none";
     })
     .text(d => d.data.name)

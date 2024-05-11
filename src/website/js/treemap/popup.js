@@ -37,7 +37,7 @@ export function hidePopup() {
     fadeOut(popup);
   }
   
-  export function movePopup(e) {
+export function movePopup(e) {
     var popup = document.getElementById("myPopup");
     var div = document.getElementById("treemap");
 
@@ -51,16 +51,20 @@ export function hidePopup() {
 
     // Calculate the mouse position relative to the div
     if (e) {
-        // Obtain the mouse coordinates relative to the viewport
         var x = e.clientX;
         var y = e.clientY;
-
-        // Calculate the mouse position relative to the div
         var relativeX = x - divRect.left;
         var relativeY = y - divRect.top;
-        // Set the popup's position based on the relative mouse position
-        popup.style.left = `${relativeX - 25}px`;
-        popup.style.top = `${relativeY + 930}px`;
+        // Adjustments based on viewport dimensions
+        var xOffset = 0.02 * window.innerWidth; // 5% of the viewport width
+        var yOffset = 0.2 * window.innerHeight; // 20% of the viewport height
+
+        // Calculate the adjusted positions
+        popup.style.left = `${relativeX - xOffset}px`;
+        popup.style.top = `${relativeY + yOffset}px`;
+
+        console.log('mouse:', x, y);
+        console.log(popup.style.left, popup.style.top);
 
         // Display the popup
         popup.style.display = 'block';
