@@ -1,69 +1,104 @@
-// Wait Dom to be ready
-document.addEventListener('DOMContentLoaded', function() {
-  //get div
-  var popupTrigger = document.querySelector('.popup');
-  popup = document.getElementById('myPopup');
-  //add mouseover, mouseout and mousemove events
-  popupTrigger.addEventListener('mouseover', showPopup);
-  popupTrigger.addEventListener('mouseout', hidePopup);
-  popupTrigger.addEventListener('mousemove', movePopup);
-});
+/* 
+  /Ecole Polytechnique Fédérale de Lausanne
+  /Course: COM-480: Data Visualization
+  /Project: Olympic History Data Visualization
+  /Students: Vincent Roduit, Yannis Laaroussi, Fabio Palmisano
 
-// When the user hovers over the element, show the popup
-function showPopup() {
-  popup.classList.add("show");
-  fadeIn(popup);
+  /Description:
+  /This script is responsible for the switch that changes the Olympic season.
+*/
+
+
+function whenDocumentLoaded(action) {
+    //Function that checks if the document is already loaded or not
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", action);
+    } else {
+      action();
+    }
+  }
+  
+  //Define the function that will be called when the document is loaded
+  whenDocumentLoaded(function () {
+    createCheckbox();
+    document.querySelector('.switch').style.display = 'block';
+    });
+  
+function createCheckbox() {
+  var checkbox = document.querySelector('.switch input[type="checkbox"]');
+  var OlympicSeason = checkbox.checked ? 'Winter' : 'Summer';
+  console.log('Initial Olympic season:', OlympicSeason);
+  checkbox.addEventListener('change', function () {
+    if (checkbox.checked) {
+      OlympicSeason = 'Winter';
+    } else {
+      OlympicSeason = 'Summer';
+    }
+  });
 }
 
-// When the user moves the mouse away from the element, hide the popup
-function hidePopup() {
-  popup.classList.remove("show");
-  fadeOut(popup);
-}
 
-// When the user moves the mouse, move the popup
-// When the user moves the mouse, move the popup
-function movePopup(e) {
-  var popup = document.getElementById("myPopup"); // Ensure popup is properly referenced
 
-  // If event exists, show and move the popup
-  if (e) {
-    popup.style.left = `${e.clientX - 80}px`;
-    popup.style.top = `${e.clientY - 50}px`; // Subtract 20 pixels from the Y position
-    popup.style.display = 'block';
+
+
+
+
+
+
+
+
+
+
+/* 
+  /Ecole Polytechnique Fédérale de Lausanne
+  /Course: COM-480: Data Visualization
+  /Project: Olympic History Data Visualization
+  /Students: Vincent Roduit, Yannis Laaroussi, Fabio Palmisano
+
+  /Description:
+  /This script is responsible for the switch that changes the Olympic season.
+*/
+
+
+function whenDocumentLoaded(action) {
+  //Function that checks if the document is already loaded or not
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", action);
   } else {
-    // If event does not exist, hide the popup
-    popup.style.display = 'none';
-    popup.textContent = '';
+    action();
   }
 }
 
+//Define the function that will be called when the document is loaded
+whenDocumentLoaded(function () {
+  var checkbox = document.querySelector('.switch input[type="checkbox"]');
+  document.querySelector('.switch').style.display = 'block';
+  const slider = document.querySelector('.slider');
+  slider.classList.add('.slider')
+  var OlympicSeason = checkbox.checked ? 'Winter' : 'Summer';
+  console.log('Initial Olympic season:', OlympicSeason);
 
-// Fade in function
-function fadeIn(element) {
-  var op = 0.1;  // initial opacity
-  element.style.display = 'block';
-  element.style.opacity = op;
-  var timer = setInterval(function () {
-      if (op >= 1){
-          clearInterval(timer);
-      }
-      op += op * 0.1;
-      element.style.opacity = op;
-      element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-  }, 10);
-}
+  window.getOlympicSeason = function () {
+    // Return the current Olympic season (Summer or Winter)
+    return OlympicSeason;
+  }
 
-function fadeOut(element) {
-  var op = 1;  // initial opacity
-  element.style.opacity = op;
-  var timer = setInterval(function () {
-      if (op <= 0.1){
-          clearInterval(timer);
-          element.style.display = 'none';
-      }
-      op -= op * 0.1;
-      element.style.opacity = op;
-      element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-  }, 10);
-}
+  var checkboxState = sessionStorage.getItem('checkboxState');
+  if (checkboxState !== null) {
+    checkbox.checked = checkboxState === 'true';
+  }
+
+  // Change the Olympic season when the checkbox changes
+  checkbox.addEventListener('change', function () {
+    console.log('Checkbox state:', checkbox.checked);
+    if (checkbox.checked) {
+      OlympicSeason = 'Winter';
+      slider.style.backgroundColor = '#1d92c4'; // Color for "checked" state
+      slider.style.boxShadow = '0 0 1px #1d92c4';
+    } else {
+      OlympicSeason = 'Summer';
+    }
+    // Store the checkbox state in the session storage when it changes
+    sessionStorage.setItem('checkboxState', checkbox.checked);
+  });
+  });

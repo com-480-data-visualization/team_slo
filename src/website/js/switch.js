@@ -8,6 +8,7 @@
   /This script is responsible for the switch that changes the Olympic season.
 */
 
+var OlympicSeason = null;
 
 function whenDocumentLoaded(action) {
   //Function that checks if the document is already loaded or not
@@ -20,31 +21,31 @@ function whenDocumentLoaded(action) {
 
 //Define the function that will be called when the document is loaded
 whenDocumentLoaded(function () {
-  var checkbox = document.querySelector('input[type="checkbox"]');
-  var OlympicSeason = 'Summer';
+  createCheckbox();
+  document.querySelector('.switch').style.display = 'block';
+  });
 
-  window.getOlympicSeason = function () {
-    // Return the current Olympic season (Summer or Winter)
-    return OlympicSeason;
+  function createCheckbox() {
+  var checkbox = document.querySelector('.switch input[type="checkbox"]');
+  checkbox.checked = false;
+  if (sessionStorage.getItem('checkboxState') === 'true') {
+    checkbox.checked = true;
+    OlympicSeason = 'Winter';
+  } else {
+    OlympicSeason = 'Summer';
   }
-
-  // Store the checkbox state in the local storage
-  var checkboxState = localStorage.getItem('checkboxState');
-  if (checkboxState !== null) {
-    checkbox.checked = checkboxState === 'true';
-  }
-
-  // Change the Olympic season when the checkbox changes
+  console.log('Initial Olympic season:', OlympicSeason);
   checkbox.addEventListener('change', function () {
+    sessionStorage.setItem('checkboxState', checkbox.checked);
     if (checkbox.checked) {
       OlympicSeason = 'Winter';
     } else {
       OlympicSeason = 'Summer';
     }
-    // Store the checkbox state in the local storage when it changes
-    localStorage.setItem('checkboxState', checkbox.checked);
   });
+}
 
-  // Show the slider
-  document.querySelector('.switch').style.display = 'block';
-});
+window.getOlympicSeason = function () {
+  // Return the current Olympic season (Summer or Winter)
+  return OlympicSeason;
+}

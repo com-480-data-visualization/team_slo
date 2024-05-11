@@ -1,0 +1,370 @@
+,country_name,country_3_letter_code,game_season
+0,Italy,ITA,Winter
+1,Norway,NOR,Winter
+2,Sweden,SWE,Winter
+3,Great Britain,GBR,Winter
+4,Canada,CAN,Winter
+5,Czech Republic,CZE,Winter
+6,Switzerland,SUI,Winter
+7,United States of America,USA,Winter
+8,People's Republic of China,CHN,Winter
+9,Australia,AUS,Winter
+11,Japan,JPN,Winter
+17,Republic of Korea,KOR,Winter
+18,Denmark,DEN,Winter
+19,ROC,ROC,Winter
+33,Finland,FIN,Winter
+34,Kazakhstan,KAZ,Winter
+51,France,FRA,Winter
+64,New Zealand,NZL,Winter
+73,Ireland,IRL,Winter
+77,Austria,AUT,Winter
+92,Spain,ESP,Winter
+119,Germany,GER,Winter
+152,Estonia,EST,Winter
+158,Chile,CHI,Winter
+198,Brazil,BRA,Winter
+207,Belarus,BLR,Winter
+239,Ukraine,UKR,Winter
+370,Netherlands,NED,Winter
+378,Hungary,HUN,Winter
+380,Croatia,CRO,Winter
+381,Poland,POL,Winter
+388,Belgium,BEL,Winter
+399,Latvia,LAT,Winter
+403,"Hong Kong, China",HKG,Winter
+404,Israel,ISR,Winter
+489,Turkey,TUR,Winter
+607,Malta,MLT,Winter
+650,Andorra,AND,Winter
+665,Slovenia,SLO,Winter
+682,Bulgaria,BUL,Winter
+719,Slovakia,SVK,Winter
+950,Romania,ROU,Winter
+1072,Georgia,GEO,Winter
+1113,Armenia,ARM,Winter
+1118,Lithuania,LTU,Winter
+1138,Azerbaijan,AZE,Winter
+1153,Mexico,MEX,Winter
+1243,Bosnia and Herzegovina,BIH,Winter
+1250,Republic of Moldova,MDA,Winter
+1255,Argentina,ARG,Winter
+1273,Chinese Taipei,TPE,Winter
+1907,Puerto Rico,PUR,Winter
+1915,Kyrgyzstan,KGZ,Winter
+1922,Colombia,COL,Winter
+1927,India,IND,Winter
+1932,Portugal,POR,Winter
+1933,San Marino,SMR,Winter
+1935,Philippines,PHI,Winter
+1939,Lebanon,LBN,Winter
+1940,Uzbekistan,UZB,Winter
+1941,Albania,ALB,Winter
+1947,Montenegro,MNE,Winter
+1948,Greece,GRE,Winter
+1949,Kosovo,KOS,Winter
+1950,Luxembourg,LUX,Winter
+1954,Madagascar,MAD,Winter
+1960,Cyprus,CYP,Winter
+1961,Malaysia,MAS,Winter
+1962,Haiti,HAI,Winter
+1965,Thailand,THA,Winter
+1976,Pakistan,PAK,Winter
+1985,Democratic Republic of Timor-Leste,TLS,Winter
+1990,Iceland,ISL,Winter
+2001,Monaco,MON,Winter
+2009,Serbia,SRB,Winter
+2024,Liechtenstein,LIE,Winter
+2028,Bolivia,BOL,Winter
+2222,Morocco,MAR,Winter
+2253,Ghana,GHA,Winter
+2254,Jamaica,JAM,Winter
+2261,Eritrea,ERI,Winter
+2289,Saudi Arabia,KSA,Winter
+2328,Peru,PER,Winter
+2374,Ecuador,ECU,Winter
+2455,Islamic Republic of Iran,IRI,Winter
+2492,"Virgin Islands, US",ISV,Winter
+2519,American Samoa,ASA,Winter
+2620,Mongolia,MGL,Winter
+2941,North Macedonia,MKD,Winter
+3113,Nigeria,NGR,Winter
+3761,Trinidad and Tobago,TTO,Winter
+3784,Spain,ESP,Summer
+3785,San Marino,SMR,Summer
+3786,United States of America,USA,Summer
+3787,Slovakia,SVK,Summer
+3788,Japan,JPN,Summer
+3789,Australia,AUS,Summer
+3792,People's Republic of China,CHN,Summer
+3793,Great Britain,GBR,Summer
+3794,ROC,ROC,Summer
+3795,Italy,ITA,Summer
+3798,Mexico,MEX,Summer
+3799,Egypt,EGY,Summer
+3802,Belarus,BLR,Summer
+3804,Islamic Republic of Iran,IRI,Summer
+3805,Switzerland,SUI,Summer
+3806,Norway,NOR,Summer
+3807,Serbia,SRB,Summer
+3808,Germany,GER,Summer
+3809,Indonesia,INA,Summer
+3811,Czech Republic,CZE,Summer
+3814,Mongolia,MGL,Summer
+3815,Puerto Rico,PUR,Summer
+3816,Poland,POL,Summer
+3817,Republic of Korea,KOR,Summer
+3819,Uzbekistan,UZB,Summer
+3822,Malaysia,MAS,Summer
+3824,Slovenia,SLO,Summer
+3827,Hungary,HUN,Summer
+3829,Cuba,CUB,Summer
+3830,France,FRA,Summer
+3832,India,IND,Summer
+3833,Denmark,DEN,Summer
+3835,Croatia,CRO,Summer
+3838,Ukraine,UKR,Summer
+3842,Oman,OMA,Summer
+3846,Argentina,ARG,Summer
+3851,Turkey,TUR,Summer
+3864,Kazakhstan,KAZ,Summer
+3872,Venezuela,VEN,Summer
+3874,Lithuania,LTU,Summer
+3881,Estonia,EST,Summer
+3885,Colombia,COL,Summer
+3889,Azerbaijan,AZE,Summer
+3891,Peru,PER,Summer
+3893,Pakistan,PAK,Summer
+3896,Thailand,THA,Summer
+3911,Israel,ISR,Summer
+3917,Philippines,PHI,Summer
+3918,Austria,AUT,Summer
+3923,Chinese Taipei,TPE,Summer
+3931,Bangladesh,BAN,Summer
+3942,Afghanistan,AFG,Summer
+3945,Kosovo,KOS,Summer
+3960,Romania,ROU,Summer
+3977,Singapore,SGP,Summer
+3979,Belgium,BEL,Summer
+3983,Bhutan,BHU,Summer
+3985,Algeria,ALG,Summer
+3986,Sri Lanka,SRI,Summer
+3987,Kyrgyzstan,KGZ,Summer
+3988,Bosnia and Herzegovina,BIH,Summer
+3990,Nepal,NEP,Summer
+3991,Refugee Olympic Team,EOR,Summer
+4001,Ireland,IRL,Summer
+4005,Portugal,POR,Summer
+4008,Qatar,QAT,Summer
+4013,Kuwait,KUW,Summer
+4023,Cyprus,CYP,Summer
+4030,Morocco,MAR,Summer
+4036,Bahrain,BRN,Summer
+4044,Senegal,SEN,Summer
+4050,New Zealand,NZL,Summer
+4057,Chile,CHI,Summer
+4067,Guatemala,GUA,Summer
+4072,Lebanon,LBN,Summer
+4081,Finland,FIN,Summer
+4082,Bulgaria,BUL,Summer
+4087,Iraq,IRQ,Summer
+4093,Ecuador,ECU,Summer
+4109,Greece,GRE,Summer
+4110,Albania,ALB,Summer
+4115,Latvia,LAT,Summer
+4117,Jordan,JOR,Summer
+4119,Yemen,YEM,Summer
+4122,Tunisia,TUN,Summer
+4124,Georgia,GEO,Summer
+4125,Montenegro,MNE,Summer
+4128,Armenia,ARM,Summer
+4130,Malta,MLT,Summer
+4132,Canada,CAN,Summer
+4134,Republic of Moldova,MDA,Summer
+4213,Brazil,BRA,Summer
+4214,North Macedonia,MKD,Summer
+4215,Aruba,ARU,Summer
+4219,Myanmar,MYA,Summer
+4222,Vietnam,VIE,Summer
+4224,Nicaragua,NCA,Summer
+4226,Iceland,ISL,Summer
+4269,Saudi Arabia,KSA,Summer
+4278,Sweden,SWE,Summer
+4287,United Arab Emirates,UAE,Summer
+4331,Jamaica,JAM,Summer
+4336,Dominican Republic,DOM,Summer
+4356,Netherlands,NED,Summer
+4427,South Africa,RSA,Summer
+4468,Nigeria,NGR,Summer
+4487,Sao Tome and Principe,STP,Summer
+4514,Samoa,SAM,Summer
+4527,Cook Islands,COK,Summer
+4618,Mozambique,MOZ,Summer
+4652,Belize,BIZ,Summer
+4741,Ethiopia,ETH,Summer
+4745,Eritrea,ERI,Summer
+4747,Trinidad and Tobago,TTO,Summer
+4752,Luxembourg,LUX,Summer
+4764,Costa Rica,CRC,Summer
+4774,Paraguay,PAR,Summer
+4780,Namibia,NAM,Summer
+4856,"Hong Kong, China",HKG,Summer
+4862,Rwanda,RWA,Summer
+4887,Burkina Faso,BUR,Summer
+4954,Panama,PAN,Summer
+4988,Zambia,ZAM,Summer
+4998,Côte d'Ivoire,CIV,Summer
+5005,Honduras,HON,Summer
+5010,Mauritius,MRI,Summer
+5019,Eswatini,SWZ,Summer
+5021,Uganda,UGA,Summer
+5029,Cameroon,CMR,Summer
+5046,Haiti,HAI,Summer
+5051,Democratic Republic of the Congo,COD,Summer
+5065,Tajikistan,TJK,Summer
+5075,Ghana,GHA,Summer
+5097,Kenya,KEN,Summer
+5099,Guyana,GUY,Summer
+5208,Burundi,BDI,Summer
+5230,Botswana,BOT,Summer
+5246,Cape Verde,CPV,Summer
+5253,Somalia,SOM,Summer
+5264,El Salvador,ESA,Summer
+5271,Antigua and Barbuda,ANT,Summer
+5286,Papua New Guinea,PNG,Summer
+5313,Liechtenstein,LIE,Summer
+5350,Angola,ANG,Summer
+5353,Fiji,FIJ,Summer
+5451,Bermuda,BER,Summer
+5541,Syrian Arab Republic,SYR,Summer
+5610,Vanuatu,VAN,Summer
+5627,Togo,TOG,Summer
+5717,Monaco,MON,Summer
+5791,Andorra,AND,Summer
+5957,Mali,MLI,Summer
+5997,Gabon,GAB,Summer
+5999,Niger,NIG,Summer
+6001,Tonga,TGA,Summer
+6121,Suriname,SUR,Summer
+6700,Maldives,MDV,Summer
+6781,Guinea-Bissau,GBS,Summer
+6792,Guam,GUM,Summer
+7003,Guinea,GUI,Summer
+7094,Bolivia,BOL,Summer
+7496,Zimbabwe,ZIM,Summer
+7629,Chad,CHA,Summer
+7634,Kiribati,KIR,Summer
+7665,Comoros,COM,Summer
+7678,Uruguay,URU,Summer
+7683,Sierra Leone,SLE,Summer
+7684,Palestine,PLE,Summer
+7732,Sudan,SUD,Summer
+7745,Djibouti,DJI,Summer
+7751,Gambia,GAM,Summer
+7765,Malawi,MAW,Summer
+7806,Libya,LBA,Summer
+7810,Benin,BEN,Summer
+7834,Seychelles,SEY,Summer
+7885,Lao People's Democratic Republic,LAO,Summer
+7894,Madagascar,MAD,Summer
+7948,Turkmenistan,TKM,Summer
+8146,"Virgin Islands, US",ISV,Summer
+8238,Solomon Islands,SOL,Summer
+8368,Nauru,NRU,Summer
+8378,American Samoa,ASA,Summer
+8829,"Virgin Islands, British",IVB,Summer
+8860,Lesotho,LES,Summer
+8862,United Republic of Tanzania,TAN,Summer
+9059,Liberia,LBR,Summer
+9067,Bahamas,BAH,Summer
+9181,Dominica,DMA,Summer
+9396,Grenada,GRN,Summer
+9974,Saint Lucia,LCA,Summer
+10668,Olympic Athletes from Russia,OAR,Winter
+12346,Democratic People's Republic of Korea,PRK,Winter
+12618,Singapore,SGP,Winter
+12976,The Former Yugoslav Republic of Macedonia,MKD,Winter
+12979,South Africa,RSA,Winter
+13296,Kenya,KEN,Winter
+13580,Korea Team,COR,Winter
+13786,Bermuda,BER,Winter
+13796,Tonga,TGA,Winter
+13902,Togo,TOG,Winter
+14358,Russian Federation,RUS,Summer
+14637,Ivory Coast,CIV,Summer
+14839,Independent Olympic Athletes,IOA,Summer
+15053,Democratic People's Republic of Korea,PRK,Summer
+15326,The Former Yugoslav Republic of Macedonia,MKD,Summer
+15374,Barbados,BAR,Summer
+16102,Cambodia,CAM,Summer
+16167,Equatorial Guinea,GEQ,Summer
+16270,Congo,CGO,Summer
+16431,South Sudan,SSD,Summer
+16439,Refugee Olympic Athletes,XXB,Summer
+17161,Marshall Islands,MHL,Summer
+17256,Palau,PLW,Summer
+17678,Democratic Republic of Timor-Leste,TLS,Summer
+18087,US Virgin Islands,ISV,Summer
+18181,Federated States of Micronesia,FSM,Summer
+18267,Central African Republic,CAF,Summer
+19113,Cayman Islands,CAY,Summer
+19603,Brunei,BRU,Summer
+20610,Saint Vincent and the Grenadines,VIN,Summer
+21592,British Virgin Islands,IVB,Summer
+22054,Russian Federation,RUS,Winter
+22990,US Virgin Islands,ISV,Winter
+23081,Zimbabwe,ZIM,Winter
+23128,Cayman Islands,CAY,Winter
+23129,Venezuela,VEN,Winter
+23477,Tajikistan,TJK,Winter
+24479,Nepal,NEP,Winter
+24484,Dominica,DMA,Winter
+25400,Independent Olympic Athletes,IOA,Winter
+25461,British Virgin Islands,IVB,Winter
+25501,Paraguay,PAR,Winter
+26082,Swaziland,SWZ,Summer
+28078,Saint Kitts and Nevis,SKN,Summer
+31264,Tuvalu,TUV,Summer
+34297,Senegal,SEN,Winter
+35267,Algeria,ALG,Winter
+35276,Ethiopia,ETH,Winter
+38865,Netherlands Antilles,AHO,Summer
+44131,Serbia and Montenegro,SCG,Winter
+44850,Costa Rica,CRC,Winter
+47167,Serbia and Montenegro,SCG,Summer
+55254,Fiji,FIJ,Winter
+56120,Cameroon,CMR,Winter
+65701,Uruguay,URU,Winter
+76468,Unified Team,EUN,Summer
+76479,Czechoslovakia,TCH,Summer
+77661,Mauritania,MTN,Summer
+83351,Unified Team,EUN,Winter
+83357,Czechoslovakia,TCH,Winter
+83418,Yugoslavia,YUG,Winter
+83503,Honduras,HON,Winter
+84798,Swaziland,SWZ,Winter
+85425,Netherlands Antilles,AHO,Winter
+86132,Soviet Union,URS,Summer
+86136,Federal Republic of Germany,FRG,Summer
+86213,German Democratic Republic (Germany),GDR,Summer
+86219,Yugoslavia,YUG,Summer
+88880,Yemen Arab Republic,YAR,Summer
+89206,Yemen Democratic Republic,YMD,Summer
+92478,Federal Republic of Germany,FRG,Winter
+92497,German Democratic Republic (Germany),GDR,Winter
+92530,Soviet Union,URS,Winter
+93212,Guatemala,GUA,Winter
+93675,Guam,GUM,Winter
+99975,Egypt,EGY,Winter
+112052,South Vietnam,VNM,Summer
+112423,Rhodesia,RHO,Summer
+125342,United Arab Republic,UAR,Summer
+125500,Malaya,MAL,Summer
+125707,West Indies Federation,WIF,Summer
+130142,North Borneo,NBO,Summer
+133964,Saar,SAA,Summer
+147639,MIX,MIX,Winter
+155211,Australasia,ANZ,Summer
+155215,Bohemia,BOH,Summer
+159469,MIX,MIX,Summer
+159675,Newfoundland,NFL,Summer

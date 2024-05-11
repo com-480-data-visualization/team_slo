@@ -1,0 +1,43 @@
+#container {
+    display: flex; /* Use flexbox for layout */
+    padding-left: 50px; /* Add some padding to the left */
+    padding-right: 200px; /* Add some padding to the right */
+    height: 60vh;
+    padding-bottom: 50px;
+}
+  
+#treemap {
+    flex-grow: 1; /* Allow treemap to take up the remaining space */
+  }
+  
+#control-panel {
+    margin-left: 20px;
+    width: 250px; /* Fixed width for the control panel */
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+#country-select {
+    display: block; /* Make sure the select is not hidden */
+    width: 80%; /* Take up the full width of its container */
+    padding: 5px; /* Add some padding for aesthetics */
+    font-size: 16px; /* Increase font size for readability */
+  }
+
+.node{
+  fill: steelblue;
+}
+.node-label {
+  text-anchor: middle;
+}
+.node:hover {
+  fill: rgba(70, 131, 180, 0.378);
+  border-radius: 10px;
+}
+
+#back-button {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
