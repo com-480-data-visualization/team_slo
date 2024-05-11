@@ -26,7 +26,10 @@ var currentCountryISO3 = null;
 var currentSeason = null;
 var current_country_name = null;
 
+var isHostButtonClicked = false;
+
 var switchElement = document.getElementById('season-switch');
+var hostButton = document.getElementById('host-button');
 
 var selectedCountry = null;
 var selectedCountryISO3 = null;
@@ -56,6 +59,12 @@ function zoomed() {
   countriesGroup
     .attr("transform", "translate(" + [translate.x, translate.y] + ")scale(" + translate.k + ")")
     ;
+  
+  // refresh the host countries position
+  if (isHostButtonClicked && currentCountryISO3 === null) {
+    displayHostCountries();
+  }
+  
 }
 
 function unZoomed() {
@@ -121,6 +130,7 @@ function boxZoom(box, centroid, paddingPercentage) {
       zoom.transform,
       d3.zoomIdentity.translate(translateX, translateY).scale(zoomFactor)
     );
+  
 }
 
 function boxUnZoom() {
@@ -148,6 +158,7 @@ function addBackground(countriesGroup) {
 // [ ] ----------------------- CREATE COUNTRIES FUNCTIONS ----------------------------- //
 
 function createCountries(json, path, countriesGroup) {
+  const season = window.getOlympicSeason();
   countries = countriesGroup
     .selectAll("path")
     .data(json.features)
@@ -209,7 +220,13 @@ function clickCountry(d, i) {
       this.zoomed = false;
     });
     clickedCountry.zoomed = true;
+    isHostButtonClicked = false;
+    // hide the host button
+    hostButton.style.display = "none";
+    hideHostCountriesLabel();
   } else {
+    currentCountryISO3 = null;
+    current_country_name = null;
     hideCountryInfo();
     svg.attr("width", $("#map-holder").width());
     boxUnZoom();
@@ -248,9 +265,8 @@ $(window).resize(function () {
     console.log("Resizing country info");
     displayCountryInfo(selectedCountry, selectedCountryISO3); // You need to get country and countryCodeISO3 from somewhere
   }
-  // Resize font size of each element in the country info panel
-  
 
+  displayHostCountries();
 
   initiateZoom();
 });
@@ -275,7 +291,7 @@ d3.json(dataPath,
     countriesGroup = addBackground(countriesGroup);
     createCountries(json, path, countriesGroup);
     initiateZoom();
-    currentSeason = window.getOlympicSeason();
+    currentSeason = window.getOlympicSeason();    
   }
 );
 
@@ -350,16 +366,10 @@ function hideCountryInfo() {
 
   // Clear country info
   countryInfo.innerHTML = "";
-}
 
-// Add event listener for window resize
-// window.addEventListener("resize", function() {
-//   console.log(selectedCountry, selectedCountryISO3);
-//   if (selectedCountry !== null && selectedCountryISO3 !== null) {
-//     console.log("Resizing country info");
-//     displayCountryInfo(selectedCountry, selectedCountryISO3); // You need to get country and countryCodeISO3 from somewhere
-//   }
-// });
+  displayHostCountries();
+  hostButton.style.display = "block";
+}
 
 async function getFlag(countryCodeISO3) {
   try {
@@ -415,7 +425,6 @@ function displayMedals(countryCodeISO3, country_name) {
   medals.classList.add("country-stats");
   medals.style.top = "12%";
   medals.style.height = "38%";
-  medals.style.backgroundColor = "darkgoldenrod";
   medals.style.position = "absolute";
 
   var medalsFontSize = $(countryInfo).height() * 0.05 + "px";
@@ -483,6 +492,13 @@ function displayMedals(countryCodeISO3, country_name) {
       medals.appendChild(goldContainer);
       medals.appendChild(silverContainer);
       medals.appendChild(bronzeContainer);
+
+      const season = window.getOlympicSeason();
+      if (season === "Summer") {
+        medals.style.backgroundColor = "darkgoldenrod";
+      } else {
+        medals.style.backgroundColor = "darkslategray";
+      }
     }
     else {
       // Display message if no data is found
@@ -493,6 +509,12 @@ function displayMedals(countryCodeISO3, country_name) {
       medals.removeChild(silverContainer);
       medals.removeChild(bronzeContainer);
       console.log("No data found");
+      const season = window.getOlympicSeason();
+      if (season === "Summer") {
+        medals.style.backgroundColor = "darkgoldenrod";
+      } else {
+        medals.style.backgroundColor = "darkslategray";
+      }
     }
   }).catch(function (error) {
     console.log('Error:', error);
@@ -524,6 +546,7 @@ function animateCounter(counterElement, finalValue, duration) {
 
 function displayBestAthlete(countryCodeISO3, countryName) {
   console.log("displaying best athlete");
+  
   var countryInfo = document.getElementById("country-info");
   var oldAthlete = document.getElementById("best-athlete");
   if (oldAthlete !== null) {
@@ -534,7 +557,7 @@ function displayBestAthlete(countryCodeISO3, countryName) {
   athlete.classList.add("country-stats");
   athlete.style.top = "50%";
   athlete.style.height = "50%";
-  athlete.style.backgroundColor = "darkred";
+  
   athlete.style.position = "absolute";
 
   var athleteFontSize = $(countryInfo).height() * 0.05 + "px";
@@ -609,6 +632,12 @@ function displayBestAthlete(countryCodeISO3, countryName) {
 
       athleteContainer.appendChild(athleteInfoContainer);
       athlete.appendChild(athleteContainer);
+      const season = window.getOlympicSeason();
+      if (season === "Summer") {
+        athlete.style.backgroundColor = "darkred";
+      } else {
+        athlete.style.backgroundColor = "darkblue";
+      }
     }
     else {
       // Display message if no data is found
@@ -617,10 +646,16 @@ function displayBestAthlete(countryCodeISO3, countryName) {
       noData.textContent = "No athlete has won any medals in the " + season + " Olympics for this country.";
       athlete.appendChild(noData);
       console.log("No data found");
+      if (season === "Summer") {
+        athlete.style.backgroundColor = "darkred";
+      } else {
+        athlete.style.backgroundColor = "darkblue";
+      }
     }
   }).catch(function (error) {
     console.log('Error:', error);
   });
+  
   // Inserting athlete after existing elements in countryInfo
   countryInfo.appendChild(athlete);
 }
@@ -693,19 +728,138 @@ switchElement.addEventListener('change', function () {
     currentSeason = newSeason;
     console.log("Season changed to", currentSeason);
     console.log("Current country:", currentCountryISO3);
+    // check if a country is selected
     // Update the medals
     displayMedals(currentCountryISO3, current_country_name);
     // Update the best athlete
     displayBestAthlete(currentCountryISO3, current_country_name);
   }
+  if (isHostButtonClicked) {
+    // Update the host countries
+    displayHostCountries();
+  }
+  // update color of the countries according to the season
+  if (newSeason === "Summer") {
+    d3.selectAll(".country").classed("country-summer", true);
+    d3.selectAll(".country").classed("country-winter", false);
+  }
+  else {
+    d3.selectAll(".country").classed("country-winter", true);
+    d3.selectAll(".country").classed("country-summer", false);
+  }
+
 });
 
 // [ ] -------------------------------------- END SEASON SWITCH ---------------------------------------- //
 
+// [ ] ---------------------------------------- HOST BUTTON ------------------------------------------ //
+
+hostButton.addEventListener('click', function () {
+  isHostButtonClicked = !isHostButtonClicked;
+  displayHostCountries();
+});
+
+function displayHostCountries() {
+  if (isHostButtonClicked) {
+    fetchHostData().then(function (result) {
+      if (result !== null) {
+        // Highlight the host countries on the map
+        d3.selectAll(".country").classed("country-selected", false);
+        d3.selectAll(".country").classed("country-over", false);
+        d3.selectAll(".country").each(function () {
+          this.zoomed = false;
+        });
+
+        for (let i = 0; i < result.length; i++) {
+          let hostCountry = result[i];
+          d3.select("#countryName" + hostCountry.country_3_letter_code).classed("country-selected", true);
+        }
+        hideHostCountriesLabel();
+        // Display the game names above each host country, there can be multiple games in the same country
+        d3.selectAll(".country").each(function () {
+          let country = d3.select(this);
+          let countryCode = country.attr("id").substring(11);
+          let hostGames = result.filter(d => d.country_3_letter_code === countryCode);
+          if (hostGames.length > 0) {
+            let gameNames = hostGames.map(d => d.game_name);
+            let gameNamesString = gameNames.join(",\n");
+        
+            let geoCentroid = d3.geoCentroid(country.datum());
+            let screenCentroid = projection(geoCentroid);
+        
+            // Get the current zoom and pan transformation
+            let transform = d3.zoomTransform(svg.node());
+        
+            // Apply the transformation to the centroid coordinates
+            let transformedCentroid = transform.apply(screenCentroid);
+        
+            svg.append("rect")
+              .attr("x", transformedCentroid[0] - gameNamesString.length * 5 / 2 - 10)
+              .attr("y", transformedCentroid[1] - 20)
+              .attr("width", gameNamesString.length * 5 + 20)
+              .attr("height", 30)
+              .attr("rx", 15)
+              .attr("ry", 15)
+              .attr("fill", "rgba(0, 0, 0, 0.7)")
+              .classed("host-background", true);
+
+            svg.append("text")
+              .attr("x", transformedCentroid[0])
+              .attr("y", transformedCentroid[1])
+              .attr("text-anchor", "middle")
+              .attr("font-size", "10px")
+              .attr("fill", "white")
+              .text(gameNamesString)
+              .classed("host-text", true);
+          }
+        });
+        hostButton.textContent = "Hide host countries";
+      }
+    }).catch(function (error) {
+      console.log('Error:', error);
+    });
+  } else {
+    d3.selectAll(".country").classed("country-selected", false);
+    d3.selectAll(".country").classed("country-over", false);
+    d3.selectAll(".country").each(function () {
+      this.zoomed = false;
+    });
+    hostButton.textContent = "Show host countries";
+    // remove the game names above the host countries
+    hideHostCountriesLabel();
+  }
+}
+
+function hideHostCountriesLabel() {
+  d3.selectAll(".host-background").remove();
+  d3.selectAll(".host-text").remove();
+}
+
+
+async function fetchHostData() {
+  try {
+    const data = await d3.csvParse(await (await fetch('../../data/olympic_hosts_processed.csv')).text());
+    const season = window.getOlympicSeason();
+    const hostData = data.filter(d => d.game_season === season);
+    return hostData;
+  }
+  catch (error) {
+    console.error('Error:', error);
+    return null;
+  }
+
+}
+
+// [ ] -------------------------------------- END HOST BUTTON ---------------------------------------- //
+
 // [ ] -------------------------------------- POPUP WINDOW ------------------------------------------ //
-function showPopup(e) {
+function showPopup(e, text = "None") {
   var popup = document.getElementById("myPopup");
-  popup.textContent = e.getAttribute('title'); 
+  if (text === "None") {
+    popup.textContent = e.getAttribute('title'); 
+  } else {
+    popup.textContent = text;
+  }
   popup.classList.add("show");
   fadeIn(popup);
 }

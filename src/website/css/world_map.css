@@ -7,6 +7,7 @@
   width: 100%;
   height: 100%;
   float: left;
+  position: relative;
 }
 
 svg rect {
@@ -19,12 +20,24 @@ svg rect {
   stroke-width: 1;
 }
 
+.country-summer{
+  fill: #dfdf7f;
+  stroke: #2A2C39; 
+  stroke-width: 1;
+}
+
+.country-winter{
+  fill: #00d9ff;
+  stroke: #2A2C39; 
+  stroke-width: 1;
+}
+
 .country-over{
   fill: #4B5358; /*Change color when mouse over*/
 }
 
 .country-selected{
-  fill: #ae4d5a;   /* change colour when country selected */
+  fill: #df2841;   /* change colour when country selected */
   stroke-width: 2;
 }
 
