@@ -59,6 +59,12 @@ function zoomed() {
   countriesGroup
     .attr("transform", "translate(" + [translate.x, translate.y] + ")scale(" + translate.k + ")")
     ;
+  
+  // refresh the host countries position
+  if (isHostButtonClicked && currentCountryISO3 === null) {
+    displayHostCountries();
+  }
+  
 }
 
 function unZoomed() {
@@ -124,6 +130,7 @@ function boxZoom(box, centroid, paddingPercentage) {
       zoom.transform,
       d3.zoomIdentity.translate(translateX, translateY).scale(zoomFactor)
     );
+  
 }
 
 function boxUnZoom() {
@@ -213,6 +220,10 @@ function clickCountry(d, i) {
       this.zoomed = false;
     });
     clickedCountry.zoomed = true;
+    isHostButtonClicked = false;
+    // hide the host button
+    hostButton.style.display = "none";
+    hideHostCountriesLabel();
   } else {
     currentCountryISO3 = null;
     current_country_name = null;
@@ -254,9 +265,8 @@ $(window).resize(function () {
     console.log("Resizing country info");
     displayCountryInfo(selectedCountry, selectedCountryISO3); // You need to get country and countryCodeISO3 from somewhere
   }
-  // Resize font size of each element in the country info panel
-  
 
+  displayHostCountries();
 
   initiateZoom();
 });
@@ -281,7 +291,7 @@ d3.json(dataPath,
     countriesGroup = addBackground(countriesGroup);
     createCountries(json, path, countriesGroup);
     initiateZoom();
-    currentSeason = window.getOlympicSeason();
+    currentSeason = window.getOlympicSeason();    
   }
 );
 
@@ -343,10 +353,6 @@ function displayCountryInfo(country, countryCodeISO3) {
 
   // display best athlete below the medals
   displayBestAthlete(countryCodeISO3, country);
-
-  isHostButtonClicked = false;
-  // hide the host button
-  hostButton.style.display = "none";
 }
 
 function hideCountryInfo() {
@@ -757,30 +763,54 @@ function displayHostCountries() {
   if (isHostButtonClicked) {
     fetchHostData().then(function (result) {
       if (result !== null) {
-        // console.log("Host data:", result);
         // Highlight the host countries on the map
         d3.selectAll(".country").classed("country-selected", false);
         d3.selectAll(".country").classed("country-over", false);
         d3.selectAll(".country").each(function () {
           this.zoomed = false;
         });
+
         for (let i = 0; i < result.length; i++) {
           let hostCountry = result[i];
           d3.select("#countryName" + hostCountry.country_3_letter_code).classed("country-selected", true);
         }
-       
+        hideHostCountriesLabel();
         // Display the game names above each host country, there can be multiple games in the same country
         d3.selectAll(".country").each(function () {
           let country = d3.select(this);
-          let countryName = country.attr("title");
           let countryCode = country.attr("id").substring(11);
           let hostGames = result.filter(d => d.country_3_letter_code === countryCode);
           if (hostGames.length > 0) {
             let gameNames = hostGames.map(d => d.game_name);
-            let gameNamesString = gameNames.join(", ");
-            // // display a popup with the game names
-            showHostPopup(country, gameNamesString);
-            // write the game names above the centroid of the country
+            let gameNamesString = gameNames.join(",\n");
+        
+            let geoCentroid = d3.geoCentroid(country.datum());
+            let screenCentroid = projection(geoCentroid);
+        
+            // Get the current zoom and pan transformation
+            let transform = d3.zoomTransform(svg.node());
+        
+            // Apply the transformation to the centroid coordinates
+            let transformedCentroid = transform.apply(screenCentroid);
+        
+            svg.append("rect")
+              .attr("x", transformedCentroid[0] - gameNamesString.length * 5 / 2 - 10)
+              .attr("y", transformedCentroid[1] - 20)
+              .attr("width", gameNamesString.length * 5 + 20)
+              .attr("height", 30)
+              .attr("rx", 15)
+              .attr("ry", 15)
+              .attr("fill", "rgba(0, 0, 0, 0.7)")
+              .classed("host-background", true);
+
+            svg.append("text")
+              .attr("x", transformedCentroid[0])
+              .attr("y", transformedCentroid[1])
+              .attr("text-anchor", "middle")
+              .attr("font-size", "10px")
+              .attr("fill", "white")
+              .text(gameNamesString)
+              .classed("host-text", true);
           }
         });
         hostButton.textContent = "Hide host countries";
@@ -795,43 +825,15 @@ function displayHostCountries() {
       this.zoomed = false;
     });
     hostButton.textContent = "Show host countries";
-    hideHostPopup();
+    // remove the game names above the host countries
+    hideHostCountriesLabel();
   }
 }
 
-function showHostPopup(country, text) {
-  var popupContainer = document.createElement("div");
-  popupContainer.classList.add("host-popup");
-  var popupText = document.createElement("span");
-  popupText.classList.add("host-popuptext");
-  popupText.textContent = text;
-  popupContainer.appendChild(popupText);
-
-  var centroid = path.centroid(country.data()[0]);
-  var x = centroid[0];
-  var y = centroid[1];
-
-  var div = document.getElementById("world-map-container");
-  var divRect = div.getBoundingClientRect();
-
-  x -= divRect.left;
-  y += divRect.top;
-
-  console.log("Centroid:", x, y);
-
-  popupContainer.style.left = x + "px";
-  popupContainer.style.top = y + "px";
-  document.body.appendChild(popupContainer);
+function hideHostCountriesLabel() {
+  d3.selectAll(".host-background").remove();
+  d3.selectAll(".host-text").remove();
 }
-
-
-function hideHostPopup() {
-  var popup = document.getElementsByClassName("host-popup");
-  for (let i = popup.length - 1; i >= 0; i--) {
-    popup[i].remove();
-  }
-}
-
 
 
 async function fetchHostData() {

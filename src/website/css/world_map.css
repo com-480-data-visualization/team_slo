@@ -7,6 +7,7 @@
   width: 100%;
   height: 100%;
   float: left;
+  position: relative;
 }
 
 svg rect {
@@ -74,6 +75,7 @@ svg rect {
 
 .host-popuptext {
   /* Additional styles for the text inside the popup */
+  position: relative;
   color: black;
   font-size: 12px;
 }
