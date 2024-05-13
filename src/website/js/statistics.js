@@ -1,3 +1,29 @@
+window.onload = function() {
+  // Get the select element
+  var games = ['Summer', 'Winter'];
+  var selectElement = document.getElementById('game-select');
+
+  // Loop through the array of games
+  for (var i = 0; i < games.length; i++) {
+    // Create a new option element
+    var option = document.createElement('option');
+
+    // Set the value and text of the option
+    option.value = games[i];
+    option.text = games[i];
+
+    // Add the option to the select element
+    selectElement.add(option);
+  }
+}
+
+
+
+
+
+var games_of_interest = []
+
+
 async function generateChart(season_actual) {
   try {
     // Fetch CSV data
@@ -21,6 +47,10 @@ async function generateChart(season_actual) {
 
       if (season !== season_actual) {
         return;
+      }
+
+      if (!games_of_interest.includes(gameName)) {
+        games_of_interest.push(gameName);
       }
 
       // Add game name to labels if not already present
@@ -84,9 +114,12 @@ switchElement.addEventListener('change', function() {
     season_actual = newSeason;
     console.log("Season changed to", season_actual);
     generateChart(season_actual); // Call the function to generate the chart
+    // And call the function to update the selection choice possibility according the season
+    var selectElement = document.getElementById('game-select');
   }
 });
 
 // Call the function initially to generate the chart for the current season
 generateChart(season_actual);
+
   

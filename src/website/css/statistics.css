@@ -1,6 +1,18 @@
+#parent-container {
+  display: flex; /* Use flexbox for layout */
+}
+
 #myDiv {
-  background-color: white; 
+  background-color: rgb(255, 254, 254);
+  flex-grow: 1; /* Allow #myDiv to take up the remaining space */
 }
-.content-block {
-  background-color: white; /* Change this to whatever color you like */
+
+#container {
+  display: flex; /* Use flexbox for layout */
+  padding-left: 10px; /* Add some padding to the left */
+  padding-right: 200px; /* Add some padding to the right */
+  height: 60vh;
+  padding-bottom: 50px;
+  flex-grow: 1; /* Allow #container to take up the remaining space */
 }
+

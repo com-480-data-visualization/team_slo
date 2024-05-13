@@ -14,6 +14,7 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- Load d3.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 </head>
 <body>
     <div class="topnav">
@@ -26,12 +27,22 @@
             <span class="slider round"></span>
         </label>
     </div>
-    <div class="content-block">
-        <h1>Some Statistics</h1>
-        <p>Here are some statistics about the Olympics.</p>
-    </div>
-    <div id="myDiv">
-        <div id="chart"></div>
+    <div id="parent-container">
+        <div class="content-block">
+            <h1>Some Statistics</h1>
+            <p>Here are some statistics about the Olympics.</p>
+        </div>
+        <div id="myDiv">
+            <div id="chart"></div>
+        </div>
+        <div id="container">
+            <div id="control-panel">
+                <label for="game-select">Select a Game:</label>
+                <select id="game-select">
+                <!-- Options will be added here dynamically -->
+                </select>
+            </div>
+        </div>
     </div>
     <script type="text/javascript" src="./js/switch.js"></script>
     <script src="./js/statistics.js"></script>
