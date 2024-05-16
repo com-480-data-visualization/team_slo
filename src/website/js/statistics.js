@@ -1,30 +1,46 @@
-window.onload = function() {
+// Function to load the list of games
+async function loadGamesList(season) {
+  // Fetch CSV data
+  const response = await fetch('../../data/olympic_results_join.csv');
+  const csvData = await response.text();
+
+  // Parse CSV data
+  const parsedData = d3.csvParse(csvData);
+
+  // Get the unique game names
+  var games = [...new Set(parsedData.map(row => ({ game_name: row.game_name, season: row.game_season })))];
+
   // Get the select element
-  var games = ['Summer', 'Winter'];
   var selectElement = document.getElementById('game-select');
 
-  // Loop through the array of games
+  // Clear the select element
+  selectElement.innerHTML = '';
+
   for (var i = 0; i < games.length; i++) {
-    // Create a new option element
-    var option = document.createElement('option');
+    // Check if the game's season matches the actual season
+    var existingOption = selectElement.querySelector(`option[value="${games[i].game_name}"]`);
+    if (existingOption) continue;
+    if (games[i].season === season) {
+      // Create a new option element
+      var option = document.createElement('option');
 
-    // Set the value and text of the option
-    option.value = games[i];
-    option.text = games[i];
+      // Set the value and text of the option
+      option.value = games[i].game_name;
+      option.text = games[i].game_name;
 
-    // Add the option to the select element
-    selectElement.add(option);
+      // Add the option to the select element
+      selectElement.add(option);
+    }
   }
+
+  // Display the wheel chart for the first game of the new season
+  displayWheelChart(season, selectElement.options[0].value);
 }
 
 
 
 
-
-var games_of_interest = []
-
-
-async function generateChart(season_actual) {
+async function displayWheelChart(season_actual, game_of_interest) {
   try {
     // Fetch CSV data
     const response = await fetch('../../data/olympic_results_join.csv');
@@ -45,13 +61,18 @@ async function generateChart(season_actual) {
       const season = row.game_season;
       const year = row.game_year;
 
-      if (season !== season_actual) {
+      if (game_of_interest !== gameName) {
         return;
       }
+      console.log(game_of_interest, gameName);
 
-      if (!games_of_interest.includes(gameName)) {
-        games_of_interest.push(gameName);
+      console.log(season_actual, season);
+
+      if (season !== season_actual) {
+        console.log("Season mismatch");
+        return;
       }
+      console.log(season_actual, season);
 
       // Add game name to labels if not already present
       if (!labels.includes(gameName)) {
@@ -60,18 +81,14 @@ async function generateChart(season_actual) {
       }
 
       // Add discipline title to labels if not already present
-      const uniqueDisciplineTitle = `${year}-${disciplineTitle}`;
-      if (!labels.includes(uniqueDisciplineTitle)) {
-        labels.push(uniqueDisciplineTitle);
+      if (!labels.includes(disciplineTitle)) {
+        labels.push(disciplineTitle);
         parents.push(gameName);
       }
 
-      // Add event title to labels if not already present
-      const uniqueEventTitle = `${uniqueDisciplineTitle}-${eventTitle}`;
-      if (!labels.includes(uniqueEventTitle)) {
-        labels.push(uniqueEventTitle);
-        parents.push(uniqueDisciplineTitle);
-      }
+      labels.push(eventTitle);
+      parents.push(disciplineTitle);
+
     });
 
     // Create sunburst data object
@@ -107,19 +124,51 @@ var switchElement = document.getElementById('season-switch');
 // Determine the initial state of the switch button
 var season_actual = switchElement.checked ? 'Winter' : 'Summer';
 
-switchElement.addEventListener('change', function() {
+switchElement.addEventListener('change', async function() {
   var newSeason = switchElement.checked ? 'Winter' : 'Summer';
   console.log(newSeason);
-  if (newSeason !== season_actual) {
-    season_actual = newSeason;
-    console.log("Season changed to", season_actual);
-    generateChart(season_actual); // Call the function to generate the chart
-    // And call the function to update the selection choice possibility according the season
-    var selectElement = document.getElementById('game-select');
-  }
+
+  season_actual = newSeason;
+  await loadGamesList(season_actual);
+  console.log("Season changed to", season_actual);
+
+  // Get the first game of the new season
+  var firstGame = document.getElementById('game-select').options[0].value;
+
+  // Display the wheel chart for the first game of the new season
+  displayWheelChart(season_actual, firstGame);
+  
 });
 
-// Call the function initially to generate the chart for the current season
-generateChart(season_actual);
 
-  
+window.onload = async function() {
+  // Determine the initial state of the switch button
+  var switchElement = document.getElementById('season-switch');
+  var season_actual = switchElement.checked ? 'Winter' : 'Summer';
+
+  await loadGamesList(season_actual);
+
+  // Get the first game of the current season
+  var firstGame = document.getElementById('game-select').options[0].value;
+
+  // Display the wheel chart for the first game of the current season
+  displayWheelChart(season_actual, firstGame);
+};
+
+
+// Get the select element
+var selectElement = document.getElementById('game-select');
+
+// Add an event listener to the select element
+selectElement.addEventListener('change', function() {
+  var switchElement = document.getElementById('season-switch');
+  var season_actual = switchElement.checked ? 'Winter' : 'Summer';
+  // Get the selected game
+  var selectedGame = selectElement.value;
+  console.log("Season is", season_actual);
+  // Update the wheel chart
+  displayWheelChart(season_actual, selectedGame);
+});
+
+
+

@@ -1,18 +1,36 @@
 #parent-container {
-  display: flex; /* Use flexbox for layout */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 }
 
 #myDiv {
   background-color: rgb(255, 254, 254);
-  flex-grow: 1; /* Allow #myDiv to take up the remaining space */
+  flex-grow: 1;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 }
 
+#plot-container {
+  background-color: rgb(26, 183, 26);
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+
 #container {
-  display: flex; /* Use flexbox for layout */
-  padding-left: 10px; /* Add some padding to the left */
-  padding-right: 200px; /* Add some padding to the right */
-  height: 60vh;
-  padding-bottom: 50px;
-  flex-grow: 1; /* Allow #container to take up the remaining space */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 2px; /* Reduce padding */
+  height: 5vh; /* Reduce height */
+  width: 20vw; /* Add width */
+  flex-grow: 1;
+  border: 2px solid rgb(253, 252, 252); /* Add a border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: rgb(117, 128, 8);
+  margin-bottom: 50px; /* Add margin at the bottom */
 }
 
