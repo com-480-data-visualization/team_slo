@@ -37,7 +37,13 @@ async function loadGamesList(season) {
   displayWheelChart(season, selectElement.options[0].value);
 }
 
-
+function generateCustomdata(gold, silver, bronze) {
+  if (gold !== undefined && silver !== undefined && bronze !== undefined) {
+    return [`Gold: ${gold}<br> Silver: ${silver}<br> Bronze: ${bronze}`];
+  } else {
+    return [""];
+  }
+}
 
 
 async function displayWheelChart(season_actual, game_of_interest) {
@@ -52,58 +58,62 @@ async function displayWheelChart(season_actual, game_of_interest) {
     // Initialize arrays for labels, parents, and values
     const labels = [];
     const parents = [];
+    const medalists = [];
+    const customdata = [];
 
     // Iterate over the parsed data to create the labels, parents, and values arrays
-    parsedData.forEach(row => {
-      const gameName = row.game_name;
-      const disciplineTitle = row.discipline_title;
-      const eventTitle = row.event_title;
-      const season = row.game_season;
-      const year = row.game_year;
+// Iterate over the parsed data to create the labels, parents, and values arrays
+parsedData.forEach(row => {
+  const gameName = row.game_name;
+  const disciplineTitle = row.discipline_title;
+  const eventTitle = row.event_title;
+  const season = row.game_season;
+  const year = row.game_year;
+  const gold = row.GOLD;
+  const silver = row.SILVER;
+  const bronze = row.BRONZE;
 
-      if (game_of_interest !== gameName) {
-        return;
-      }
-      console.log(game_of_interest, gameName);
+  if (game_of_interest !== gameName) {
+    return;
+  }
 
-      console.log(season_actual, season);
+  if (season !== season_actual) {
+    return;
+  }
 
-      if (season !== season_actual) {
-        console.log("Season mismatch");
-        return;
-      }
-      console.log(season_actual, season);
+  // Add game name to labels if not already present
+  if (!labels.includes(gameName)) {
+    labels.push(gameName);
+    parents.push('');
+    customdata.push([""]); // Game name nodes don't have medalists
+  }
 
-      // Add game name to labels if not already present
-      if (!labels.includes(gameName)) {
-        labels.push(gameName);
-        parents.push('');
-      }
+  // Add discipline title to labels if not already present
+  if (!labels.includes(disciplineTitle)) {
+    labels.push(disciplineTitle);
+    parents.push(gameName);
+    customdata.push([""]); // Discipline title nodes don't have medalists
+  }
 
-      // Add discipline title to labels if not already present
-      if (!labels.includes(disciplineTitle)) {
-        labels.push(disciplineTitle);
-        parents.push(gameName);
-      }
+  labels.push(eventTitle);
+  parents.push(disciplineTitle);
+  customdata.push(generateCustomdata(gold, silver, bronze)); // Event title nodes have medalists // Event title nodes have medalists
+});
 
-      labels.push(eventTitle);
-      parents.push(disciplineTitle);
-
-    });
-
-    // Create sunburst data object
-    const data = [{
-      type: 'sunburst',
-      labels: labels,
-      parents: parents,
-      outsidetextfont: { size: 20, color: '#377eb8' },
-      leaf: { opacity: 0.4 },
-      marker: { line: { width: 2 } },
-      maxdepth: 2, // Show only the gameName nodes initially
-      branchvalues: 'total', // Size segments based on total values
-      textinfo: 'label',
-      hovertemplate: '%{label}<extra></extra>', // Only display label in hover text
-    }];
+// Create sunburst data object
+const data = [{
+  type: 'sunburst',
+  labels: labels,
+  parents: parents,
+  customdata: customdata,
+  outsidetextfont: { size: 20, color: '#377eb8' },
+  leaf: { opacity: 0.4 },
+  marker: { line: { width: 2 } },
+  maxdepth: 2, // Show only the gameName nodes initially
+  branchvalues: 'total', // Size segments based on total values
+  textinfo: 'label',
+  hovertemplate: '%{label}<br>%{customdata[0]}<extra></extra>', // Display medalists in hover text
+}];
 
     // Define layout
     const layout = {
