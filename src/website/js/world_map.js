@@ -326,6 +326,7 @@ function displayCountryInfo(country, countryCodeISO3) {
     var flagAndNameContainer = document.createElement("div");
     flagAndNameContainer.style.display = "flex";
     flagAndNameContainer.style.justifyContent = "center"; // Align items horizontally in the center
+    flagAndNameContainer.style.marginTop = "5px";
 
     if (result !== null) {
       flagAndNameContainer.appendChild(result);
@@ -872,24 +873,37 @@ function hidePopup() {
 
 function movePopup(e) {
   var popup = document.getElementById("myPopup");
-  var div = document.getElementById("world-map-container"); 
 
-  var divRect = div.getBoundingClientRect();
-
+  // If the popup does not have the "show" class, show the popup
   if (!popup.classList.contains("show")) {
     showPopup(e.target);
   }
 
-  if (e) {
-    var x = e.clientX - divRect.left;
-    var y = e.clientY - divRect.top;
 
-    popup.style.left = `${x - 80}px`;
-    popup.style.top = `${y + 330}px`;
-    popup.style.display = 'block';
+  if (e) {
+      // Get the mouse cursor position
+      var x = e.clientX;
+      var y = e.clientY;  
+      
+      var offsetX = -80;
+      var offsetY = -60;
+
+      x += offsetX;
+      y += offsetY;
+
+      // Calculate the adjusted positions
+      popup.style.left = `${x}px`;
+      popup.style.top = `${y}px`;
+
+      // console.log('mouse:', x, y);
+      // console.log(popup.style.left, popup.style.top);
+
+      // Display the popup
+      popup.style.display = 'block';
   } else {
-    popup.style.display = 'none';
-    popup.textContent = '';
+      // If the event is not provided, hide the popup
+      popup.style.display = 'none';
+      popup.textContent = '';
   }
 }
 
