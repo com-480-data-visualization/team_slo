@@ -39,7 +39,7 @@ async function loadGamesList(season) {
 
 function generateCustomdata(gold, silver, bronze) {
   if (gold !== undefined && silver !== undefined && bronze !== undefined) {
-    return [`Gold: ${gold}<br> Silver: ${silver}<br> Bronze: ${bronze}`];
+    return [`🥇 Gold: ${gold}<br> 🥈 Silver: ${silver}<br> 🥉 Bronze: ${bronze}`];
   } else {
     return [""];
   }
