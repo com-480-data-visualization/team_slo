@@ -27,7 +27,7 @@ svg rect {
 }
 
 .country-winter{
-  fill: #00d9ff;
+  fill: #012aa5;
   stroke: #2A2C39; 
   stroke-width: 1;
 }
@@ -63,4 +63,26 @@ svg rect {
   position: absolute;
   left: 0;
   text-align: center;
+}
+
+#host-button {
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+  z-index: 999; 
+  padding: 12px 24px;
+  background-color: #b90000; 
+  color: white; 
+  border: none; 
+  border-radius: 10px; 
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#host-button:hover {
+  background-color: #600202; 
+  transform: translateY(-2px); 
 }
