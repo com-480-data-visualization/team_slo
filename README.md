@@ -48,6 +48,9 @@ Our project introduces a novel approach that sets it apart from other related wo
 ## Milestone 3 (31st May, 5pm)
 
 **80% of the final grade**
+[Website for Milestone 3](https://com-480-data-visualization.github.io/team_slo) \
+[Link to the Process Book](./documents/data_visualization_m2_report.pdf)
+[Link to Screencast](./document/data_visualization_m3.mp4)
 
 
 ## Late policy
