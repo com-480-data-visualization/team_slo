@@ -1,42 +1,33 @@
-// Function to load the list of games
+
+// Load the options for the game select element
 async function loadGamesList(season) {
-  // Fetch CSV data
   const response = await fetch('../../data/olympic_results_join.csv');
   const csvData = await response.text();
 
-  // Parse CSV data
   const parsedData = d3.csvParse(csvData);
 
-  // Get the unique game names
+  // unique game names
   var games = [...new Set(parsedData.map(row => ({ game_name: row.game_name, season: row.game_season })))];
 
-  // Get the select element
   var selectElement = document.getElementById('game-select');
-
-  // Clear the select element
   selectElement.innerHTML = '';
 
+  // Add an option for each game in the current season
   for (var i = 0; i < games.length; i++) {
-    // Check if the game's season matches the actual season
     var existingOption = selectElement.querySelector(`option[value="${games[i].game_name}"]`);
     if (existingOption) continue;
     if (games[i].season === season) {
-      // Create a new option element
       var option = document.createElement('option');
-
-      // Set the value and text of the option
       option.value = games[i].game_name;
       option.text = games[i].game_name;
-
-      // Add the option to the select element
       selectElement.add(option);
     }
   }
 
-  // Display the wheel chart for the first game of the new season
   displayWheelChart(season, selectElement.options[0].value);
 }
 
+// Generate the display of the medals 
 function generateCustomdata(gold, silver, bronze) {
   if (gold !== undefined && silver !== undefined && bronze !== undefined) {
     return [`🥇 Gold: ${gold}<br> 🥈 Silver: ${silver}<br> 🥉 Bronze: ${bronze}`];
@@ -45,138 +36,116 @@ function generateCustomdata(gold, silver, bronze) {
   }
 }
 
-
+// Display the wheel chart
 async function displayWheelChart(season_actual, game_of_interest) {
   try {
-    // Fetch CSV data
     const response = await fetch('../../data/olympic_results_join.csv');
     const csvData = await response.text();
-
-    // Parse CSV data
     const parsedData = d3.csvParse(csvData);
 
-    // Initialize arrays for labels, parents, and values
     const labels = [];
     const parents = [];
-    const medalists = [];
     const customdata = [];
 
-    // Iterate over the parsed data to create the labels, parents, and values arrays
-// Iterate over the parsed data to create the labels, parents, and values arrays
-parsedData.forEach(row => {
-  const gameName = row.game_name;
-  const disciplineTitle = row.discipline_title;
-  const eventTitle = row.event_title;
-  const season = row.game_season;
-  const year = row.game_year;
-  const gold = row.GOLD;
-  const silver = row.SILVER;
-  const bronze = row.BRONZE;
+  parsedData.forEach(row => {
+    const gameName = row.game_name;
+    const disciplineTitle = row.discipline_title;
+    const eventTitle = row.event_title;
+    const season = row.game_season;
+    const gold = row.GOLD;
+    const silver = row.SILVER;
+    const bronze = row.BRONZE;
 
-  if (game_of_interest !== gameName) {
-    return;
-  }
+    if (game_of_interest !== gameName) {
+      return;
+    }
 
-  if (season !== season_actual) {
-    return;
-  }
+    if (season !== season_actual) {
+      return;
+    }
+    // Add Game Name node
+    if (!labels.includes(gameName)) {
+      labels.push(gameName);
+      parents.push('');
+      customdata.push([""]); 
+    }
 
-  // Add game name to labels if not already present
-  if (!labels.includes(gameName)) {
-    labels.push(gameName);
-    parents.push('');
-    customdata.push([""]); // Game name nodes don't have medalists
-  }
+    // Add Discipline Title node
+    if (!labels.includes(disciplineTitle)) {
+      labels.push(disciplineTitle);
+      parents.push(gameName);
+      customdata.push([""]); 
+    }
 
-  // Add discipline title to labels if not already present
-  if (!labels.includes(disciplineTitle)) {
-    labels.push(disciplineTitle);
-    parents.push(gameName);
-    customdata.push([""]); // Discipline title nodes don't have medalists
-  }
+    // Add Event Title node
+    labels.push(eventTitle);
+    parents.push(disciplineTitle);
+    customdata.push(generateCustomdata(gold, silver, bronze)); 
+  });
 
-  labels.push(eventTitle);
-  parents.push(disciplineTitle);
-  customdata.push(generateCustomdata(gold, silver, bronze)); // Event title nodes have medalists // Event title nodes have medalists
-});
 
-// Create sunburst data object
-const data = [{
-  type: 'sunburst',
-  labels: labels,
-  parents: parents,
-  customdata: customdata,
-  outsidetextfont: { size: 20, color: '#377eb8' },
-  leaf: { opacity: 0.4 },
-  marker: { line: { width: 2 } },
-  maxdepth: 2, // Show only the gameName nodes initially
-  branchvalues: 'total', // Size segments based on total values
-  textinfo: 'label',
-  hovertemplate: '%{label}<br>%{customdata[0]}<extra></extra>', // Display medalists in hover text
-}];
+    const data = [{
+      type: 'sunburst',
+      labels: labels,
+      parents: parents,
+      customdata: customdata,
+      outsidetextfont: { size: 20, color: '#377eb8' },
+      leaf: { opacity: 0.4 },
+      marker: { line: { width: 2 } },
+      maxdepth: 2, 
+      branchvalues: 'total', 
+      textinfo: 'label',
+      hovertemplate: '%{label}<br>%{customdata[0]}<extra></extra>', // Display medalists in hover text
+    }];
 
-    // Define layout
+
     const layout = {
-      margin: { l: 100, r: 100, b: 200, t: 50 },
-      width: 1000, // Adjust this percentage as needed
-      height: 800 // Adjust this percentage as needed
+      margin: { l: 10, r: 10, b: 10, t: 10 },
+      width: 800, 
+      height: 800 
     };
 
-    // Plot sunburst chart
     Plotly.newPlot('myDiv', data, layout);
   } catch (error) {
     console.error('Error:', error);
   }
 }
 
-var switchElement = document.getElementById('season-switch');
 
-// Determine the initial state of the switch button
+// Manage the season switch
+var switchElement = document.getElementById('season-switch');
 var season_actual = switchElement.checked ? 'Winter' : 'Summer';
 
 switchElement.addEventListener('change', async function() {
   var newSeason = switchElement.checked ? 'Winter' : 'Summer';
-  console.log(newSeason);
-
   season_actual = newSeason;
   await loadGamesList(season_actual);
-  console.log("Season changed to", season_actual);
-
-  // Get the first game of the new season
   var firstGame = document.getElementById('game-select').options[0].value;
 
-  // Display the wheel chart for the first game of the new season
   displayWheelChart(season_actual, firstGame);
   
 });
 
-
+// When the page is loaded
 window.onload = async function() {
-  // Determine the initial state of the switch button
   var switchElement = document.getElementById('season-switch');
   var season_actual = switchElement.checked ? 'Winter' : 'Summer';
 
   await loadGamesList(season_actual);
 
-  // Get the first game of the current season
   var firstGame = document.getElementById('game-select').options[0].value;
 
-  // Display the wheel chart for the first game of the current season
   displayWheelChart(season_actual, firstGame);
 };
 
 
-// Get the select element
+// Manage the selection element
 var selectElement = document.getElementById('game-select');
 
-// Add an event listener to the select element
 selectElement.addEventListener('change', function() {
   var switchElement = document.getElementById('season-switch');
   var season_actual = switchElement.checked ? 'Winter' : 'Summer';
-  // Get the selected game
   var selectedGame = selectElement.value;
-  console.log("Season is", season_actual);
-  // Update the wheel chart
   displayWheelChart(season_actual, selectedGame);
 });
 
