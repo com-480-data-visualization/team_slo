@@ -33,11 +33,11 @@ svg rect {
 }
 
 .country-over{
-  fill: #4B5358; /*Change color when mouse over*/
+  fill: #4B5358; 
 }
 
 .country-selected{
-  fill: #df2841;   /* change colour when country selected */
+  fill: #df2841;  
   stroke-width: 2;
 }
 
@@ -54,8 +54,8 @@ svg rect {
   color: white;
   display: flex;
   position: relative;
-  justify-content: center; /* Center horizontally */
-  align-items: flex-start; /* Align items to the top */
+  justify-content: center;
+  align-items: flex-start; 
 }
 
 .country-stats {
@@ -79,7 +79,7 @@ svg rect {
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer; 
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 #host-button:hover {
