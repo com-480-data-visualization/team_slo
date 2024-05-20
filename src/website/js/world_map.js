@@ -16,7 +16,7 @@ const dataPath = '../../data/world_map.json'
 
 //* ------------------------------ VARIABLES ---------------------------------------- // 
 const w = 3000; // width of the map
-const h = 1250; // height of the map
+const h = 1500; // height of the map
 
 var minZoom;
 var maxZoom;
@@ -51,7 +51,12 @@ var path = d3
 //* ------------------------------ FUNCTIONS ---------------------------------------- //
 
 //[ ] --------------------------- ZOOM FUNCTIONS ----------------------------------- //
+
 function zoomed() {
+  /**
+   * Function to zoom in on the map
+   */
+
   var translate = d3
     .event
     .transform
@@ -68,6 +73,10 @@ function zoomed() {
 }
 
 function unZoomed() {
+  /**
+   * Function to unzoom the map
+   */
+
   var translate = d3
     .zoomIdentity
     ;
@@ -77,6 +86,10 @@ function unZoomed() {
 }
 
 function initiateZoom() {
+  /**
+   * Function to initiate the zoom
+   */
+
   minZoom = Math.max($("#map-holder").width() / w, $("#map-holder").height() / h);
   maxZoom = 20 * minZoom;
   zoom
@@ -92,6 +105,14 @@ function initiateZoom() {
 
 
 function boxZoom(box, centroid, paddingPercentage) {
+  /**
+   * Function to zoom in on a box
+   * 
+   * @param {Array} box - The box to zoom in on
+   * @param {Array} centroid - The centroid of the box
+   * @param {number} paddingPercentage - The padding percentage
+   */
+
   const [minPoint, maxPoint] = box;
 
   zoomWidth = Math.abs(minPoint[0] - maxPoint[0]);
@@ -134,6 +155,9 @@ function boxZoom(box, centroid, paddingPercentage) {
 }
 
 function boxUnZoom() {
+  /**
+   * Call default zoom function
+  */
   boxZoom([[0, 0], [w, h]], [w / 2, h / 2], 0);
 }
 
@@ -141,6 +165,12 @@ function boxUnZoom() {
 
 // [ ] ---------------------------- BACKGROUND FUNCTIONS --------------------------------- //
 function addBackground(countriesGroup) {
+  /**
+   * Function to add a background to the map
+   * 
+   * @param {Object} countriesGroup - The group of countries
+   */
+
   // add a background rectangle
   countriesGroup
     .append("rect")
@@ -158,6 +188,14 @@ function addBackground(countriesGroup) {
 // [ ] ----------------------- CREATE COUNTRIES FUNCTIONS ----------------------------- //
 
 function createCountries(json, path, countriesGroup) {
+  /**
+   * Function to create the countries on the map
+   * 
+   * @param {Object} json - The JSON data of the countries
+   * @param {Object} path - The path object
+   * @param {Object} countriesGroup - The group of countries
+   */
+
   const season = window.getOlympicSeason();
   countries = countriesGroup
     .selectAll("path")
@@ -179,14 +217,20 @@ function createCountries(json, path, countriesGroup) {
 }
 
 function createCountryActions(countries) {
+  /**
+   * Function to create the actions for the countries
+   * 
+   * @param {Object} countries - The countries data
+   */
+
   countries
-    .on("mouseover", function (d, i) {
+    .on("mouseover", function (d) {
       d3.select("#countryLabel" + d.properties.iso_a3).style("display", "block");
       d3.select(this).classed("country-over", true);
       d3.select(this).style("cursor", "pointer");
       showPopup(this);
     })
-    .on("mouseout", function (d, i) {
+    .on("mouseout", function (d) {
       hidePopup(this);
       d3.select("#countryLabel" + d.properties.iso_a3).style("display", "none");
       if (!this.zoomed) {
@@ -194,13 +238,19 @@ function createCountryActions(countries) {
       }
     }
     )
-    .on("mousemove", function (d, i) {
+    .on("mousemove", function () {
       movePopup(d3.event);
     })
     .on("click", clickCountry);
 }
 
-function clickCountry(d, i) {
+function clickCountry(d) {
+  /**
+   * Function to handle the click event on a country
+   * 
+   * @param {Object} d - The country data
+   */
+
   var clickedCountry = this;
   var isCountryZoomed = clickedCountry.zoomed;
   currentCountryISO3 = d.properties.iso_a3;
@@ -212,7 +262,6 @@ function clickCountry(d, i) {
     // reduce width of the map to 50%
     displayCountryInfo(d.properties.name, d.properties.iso_a3);
     // resize the width of the svg
-    // console.log(mapWidth);
     svg.attr("width", $("#map-holder").width());
     boxZoom(path.bounds(d), [path.centroid(d)[0], path.centroid(d)[1]], 20);
     // put all other countries to false
@@ -298,6 +347,14 @@ d3.json(dataPath,
 //* ----------------------------- CREATE COUNTRY INFO PANEL ------------------------------- //
 
 function displayCountryInfo(country, countryCodeISO3) {
+  /**
+   * Function to display the country info panel
+   * 
+   * @param {string} country - Name of the country
+   * @param {string} countryCodeISO3 - ISO 3166-1 alpha-3 code of the country
+   * 
+   */
+
   console.log("displaying country info");
   var countryInfo = document.getElementById("country-info");
   var map = document.getElementById("map-holder");
@@ -325,7 +382,7 @@ function displayCountryInfo(country, countryCodeISO3) {
     // Create a container for the flag and country name
     var flagAndNameContainer = document.createElement("div");
     flagAndNameContainer.style.display = "flex";
-    flagAndNameContainer.style.justifyContent = "center"; // Align items horizontally in the center
+    flagAndNameContainer.style.justifyContent = "center";
     flagAndNameContainer.style.marginTop = "5px";
 
     if (result !== null) {
@@ -357,11 +414,19 @@ function displayCountryInfo(country, countryCodeISO3) {
 }
 
 function hideCountryInfo() {
+  /**
+   * Function to hide the country info panel
+   */
+
   console.log("hiding country info");
+
+  // Reset selected country
+  selectedCountry = null;
+
   var countryInfo = document.getElementById("country-info");
   var map = document.getElementById("map-holder");
 
-  // Reset 
+  // Reset the width of the map and country info panel
   map.style.width = "100%";
   countryInfo.style.width = "0";
 
@@ -369,10 +434,20 @@ function hideCountryInfo() {
   countryInfo.innerHTML = "";
 
   displayHostCountries();
+
+  // Show the host button
   hostButton.style.display = "block";
 }
 
 async function getFlag(countryCodeISO3) {
+  /**
+   * Function to fetch the flag of a country
+   * 
+   * @param {string} countryCodeISO3 - ISO 3166-1 alpha-3 code of the country
+   * 
+   * @returns {HTMLImageElement} - The flag image element
+   */
+
   try {
     // Fetch country data
     const response = await fetch('https://restcountries.com/v3.1/all');
@@ -394,7 +469,6 @@ async function getFlag(countryCodeISO3) {
     // Create flag image element
     const flagImage = document.createElement('img');
     flagImage.src = URL.createObjectURL(flagDataURL);
-    // flagImage.alt = `${countryName} flag`;
     flagImage.width = 100;
     var countryInfo = document.getElementById("country-info");
     flagImage.height = $(countryInfo).height() * 0.1;
@@ -430,7 +504,6 @@ function displayMedals(countryCodeISO3, country_name) {
 
   var medalsFontSize = $(countryInfo).height() * 0.05 + "px";
 
-  // Add "Medals" text above the emojis
   var medalsText = document.createElement("h2");
   medalsText.textContent = "Medals";
   medalsText.style.fontSize = medalsFontSize;
@@ -503,14 +576,15 @@ function displayMedals(countryCodeISO3, country_name) {
     }
     else {
       // Display message if no data is found
+      const season = window.getOlympicSeason();
       var noData = document.createElement("h2");
-      noData.textContent = "Oops! This country never won any medals :(";
+      noData.textContent = "Oops! This country never won any medals in the " + season + " Olympics.";
+
       medals.appendChild(noData);
       medals.removeChild(goldContainer);
       medals.removeChild(silverContainer);
       medals.removeChild(bronzeContainer);
-      console.log("No data found");
-      const season = window.getOlympicSeason();
+      
       if (season === "Summer") {
         medals.style.backgroundColor = "darkgoldenrod";
       } else {
@@ -532,6 +606,7 @@ function animateCounter(counterElement, finalValue, duration) {
    * @param {number} finalValue - The final value of the counter
    * @param {number} duration - The duration of the animation in milliseconds
    */
+
   var start = 0;
   var stepTime = Math.abs(Math.floor(duration / finalValue));
   var obj = counterElement;
@@ -546,24 +621,30 @@ function animateCounter(counterElement, finalValue, duration) {
 }
 
 function displayBestAthlete(countryCodeISO3, countryName) {
-  console.log("displaying best athlete");
+  /**
+   * Function to display the best athlete of a country
+   * 
+   * @param {string} countryCodeISO3 - ISO 3166-1 alpha-3 code of the country
+   * @param {string} countryName - Name of the country
+   */
   
   var countryInfo = document.getElementById("country-info");
   var oldAthlete = document.getElementById("best-athlete");
+
   if (oldAthlete !== null) {
     countryInfo.removeChild(oldAthlete);
   }
+
   var athlete = document.createElement("div");
   athlete.id = "best-athlete";
   athlete.classList.add("country-stats");
   athlete.style.top = "50%";
   athlete.style.height = "50%";
-  
   athlete.style.position = "absolute";
 
   var athleteFontSize = $(countryInfo).height() * 0.05 + "px";
 
-  // Add "Best Athlete" text above the emojis
+  // Add text above the emojis
   var athleteText = document.createElement("h1");
   athleteText.textContent = "Most decorated athlete";
   athleteText.style.fontSize = athleteFontSize;
@@ -663,6 +744,15 @@ function displayBestAthlete(countryCodeISO3, countryName) {
 
 
 async function fetchMedalData(countryCodeISO3, country_name) {
+  /**
+   * Function to fetch the medal data of a country
+   * 
+   * @param {string} countryCodeISO3 - ISO 3166-1 alpha-3 code of the country
+   * @param {string} country_name - Name of the country
+   * 
+   * @returns {Object} - The medal data: gold, silver, and bronze medals
+   */
+
   try {
     const data = await d3.csvParse(await (await fetch('../../data/olympic_medals_processed.csv')).text());
     const season = window.getOlympicSeason();
@@ -692,12 +782,21 @@ async function fetchMedalData(countryCodeISO3, country_name) {
 }
 
 async function fetchBestAthleteData(countryCodeISO3, country_name) {
+  /**
+   * Function to fetch the best athlete data of a country
+   * 
+   * @param {string} countryCodeISO3 - ISO 3166-1 alpha-3 code of the country
+   * @param {string} country_name - Name of the country
+   * 
+   * @returns {Object} - The best athlete data: name, sport, and medals
+   */
   try {
     const data = await d3.csvParse(await (await fetch('../../data/olympic_top_athlete_per_country.csv')).text());
     const season = window.getOlympicSeason();
     console.log("Season:", season);
     console.log("Country code:", countryCodeISO3);
-    const athleteData = data.filter(d => d.game_season === season && (d.country_3_letter_code === countryCodeISO3 || d.country_name === country_name));
+    const athleteData = data.filter(d => d.game_season === season && 
+      (d.country_3_letter_code === countryCodeISO3 || d.country_name === country_name));
 
     if (athleteData.length === 0) {
       console.log("No athlete found for the country with code", countryCodeISO3);
@@ -755,12 +854,17 @@ switchElement.addEventListener('change', function () {
 
 // [ ] ---------------------------------------- HOST BUTTON ------------------------------------------ //
 
+// Add event listener to the host button
 hostButton.addEventListener('click', function () {
   isHostButtonClicked = !isHostButtonClicked;
   displayHostCountries();
 });
 
 function displayHostCountries() {
+  /**
+   * Function to display the host countries on the map
+   */
+
   if (isHostButtonClicked) {
     fetchHostData().then(function (result) {
       if (result !== null) {
@@ -793,7 +897,8 @@ function displayHostCountries() {
         
             // Apply the transformation to the centroid coordinates
             let transformedCentroid = transform.apply(screenCentroid);
-        
+            
+            // Add a rectangle and text above the host country
             svg.append("rect")
               .attr("x", transformedCentroid[0] - gameNamesString.length * 5 / 2 - 10)
               .attr("y", transformedCentroid[1] - 20)
@@ -832,12 +937,22 @@ function displayHostCountries() {
 }
 
 function hideHostCountriesLabel() {
+  /**
+   * Function to hide the game names above the host countries
+   */
+
   d3.selectAll(".host-background").remove();
   d3.selectAll(".host-text").remove();
 }
 
 
 async function fetchHostData() {
+  /**
+   * Function to fetch the host data
+   * 
+   * @returns {Object} - The host data
+   */
+
   try {
     const data = await d3.csvParse(await (await fetch('../../data/olympic_hosts_processed.csv')).text());
     const season = window.getOlympicSeason();
@@ -855,6 +970,15 @@ async function fetchHostData() {
 
 // [ ] -------------------------------------- POPUP WINDOW ------------------------------------------ //
 function showPopup(e, text = "None") {
+  /**
+   * Function to display the popup window
+   * 
+   * @param {HTMLElement} e - The element that triggered the popup
+   * @param {string} text - The text to display in the popup
+   * 
+   * @returns {HTMLElement} - The popup window
+   */
+
   var popup = document.getElementById("myPopup");
   if (text === "None") {
     popup.textContent = e.getAttribute('title'); 
@@ -866,12 +990,22 @@ function showPopup(e, text = "None") {
 }
 
 function hidePopup() {
+  /**
+   * Function to hide the popup window
+   */
+
   var popup = document.getElementById("myPopup");
   popup.classList.remove("show");
   fadeOut(popup);
 }
 
 function movePopup(e) {
+  /**
+   * Function to move the popup window
+   * 
+   * @param {MouseEvent} e - The mouse event
+   */
+
   var popup = document.getElementById("myPopup");
 
   // If the popup does not have the "show" class, show the popup
@@ -908,6 +1042,12 @@ function movePopup(e) {
 }
 
 function fadeIn(element) {
+  /**
+   * Function to fade in an element
+   * 
+   * @param {HTMLElement} element - The element to fade in
+   */
+
   var op = 0.1;
   element.style.display = 'block';
   element.style.opacity = op;
@@ -922,6 +1062,12 @@ function fadeIn(element) {
 }
 
 function fadeOut(element) {
+  /**
+   * Function to fade out an element
+   * 
+   * @param {HTMLElement} element - The element to fade out
+   */
+
   var op = 1; 
   element.style.opacity = op;
   var timer = setInterval(function () {
