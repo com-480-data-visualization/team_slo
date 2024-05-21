@@ -1,73 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/statistics.css">
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/switch.css">
-        <link rel="stylesheet" href="./css/treemap.css">
-        <link rel="stylesheet" href="./css/popup.css">
-        <!-- Load d3.js -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    </head>
-    
-    <body>
-        <div class="topnav">
-            <a href="world_map.html">World Map</a>
-            <a class ="active" href ="statistics.html">Statistics</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-            <label class="switch">
-                <input type="checkbox" id="season-switch">
-                <span class="slider round"></span>
-            </label>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Statistics</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/statistics.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/switch.css">
+    <link rel="stylesheet" href="../test/test.css">
+    <!-- Load Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Load d3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a href="world_map.html">World Map</a>
+        <a class="active" href="statistics.html">Statistics</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <label class="switch">
+            <input type="checkbox" id="season-switch" !checked>
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div id="parent-container">
+        <div class="content-block">
+            <h1>Wheel Chart</h1>
+            <p>Here will be shown the medalist of the games.</p>
         </div>
-        <div id="title-stats-img"></div>
-        <div id="title-stats">
-            <h1>The Race for Medals: A Century of History</h1>
-        </div>
-        <div>
-            <div id="stats-text">
-                <div id="stats-text">
-                <p class="paragraph">The Olympic Games are the scene of incredible performances and emotional moments that are forever etched in the minds of athletes and fans alike.  But when it comes to results, and particularly medal counts, the countries seem very unequal. In both winter and summer, the USA outdid its rivals. On this site, you can discover the reasons behind this domination through various graphs.</p>
-        </div>
-        <div id="title-stats">
-            <h2 class="center-text">All Results at a Glance</h2>
-        </div>
-        <div id="stats-text">
-            <p class="paragraph"> It's sometimes difficult to get an overall view of the medals won in the various disciplines. This site visualizes all the medals won since the 1900 Paris games. Click on the wheel to dive into each edition and discover who the heroes of each discipline are!</p>
-        </div>
-
-        <div id="wheel-viz">
-            <p>Here the wheel chart will be displayed (see milestone 2 for details)</p>
-        </div>
-
-        <div id="title-stats">
-            <h2 class="center-text">Sporting Spectrum: A Nation's Athletic Showcase</h2>
-        </div>
-        <div id="stats-text">
-            <p class="paragraph">A first case study is the presence of a country in the disciplines featured at the Olympic Games. Clearly, some countries have very uneven situations depending on the season. Countries in the southern hemisphere will find it harder to field athletes at the winter games, while Nordic countries will have the opposite tendency. On the other hand, countries with temperate climates are more likely to achieve good results in both seasons. Use this visualization to discover the distribution for the country of your choice!</p>
-        </div>
-        <div id="popup" class="popup">
-            <span class="popuptext" id="myPopup">here</span>
+        <div id="myDiv">
+            <div id="chart"></div>
         </div>
         <div id="container">
-            <div id="treemap"></div>
             <div id="control-panel">
-                <label for="country-select">Select a country:</label>
-                <select id="country-select">
-                  <!-- Options will be added here dynamically -->
+                <label for="game-select">Select a Game:</label>
+                <select id="game-select">
+                <!-- Options will be added here dynamically -->
                 </select>
-                <button id="back-button">Back to discipline</button>
             </div>
         </div>
-        <script type="text/javascript" src="./js/switch.js"></script>
-        <script type="module" src="./js/treemap/treemap.js"></script>
-    </body>
-
+    </div>
+    <script type="text/javascript" src="./js/switch.js"></script>
+    <script src="./js/statistics.js"></script>
+</body>
 </html>
+
+
