@@ -34,3 +34,93 @@
   margin-bottom: 50px; /* Add margin at the bottom */
 }
 
+#title-stats-img {
+  height: 30vh;
+  margin-bottom: 20px;
+  background-image: url(https://img.olympics.com/images/image/private//f_auto/primary/its2n2ztxkvgofpf7zev);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#title-stats h1 {
+  font-size: 5vh;
+  text-align: center;
+  padding-top: 0px;
+}
+
+#title-stats h2 {
+  font-size: 3vh;
+  text-align: center;
+  padding-top: 0px;
+}
+
+#treemap-viz, #wheel-viz {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 300px;
+  border: 1px solid #000;
+}
+
+@media screen and (max-width: 600px) {
+  #title-stats-img {
+      height: 20vh;
+  }
+
+  #title-stats h1 {
+      font-size: 4vh;
+  }
+
+  #title-stats h2 {
+      font-size: 2.5vh;
+  }
+
+  #treemap-viz, #wheel-viz {
+      margin-left: 20px;
+      margin-right: 20px;
+      height: 250px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  #title-stats-img {
+      height: 25vh;
+  }
+
+  #title-stats h1 {
+      font-size: 4.5vh;
+  }
+
+  #title-stats h2 {
+      font-size: 2.8vh;
+  }
+
+  #treemap-viz, #wheel-viz {
+      margin-left: 30px;
+      margin-right: 30px;
+      height: 280px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #title-stats-img {
+      height: 30vh;
+  }
+
+  #title-stats h1 {
+      font-size: 5vh;
+  }
+
+  #title-stats h2 {
+      font-size: 3vh;
+  }
+
+  #treemap-viz, #wheel-viz {
+      margin-left: 50px;
+      margin-right: 50px;
+      height: 300px;
+  }
+}

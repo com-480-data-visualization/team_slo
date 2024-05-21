@@ -38,34 +38,38 @@ export function hidePopup() {
   }
   
 export function movePopup(e) {
+    /**
+     * Function to move the popup window
+     * 
+     * @param {MouseEvent} e - The mouse event
+     */
+  
     var popup = document.getElementById("myPopup");
-    var div = document.getElementById("treemap");
-
-    // Retrieve the bounding rectangle of the div
-    var divRect = div.getBoundingClientRect();
-
+  
     // If the popup does not have the "show" class, show the popup
     if (!popup.classList.contains("show")) {
-        showPopup(e.target);
+      showPopup(e.target);
     }
-
-    // Calculate the mouse position relative to the div
+  
+  
     if (e) {
+        // Get the mouse cursor position
         var x = e.clientX;
-        var y = e.clientY;
-        var relativeX = x - divRect.left;
-        var relativeY = y - divRect.top;
-        // Adjustments based on viewport dimensions
-        var xOffset = 0.02 * window.innerWidth; // 5% of the viewport width
-        var yOffset = 0.2 * window.innerHeight; // 20% of the viewport height
-
+        var y = e.clientY;  
+        
+        var offsetX = -80;
+        var offsetY = -70;
+  
+        x += offsetX;
+        y += offsetY;
+  
         // Calculate the adjusted positions
-        popup.style.left = `${relativeX - xOffset}px`;
-        popup.style.top = `${relativeY + yOffset}px`;
-
-        console.log('mouse:', x, y);
-        console.log(popup.style.left, popup.style.top);
-
+        popup.style.left = `${x}px`;
+        popup.style.top = `${y}px`;
+  
+        // console.log('mouse:', x, y);
+        // console.log(popup.style.left, popup.style.top);
+  
         // Display the popup
         popup.style.display = 'block';
     } else {
@@ -73,7 +77,7 @@ export function movePopup(e) {
         popup.style.display = 'none';
         popup.textContent = '';
     }
-}
+  }
 
   
 function fadeIn(element) {
