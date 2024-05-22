@@ -38,6 +38,14 @@ function generateCustomdata(gold, silver, bronze) {
 
 // Display the wheel chart
 async function displayWheelChart(season_actual, game_of_interest) {
+  // Change select label depending on the season
+  var gameSelectLabel = document.getElementById('game-select-label');
+  if (season_actual === 'Winter') {
+    gameSelectLabel.innerHTML = '❄️ Select a Winter Game ❄️';
+  } else {
+    gameSelectLabel.innerHTML = '🌞 Select a Summer Game 🌞';
+  }
+
   try {
     const response = await fetch('../../data/olympic_results_join.csv');
     const csvData = await response.text();
