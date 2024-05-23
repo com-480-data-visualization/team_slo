@@ -1,24 +1,9 @@
-html 
+.header
 {
-    overflow-x: hidden;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
 }
-
-body {
-
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    background-color: white;
-    
-}
-
-a
-{
-
-    text-decoration: none;
-
-}
-
-
 .card
 {
     z-index: 1;
@@ -27,6 +12,8 @@ a
     height:450px;
     margin: 0 auto;
     margin-top:100px;
+    margin-left: 5%;
+    margin-right: 5%;
     background-color: white;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
