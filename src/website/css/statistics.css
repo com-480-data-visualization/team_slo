@@ -1,8 +1,8 @@
-/* #parent-container {
+#parent-container {
   display: flex;
   justify-content: center; 
   align-items: center; 
-} */
+}
 
 
 #plot-container {
@@ -67,10 +67,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-#chart {
-  position: relative;
+  width: 50%;
+  height: 10%;
 }
 
 #control-panel-container {

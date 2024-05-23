@@ -4,8 +4,8 @@ body {
   font-family: 'Inter';
   font-weight: 200;
   font-size: 17px;
+  padding-top: 60px;
 }
-
 .topnav {
   position: fixed;
   top: 0;

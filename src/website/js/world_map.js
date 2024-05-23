@@ -372,7 +372,7 @@ function displayCountryInfo(country, countryCodeISO3) {
   // add country name and flag in the same div
   var countryFlagContainer = document.createElement("div");
   countryFlagContainer.classList.add("country-stats");
-  countryFlagContainer.style.backgroundColor = "grey";
+  countryFlagContainer.style.backgroundColor = "#8b929a";
   countryFlagContainer.style.textAlign = "center";
 
   // add flag
@@ -906,7 +906,9 @@ function displayHostCountries() {
               .attr("height", 30)
               .attr("rx", 15)
               .attr("ry", 15)
-              .attr("fill", "rgba(0, 0, 0, 0.7)")
+              .style("stroke", "lightgrey")
+              .style("stroke-width", "1px")
+              .style("fill", "white")
               .classed("host-background", true);
 
             svg.append("text")
@@ -914,7 +916,7 @@ function displayHostCountries() {
               .attr("y", transformedCentroid[1])
               .attr("text-anchor", "middle")
               .attr("font-size", "10px")
-              .attr("fill", "white")
+              .attr("fill", "black")
               .text(gameNamesString)
               .classed("host-text", true);
           }

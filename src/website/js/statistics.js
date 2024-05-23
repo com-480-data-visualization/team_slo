@@ -109,11 +109,13 @@ async function displayWheelChart(season_actual, game_of_interest) {
 
     const layout = {
       margin: { l: 10, r: 10, b: 10, t: 10 },
-      width: 800, 
-      height: 800 
+      width: window.innerWidth * 0.5, // subtract margins
+      height: window.innerHeight * 0.7, // subtract margins
+      paper_bgcolor: '#F8F8FF', // Background color of the entire chart
+      plot_bgcolor: 'white', // Background color of the plot area
     };
 
-    Plotly.newPlot('myDiv', data, layout);
+    Plotly.newPlot('chart', data, layout);
   } catch (error) {
     console.error('Error:', error);
   }

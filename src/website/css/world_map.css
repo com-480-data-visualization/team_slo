@@ -11,23 +11,11 @@
 }
 
 svg rect {
-  fill: #050c3ea2;
+  fill: #B0C4DE;
 }
 
 .country{
-  fill: #dfdf7f;
-  stroke: #2A2C39; 
-  stroke-width: 1;
-}
-
-.country-summer{
-  fill: #dfdf7f;
-  stroke: #2A2C39; 
-  stroke-width: 1;
-}
-
-.country-winter{
-  fill: #012aa5;
+  fill: #FFEBB7;
   stroke: #2A2C39; 
   stroke-width: 1;
 }
