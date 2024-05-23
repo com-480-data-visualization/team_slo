@@ -111,7 +111,7 @@ async function displayWheelChart(season_actual, game_of_interest) {
       margin: { l: 10, r: 10, b: 10, t: 10 },
       width: window.innerWidth * 0.5, // subtract margins
       height: window.innerHeight * 0.7, // subtract margins
-      paper_bgcolor: '#F8F8FF', // Background color of the entire chart
+      paper_bgcolor: '#f0ece2', // Background color of the entire chart
       plot_bgcolor: 'white', // Background color of the plot area
     };
 
