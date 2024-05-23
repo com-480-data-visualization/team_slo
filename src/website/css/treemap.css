@@ -34,6 +34,10 @@
   fill: rgba(70, 131, 180, 0.378);
   border-radius: 10px;
 }
+.node-hover {
+  fill: rgba(70, 131, 180, 0.378);
+  border-radius: 10px;
+}
 
 #back-button {
   margin-top: 10px;

@@ -12,7 +12,7 @@ export function showPopup(e) {
   var popup = document.getElementById("myPopup");
 
   // Check if `e` contains the expected data
-  if (e && e.data) {
+  if (e && e.data && !popup.classList.contains("show")) {
       // Extract `name` and `value` from the data object
       var firstLine = e.data.name;  // Get the `name` attribute from `e.data`
       var secondLine = e.data.value + "%";  // Get the `value` attribute from `e.data` and append '%'
@@ -58,7 +58,7 @@ export function movePopup(e) {
         var y = e.clientY;  
         
         var offsetX = -80;
-        var offsetY = -70;
+        var offsetY = -90;
   
         x += offsetX;
         y += offsetY;
