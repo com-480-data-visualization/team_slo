@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #F8F8FF;
+  background-color: #f0ece2;
   font-family: 'Inter';
   font-weight: 200;
   font-size: 17px;
@@ -11,7 +11,7 @@ body {
   top: 0;
   width: 100%;
   display: flex;
-  background-color: #333;
+  background-color: #596e79;
   font-family: 'Inter';
   overflow: hidden;
   align-items: center;
@@ -39,7 +39,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #c7b198;
   color: white;
 }
 
@@ -52,6 +52,12 @@ body {
   background-repeat: no-repeat;
   background-position: center 120px;
   background-size: 120px;
+}
+
+#title-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .center-text {
