@@ -4,6 +4,13 @@
     margin-right: 20%;
     text-align: justify;
 }
+.header h1
+{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
 .card
 {
     z-index: 1;
@@ -11,7 +18,7 @@
     width: 300px;
     height:450px;
     margin: 0 auto;
-    margin-top:100px;
+    margin-top:50px;
     margin-left: 5%;
     margin-right: 5%;
     background-color: white;
