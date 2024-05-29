@@ -58,6 +58,12 @@
   border: 1px solid #000;
 }
 
+#stats-text{
+  margin-right: 50px;
+  margin-left: 50px;
+
+  justify-content: center;
+}
 
 #myDiv {
   background-color: rgb(255, 254, 254);

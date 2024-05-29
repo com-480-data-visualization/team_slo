@@ -1,27 +1,27 @@
 #container_treemap {
-    display: flex; /* Use flexbox for layout */
-    padding-left: 50px; /* Add some padding to the left */
-    padding-right: 200px; /* Add some padding to the right */
+    display: flex; 
+    padding-left: 100px;
+    padding-right: 100px;
     height: 60vh;
     padding-bottom: 50px;
 }
   
 #treemap {
-    flex-grow: 1; /* Allow treemap to take up the remaining space */
+    flex-grow: 1;
   }
   
 #control-panel {
     margin-left: 20px;
-    width: 250px; /* Fixed width for the control panel */
+    width: 250px;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #ccc;
   }
 #country-select {
-    display: block; /* Make sure the select is not hidden */
-    width: 80%; /* Take up the full width of its container */
-    padding: 5px; /* Add some padding for aesthetics */
-    font-size: 16px; /* Increase font size for readability */
+    display: block;
+    width: 80%;
+    padding: 5px; 
+    font-size: 16px; 
   }
 
 .node{
