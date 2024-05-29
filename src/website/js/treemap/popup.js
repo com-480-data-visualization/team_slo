@@ -58,10 +58,14 @@ export function movePopup(e) {
         var y = e.clientY;  
         
         var offsetX = -80;
-        var offsetY = -90;
+        var offsetY = -80;
+
+        var lenText = popup.textContent.length;
+
+        console.log(lenText);
   
         x += offsetX;
-        y += offsetY;
+        y += offsetY - lenText;
   
         // Calculate the adjusted positions
         popup.style.left = `${x}px`;
