@@ -8,8 +8,6 @@
   /This script fetches the discipline and event data.
 */
 
-import { countryISO } from "./treemap.js";
-
 export async function fetch_discipline(countryCodeISO3, country_name) {
     let new_countryISO = countryCodeISO3;
     let new_country_name = country_name;

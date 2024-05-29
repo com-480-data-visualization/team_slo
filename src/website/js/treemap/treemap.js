@@ -65,11 +65,10 @@ function makeVisualization() {
     // Clear any existing options in the dropdown
     countrySelect.selectAll('option').remove();
     
-    // Populate the dropdown with country names
     country_names.forEach(country => {
         countrySelect.append('option')
-            .attr('value', country)  // Set the option value to the country name
-            .text(country);  // Set the option text to the country name
+            .attr('value', country)
+            .text(country); 
     });
     countrySelect.property('value', country_name);
 
