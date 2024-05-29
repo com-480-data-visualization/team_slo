@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const snowflake = document.createElement("div");
         snowflake.className = "snowflake";
         snowflake.style.left = `${Math.random() * 100}vw`;
+        snowflake.style.top = `${window.scrollY - 20}px`; // start from current scroll position
         snowflake.style.animationDuration = `${3 + Math.random() * 5}s`;
         snowflake.style.animationDelay = `${Math.random() * 2}s`;
 
