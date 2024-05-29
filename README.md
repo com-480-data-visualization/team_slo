@@ -52,8 +52,8 @@ Our project introduces a novel approach that sets it apart from other related wo
 [Website for Milestone 3](https://com-480-data-visualization.github.io/team_slo) \
 [Link to the Process Book](./documents/data_visualization_m3_report.pdf) \
 [Link to Screencast](./document/data_visualization_m3.mp4)
-
-
+```
+.
 ├── README.md
 ├── data
 │   ├── image_athletes
@@ -108,18 +108,7 @@ Our project introduces a novel approach that sets it apart from other related wo
         │   │   └── treemap.js
         │   └── world_map.js
         ├── pictures
-        │   ├── Fabio.jpeg
-        │   ├── chamoson.jpg
-        │   ├── flanthey.jpg
-        │   ├── neuch.jpg
-        │   ├── vincent.jpg
-        │   └── yannis.jpg
         ├── statistics.html
         └── world_map.html
-
-
-## Late policy
-
-- < 24h: 80% of the grade for the milestone
-- < 48h: 70% of the grade for the milestone
+```
 
