@@ -312,7 +312,7 @@ $(window).resize(function () {
 
   if (selectedCountry !== null && selectedCountryISO3 !== null) {
     console.log("Resizing country info");
-    displayCountryInfo(selectedCountry, selectedCountryISO3); // You need to get country and countryCodeISO3 from somewhere
+    displayCountryInfo(selectedCountry, selectedCountryISO3); 
   }
 
   displayHostCountries();
