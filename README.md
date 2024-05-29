@@ -52,10 +52,65 @@ Our project introduces a novel approach that sets it apart from other related wo
 [Website for Milestone 3](https://com-480-data-visualization.github.io/team_slo) \
 [Link to the Process Book](./documents/data_visualization_m3_report.pdf) \
 [Link to Screencast](./document/data_visualization_m3.mp4)
-
-
-## Late policy
-
-- < 24h: 80% of the grade for the milestone
-- < 48h: 70% of the grade for the milestone
+```
+.
+├── README.md
+├── data
+│   ├── image_athletes
+│   ├── olympic_athletes.csv
+│   ├── olympic_hosts.csv
+│   ├── olympic_hosts_processed.csv
+│   ├── olympic_medals.csv
+│   ├── olympic_medals_join.csv
+│   ├── olympic_medals_processed.csv
+│   ├── olympic_results.csv
+│   ├── olympic_results.pkl
+│   ├── olympic_results_join.csv
+│   ├── olympic_top_athlete_per_country.csv
+│   ├── olympic_treemap_country_list.csv
+│   ├── olympic_treemap_discipline.csv
+│   ├── olympic_treemap_event.csv
+│   └── world_map.json
+├── documents
+│   ├── data_visualization_m2_report.pdf
+│   ├── data_visualization_milestone1.pdf
+│   └── data_visualization_milestone2.pdf
+│   └── data_visualization_m3_report.pdf
+│   └── data_visualization_m3.mp4
+├── index.html
+└── src
+    ├── processing
+    │   └── data_preprocessing_Fabio.ipynb
+    ├── test
+    │   ├── draw_treemap.js
+    │   ├── fetch_data.js
+    │   ├── test.css
+    │   ├── test.html
+    │   └── test.js
+    └── website
+        ├── about.html
+        ├── css
+        │   ├── about.css
+        │   ├── main.css
+        │   ├── popup.css
+        │   ├── snowflakes.css
+        │   ├── statistics.css
+        │   ├── switch.css
+        │   ├── treemap.css
+        │   └── world_map.css
+        ├── flare-2.json
+        ├── js
+        │   ├── snowflakes.js
+        │   ├── statistics.js
+        │   ├── switch.js
+        │   ├── treemap
+        │   │   ├── draw_treemap.js
+        │   │   ├── fetch_data.js
+        │   │   ├── popup.js
+        │   │   └── treemap.js
+        │   └── world_map.js
+        ├── pictures
+        ├── statistics.html
+        └── world_map.html
+```
 

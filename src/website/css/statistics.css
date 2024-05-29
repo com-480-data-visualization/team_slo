@@ -8,23 +8,23 @@
 #plot-container {
   background-color: rgb(26, 183, 26);
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
+  justify-content: center;
+  align-items: center; 
 }
 
 
 #container {
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  padding: 2px; /* Reduce padding */
-  height: 5vh; /* Reduce height */
-  width: 20vw; /* Add width */
+  justify-content: center; 
+  align-items: center; 
+  padding: 2px; 
+  height: 5vh;
+  width: 20vw; 
   flex-grow: 1;
-  border: 2px solid rgb(253, 252, 252); /* Add a border */
-  border-radius: 10px; /* Rounded corners */
+  border: 2px solid rgb(253, 252, 252); 
+  border-radius: 10px; 
   background-color: rgb(117, 128, 8);
-  margin-bottom: 50px; /* Add margin at the bottom */
+  margin-bottom: 50px; 
 }
 
 #title-stats-img {
