@@ -8,7 +8,8 @@
 
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
-## Milestone 1 (29th March, 5pm)
+## Milestone 1
+
 
 **10% of the final grade**
 
@@ -38,14 +39,14 @@ which illustrated how powerful the visualisation on map can be.
 Our project introduces a novel approach that sets it apart from other related works by providing comprehensive access to all statistics concerning the Olympic Games in a single interface. By visualizing this data on a world map, we enhance user-friendliness, offering a unique and superior experience compared to existing works.
 
 
-## Milestone 2 (26th April, 5pm)
+## Milestone 2
 
 **10% of the final grade**
 
 [Website for Milestone 2](https://com-480-data-visualization.github.io/team_slo) \
 [Link to the report](./documents/data_visualization_m2_report.pdf)
 
-## Milestone 3 (31st May, 5pm)
+## Milestone 3
 
 **80% of the final grade**
 
