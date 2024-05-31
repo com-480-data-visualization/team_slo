@@ -51,7 +51,7 @@ Our project introduces a novel approach that sets it apart from other related wo
 
 [Website for Milestone 3](https://com-480-data-visualization.github.io/team_slo) \
 [Link to the Process Book](./documents/data_visualization_m3_report.pdf) \
-[Link to Screencast](./document/data_visualization_m3.mp4)
+[Link to Screencast](./document/team_slo_presentation.mp4)
 
 ### Project Structure
 ```
